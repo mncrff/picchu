@@ -15,8 +15,8 @@
 
 @font-face {
     font-family: 'wf_segoe-ui_light';
-    src: url("http://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
-    src: local("Segoe UI Light"), local("Segoe WP Light"), url("http://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("http://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("http://i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
+    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
+    src: local("Segoe UI Light"), local("Segoe WP Light"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
     font-weight: 600;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'wf_segoe-ui_normal';
-    src: url("http//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
+    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
     src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.svg#web") format("svg");
     font-weight: normal;
     font-style: normal;
@@ -294,7 +294,7 @@ p.small {
 
 .hidden {
     display: none !important;
-} 
+}
 
 .overflow-hidden, .ofh {
     overflow: hidden;
