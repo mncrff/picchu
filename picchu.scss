@@ -96,7 +96,7 @@ body {
 
 p, a, input {
     font-family: wf_segoe-ui_normal;
-    font-size: -webkit-calc(16px + .25vw);
+    font-size: unquote("-webkit-calc(16px + .25vw)");
     font-size: calc(16px + .25vw);
 }
 
@@ -107,37 +107,37 @@ a {
 
 h1 {
     font-size: 2em;
-    font-size: -webkit-calc(2em + 1vw);
+    font-size: unquote("-webkit-calc(2em + 1vw)");
     font-size: calc(2em + 1vw);
 }
 
 h2 {
     font-size: 1.5em;
-    font-size: -webkit-calc(1.5em + .75vw);
+    font-size: unquote("-webkit-calc(1.5em + .75vw)");
     font-size: calc(1.5em + .75vw);
 }
 
 h3 {
     font-size: 1.17em;
-    font-size: -webkit-calc(1.17em + .5vw);
+    font-size: unquote("-webkit-calc(1.17em + .5vw)");
     font-size: calc(1.17em + .5vw);
 }
 
 h4 {
     font-size: 1em;
-    font-size: -webkit-calc(1em + .25vw);
+    font-size: unquote("-webkit-calc(1em + .25vw)");
     font-size: calc(1em + .25vw);
 }
 
 h5 {
     font-size: 0.83em;
-    font-size: -webkit-calc(0.83em + .25vw);
+    font-size: unquote("-webkit-calc(0.83em + .25vw)");
     font-size: calc(0.83em + .25vw);
 }
 
 h6 {
     font-size: 0.67em;
-    font-size: -webkit-calc(0.67em + .25vw);
+    font-size: unquote("-webkit-calc(0.67em + .25vw)");
     font-size: calc(0.67em + .25vw);
 }
 
