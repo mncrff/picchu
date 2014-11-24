@@ -106,16 +106,16 @@ a {
 h1, h2, .headline {
   font-family: $light;
   font-weight: inherit;
-  margin: 0 0 0.75em;
-  line-height: 1.2em;
 }
 
 h3, .h3, .title {
     font-family: $semilight;
+    font-weight: inherit;
 }
 
 h4, .h4, .subtitle {
     font-family: $regular;
+    font-weight: inherit;
 }
 
 .headline {
