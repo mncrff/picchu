@@ -1,0 +1,133 @@
+//------------------------------------
+//              #COLORS
+//------------------------------------
+
+
+//Variables
+$aqua: #00BCF1;
+$cobalt: #0078D7;
+$blue: #0046FF;
+$violet: #4F4BD9;
+$lavender: #886CE4;
+$purple: #5C2E91;
+$magenta: #B4009E;
+$pink: #EF0060;
+$salmon: #FF6F6F;
+$red: #E81123;
+$orange: #F43E06;
+$pumpkin: #F5881f;
+$yellow: #FFB900;
+$lime: #2EAC1D;
+$green: #14AF14;
+$forest: #107C10;
+$teal: #008272;
+$marine: #00B294;
+$tealgray: #5A7D73;
+$bluegray: #6B7B7F;
+$lightgray: #7F7A78;
+$white: #FFFFFF;
+$black: #000000;
+
+$color-list: ("aqua", $aqua), ("cobalt", $cobalt), ("blue", $blue), ("violet", $violet),
+("lavender", $lavender), ("purple", $purple), ("magenta", $magenta),
+("pink", $pink), ("salmon", $salmon), ("red", $red), ("orange", $orange),
+("pumpkin", $pumpkin), ("yellow", $yellow), ("lime", $lime),
+("green", $green), ("forest", $forest), ("teal", $teal), ("marine", $marine),
+("tealgray", $tealgray), ("bluegray", $bluegray), ("lightgray", $lightgray);
+$shade-list: (30%, 50%, 70%);
+
+
+//Functions
+@function tint($color, $percentage) {
+    @return mix(#FFFFFF, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(#000000, $color, $percentage);
+}
+
+
+//Mixins
+@mixin primary-color-ladder($color) {
+    .primary-bgc {
+        background-color: $color;
+    }
+
+    .primary-c {
+        color: $color;
+    }
+
+    @for $i from 1 through 3 {
+        .primary-d#{$i}-bgc {
+            background-color: shade($color, nth($shade-list, $i));
+        }
+        .primary-l#{$i}-bgc {
+            background-color: tint($color, nth($shade-list, $i));
+        }
+
+        .primary-d#{$i}-c {
+            color: shade($color, nth($shade-list, $i));
+        }
+        .primary-l#{$i}-c {
+            color: tint($color, nth($shade-list, $i));
+        }
+    }
+}
+
+@mixin secondary-color-ladder($color) {
+    .secondary-bgc {
+        background-color: $color;
+    }
+
+    .secondary-c {
+        color: $color;
+    }
+
+    @for $i from 1 through 3 {
+        .secondary-d#{$i}-bgc {
+            background-color: shade($color, nth($shade-list, $i));
+        }
+        .secondary-l#{$i}-bgc {
+            background-color: tint($color, nth($shade-list, $i));
+        }
+
+        .secondary-d#{$i}-c {
+            color: shade($color, nth($shade-list, $i));
+        }
+        .secondary-l#{$i}-c {
+            color: tint($color, nth($shade-list, $i));
+        }
+    }
+}
+
+
+//Output
+@each $pair in $color-list {
+    @for $i from 1 through 4 {
+        @if $i == 4 {
+            .#{nth($pair, 1)}-bgc {
+                background-color: nth($pair, 2);
+            }
+            .#{nth($pair, 1)}-c {
+                color: nth($pair, 2);
+            }
+        } 
+        @else {
+            .#{nth($pair, 1)}-d#{$i}-bgc {
+                background-color: shade(nth($pair, 2), nth($shade-list, $i));
+            }
+
+            .#{nth($pair, 1)}-l#{$i}-bgc {
+                background-color: tint(nth($pair, 2), nth($shade-list, $i));
+            }
+
+            .#{nth($pair, 1)}-d#{$i}-c {
+                color: shade(nth($pair, 2), nth($shade-list, $i));
+            }
+
+            .#{nth($pair, 1)}-l#{$i}-c {
+                color: tint(nth($pair, 2), nth($shade-list, $i));
+            }
+        }
+    }
+}
