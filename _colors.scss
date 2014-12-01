@@ -102,6 +102,22 @@ $shade-list: (30%, 50%, 70%);
 
 
 //Output
+.black-bgc {
+    background-color: $black;
+}
+
+.black-c {
+    color: $black;
+}
+
+.white-bgc {
+    background-color: $white;
+}
+
+.white-c {
+    color: $white;
+}
+
 @each $pair in $color-list {
     @for $i from 1 through 4 {
         @if $i == 4 {
