@@ -6,7 +6,7 @@
     font-family: 'wf_segoe-ui_light';
     src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
     src: local("Segoe UI Light"), local("Segoe WP Light"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
-    font-weight: 600;
+    font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 }
@@ -24,7 +24,7 @@
     src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot');
     src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot?#iefix') format('embedded-opentype'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.woff') format('woff'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.ttf') format('truetype'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.svg#web') format('svg');
     font-weight: normal;
-    font-style: normal
+    font-style: normal;
 }
 @font-face{
     font-family:'wf_segoe-ui_semilight';
@@ -34,7 +34,7 @@
     url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.ttf") format("truetype"),
     url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.svg#web") format("svg");
     font-weight:normal;
-    font-style:normal
+    font-style: normal;
 }
 
 //Font variables
