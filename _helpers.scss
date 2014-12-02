@@ -2,6 +2,38 @@
 //              #HELPERS
 //------------------------------------
 
+//Clear fix placeholder(Nicholas Gallagher)
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix {
+    @extend %clearfix;
+}
+
+//Visual hides element but allows it to still be read by screen readers
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+.visually-hidden {
+    @extend %visuallyhidden;
+}
+
 .text-center, .tac {
     text-align: center;
 }
