@@ -1,3 +1,13 @@
+$vp1: 320px;
+$vp2: 540px;
+$vp3: 768px;
+$vp4: 992px;
+$vp5: 1400px;
+
+
+
+
+
 //------------------------------------
 //              #FONTS
 //------------------------------------
@@ -95,6 +105,11 @@ h4, .h4, .subtitle {
     font-weight: inherit;
 }
 
+.base, h5, .h5, h6, .h6 {
+    font-family: $semibold;
+    font-weight: inherit;
+}
+
 .headline {
 font-size: 62px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
 font-size: calc(35px + 2.6vw);
@@ -123,8 +138,7 @@ font-size: calc(15px + 0.45vw);
 }
 
 body, .base, p, h5, .h5, h6, .h6, input {
-font-size: 15px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
-font-size: calc(12px + 0.25vw);
+    font-size: 18px; //Mobile first, fixed font-size below viewport 2
 }
 
 .caption {
@@ -140,4 +154,32 @@ font-size: calc(10px + 0.25vw);
 .subcaption {
 font-size: 8px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
 font-size: calc(8px + 0.25vw);
+}
+
+@media all and (min-width: $vp2) {
+   body, .base, p, h5, .h5, h6, .h6, input {
+    font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
+    font-size: calc(17px + 0.15vw);
+    }   
+}
+
+@media all and (min-width: $vp3) {
+   body, .base, p, h5, .h5, h6, .h6, input {
+    font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
+    font-size: calc(18px + 0.15vw);
+    }   
+}
+
+@media all and (min-width: $vp4) {
+   body, .base, p, h5, .h5, h6, .h6, input {
+    font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
+    font-size: calc(19px + 0.15vw);
+    }   
+}
+
+@media all and (min-width: $vp5) {
+   body, .base, p, h5, .h5, h6, .h6, input {
+    font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
+    font-size: calc(20px + 0.15vw);
+    }   
 }
