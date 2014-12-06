@@ -173,13 +173,12 @@ font-size: calc(8px + 0.25vw);
 @media all and (min-width: $vp4) {
    body, .base, p, h5, .h5, h6, .h6, input {
     font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
-    font-size: calc(19px + 0.15vw);
+    font-size: calc(18px + 0.1vw);
     }   
 }
 
 @media all and (min-width: $vp5) {
    body, .base, p, h5, .h5, h6, .h6, input {
     font-size: 18px; //this is fallback for Metro 2.0 non-responsive standards (1024w)
-    font-size: calc(20px + 0.15vw);
     }   
 }
