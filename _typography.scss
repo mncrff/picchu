@@ -84,7 +84,7 @@ body, p, input, .body, div, span, li {
 a {
     color: shade($blue, nth($shade-list, 2));
     font-size: inherit;
-    font-family: $normal;
+    font-family: $regular;
     text-decoration: none;
 
     &:hover, &:focus {
