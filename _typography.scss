@@ -81,6 +81,10 @@ body, p, input, .body, div, span, li {
     line-height: 1.5;
 }
 
+p {
+	margin: 0 0 1em 0;
+}
+
 a {
     color: shade($blue, nth($shade-list, 2));
     font-size: inherit;
