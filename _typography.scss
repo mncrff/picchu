@@ -76,8 +76,9 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-body, p, input {
+body, p, input, .body, div, span, li {
     font-family: $regular;
+    line-height: 1.5;
 }
 
 a {
