@@ -15,7 +15,10 @@ $vp5: 1400px;
 @font-face {
     font-family: 'wf_segoe-ui_light';
     src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
-    src: local("Segoe UI Light"), local("Segoe WP Light"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.svg#web") format("svg");
+    src: local("Segoe UI Light"), local("Segoe WP Light"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
@@ -24,7 +27,10 @@ $vp5: 1400px;
 @font-face {
     font-family: 'wf_segoe-ui_normal';
     src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
-    src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype"), url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.svg#web") format("svg");
+    src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -32,7 +38,10 @@ $vp5: 1400px;
 @font-face {
     font-family: 'wf_segoe-ui_semibold';
     src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot');
-    src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot?#iefix') format('embedded-opentype'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.woff') format('woff'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.ttf') format('truetype'), url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.svg#web') format('svg');
+    src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"),
+     url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot?#iefix') format("embedded-opentype"),
+     url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.woff') format("woff"), 
+     url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -41,17 +50,26 @@ $vp5: 1400px;
     src:url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot");
     src:url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot?#iefix") format("embedded-opentype"),
     url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.woff") format("woff"),
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.ttf") format("truetype"),
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.svg#web") format("svg");
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.ttf") format("truetype");
     font-weight:normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wf_segoe-ui_bold';
+    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot");
+    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot?#iefix") format("embedded-opentype"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff") format("woff"), 
+    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.ttf") format("truetype");
+    font-weight: normal;
     font-style: normal;
 }
 
 //Font variables
-$light: wf_segoe-ui_light, Arial, sans-serif;
-$semibold: wf_segoe-ui_semibold, Arial, sans-serif;
-$regular: wf_segoe-ui_normal, Arial, sans-serif;
-$semilight: wf_segoe-ui_semilight, Arial, sans-serif;
+$light: wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif;
+$semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
+$regular: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif;
+$semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
+$bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
 
 $font-stack: $regular, $light, Arial, sans-serif;
 $font-stack-light: $light, $regular, Arial, sans-serif;
@@ -68,15 +86,19 @@ $font-stack-light: $light, $regular, Arial, sans-serif;
     font-family: $regular;
 }
 
-.semibold, .bold, b {
+.semibold, {
     font-family: $semibold;
+}
+
+b, .bold, .base {
+	font-family: $bold;
 }
 
 body {
     text-rendering: optimizeLegibility;
 }
 
-body, p, input, .body, div, span, li {
+body, p, input, .body, div, span, li, select {
     font-family: $regular;
     line-height: 1.5;
 }
@@ -143,24 +165,24 @@ h4, .h4, .subtitle {
     font-size: calc(20px + 0.15vw);
 }
 
-body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li {
+body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
     font-size: 16px;
     font-size: calc(16px + 0.15vw);
 }
 
 .caption {
+    font-size: 14px;
+    font-size: calc(14px + 0.15vw);
+}
+
+.caption-alt {
     font-size: 12px;
     font-size: calc(12px + 0.15vw);
 }
 
-.caption-alt {
+.subcaption {
     font-size: 10px;
     font-size: calc(10px + 0.15vw);
-}
-
-.subcaption {
-    font-size: 8px;
-    font-size: calc(8px + 0.15vw);
 }
 
 @media all and (min-width: $vp5) {
@@ -184,19 +206,19 @@ body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li {
         font-size: 22px;
     }
 
-    body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li {
+    body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
         font-size: 18px;
     }
 
     .caption {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .caption-alt {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .subcaption {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
