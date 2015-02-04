@@ -27,14 +27,23 @@ module.exports = function (grunt) {
                     'css/picchu.css': 'css/picchu.css'
                 }
             }
-        }
+        },
 
-    });
+        cssmin: {
+          target: {
+            files: {
+                'css/picchu.min.css': 'css/picchu.css'
+          }
+      }
+  }
+
+});
 
     // Load Grunt modules
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Set Grunt tasks
-    grunt.registerTask('default', ['sass', 'autoprefixer']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
 }
