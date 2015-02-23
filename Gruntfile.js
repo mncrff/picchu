@@ -12,7 +12,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     src: ['*.scss'],
-                    dest: 'css',
+                    dest: 'dist',
                     ext: '.css'
                 }]
             }
@@ -24,7 +24,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'css/picchu.css': 'css/picchu.css'
+                    'dist/picchu.css': 'dist/picchu.css'
                 }
             }
         },
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
         cssmin: {
           target: {
             files: {
-                'css/picchu.min.css': 'css/picchu.css'
+                'dist/picchu.min.css': 'dist/picchu.css'
           }
       }
   }
