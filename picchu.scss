@@ -3,11 +3,12 @@
 //------------------------------------
 //              #IMPORTS
 //------------------------------------
-@import "normalize";
-@import "colors";
-@import "typography";
-@import "buttons";
-@import "helpers";
+@import "src/Reset/normalize";
+@import "src/Color/colors";
+@import "src/Typography/typography";
+@import "src/FormElements/buttons";
+@import "src/FormElements/slider";
+@import "src/Helpers/helpers";
 @import "components/grid/src/sass/mscom-grid-mixed";
 
 

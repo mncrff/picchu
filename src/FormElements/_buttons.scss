@@ -2,11 +2,14 @@ button, .button {
 	border: 2px solid rgba(0,0,0,0);
 	box-sizing: border-box;
 	color: #FFF;
-	line-height: 1.3;
 	outline: none;
-	padding: 0.5em 1em;
+	padding: 0.4em 1em;
 	position: relative;
 	transition: all 0.15s;
+
+	&[disabled] {
+		opacity: 0.5s;
+	}
 
 	@each $pair in $color-list {
 		&.#{nth($pair, 1)} {
