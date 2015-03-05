@@ -88,12 +88,8 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-body, p, input, .body, div, span, li, select {
+body, p, input, .body, .body-alt, div, span, li, select {
     font-family: $regular;
-}
-
-p, .base {
-	line-height: 1.5;
 }
 
 p {
@@ -161,9 +157,17 @@ h4, .h4, .subtitle {
     font-size: calc(20px + 0.15vw);
 }
 
-body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
     font-size: 16px;
     font-size: calc(16px + 0.15vw);
+}
+
+p, .base {
+    line-height: 1.5;
+}
+
+.body-alt {
+    line-height: 1.25;
 }
 
 .caption {
@@ -178,7 +182,7 @@ body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
     line-height: 1.25;
 }
 
-.superscript {
+.subcaption {
     font-size: 10px;
     font-size: calc(10px + 0.15vw);
     line-height: 1.25;
@@ -205,7 +209,7 @@ body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
         font-size: 22px;
     }
 
-    body, .body, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
         font-size: 18px;
     }
 
