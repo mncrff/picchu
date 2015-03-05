@@ -12100,6 +12100,10 @@ button.white:hover, button.white:focus, .button.white:hover, .button.white:focus
 button.white:active, .button.white:active {
   background-color: #d8d8d8;
 }
+button.white[disabled]:hover, button.white[disabled]:focus, .button.white[disabled]:hover, .button.white[disabled]:focus {
+  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+}
 button.black, .button.black {
   background-color: #000000;
 }
@@ -12108,6 +12112,10 @@ button.black:hover, button.black:focus, .button.black:hover, .button.black:focus
 }
 button.black:active, .button.black:active {
   background-color: #262626;
+}
+button.black[disabled]:hover, button.black[disabled]:focus, .button.black[disabled]:hover, .button.black[disabled]:focus {
+  border-color: #000000;
+  background-color: #000000;
 }
 
 input[type=range].ms-slider {
