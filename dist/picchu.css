@@ -12117,6 +12117,24 @@ button.darkgray:hover, button.darkgray:focus, .button.darkgray:hover, .button.da
 button.darkgray:active, .button.darkgray:active {
   background-color: #444444;
 }
+button.white, .button.white {
+  background-color: #FFFFFF;
+}
+button.white:hover, button.white:focus, .button.white:hover, .button.white:focus {
+  border: 2px solid #bfbfbf;
+}
+button.white:active, .button.white:active {
+  background-color: #d8d8d8;
+}
+button.black, .button.black {
+  background-color: #000000;
+}
+button.black:hover, button.black:focus, .button.black:hover, .button.black:focus {
+  border: 2px solid #3f3f3f;
+}
+button.black:active, .button.black:active {
+  background-color: #262626;
+}
 
 input[type=range].ms-slider {
   -webkit-appearance: none;

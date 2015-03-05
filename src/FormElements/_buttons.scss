@@ -23,4 +23,26 @@ button, .button {
 			}
 		}
 	}
+
+	&.white {
+		background-color: $white;
+
+		&:hover, &:focus {
+			border: 2px solid shade($white, 25%);
+		}
+		&:active {
+			background-color: shade($white, 15%);
+		}
+	}
+
+	&.black {
+		background-color: $black;
+
+		&:hover, &:focus {
+			border: 2px solid tint($black, 25%);
+		}
+		&:active {
+			background-color: tint($black, 15%);
+		}
+	}
 }
