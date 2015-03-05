@@ -9,11 +9,6 @@ button, .button {
 
 	&[disabled] {
 		opacity: 0.5;
-
-		&:hover, &:focus {
-			background-color: inherit;
-			border-color: inherit;
-		}
 	}
 
 	@each $pair in $color-list {
@@ -25,6 +20,13 @@ button, .button {
 			}
 			&:active {
 				background-color: shade(nth($pair, 2), 15%);
+			}
+
+			&[disabled] {
+				&:hover, &:focus {
+					border-color: nth($pair, 2);
+					background-color: nth($pair, 2);
+				}
 			}
 		}
 	}
