@@ -4,37 +4,42 @@
 
 
 //Variables
-$aqua: #00BCF1;
-$cobalt: #0078D7;
-$blue: #0046FF;
-$violet: #4F4BD9;
-$lavender: #886CE4;
-$purple: #5C2E91;
+$lightblue: #00BCF2;
+$blue: #0078D7;
+$midblue: #00188F;
+$darkblue: #002050;
+$lightpurple: #B4A0FF;
+$purple: #5C2D91;
+$darkpurple: #32145A;
+$lightmagenta: #E3008C;
 $magenta: #B4009E;
-$pink: #EF0060;
-$salmon: #FF6F6F;
+$darkmagenta: #5C005C;
 $red: #E81123;
-$orange: #F43E06;
-$pumpkin: #F5881f;
+$darkred: #A80000;
+$lightorange: #FF8C00;
+$orange: #D83B01;
+$lightyellow: #FFF100;
 $yellow: #FFB900;
-$lime: #2EAC1D;
-$green: #14AF14;
-$forest: #107C10;
+$lightgreen: #BAD80A;
+$green: #107C10;
+$darkgreen: #004B1C;
+$lightteal: #00B294;
 $teal: #008272;
-$marine: #00B294;
-$tealgray: #5A7D73;
-$bluegray: #6B7B7F;
-$lightgray: #7F7A78;
+$darkteal: #004B50;
+$lightgray: #D2D2D2;
+$midgray: #767676;
+$darkgray: #505050;
 $white: #FFFFFF;
 $black: #000000;
 
-$color-list: ("aqua", $aqua), ("cobalt", $cobalt), ("blue", $blue), ("violet", $violet),
-("lavender", $lavender), ("purple", $purple), ("magenta", $magenta),
-("pink", $pink), ("salmon", $salmon), ("red", $red), ("orange", $orange),
-("pumpkin", $pumpkin), ("yellow", $yellow), ("lime", $lime),
-("green", $green), ("forest", $forest), ("teal", $teal), ("marine", $marine),
-("tealgray", $tealgray), ("bluegray", $bluegray), ("lightgray", $lightgray);
-$shade-list: (30%, 50%, 70%);
+$color-list: ("lightblue", $lightblue), ("blue", $blue), ("midblue", $midblue), ("darkblue", $darkblue),
+("lightpurple", $lightpurple), ("purple", $purple), ("darkpurple", $darkpurple), ("lightmagenta", $lightmagenta),
+("magenta", $magenta), ("darkmagenta", $darkmagenta), ("red", $red),
+("darkred", $darkred), ("lightorange", $lightorange), ("orange", $orange),
+("lightyellow", $lightyellow), ("yellow", $yellow), ("lightgreen", $lightgreen),
+("green", $green), ("darkgreen", $darkgreen), ("lightteal", $lightteal), ("teal", $teal),
+("darkteal", $darkteal), ("lightgray", $lightgray), ("midgray", $midgray), ("darkgray", $darkgray);
+$shade-list: (30%, 60%, 90%);
 
 
 //Functions
