@@ -40,6 +40,12 @@ button, .button {
 		&:active {
 			background-color: shade($white, 15%);
 		}
+		&[disabled] {
+			&:hover, &:focus {
+				border-color: $white;
+				background-color: $white;
+			}
+		}
 	}
 
 	&.black {
@@ -50,6 +56,12 @@ button, .button {
 		}
 		&:active {
 			background-color: tint($black, 15%);
+		}
+		&[disabled] {
+			&:hover, &:focus {
+				border-color: $black;
+				background-color: $black;
+			}
 		}
 	}
 }
