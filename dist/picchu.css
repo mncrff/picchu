@@ -11519,172 +11519,60 @@ table {
   color: #004B50;
 }
 
-.lightgray-d1-bgc {
-  background-color: #939393;
-}
-
-.lightgray-l1-bgc {
-  background-color: #dfdfdf;
-}
-
-.lightgray-d1-c {
-  color: #939393;
-}
-
-.lightgray-l1-c {
-  color: #dfdfdf;
-}
-
-.lightgray-d2-bgc {
-  background-color: dimgray;
-}
-
-.lightgray-l2-bgc {
-  background-color: #e8e8e8;
-}
-
-.lightgray-d2-c {
-  color: dimgray;
-}
-
-.lightgray-l2-c {
-  color: #e8e8e8;
-}
-
-.lightgray-d3-bgc {
-  background-color: #3f3f3f;
-}
-
-.lightgray-l3-bgc {
-  background-color: #f1f1f1;
-}
-
-.lightgray-d3-c {
-  color: #3f3f3f;
-}
-
-.lightgray-l3-c {
-  color: #f1f1f1;
-}
-
-.lightgray-bgc {
-  background-color: #D2D2D2;
-}
-
-.lightgray-c {
-  color: #D2D2D2;
-}
-
-.midgray-d1-bgc {
+.gray-d1-bgc {
   background-color: #525252;
 }
 
-.midgray-l1-bgc {
+.gray-l1-bgc {
   background-color: #9f9f9f;
 }
 
-.midgray-d1-c {
+.gray-d1-c {
   color: #525252;
 }
 
-.midgray-l1-c {
+.gray-l1-c {
   color: #9f9f9f;
 }
 
-.midgray-d2-bgc {
+.gray-d2-bgc {
   background-color: #3b3b3b;
 }
 
-.midgray-l2-bgc {
+.gray-l2-bgc {
   background-color: #bababa;
 }
 
-.midgray-d2-c {
+.gray-d2-c {
   color: #3b3b3b;
 }
 
-.midgray-l2-c {
+.gray-l2-c {
   color: #bababa;
 }
 
-.midgray-d3-bgc {
+.gray-d3-bgc {
   background-color: #232323;
 }
 
-.midgray-l3-bgc {
+.gray-l3-bgc {
   background-color: #d5d5d5;
 }
 
-.midgray-d3-c {
+.gray-d3-c {
   color: #232323;
 }
 
-.midgray-l3-c {
+.gray-l3-c {
   color: #d5d5d5;
 }
 
-.midgray-bgc {
+.gray-bgc {
   background-color: #767676;
 }
 
-.midgray-c {
+.gray-c {
   color: #767676;
-}
-
-.darkgray-d1-bgc {
-  background-color: #383838;
-}
-
-.darkgray-l1-bgc {
-  background-color: #848484;
-}
-
-.darkgray-d1-c {
-  color: #383838;
-}
-
-.darkgray-l1-c {
-  color: #848484;
-}
-
-.darkgray-d2-bgc {
-  background-color: #282828;
-}
-
-.darkgray-l2-bgc {
-  background-color: #a7a7a7;
-}
-
-.darkgray-d2-c {
-  color: #282828;
-}
-
-.darkgray-l2-c {
-  color: #a7a7a7;
-}
-
-.darkgray-d3-bgc {
-  background-color: #181818;
-}
-
-.darkgray-l3-bgc {
-  background-color: #cacaca;
-}
-
-.darkgray-d3-c {
-  color: #181818;
-}
-
-.darkgray-l3-c {
-  color: #cacaca;
-}
-
-.darkgray-bgc {
-  background-color: #505050;
-}
-
-.darkgray-c {
-  color: #505050;
 }
 
 @font-face {
@@ -12094,32 +11982,14 @@ button.darkteal:hover, button.darkteal:focus, .button.darkteal:hover, .button.da
 button.darkteal:active, .button.darkteal:active {
   background-color: #003f44;
 }
-button.lightgray, .button.lightgray {
-  background-color: #D2D2D2;
-}
-button.lightgray:hover, button.lightgray:focus, .button.lightgray:hover, .button.lightgray:focus {
-  border: 2px solid #9d9d9d;
-}
-button.lightgray:active, .button.lightgray:active {
-  background-color: #b2b2b2;
-}
-button.midgray, .button.midgray {
+button.gray, .button.gray {
   background-color: #767676;
 }
-button.midgray:hover, button.midgray:focus, .button.midgray:hover, .button.midgray:focus {
+button.gray:hover, button.gray:focus, .button.gray:hover, .button.gray:focus {
   border: 2px solid #585858;
 }
-button.midgray:active, .button.midgray:active {
+button.gray:active, .button.gray:active {
   background-color: #646464;
-}
-button.darkgray, .button.darkgray {
-  background-color: #505050;
-}
-button.darkgray:hover, button.darkgray:focus, .button.darkgray:hover, .button.darkgray:focus {
-  border: 2px solid #3c3c3c;
-}
-button.darkgray:active, .button.darkgray:active {
-  background-color: #444444;
 }
 button.white, .button.white {
   background-color: #FFFFFF;

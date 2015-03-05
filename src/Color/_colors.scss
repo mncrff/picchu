@@ -26,9 +26,8 @@ $darkgreen: #004B1C;
 $lightteal: #00B294;
 $teal: #008272;
 $darkteal: #004B50;
-$lightgray: #D2D2D2;
-$midgray: #767676;
-$darkgray: #505050;
+$gray: #767676;
+$lightgray: #F2F2F2;
 $white: #FFFFFF;
 $black: #000000;
 
@@ -38,7 +37,7 @@ $color-list: ("lightblue", $lightblue), ("blue", $blue), ("midblue", $midblue), 
 ("darkred", $darkred), ("lightorange", $lightorange), ("orange", $orange),
 ("lightyellow", $lightyellow), ("yellow", $yellow), ("lightgreen", $lightgreen),
 ("green", $green), ("darkgreen", $darkgreen), ("lightteal", $lightteal), ("teal", $teal),
-("darkteal", $darkteal), ("lightgray", $lightgray), ("midgray", $midgray), ("darkgray", $darkgray);
+("darkteal", $darkteal), ("gray", $gray);
 $shade-list: (30%, 50%, 70%);
 
 
@@ -121,6 +120,14 @@ $shade-list: (30%, 50%, 70%);
 
 .white-c {
     color: $white;
+}
+
+.lightgray-bgc {
+    background-color: $lightgray;
+}
+
+.lightgray-c {
+    color: $lightgray;
 }
 
 @each $pair in $color-list {
