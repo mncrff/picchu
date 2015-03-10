@@ -70,7 +70,7 @@ $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-numbe
   // Convert to percentage and return
   @return 100% * $number / 255;
 }
- 
+
 @function contrasting-color($color) {
   @if brightness($color) < 65% {
     @return $white;
