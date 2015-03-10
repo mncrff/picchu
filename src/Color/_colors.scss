@@ -52,30 +52,6 @@ $shade-list: (20%, 40%, 60%, 80%);
 
 // Brightness math based on:
 //   http://www.nbdtech.com/Blog/archive/2008/04/27/Calculating-the-Perceived-Brightness-of-a-Color.aspx
-
-$loops : 0;
-@function approximateSq($num, $approx) {
-  $root : (( $num / $approx ) + $approx) / 2;
-  @return $root;
-}
-
-@function sqrt($num) {
-  $root:0;
-  $testRoot : 0;
-  $upperBounds : round($num / 2) + 1;
-  $loops : $upperBounds;
-  @for $test from 2 through $upperBounds {
-    $sq : $test * $test;
-    @if $sq <= $num {
-      $testRoot : $test;
-    }
-  }  
-  
-  $root : (approximateSq($num, $testRoot));
-  
-  @return $root;
-}
-
  
 $red-magic-number: 241;
 $green-magic-number: 691;

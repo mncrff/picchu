@@ -1,4 +1,9 @@
 module.exports = function (grunt) {
+    require('time-grunt')(grunt);
+
+    // Load Grunt modules
+    require('load-grunt-tasks')(grunt);
+    
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -38,11 +43,6 @@ module.exports = function (grunt) {
   }
 
 });
-
-    // Load Grunt modules
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Set Grunt tasks
     grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
