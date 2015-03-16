@@ -81,7 +81,7 @@ $font-stack-light: $light, $regular, Arial, sans-serif;
 }
 
 b, .bold, .base {
-	font-family: $bold;
+    font-family: $bold;
 }
 
 body {
@@ -93,7 +93,7 @@ body, p, input, .body, .body-alt, div, span, li, select {
 }
 
 p {
-	margin: 0 0 1em 0;
+    margin: 0 0 1em 0;
 }
 
 a {
@@ -131,35 +131,29 @@ h4, .h4, .subtitle {
 }
 
 .headline {
-    font-size: 62px;
-    font-size: calc(62px + 0.15vw);
+    font-size: 50px;
     letter-spacing: -0.01em;
 }
 
 h1, .h1, .header {
-    font-size: 46px;
-    font-size: calc(46px + 0.15vw);
+    font-size: 39px;
     letter-spacing: -0.01em;
 }
 
 h2, .h2, .subheader {
-    font-size: 34px;
-    font-size: calc(34px + 0.15vw);
+    font-size: 28px;
 }
 
 h3, .h3, .title {
     font-size: 24px;
-    font-size: calc(24px + 0.15vw);
 }
 
 h4, .h4, .subtitle {
     font-size: 20px;
-    font-size: calc(20px + 0.15vw);
 }
 
 body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
     font-size: 16px;
-    font-size: calc(16px + 0.15vw);
 }
 
 p, .base {
@@ -188,25 +182,44 @@ p, .base {
     line-height: 1.25;
 }
 
+@media all and (min-width: $vp2) {
+    .headline {
+        font-size: calc(50px + 1vw);
+    }
+
+    h1, .h1, .header {
+        font-size: calc(39px + 0.5vw);
+    }
+
+    h2, .h2, .subheader {
+        font-size: calc(28px + 0.43vw);
+    }
+
+    h3, .h3, .title {
+        font-size: calc(22px + 0.14vw);
+    }
+
+    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+        font-size: calc(16px + 0.15vw);
+    }
+}
+
+
 @media all and (min-width: $vp5) {
     .headline {
         font-size: 64px;
     }
 
     h1, .h1, .header {
-        font-size: 48px;
+        font-size: 46px;
     }
 
     h2, .h2, .subheader {
-        font-size: 36px;
+        font-size: 34px;
     }
 
     h3, .h3, .title {
-        font-size: 26px;
-    }
-
-    h4, .h4, .subtitle {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
