@@ -14,6 +14,7 @@ button, .button {
 	@each $pair in $color-list {
 		&.#{nth($pair, 1)} {
 			background-color: nth($pair, 2);
+			color: contrasting-color(nth($pair, 2));
 
 			&:hover, &:focus {
 				border: 2px solid shade(nth($pair, 2), 25%);
@@ -33,6 +34,7 @@ button, .button {
 
 	&.white {
 		background-color: $white;
+		color: $black;
 
 		&:hover, &:focus {
 			border: 2px solid shade($white, 25%);
@@ -50,6 +52,7 @@ button, .button {
 
 	&.black {
 		background-color: $black;
+		color: $white;
 
 		&:hover, &:focus {
 			border: 2px solid tint($black, 25%);

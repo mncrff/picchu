@@ -7908,7 +7908,8 @@ button, .button {
   button[disabled], .button[disabled] {
     opacity: 0.5; }
   button.lightblue, .button.lightblue {
-    background-color: #00BCF2; }
+    background-color: #00BCF2;
+    color: #000000; }
     button.lightblue:hover, button.lightblue:focus, .button.lightblue:hover, .button.lightblue:focus {
       border: 2px solid #008db5; }
     button.lightblue:active, .button.lightblue:active {
@@ -7917,7 +7918,8 @@ button, .button {
       border-color: #00BCF2;
       background-color: #00BCF2; }
   button.blue, .button.blue {
-    background-color: #0078D7; }
+    background-color: #0078D7;
+    color: #FFFFFF; }
     button.blue:hover, button.blue:focus, .button.blue:hover, .button.blue:focus {
       border: 2px solid #005aa1; }
     button.blue:active, .button.blue:active {
@@ -7926,7 +7928,8 @@ button, .button {
       border-color: #0078D7;
       background-color: #0078D7; }
   button.midblue, .button.midblue {
-    background-color: #00188F; }
+    background-color: #00188F;
+    color: #FFFFFF; }
     button.midblue:hover, button.midblue:focus, .button.midblue:hover, .button.midblue:focus {
       border: 2px solid #00126b; }
     button.midblue:active, .button.midblue:active {
@@ -7935,7 +7938,8 @@ button, .button {
       border-color: #00188F;
       background-color: #00188F; }
   button.darkblue, .button.darkblue {
-    background-color: #002050; }
+    background-color: #002050;
+    color: #FFFFFF; }
     button.darkblue:hover, button.darkblue:focus, .button.darkblue:hover, .button.darkblue:focus {
       border: 2px solid #00183c; }
     button.darkblue:active, .button.darkblue:active {
@@ -7944,7 +7948,8 @@ button, .button {
       border-color: #002050;
       background-color: #002050; }
   button.lightpurple, .button.lightpurple {
-    background-color: #B4A0FF; }
+    background-color: #B4A0FF;
+    color: #000000; }
     button.lightpurple:hover, button.lightpurple:focus, .button.lightpurple:hover, .button.lightpurple:focus {
       border: 2px solid #8778bf; }
     button.lightpurple:active, .button.lightpurple:active {
@@ -7953,7 +7958,8 @@ button, .button {
       border-color: #B4A0FF;
       background-color: #B4A0FF; }
   button.purple, .button.purple {
-    background-color: #5C2D91; }
+    background-color: #5C2D91;
+    color: #FFFFFF; }
     button.purple:hover, button.purple:focus, .button.purple:hover, .button.purple:focus {
       border: 2px solid #45216c; }
     button.purple:active, .button.purple:active {
@@ -7962,7 +7968,8 @@ button, .button {
       border-color: #5C2D91;
       background-color: #5C2D91; }
   button.darkpurple, .button.darkpurple {
-    background-color: #32145A; }
+    background-color: #32145A;
+    color: #FFFFFF; }
     button.darkpurple:hover, button.darkpurple:focus, .button.darkpurple:hover, .button.darkpurple:focus {
       border: 2px solid #250f43; }
     button.darkpurple:active, .button.darkpurple:active {
@@ -7971,7 +7978,8 @@ button, .button {
       border-color: #32145A;
       background-color: #32145A; }
   button.lightmagenta, .button.lightmagenta {
-    background-color: #E3008C; }
+    background-color: #E3008C;
+    color: #FFFFFF; }
     button.lightmagenta:hover, button.lightmagenta:focus, .button.lightmagenta:hover, .button.lightmagenta:focus {
       border: 2px solid #aa0069; }
     button.lightmagenta:active, .button.lightmagenta:active {
@@ -7980,7 +7988,8 @@ button, .button {
       border-color: #E3008C;
       background-color: #E3008C; }
   button.magenta, .button.magenta {
-    background-color: #B4009E; }
+    background-color: #B4009E;
+    color: #FFFFFF; }
     button.magenta:hover, button.magenta:focus, .button.magenta:hover, .button.magenta:focus {
       border: 2px solid #870076; }
     button.magenta:active, .button.magenta:active {
@@ -7989,7 +7998,8 @@ button, .button {
       border-color: #B4009E;
       background-color: #B4009E; }
   button.darkmagenta, .button.darkmagenta {
-    background-color: #5C005C; }
+    background-color: #5C005C;
+    color: #FFFFFF; }
     button.darkmagenta:hover, button.darkmagenta:focus, .button.darkmagenta:hover, .button.darkmagenta:focus {
       border: 2px solid #450045; }
     button.darkmagenta:active, .button.darkmagenta:active {
@@ -7998,7 +8008,8 @@ button, .button {
       border-color: #5C005C;
       background-color: #5C005C; }
   button.red, .button.red {
-    background-color: #E81123; }
+    background-color: #E81123;
+    color: #FFFFFF; }
     button.red:hover, button.red:focus, .button.red:hover, .button.red:focus {
       border: 2px solid #ae0c1a; }
     button.red:active, .button.red:active {
@@ -8007,7 +8018,8 @@ button, .button {
       border-color: #E81123;
       background-color: #E81123; }
   button.darkred, .button.darkred {
-    background-color: #A80000; }
+    background-color: #A80000;
+    color: #FFFFFF; }
     button.darkred:hover, button.darkred:focus, .button.darkred:hover, .button.darkred:focus {
       border: 2px solid #7e0000; }
     button.darkred:active, .button.darkred:active {
@@ -8016,7 +8028,8 @@ button, .button {
       border-color: #A80000;
       background-color: #A80000; }
   button.lightorange, .button.lightorange {
-    background-color: #FF8C00; }
+    background-color: #FF8C00;
+    color: #000000; }
     button.lightorange:hover, button.lightorange:focus, .button.lightorange:hover, .button.lightorange:focus {
       border: 2px solid #bf6900; }
     button.lightorange:active, .button.lightorange:active {
@@ -8025,7 +8038,8 @@ button, .button {
       border-color: #FF8C00;
       background-color: #FF8C00; }
   button.orange, .button.orange {
-    background-color: #D83B01; }
+    background-color: #D83B01;
+    color: #FFFFFF; }
     button.orange:hover, button.orange:focus, .button.orange:hover, .button.orange:focus {
       border: 2px solid #a22c00; }
     button.orange:active, .button.orange:active {
@@ -8034,7 +8048,8 @@ button, .button {
       border-color: #D83B01;
       background-color: #D83B01; }
   button.lightyellow, .button.lightyellow {
-    background-color: #FFF100; }
+    background-color: #FFF100;
+    color: #000000; }
     button.lightyellow:hover, button.lightyellow:focus, .button.lightyellow:hover, .button.lightyellow:focus {
       border: 2px solid #bfb400; }
     button.lightyellow:active, .button.lightyellow:active {
@@ -8043,7 +8058,8 @@ button, .button {
       border-color: #FFF100;
       background-color: #FFF100; }
   button.yellow, .button.yellow {
-    background-color: #FFB900; }
+    background-color: #FFB900;
+    color: #000000; }
     button.yellow:hover, button.yellow:focus, .button.yellow:hover, .button.yellow:focus {
       border: 2px solid #bf8a00; }
     button.yellow:active, .button.yellow:active {
@@ -8052,7 +8068,8 @@ button, .button {
       border-color: #FFB900;
       background-color: #FFB900; }
   button.lightgreen, .button.lightgreen {
-    background-color: #BAD80A; }
+    background-color: #BAD80A;
+    color: #000000; }
     button.lightgreen:hover, button.lightgreen:focus, .button.lightgreen:hover, .button.lightgreen:focus {
       border: 2px solid #8ba207; }
     button.lightgreen:active, .button.lightgreen:active {
@@ -8061,7 +8078,8 @@ button, .button {
       border-color: #BAD80A;
       background-color: #BAD80A; }
   button.green, .button.green {
-    background-color: #107C10; }
+    background-color: #107C10;
+    color: #FFFFFF; }
     button.green:hover, button.green:focus, .button.green:hover, .button.green:focus {
       border: 2px solid #0c5d0c; }
     button.green:active, .button.green:active {
@@ -8070,7 +8088,8 @@ button, .button {
       border-color: #107C10;
       background-color: #107C10; }
   button.darkgreen, .button.darkgreen {
-    background-color: #004B1C; }
+    background-color: #004B1C;
+    color: #FFFFFF; }
     button.darkgreen:hover, button.darkgreen:focus, .button.darkgreen:hover, .button.darkgreen:focus {
       border: 2px solid #003815; }
     button.darkgreen:active, .button.darkgreen:active {
@@ -8079,7 +8098,8 @@ button, .button {
       border-color: #004B1C;
       background-color: #004B1C; }
   button.lightteal, .button.lightteal {
-    background-color: #00B294; }
+    background-color: #00B294;
+    color: #000000; }
     button.lightteal:hover, button.lightteal:focus, .button.lightteal:hover, .button.lightteal:focus {
       border: 2px solid #00856f; }
     button.lightteal:active, .button.lightteal:active {
@@ -8088,7 +8108,8 @@ button, .button {
       border-color: #00B294;
       background-color: #00B294; }
   button.teal, .button.teal {
-    background-color: #008272; }
+    background-color: #008272;
+    color: #FFFFFF; }
     button.teal:hover, button.teal:focus, .button.teal:hover, .button.teal:focus {
       border: 2px solid #006155; }
     button.teal:active, .button.teal:active {
@@ -8097,7 +8118,8 @@ button, .button {
       border-color: #008272;
       background-color: #008272; }
   button.darkteal, .button.darkteal {
-    background-color: #004B50; }
+    background-color: #004B50;
+    color: #FFFFFF; }
     button.darkteal:hover, button.darkteal:focus, .button.darkteal:hover, .button.darkteal:focus {
       border: 2px solid #00383c; }
     button.darkteal:active, .button.darkteal:active {
@@ -8106,7 +8128,8 @@ button, .button {
       border-color: #004B50;
       background-color: #004B50; }
   button.gray, .button.gray {
-    background-color: #767676; }
+    background-color: #767676;
+    color: #FFFFFF; }
     button.gray:hover, button.gray:focus, .button.gray:hover, .button.gray:focus {
       border: 2px solid #585858; }
     button.gray:active, .button.gray:active {
@@ -8115,7 +8138,8 @@ button, .button {
       border-color: #767676;
       background-color: #767676; }
   button.white, .button.white {
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    color: #000000; }
     button.white:hover, button.white:focus, .button.white:hover, .button.white:focus {
       border: 2px solid #bfbfbf; }
     button.white:active, .button.white:active {
@@ -8124,7 +8148,8 @@ button, .button {
       border-color: #FFFFFF;
       background-color: #FFFFFF; }
   button.black, .button.black {
-    background-color: #000000; }
+    background-color: #000000;
+    color: #FFFFFF; }
     button.black:hover, button.black:focus, .button.black:hover, .button.black:focus {
       border: 2px solid #3f3f3f; }
     button.black:active, .button.black:active {
