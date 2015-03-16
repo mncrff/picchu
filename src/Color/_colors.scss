@@ -72,7 +72,7 @@ $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-numbe
 }
 
 @function contrasting-color($color) {
-  @if brightness($color) < 65% {
+  @if brightness($color) < 55% {
     @return $white;
   } @else {
     @return $black;
