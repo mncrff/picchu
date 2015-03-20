@@ -88,8 +88,8 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-body, p, input, .body, .body-alt, div, span, li, select {
-    font-family: $regular;
+body, p, input, .body, .body-alt, div, span, li, select, button {
+    font-family: $font-stack;
 }
 
 p {
@@ -99,7 +99,7 @@ p {
 a {
     color: shade($blue, nth($shade-list, 2));
     font-size: inherit;
-    font-family: $regular;
+    font-family: $font-stack;
     text-decoration: none;
 
     &:hover, &:focus {
@@ -145,14 +145,14 @@ h2, .h2, .subheader {
 }
 
 h3, .h3, .title {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 h4, .h4, .subtitle {
     font-size: 20px;
 }
 
-body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
     font-size: 16px;
 }
 
@@ -184,22 +184,22 @@ p, .base {
 
 @media all and (min-width: $vp2) {
     .headline {
-        font-size: calc(50px + 1vw);
+        font-size: calc(43px + 1.38vw);
     }
 
     h1, .h1, .header {
-        font-size: calc(39px + 0.5vw);
+        font-size: calc(35px + 0.78vw);
     }
 
     h2, .h2, .subheader {
-        font-size: calc(28px + 0.43vw);
+        font-size: calc(25px + 0.65vw);
     }
 
     h3, .h3, .title {
-        font-size: calc(22px + 0.14vw);
+        font-size: calc(21px + 0.22vw);
     }
 
-    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
         font-size: calc(16px + 0.15vw);
     }
 }
@@ -207,7 +207,7 @@ p, .base {
 
 @media all and (min-width: $vp5) {
     .headline {
-        font-size: 64px;
+        font-size: 62px;
     }
 
     h1, .h1, .header {
@@ -222,7 +222,7 @@ p, .base {
         font-size: 24px;
     }
 
-    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select {
+    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
         font-size: 18px;
     }
 
