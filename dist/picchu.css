@@ -7829,13 +7829,13 @@ table {
   font-style: normal; }
 
 .light {
-  font-family: wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif; }
+  font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif; }
 
 .semilight {
   font-family: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif; }
 
 .normal, .regular {
-  font-family: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif; }
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif; }
 
 .semibold {
   font-family: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif; }
@@ -7847,7 +7847,7 @@ body {
   text-rendering: optimizeLegibility; }
 
 body, p, input, .body, .body-alt, div, span, li, select, button {
-  font-family: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif, wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif, Arial, sans-serif; }
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif; }
 
 p {
   margin: 0 0 1em 0; }
@@ -7855,13 +7855,13 @@ p {
 a {
   color: #004881;
   font-size: inherit;
-  font-family: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif, wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif, Arial, sans-serif;
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: underline; }
 
 h1, h2, .headline {
-  font-family: wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif;
+  font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
   font-weight: inherit;
   line-height: 1.2; }
 
@@ -7871,7 +7871,7 @@ h3, .h3, .title {
   line-height: 1.25; }
 
 h4, .h4, .subtitle {
-  font-family: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif;
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
   font-weight: inherit;
   line-height: 1.25; }
 

@@ -55,14 +55,11 @@
 }
 
 //Font variables
-$light: wf_segoe-ui_light, wf_segoe-ui_normal, Arial, sans-serif;
+$light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-$regular: wf_segoe-ui_normal, wf_segoe-ui_normal, Arial, sans-serif;
+$regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
 $semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-
-$font-stack: $regular, $light, Arial, sans-serif;
-$font-stack-light: $light, $regular, Arial, sans-serif;
 
 .light {
     font-family: $light;
@@ -89,7 +86,7 @@ body {
 }
 
 body, p, input, .body, .body-alt, div, span, li, select, button {
-    font-family: $font-stack;
+    font-family: $regular;
 }
 
 p {
@@ -99,7 +96,7 @@ p {
 a {
     color: shade($blue, nth($shade-list, 2));
     font-size: inherit;
-    font-family: $font-stack;
+    font-family: $regular;
     text-decoration: none;
 
     &:hover, &:focus {
