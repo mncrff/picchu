@@ -7853,7 +7853,7 @@ p {
   margin: 0 0 1em 0; }
 
 a {
-  color: #004881;
+  color: #0060ac;
   font-size: inherit;
   font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
   text-decoration: none; }
@@ -7907,17 +7907,14 @@ p, .base {
 
 .caption {
   font-size: 14px;
-  font-size: calc(14px + 0.15vw);
   line-height: 1.25; }
 
 .caption-alt {
   font-size: 12px;
-  font-size: calc(12px + 0.15vw);
   line-height: 1.25; }
 
-.subcaption {
+.sub-caption {
   font-size: 10px;
-  font-size: calc(10px + 0.15vw);
   line-height: 1.25; }
 
 @media all and (min-width: 540px) {
@@ -7930,7 +7927,13 @@ p, .base {
   h3, .h3, .title {
     font-size: calc(21px + 0.22vw); }
   body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    font-size: calc(16px + 0.15vw); } }
+    font-size: calc(15px + 0.22vw); }
+  .caption {
+    font-size: calc(13px + 0.22vw); }
+  .caption-alt {
+    font-size: calc(11px + 0.22vw); }
+  .sub-caption {
+    font-size: calc(9px + 0.22vw); } }
 
 @media all and (min-width: 1400px) {
   .headline {
@@ -7947,8 +7950,27 @@ p, .base {
     font-size: 16px; }
   .caption-alt {
     font-size: 14px; }
-  .subcaption {
+  .sub-caption {
     font-size: 12px; } }
+
+.static-typography .headline {
+  font-size: 62px; }
+.static-typography h1, .static-typography .h1, .static-typography .header {
+  font-size: 46px; }
+.static-typography h2, .static-typography .h2, .static-typography .subheader {
+  font-size: 34px; }
+.static-typography h3, .static-typography .h3, .static-typography .title {
+  font-size: 24px; }
+.static-typography h4, .static-typography .h4, .static-typography .subtitle {
+  font-size: 20px; }
+.static-typography body, .static-typography .body, .static-typography .body-alt, .static-typography .base, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
+  font-size: 16px; }
+.static-typography .caption {
+  font-size: 14px; }
+.static-typography .caption-alt {
+  font-size: 12px; }
+.static-typography .sub-caption {
+  font-size: 10px; }
 
 button, .button {
   border: 2px solid transparent;

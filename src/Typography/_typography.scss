@@ -94,7 +94,7 @@ p {
 }
 
 a {
-    color: shade($blue, nth($shade-list, 2));
+    color: shade($blue, nth($shade-list, 1));
     font-size: inherit;
     font-family: $regular;
     text-decoration: none;
@@ -163,21 +163,26 @@ p, .base {
 
 .caption {
     font-size: 14px;
-    font-size: calc(14px + 0.15vw);
     line-height: 1.25;
 }
 
 .caption-alt {
     font-size: 12px;
-    font-size: calc(12px + 0.15vw);
     line-height: 1.25;
 }
 
-.subcaption {
+.sub-caption {
     font-size: 10px;
-    font-size: calc(10px + 0.15vw);
     line-height: 1.25;
 }
+
+
+
+
+
+//----------------------------------------------------------
+//              #Responsive font calculations
+//----------------------------------------------------------
 
 @media all and (min-width: $vp2) {
     .headline {
@@ -197,10 +202,29 @@ p, .base {
     }
 
     body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: calc(16px + 0.15vw);
+        font-size: calc(15px + 0.22vw);
+    }
+
+    .caption {
+        font-size: calc(13px + 0.22vw)
+    }
+
+    .caption-alt {
+        font-size: calc(11px + 0.22vw)
+    }
+
+    .sub-caption {
+        font-size: calc(9px + 0.22vw)
     }
 }
 
+
+
+
+
+//----------------------------------------------------------
+//              #Lock font size above last breakpoint
+//----------------------------------------------------------
 
 @media all and (min-width: $vp5) {
     .headline {
@@ -231,7 +255,53 @@ p, .base {
         font-size: 14px;
     }
 
-    .subcaption {
+    .sub-caption {
         font-size: 12px;
+    }
+}
+
+
+
+
+
+//---------------------------------------------
+//              #Non-responsive Typography
+//---------------------------------------------
+
+.static-typography {
+    .headline {
+        font-size: 62px;
+    }
+
+    h1, .h1, .header {
+        font-size: 46px;
+    }
+
+    h2, .h2, .subheader {
+        font-size: 34px;
+    }
+
+    h3, .h3, .title {
+        font-size: 24px;
+    }
+
+    h4, .h4, .subtitle {
+        font-size: 20px;
+    }
+
+    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
+        font-size: 16px;
+    }
+
+    .caption {
+        font-size: 14px;
+    }
+
+    .caption-alt {
+        font-size: 12px;
+    }
+
+    .sub-caption {
+        font-size: 10px;
     }
 }
