@@ -1,4 +1,0 @@
-[submodule "components/grid"]
-	path = components/grid
-	url = https://github.com/winjs/grid.git
-	branch = master
