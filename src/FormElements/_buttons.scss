@@ -1,29 +1,41 @@
 button, .button {
-	border: 2px solid rgba(0,0,0,0);
+	border: none;
 	box-sizing: border-box;
-	color: #FFF;
 	outline: none;
-	padding: 0.4em 1em;
+	padding: 0.5em 1.5em;
 	position: relative;
 	transition: all 0.15s;
 
 	&[disabled] {
-		opacity: 0.5;
+		background-color: tint($gray, 60%);
+		color: tint($gray, 20%);
+	}
+
+	&.secondary {
+		background-color: $gray;
+		color: $white;
+
+		&:hover, &:focus {
+			background-color: shade($gray, 20%);
+		}
+		&:active {
+			background-color: shade($gray, 40%);
+		}
 	}
 
 	@each $pair in $color-list {
 		&.#{nth($pair, 1)}-bgc {
 			&:hover, &:focus {
-				border: 2px solid shade(nth($pair, 2), 25%);
+				background-color: shade(nth($pair, 2), 20%);
 			}
 			&:active {
-				background-color: shade(nth($pair, 2), 15%);
+				background-color: shade(nth($pair, 2), 40%);
 			}
 
 			&[disabled] {
 				&:hover, &:focus {
-					border-color: nth($pair, 2);
-					background-color: nth($pair, 2);
+					background-color: tint($gray, 60%);
+					color: tint($gray, 20%);
 				}
 			}
 		}
@@ -31,30 +43,30 @@ button, .button {
 
 	&.white-bgc {
 		&:hover, &:focus {
-			border: 2px solid shade($white, 25%);
+			background-color: tint($gray, 80%);
 		}
 		&:active {
-			background-color: shade($white, 15%);
+			background-color: tint($gray, 60%);
 		}
 		&[disabled] {
 			&:hover, &:focus {
-				border-color: $white;
-				background-color: $white;
+				background-color: tint($gray, 60%);
+				color: tint($gray, 20%);
 			}
 		}
 	}
 
 	&.black-bgc {
 		&:hover, &:focus {
-			border: 2px solid tint($black, 25%);
+			background-color: tint($black, 20%);
 		}
 		&:active {
-			background-color: tint($black, 15%);
+			background-color: tint($black, 40%);
 		}
 		&[disabled] {
 			&:hover, &:focus {
-				border-color: $black;
-				background-color: $black;
+				background-color: tint($gray, 60%);
+				color: tint($gray, 20%);
 			}
 		}
 	}
