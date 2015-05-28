@@ -54,7 +54,7 @@
     font-style: normal;
 }
 
-//Font variables
+//Font ramp/family variables
 $light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
 $regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
@@ -82,6 +82,7 @@ b, .bold, .base {
 }
 
 body {
+    color: $text-color;
     text-rendering: optimizeLegibility;
 }
 
@@ -128,50 +129,46 @@ h4, .h4, .subtitle {
 }
 
 .headline {
-    font-size: 50px;
+    font-size: 46px;
     letter-spacing: -0.01em;
 }
 
 h1, .h1, .header {
-    font-size: 39px;
+    font-size: 34px;
     letter-spacing: -0.01em;
 }
 
 h2, .h2, .subheader {
-    font-size: 28px;
+    font-size: 24px;
 }
 
 h3, .h3, .title {
-    font-size: 22px;
-}
-
-h4, .h4, .subtitle {
     font-size: 20px;
 }
 
-body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
+h4, .h4, .subtitle {
+    font-size: 18px;
+}
+
+body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
     font-size: 16px;
 }
 
-p, .base {
-    line-height: 1.5;
-}
-
 .body-alt {
-    line-height: 1.25;
-}
-
-.caption {
     font-size: 14px;
     line-height: 1.25;
 }
 
-.caption-alt {
+p, .body {
+    line-height: 1.5;
+}
+
+.caption {
     font-size: 12px;
     line-height: 1.25;
 }
 
-.sub-caption {
+.caption-alt {
     font-size: 10px;
     line-height: 1.25;
 }
@@ -186,35 +183,39 @@ p, .base {
 
 @media all and (min-width: $vp2) {
     .headline {
-        font-size: calc(43px + 1.38vw);
+        font-size: calc(36px + 1.86vw);
     }
 
     h1, .h1, .header {
-        font-size: calc(35px + 0.78vw);
+        font-size: calc(26.5px + 1.4vw);
     }
 
     h2, .h2, .subheader {
-        font-size: calc(25px + 0.65vw);
+        font-size: calc(17.6px + 1.18vw);
     }
 
     h3, .h3, .title {
-        font-size: calc(21px + 0.22vw);
+        font-size: calc(18.2px + 0.41vw);
     }
 
-    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: calc(15px + 0.22vw);
+    h4, .h4, .subtitle {
+        font-size: calc(16.9px + 0.22vw);
+    }
+
+    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
+        font-size: calc(14.9px + 0.22vw);
+    }
+
+    .body-alt {
+        font-size: calc(13.5px + 0.11vw);
     }
 
     .caption {
-        font-size: calc(13px + 0.22vw)
+        font-size: calc(11.5px + 0.11vw)
     }
 
     .caption-alt {
-        font-size: calc(11px + 0.22vw)
-    }
-
-    .sub-caption {
-        font-size: calc(9px + 0.22vw)
+        font-size: calc(9.5px + 0.11vw)
     }
 }
 
@@ -243,20 +244,24 @@ p, .base {
         font-size: 24px;
     }
 
-    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
+    h4, .h4, .subtitle {
+        font-size: 20px;
+    }
+
+    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
         font-size: 18px;
     }
 
+    .body-alt {
+        font-size: 15px;
+    }
+
     .caption {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .caption-alt {
-        font-size: 14px;
-    }
-
-    .sub-caption {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 
@@ -289,19 +294,19 @@ p, .base {
         font-size: 20px;
     }
 
-    body, .body, .body-alt, .base, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: 16px;
+    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
+        font-size: 18px;
+    }
+
+    .body-alt {
+        font-size: 15px;
     }
 
     .caption {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .caption-alt {
-        font-size: 12px;
-    }
-
-    .sub-caption {
-        font-size: 10px;
+        font-size: 11px;
     }
 }

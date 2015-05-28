@@ -29,6 +29,7 @@ $darkteal: #004B50;
 $gray: #767676;
 $white: #FFFFFF;
 $black: #000000;
+$text-color: #2F2F2F;
 
 $color-list: ("lightblue", $lightblue), ("blue", $blue), ("midblue", $midblue), ("darkblue", $darkblue),
 ("lightpurple", $lightpurple), ("purple", $purple), ("darkpurple", $darkpurple), ("lightmagenta", $lightmagenta),
@@ -75,7 +76,7 @@ $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-numbe
   @if brightness($color) < 55% {
     @return $white;
   } @else {
-    @return $black;
+    @return $text-color;
   }
 }
 
@@ -152,7 +153,7 @@ $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-numbe
 
 .white-bgc {
     background-color: $white;
-    color: $black;
+    color: $text-color;
 }
 
 .white-c {
