@@ -20,7 +20,7 @@ npm install -g grunt-cli
 Then in the folder of the repository install the required npm packages:
 
 ```bash
-cd grid
+cd picchu
 npm install
 ```
 
