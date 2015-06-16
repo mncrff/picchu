@@ -86,10 +86,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-body, p, input, .body, .body-alt, div, span, li, select, button {
-    font-family: $regular;
-}
-
 p {
     margin: 0 0 1em 0;
 }
@@ -105,166 +101,285 @@ a {
     }
 }
 
-h1, h2, .headline {
-  font-family: $light;
-  font-weight: inherit;
-  line-height: 1.2;
+
+
+//----------------------------------------------------------
+//              #Setup and helper mixins
+//----------------------------------------------------------
+
+$typeList: (
+  headline: (
+    large: 62px,
+    small: 46px,
+    flex: calc(36px + 1.86vw)
+  ),
+  h1: (
+    large: 46px,
+    small: 34px,
+    flex: calc(26.5px + 1.4vw)
+  ),
+  h2: (
+    large: 34px,
+    small: 26px,
+    flex: calc(17.6px + 1.18vw)
+  ),
+  h3: (
+    large: 24px,
+    small: 20px,
+    flex: calc(18.2px + 0.41vw)
+  ),
+  h4: (
+    large: 20px,
+    small: 18px,
+    flex: calc(16.9px + 0.22vw)
+  ),
+  body: (
+    large: 18px,
+    small: 16px,
+    flex: calc(14.9px + 0.22vw)
+  ),
+  body-alt: (
+    large: 15px,
+    small: 14px,
+    flex: calc(13.5px + 0.11vw)
+  ),
+  caption: (
+    large: 13px,
+    small: 12px,
+    flex: calc(11.5px + 0.11vw)
+  ),
+  caption-alt: (
+    large: 11px,
+    small: 10px,
+    flex: calc(9.5px + 0.11vw)
+  )
+
+);
+
+//loop creates placeholders for each typeset.
+//1. placeholder for responsive font-size (ex. %body-respond{...})
+//2. placeholder for static font-size (ex. %body-static{...})
+@each $item, $type in $typeList {
+    %#{$item}-respond { //1.
+        font-size: map-get($type, small);
+
+        @media all and (min-width: $vp2) {
+            font-size:  map-get($type, flex);
+        }
+        @media all and (min-width: $vp5) {
+            font-size:  map-get($type, large);
+        }
+    }
+    %#{$item}-static { //2.
+        font-size: map-get($type, large);
+    }
+}
+
+//helper mixin to @extend with the appropriate placeholder
+//defaults to '%body-' placeholders.
+//1. inject base styling before media queries start
+@mixin type-responsive($mode, $name: "body") {
+    @content; //1.
+
+    @if $mode == static {
+        @extend %#{$name}-static;
+    }
+    @else {
+        @extend %#{$name}-respond;
+    }
+}
+
+
+
+//----------------------------------------------------------
+//              #Headers
+//----------------------------------------------------------
+
+%header-styles {
+    font-family: $light;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+.headline, 
+h1, .h1, .header, 
+h2, .h2, .subheader  {
+  @extend %header-styles;
+}
+
+// .headline
+
+.headline {
+    letter-spacing: -0.01em;
+    @extend %headline-respond;
+}
+
+@mixin type-headline($mode: null) {
+    @include type-responsive($mode, "headline"){
+        @extend %header-styles;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h1, .h1, .header
+
+h1, .h1, .header {
+    letter-spacing: -0.01em;
+    @extend %h1-respond;
+}
+
+@mixin type-header($mode: null) {
+    @include type-responsive($mode, "h1"){
+        @extend %header-styles;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h2, .h2, .subheader
+
+h2, .h2, .subheader {
+    @extend %h2-respond;
+}
+
+@mixin type-subheader($mode: null) {
+    @include type-responsive($mode, "h2"){
+        @extend %header-styles;
+    };
+}
+
+// h3, .h3, .title
+
+%h3-styles {
+    font-family: $semilight;
+    font-weight: inherit;
+    line-height: 1.25; 
 }
 
 h3, .h3, .title {
-    font-family: $semilight;
-    font-weight: inherit;
-    line-height: 1.25;
+    @extend %h3-styles;
+    @extend %h3-respond;
 }
 
-h4, .h4, .subtitle {
+@mixin type-title($mode: null) {
+    @include type-responsive($mode, "h3"){
+        @extend %h3-styles;
+    };
+}
+
+// h4, .h4, .subtitle
+
+%h4-styles{
     font-family: $regular;
     font-weight: inherit;
     line-height: 1.25;
 }
 
-.base, h5, .h5, h6, .h6 {
-    font-family: $semibold;
-    font-weight: inherit;
-}
-
-.headline {
-    font-size: 46px;
-    letter-spacing: -0.01em;
-}
-
-h1, .h1, .header {
-    font-size: 34px;
-    letter-spacing: -0.01em;
-}
-
-h2, .h2, .subheader {
-    font-size: 24px;
-}
-
-h3, .h3, .title {
-    font-size: 20px;
-}
-
 h4, .h4, .subtitle {
-    font-size: 18px;
+    @extend %h4-styles;
+    @extend %h4-respond;
 }
+
+@mixin type-subtitle($mode: null) {
+    @include type-responsive($mode, "h4"){
+        @extend %h4-styles;
+    };
+}
+
+
+
+//----------------------------------------------------------
+//              #Body Text
+//----------------------------------------------------------
 
 body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    font-size: 16px;
+    @extend %body-respond;
 }
 
-.body-alt {
-    font-size: 14px;
+// h5, .h5, h6, .h6
+
+%h5-h6-styles {
+    font-family: $semibold;
+    font-weight: inherit;
     line-height: 1.25;
+}
+
+h5, .h5, h6, .h6 {
+    @extend %h5-h6-styles;
+}
+
+@mixin type-sm-heading($mode: null) {
+    @include type-responsive($mode){
+        @extend %h5-h6-styles;
+    };
+}
+
+// .body
+
+body, p, input, .body, .body-alt, div, span, li, select, button {
+    font-family: $regular;
 }
 
 p, .body {
     line-height: 1.5;
 }
 
+@mixin type-body($mode: null) {
+    @include type-responsive($mode){
+        font-family: $regular;
+        line-height: 1.5;
+    };
+}
+
+// .body-alt
+
+%body-alt-styles {
+    line-height: 1.25;  
+}
+
+.body-alt {
+    @extend %body-alt-styles;
+    @extend %body-alt-respond;
+}
+
+@mixin type-body-alt($mode: null) {
+    @include type-responsive($mode, "body-alt"){
+        @extend %body-alt-styles;
+    };
+}
+
+// .caption
+
+%caption-styles {
+    line-height: 1.25;
+}
+
 .caption {
-    font-size: 12px;
+    @extend %caption-styles;
+    @extend %caption-respond;
+}
+
+@mixin type-caption($mode: null) {
+    @include type-responsive($mode, "caption"){
+        @extend %caption-styles;
+    };
+}
+
+// .caption-alt
+
+%caption-alt-styles {
     line-height: 1.25;
 }
 
 .caption-alt {
-    font-size: 10px;
-    line-height: 1.25;
+    @extend %caption-alt-styles;
+    @extend %caption-alt-respond;
 }
 
-
-
-
-
-//----------------------------------------------------------
-//              #Responsive font calculations
-//----------------------------------------------------------
-
-@media all and (min-width: $vp2) {
-    .headline {
-        font-size: calc(36px + 1.86vw);
-    }
-
-    h1, .h1, .header {
-        font-size: calc(26.5px + 1.4vw);
-    }
-
-    h2, .h2, .subheader {
-        font-size: calc(17.6px + 1.18vw);
-    }
-
-    h3, .h3, .title {
-        font-size: calc(18.2px + 0.41vw);
-    }
-
-    h4, .h4, .subtitle {
-        font-size: calc(16.9px + 0.22vw);
-    }
-
-    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: calc(14.9px + 0.22vw);
-    }
-
-    .body-alt {
-        font-size: calc(13.5px + 0.11vw);
-    }
-
-    .caption {
-        font-size: calc(11.5px + 0.11vw)
-    }
-
-    .caption-alt {
-        font-size: calc(9.5px + 0.11vw)
+@mixin type-caption-alt($mode: null) {
+    @include type-responsive($mode, "caption-alt"){
+        @extend %caption-alt-styles;
     }
 }
-
-
-
-
-
-//----------------------------------------------------------
-//              #Lock font size above last breakpoint
-//----------------------------------------------------------
-
-@media all and (min-width: $vp5) {
-    .headline {
-        font-size: 62px;
-    }
-
-    h1, .h1, .header {
-        font-size: 46px;
-    }
-
-    h2, .h2, .subheader {
-        font-size: 34px;
-    }
-
-    h3, .h3, .title {
-        font-size: 24px;
-    }
-
-    h4, .h4, .subtitle {
-        font-size: 20px;
-    }
-
-    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: 18px;
-    }
-
-    .body-alt {
-        font-size: 15px;
-    }
-
-    .caption {
-        font-size: 13px;
-    }
-
-    .caption-alt {
-        font-size: 11px;
-    }
-}
-
 
 
 
@@ -275,38 +390,38 @@ p, .body {
 
 .static-typography {
     .headline {
-        font-size: 62px;
+        @extend %headline-static;
     }
 
     h1, .h1, .header {
-        font-size: 46px;
+       @extend %h1-static;
     }
 
     h2, .h2, .subheader {
-        font-size: 34px;
+        @extend %h2-static;
     }
 
     h3, .h3, .title {
-        font-size: 24px;
+        @extend %h3-static;
     }
 
     h4, .h4, .subtitle {
-        font-size: 20px;
+        @extend %h4-static;
     }
 
     body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: 18px;
+        @extend %body-static;
     }
 
     .body-alt {
-        font-size: 15px;
+        @extend %body-alt-static;
     }
 
     .caption {
-        font-size: 13px;
+        @extend %caption-static;
     }
 
     .caption-alt {
-        font-size: 11px;
+        @extend %caption-alt-static;
     }
 }
