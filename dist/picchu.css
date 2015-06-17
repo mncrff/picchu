@@ -1857,6 +1857,114 @@ table {
   font-weight: normal;
   font-style: normal; }
 
+.headline {
+  font-size: 46px; }
+  @media all and (min-width: 540px) {
+    .headline {
+      font-size: calc(36px + 1.86vw); } }
+  @media all and (min-width: 1400px) {
+    .headline {
+      font-size: 62px; } }
+
+.static-typography .headline {
+  font-size: 62px; }
+
+h1, .h1, .header {
+  font-size: 34px; }
+  @media all and (min-width: 540px) {
+    h1, .h1, .header {
+      font-size: calc(26.5px + 1.4vw); } }
+  @media all and (min-width: 1400px) {
+    h1, .h1, .header {
+      font-size: 46px; } }
+
+.static-typography h1, .static-typography .h1, .static-typography .header {
+  font-size: 46px; }
+
+h2, .h2, .subheader {
+  font-size: 26px; }
+  @media all and (min-width: 540px) {
+    h2, .h2, .subheader {
+      font-size: calc(17.6px + 1.18vw); } }
+  @media all and (min-width: 1400px) {
+    h2, .h2, .subheader {
+      font-size: 34px; } }
+
+.static-typography h2, .static-typography .h2, .static-typography .subheader {
+  font-size: 34px; }
+
+h3, .h3, .title {
+  font-size: 20px; }
+  @media all and (min-width: 540px) {
+    h3, .h3, .title {
+      font-size: calc(18.2px + 0.41vw); } }
+  @media all and (min-width: 1400px) {
+    h3, .h3, .title {
+      font-size: 24px; } }
+
+.static-typography h3, .static-typography .h3, .static-typography .title {
+  font-size: 24px; }
+
+h4, .h4, .subtitle {
+  font-size: 18px; }
+  @media all and (min-width: 540px) {
+    h4, .h4, .subtitle {
+      font-size: calc(16.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    h4, .h4, .subtitle {
+      font-size: 20px; } }
+
+.static-typography h4, .static-typography .h4, .static-typography .subtitle {
+  font-size: 20px; }
+
+body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+      font-size: 18px; } }
+
+.static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
+  font-size: 18px; }
+
+.body-alt {
+  font-size: 14px; }
+  @media all and (min-width: 540px) {
+    .body-alt {
+      font-size: calc(13.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .body-alt {
+      font-size: 15px; } }
+
+.static-typography .body-alt {
+  font-size: 15px; }
+
+.caption {
+  font-size: 12px; }
+  @media all and (min-width: 540px) {
+    .caption {
+      font-size: calc(11.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .caption {
+      font-size: 13px; } }
+
+.static-typography .caption {
+  font-size: 13px; }
+
+.caption-alt {
+  font-size: 10px; }
+  @media all and (min-width: 540px) {
+    .caption-alt {
+      font-size: calc(9.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .caption-alt {
+      font-size: 11px; } }
+
+.static-typography .caption-alt {
+  font-size: 11px; }
+
 .light {
   font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif; }
 
@@ -1869,18 +1977,21 @@ table {
 .semibold {
   font-family: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif; }
 
-b, .bold, .base {
+b, .bold {
   font-family: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif; }
 
 body {
   color: #2F2F2F;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
+  line-height: 1.5; }
 
-body, p, input, .body, .body-alt, div, span, li, select, button {
+p, input, div, span, li, select, button {
   font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif; }
 
 p {
-  margin: 0 0 1em 0; }
+  margin: 0 0 1em 0;
+  line-height: 1.5; }
 
 a {
   color: #0060ac;
@@ -1890,7 +2001,19 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
-h1, h2, .headline {
+.headline {
+  font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
+  font-weight: inherit;
+  line-height: 1.2;
+  letter-spacing: -0.01em; }
+
+h1, .h1, .header {
+  font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
+  font-weight: inherit;
+  line-height: 1.2;
+  letter-spacing: -0.01em; }
+
+h2, .h2, .subheader {
   font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
   font-weight: inherit;
   line-height: 1.2; }
@@ -1905,103 +2028,24 @@ h4, .h4, .subtitle {
   font-weight: inherit;
   line-height: 1.25; }
 
-.base, h5, .h5, h6, .h6 {
+h5, .h5, h6, .h6 {
   font-family: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-  font-weight: inherit; }
-
-.headline {
-  font-size: 46px;
-  letter-spacing: -0.01em; }
-
-h1, .h1, .header {
-  font-size: 34px;
-  letter-spacing: -0.01em; }
-
-h2, .h2, .subheader {
-  font-size: 24px; }
-
-h3, .h3, .title {
-  font-size: 20px; }
-
-h4, .h4, .subtitle {
-  font-size: 18px; }
-
-body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-  font-size: 16px; }
-
-.body-alt {
-  font-size: 14px;
+  font-weight: inherit;
   line-height: 1.25; }
 
-p, .body {
+.body {
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
   line-height: 1.5; }
 
+.body-alt {
+  font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
+  line-height: 1.25; }
+
 .caption {
-  font-size: 12px;
   line-height: 1.25; }
 
 .caption-alt {
-  font-size: 10px;
   line-height: 1.25; }
-
-@media all and (min-width: 540px) {
-  .headline {
-    font-size: calc(36px + 1.86vw); }
-  h1, .h1, .header {
-    font-size: calc(26.5px + 1.4vw); }
-  h2, .h2, .subheader {
-    font-size: calc(17.6px + 1.18vw); }
-  h3, .h3, .title {
-    font-size: calc(18.2px + 0.41vw); }
-  h4, .h4, .subtitle {
-    font-size: calc(16.9px + 0.22vw); }
-  body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    font-size: calc(14.9px + 0.22vw); }
-  .body-alt {
-    font-size: calc(13.5px + 0.11vw); }
-  .caption {
-    font-size: calc(11.5px + 0.11vw); }
-  .caption-alt {
-    font-size: calc(9.5px + 0.11vw); } }
-
-@media all and (min-width: 1400px) {
-  .headline {
-    font-size: 62px; }
-  h1, .h1, .header {
-    font-size: 46px; }
-  h2, .h2, .subheader {
-    font-size: 34px; }
-  h3, .h3, .title {
-    font-size: 24px; }
-  h4, .h4, .subtitle {
-    font-size: 20px; }
-  body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    font-size: 18px; }
-  .body-alt {
-    font-size: 15px; }
-  .caption {
-    font-size: 13px; }
-  .caption-alt {
-    font-size: 11px; } }
-
-.static-typography .headline {
-  font-size: 62px; }
-.static-typography h1, .static-typography .h1, .static-typography .header {
-  font-size: 46px; }
-.static-typography h2, .static-typography .h2, .static-typography .subheader {
-  font-size: 34px; }
-.static-typography h3, .static-typography .h3, .static-typography .title {
-  font-size: 24px; }
-.static-typography h4, .static-typography .h4, .static-typography .subtitle {
-  font-size: 20px; }
-.static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
-  font-size: 18px; }
-.static-typography .body-alt {
-  font-size: 15px; }
-.static-typography .caption {
-  font-size: 13px; }
-.static-typography .caption-alt {
-  font-size: 11px; }
 
 button, .button {
   border: none;

@@ -2,6 +2,7 @@
 //              #FONTS
 //------------------------------------
 
+
 @font-face {
     font-family: 'wf_segoe-ui_light';
     src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
@@ -54,58 +55,14 @@
     font-style: normal;
 }
 
-//Font ramp/family variables
+
+// Variables
+
 $light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
 $regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
 $semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-
-.light {
-    font-family: $light;
-}
-
-.semilight {
-    font-family: $semilight;
-}
-
-.normal, .regular {
-    font-family: $regular;
-}
-
-.semibold, {
-    font-family: $semibold;
-}
-
-b, .bold, .base {
-    font-family: $bold;
-}
-
-body {
-    color: $text-color;
-    text-rendering: optimizeLegibility;
-}
-
-p {
-    margin: 0 0 1em 0;
-}
-
-a {
-    color: shade($blue, nth($shade-list, 1));
-    font-size: inherit;
-    font-family: $regular;
-    text-decoration: none;
-
-    &:hover, &:focus {
-        text-decoration: underline;
-    }
-}
-
-
-
-//----------------------------------------------------------
-//              #Setup and helper mixins
-//----------------------------------------------------------
 
 $typeList: (
   headline: (
@@ -156,6 +113,9 @@ $typeList: (
 
 );
 
+
+// Placeholders
+
 //loop creates placeholders for each typeset.
 //1. placeholder for responsive font-size (ex. %body-respond{...})
 //2. placeholder for static font-size (ex. %body-static{...})
@@ -175,218 +135,201 @@ $typeList: (
     }
 }
 
+
+// Mixins
+
 //helper mixin to @extend with the appropriate placeholder
 //defaults to '%body-' placeholders.
 //1. inject base styling before media queries start
-@mixin type-responsive($mode, $name: "body") {
+@mixin font-responsive($name: "body", $mode: true) {
     @content; //1.
 
-    @if $mode == static {
-        @extend %#{$name}-static;
-    }
-    @else {
+    @if $mode {
         @extend %#{$name}-respond;
     }
-}
-
-
-
-//----------------------------------------------------------
-//              #Headers
-//----------------------------------------------------------
-
-%header-styles {
-    font-family: $light;
-    font-weight: inherit;
-    line-height: 1.2;
-}
-
-.headline, 
-h1, .h1, .header, 
-h2, .h2, .subheader  {
-  @extend %header-styles;
+    @else {
+        @extend %#{$name}-static;
+    }
 }
 
 // .headline
-
-.headline {
-    letter-spacing: -0.01em;
-    @extend %headline-respond;
-}
-
-@mixin type-headline($mode: null) {
-    @include type-responsive($mode, "headline"){
-        @extend %header-styles;
+@mixin font-headline($mode: true) {
+    @include font-responsive("headline", $mode){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
         letter-spacing: -0.01em;
     };
 }
 
 // h1, .h1, .header
-
-h1, .h1, .header {
-    letter-spacing: -0.01em;
-    @extend %h1-respond;
-}
-
-@mixin type-header($mode: null) {
-    @include type-responsive($mode, "h1"){
-        @extend %header-styles;
+@mixin font-header($mode: true) {
+    @include font-responsive("h1", $mode){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
         letter-spacing: -0.01em;
     };
 }
 
 // h2, .h2, .subheader
-
-h2, .h2, .subheader {
-    @extend %h2-respond;
-}
-
-@mixin type-subheader($mode: null) {
-    @include type-responsive($mode, "h2"){
-        @extend %header-styles;
+@mixin font-subheader($mode: true) {
+    @include font-responsive("h2", $mode){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
     };
 }
 
 // h3, .h3, .title
-
-%h3-styles {
-    font-family: $semilight;
-    font-weight: inherit;
-    line-height: 1.25; 
-}
-
-h3, .h3, .title {
-    @extend %h3-styles;
-    @extend %h3-respond;
-}
-
-@mixin type-title($mode: null) {
-    @include type-responsive($mode, "h3"){
-        @extend %h3-styles;
+@mixin font-title($mode: true) {
+    @include font-responsive("h3", $mode){
+        font-family: $semilight;
+        font-weight: inherit;
+        line-height: 1.25; 
     };
 }
 
 // h4, .h4, .subtitle
-
-%h4-styles{
-    font-family: $regular;
-    font-weight: inherit;
-    line-height: 1.25;
-}
-
-h4, .h4, .subtitle {
-    @extend %h4-styles;
-    @extend %h4-respond;
-}
-
-@mixin type-subtitle($mode: null) {
-    @include type-responsive($mode, "h4"){
-        @extend %h4-styles;
+@mixin font-subtitle($mode: true) {
+    @include font-responsive("h4", $mode){
+        font-family: $regular;
+        font-weight: inherit;
+        line-height: 1.25;
     };
-}
-
-
-
-//----------------------------------------------------------
-//              #Body Text
-//----------------------------------------------------------
-
-body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    @extend %body-respond;
 }
 
 // h5, .h5, h6, .h6
-
-%h5-h6-styles {
-    font-family: $semibold;
-    font-weight: inherit;
-    line-height: 1.25;
-}
-
-h5, .h5, h6, .h6 {
-    @extend %h5-h6-styles;
-}
-
-@mixin type-sm-heading($mode: null) {
-    @include type-responsive($mode){
-        @extend %h5-h6-styles;
+@mixin font-sm-heading($mode: true) {
+    @include font-responsive("body", $mode){
+        font-family: $semibold;
+        font-weight: inherit;
+        line-height: 1.25;
     };
 }
 
-// .body
-
-body, p, input, .body, .body-alt, div, span, li, select, button {
-    font-family: $regular;
-}
-
-p, .body {
-    line-height: 1.5;
-}
-
-@mixin type-body($mode: null) {
-    @include type-responsive($mode){
+// body, .body
+@mixin font-body($mode: true) {
+    @include font-responsive("body", $mode){
         font-family: $regular;
         line-height: 1.5;
     };
 }
 
 // .body-alt
-
-%body-alt-styles {
-    line-height: 1.25;  
-}
-
-.body-alt {
-    @extend %body-alt-styles;
-    @extend %body-alt-respond;
-}
-
-@mixin type-body-alt($mode: null) {
-    @include type-responsive($mode, "body-alt"){
-        @extend %body-alt-styles;
+@mixin font-body-alt($mode: true) {
+    @include font-responsive("body-alt", $mode){
+        font-family: $regular;
+        line-height: 1.25; 
     };
 }
 
-// .caption
-
-%caption-styles {
-    line-height: 1.25;
-}
-
-.caption {
-    @extend %caption-styles;
-    @extend %caption-respond;
-}
-
-@mixin type-caption($mode: null) {
-    @include type-responsive($mode, "caption"){
-        @extend %caption-styles;
+//.caption
+@mixin font-caption($mode: true) {
+    @include font-responsive("caption", $mode){
+        line-height: 1.25;
     };
 }
 
 // .caption-alt
-
-%caption-alt-styles {
-    line-height: 1.25;
-}
-
-.caption-alt {
-    @extend %caption-alt-styles;
-    @extend %caption-alt-respond;
-}
-
-@mixin type-caption-alt($mode: null) {
-    @include type-responsive($mode, "caption-alt"){
-        @extend %caption-alt-styles;
+@mixin font-caption-alt($mode: true) {
+    @include font-responsive("caption-alt", $mode){
+        line-height: 1.25;
     }
 }
 
 
+// Typography Styles
+
+.light {
+    font-family: $light;
+}
+
+.semilight {
+    font-family: $semilight;
+}
+
+.normal, .regular {
+    font-family: $regular;
+}
+
+.semibold {
+    font-family: $semibold;
+}
+
+b, .bold {
+    font-family: $bold;
+}
+
+body {
+    color: $text-color;
+    text-rendering: optimizeLegibility;
+    @include font-body;
+}
+
+p, input, div, span, li, select, button {
+    font-family: $regular;
+    @extend %body-respond;
+}
+
+p {
+    margin: 0 0 1em 0;
+    line-height: 1.5;
+}
+
+a {
+    color: shade($blue, nth($shade-list, 1));
+    font-size: inherit;
+    font-family: $regular;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.headline {
+    @include font-headline;
+}
+
+h1, .h1, .header {
+    @include font-header;
+}
+
+h2, .h2, .subheader {
+    @include font-subheader;
+}
+
+h3, .h3, .title {
+    @include font-title;
+}
+
+h4, .h4, .subtitle {
+    @include font-subtitle;
+}
+
+h5, .h5, h6, .h6 {
+    @include font-sm-heading;
+}
+
+.body {
+    @include font-body;
+}
+
+.body-alt {
+    @include font-body-alt;
+}
+
+.caption {
+    @include font-caption;
+}
+
+.caption-alt {
+    @include font-caption-alt;
+}
 
 
-//---------------------------------------------
-//              #Non-responsive Typography
-//---------------------------------------------
+// Non-Responsive Typography Styles
 
 .static-typography {
     .headline {
