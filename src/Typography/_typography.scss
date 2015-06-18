@@ -141,10 +141,10 @@ $typeList: (
 //helper mixin to @extend with the appropriate placeholder
 //defaults to '%body-' placeholders.
 //1. inject base styling before media queries start
-@mixin font-responsive($name: "body", $mode: true) {
+@mixin font-responsive($name: "body", $isResponsive: true) {
     @content; //1.
 
-    @if $mode {
+    @if $isResponsive {
         @extend %#{$name}-respond;
     }
     @else {
@@ -153,8 +153,8 @@ $typeList: (
 }
 
 // .headline
-@mixin font-headline($mode: true) {
-    @include font-responsive("headline", $mode){
+@mixin font-headline($isResponsive: true) {
+    @include font-responsive("headline", $isResponsive){
         font-family: $light;
         font-weight: inherit;
         line-height: 1.2;
@@ -163,8 +163,8 @@ $typeList: (
 }
 
 // h1, .h1, .header
-@mixin font-header($mode: true) {
-    @include font-responsive("h1", $mode){
+@mixin font-header($isResponsive: true) {
+    @include font-responsive("h1", $isResponsive){
         font-family: $light;
         font-weight: inherit;
         line-height: 1.2;
@@ -173,8 +173,8 @@ $typeList: (
 }
 
 // h2, .h2, .subheader
-@mixin font-subheader($mode: true) {
-    @include font-responsive("h2", $mode){
+@mixin font-subheader($isResponsive: true) {
+    @include font-responsive("h2", $isResponsive){
         font-family: $light;
         font-weight: inherit;
         line-height: 1.2;
@@ -182,8 +182,8 @@ $typeList: (
 }
 
 // h3, .h3, .title
-@mixin font-title($mode: true) {
-    @include font-responsive("h3", $mode){
+@mixin font-title($isResponsive: true) {
+    @include font-responsive("h3", $isResponsive){
         font-family: $semilight;
         font-weight: inherit;
         line-height: 1.25; 
@@ -191,8 +191,8 @@ $typeList: (
 }
 
 // h4, .h4, .subtitle
-@mixin font-subtitle($mode: true) {
-    @include font-responsive("h4", $mode){
+@mixin font-subtitle($isResponsive: true) {
+    @include font-responsive("h4", $isResponsive){
         font-family: $regular;
         font-weight: inherit;
         line-height: 1.25;
@@ -200,8 +200,8 @@ $typeList: (
 }
 
 // h5, .h5, h6, .h6
-@mixin font-sm-heading($mode: true) {
-    @include font-responsive("body", $mode){
+@mixin font-sm-heading($isResponsive: true) {
+    @include font-responsive("body", $isResponsive){
         font-family: $semibold;
         font-weight: inherit;
         line-height: 1.25;
@@ -209,31 +209,31 @@ $typeList: (
 }
 
 // body, .body
-@mixin font-body($mode: true) {
-    @include font-responsive("body", $mode){
+@mixin font-body($isResponsive: true) {
+    @include font-responsive("body", $isResponsive){
         font-family: $regular;
         line-height: 1.5;
     };
 }
 
 // .body-alt
-@mixin font-body-alt($mode: true) {
-    @include font-responsive("body-alt", $mode){
+@mixin font-body-alt($isResponsive: true) {
+    @include font-responsive("body-alt", $isResponsive){
         font-family: $regular;
         line-height: 1.25; 
     };
 }
 
 //.caption
-@mixin font-caption($mode: true) {
-    @include font-responsive("caption", $mode){
+@mixin font-caption($isResponsive: true) {
+    @include font-responsive("caption", $isResponsive){
         line-height: 1.25;
     };
 }
 
 // .caption-alt
-@mixin font-caption-alt($mode: true) {
-    @include font-responsive("caption-alt", $mode){
+@mixin font-caption-alt($isResponsive: true) {
+    @include font-responsive("caption-alt", $isResponsive){
         line-height: 1.25;
     }
 }
