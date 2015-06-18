@@ -2,6 +2,7 @@
 //              #FONTS
 //------------------------------------
 
+
 @font-face {
     font-family: 'wf_segoe-ui_light';
     src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
@@ -54,12 +55,191 @@
     font-style: normal;
 }
 
-//Font ramp/family variables
+
+// Variables
+
 $light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
 $regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
 $semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
 $bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
+
+$typeList: (
+  headline: (
+    large: 62px,
+    small: 46px,
+    flex: calc(36px + 1.86vw)
+  ),
+  h1: (
+    large: 46px,
+    small: 34px,
+    flex: calc(26.5px + 1.4vw)
+  ),
+  h2: (
+    large: 34px,
+    small: 26px,
+    flex: calc(17.6px + 1.18vw)
+  ),
+  h3: (
+    large: 24px,
+    small: 20px,
+    flex: calc(18.2px + 0.41vw)
+  ),
+  h4: (
+    large: 20px,
+    small: 18px,
+    flex: calc(16.9px + 0.22vw)
+  ),
+  body: (
+    large: 18px,
+    small: 16px,
+    flex: calc(14.9px + 0.22vw)
+  ),
+  body-alt: (
+    large: 15px,
+    small: 14px,
+    flex: calc(13.5px + 0.11vw)
+  ),
+  caption: (
+    large: 13px,
+    small: 12px,
+    flex: calc(11.5px + 0.11vw)
+  ),
+  caption-alt: (
+    large: 11px,
+    small: 10px,
+    flex: calc(9.5px + 0.11vw)
+  )
+
+);
+
+
+// Placeholders
+
+//loop creates placeholders for each typeset.
+//1. placeholder for responsive font-size (ex. %body-respond{...})
+//2. placeholder for static font-size (ex. %body-static{...})
+@each $item, $type in $typeList {
+    %#{$item}-respond { //1.
+        font-size: map-get($type, small);
+
+        @media all and (min-width: $vp2) {
+            font-size:  map-get($type, flex);
+        }
+        @media all and (min-width: $vp5) {
+            font-size:  map-get($type, large);
+        }
+    }
+    %#{$item}-static { //2.
+        font-size: map-get($type, large);
+    }
+}
+
+
+// Mixins
+
+//helper mixin to @extend with the appropriate placeholder
+//defaults to '%body-' placeholders.
+//1. inject base styling before media queries start
+@mixin font-responsive($name: "body", $isResponsive: true) {
+    @content; //1.
+
+    @if $isResponsive {
+        @extend %#{$name}-respond;
+    }
+    @else {
+        @extend %#{$name}-static;
+    }
+}
+
+// .headline
+@mixin font-headline($isResponsive: true) {
+    @include font-responsive("headline", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h1, .h1, .header
+@mixin font-header($isResponsive: true) {
+    @include font-responsive("h1", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h2, .h2, .subheader
+@mixin font-subheader($isResponsive: true) {
+    @include font-responsive("h2", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+    };
+}
+
+// h3, .h3, .title
+@mixin font-title($isResponsive: true) {
+    @include font-responsive("h3", $isResponsive){
+        font-family: $semilight;
+        font-weight: inherit;
+        line-height: 1.25; 
+    };
+}
+
+// h4, .h4, .subtitle
+@mixin font-subtitle($isResponsive: true) {
+    @include font-responsive("h4", $isResponsive){
+        font-family: $regular;
+        font-weight: inherit;
+        line-height: 1.25;
+    };
+}
+
+// h5, .h5, h6, .h6
+@mixin font-sm-heading($isResponsive: true) {
+    @include font-responsive("body", $isResponsive){
+        font-family: $semibold;
+        font-weight: inherit;
+        line-height: 1.25;
+    };
+}
+
+// body, .body
+@mixin font-body($isResponsive: true) {
+    @include font-responsive("body", $isResponsive){
+        font-family: $regular;
+        line-height: 1.5;
+    };
+}
+
+// .body-alt
+@mixin font-body-alt($isResponsive: true) {
+    @include font-responsive("body-alt", $isResponsive){
+        font-family: $regular;
+        line-height: 1.25; 
+    };
+}
+
+//.caption
+@mixin font-caption($isResponsive: true) {
+    @include font-responsive("caption", $isResponsive){
+        line-height: 1.25;
+    };
+}
+
+// .caption-alt
+@mixin font-caption-alt($isResponsive: true) {
+    @include font-responsive("caption-alt", $isResponsive){
+        line-height: 1.25;
+    }
+}
+
+
+// Typography Styles
 
 .light {
     font-family: $light;
@@ -73,25 +253,28 @@ $bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-s
     font-family: $regular;
 }
 
-.semibold, {
+.semibold {
     font-family: $semibold;
 }
 
-b, .bold, .base {
+b, .bold {
     font-family: $bold;
 }
 
 body {
     color: $text-color;
     text-rendering: optimizeLegibility;
+    @include font-body;
 }
 
-body, p, input, .body, .body-alt, div, span, li, select, button {
+p, input, div, span, li, select, button {
     font-family: $regular;
+    @extend %body-respond;
 }
 
 p {
     margin: 0 0 1em 0;
+    line-height: 1.5;
 }
 
 a {
@@ -105,208 +288,83 @@ a {
     }
 }
 
-h1, h2, .headline {
-  font-family: $light;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-
-h3, .h3, .title {
-    font-family: $semilight;
-    font-weight: inherit;
-    line-height: 1.25;
-}
-
-h4, .h4, .subtitle {
-    font-family: $regular;
-    font-weight: inherit;
-    line-height: 1.25;
-}
-
-.base, h5, .h5, h6, .h6 {
-    font-family: $semibold;
-    font-weight: inherit;
-}
-
 .headline {
-    font-size: 46px;
-    letter-spacing: -0.01em;
+    @include font-headline;
 }
 
 h1, .h1, .header {
-    font-size: 34px;
-    letter-spacing: -0.01em;
+    @include font-header;
 }
 
 h2, .h2, .subheader {
-    font-size: 24px;
+    @include font-subheader;
 }
 
 h3, .h3, .title {
-    font-size: 20px;
+    @include font-title;
 }
 
 h4, .h4, .subtitle {
-    font-size: 18px;
+    @include font-subtitle;
 }
 
-body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-    font-size: 16px;
+h5, .h5, h6, .h6 {
+    @include font-sm-heading;
+}
+
+.body {
+    @include font-body;
 }
 
 .body-alt {
-    font-size: 14px;
-    line-height: 1.25;
-}
-
-p, .body {
-    line-height: 1.5;
+    @include font-body-alt;
 }
 
 .caption {
-    font-size: 12px;
-    line-height: 1.25;
+    @include font-caption;
 }
 
 .caption-alt {
-    font-size: 10px;
-    line-height: 1.25;
+    @include font-caption-alt;
 }
 
 
-
-
-
-//----------------------------------------------------------
-//              #Responsive font calculations
-//----------------------------------------------------------
-
-@media all and (min-width: $vp2) {
-    .headline {
-        font-size: calc(36px + 1.86vw);
-    }
-
-    h1, .h1, .header {
-        font-size: calc(26.5px + 1.4vw);
-    }
-
-    h2, .h2, .subheader {
-        font-size: calc(17.6px + 1.18vw);
-    }
-
-    h3, .h3, .title {
-        font-size: calc(18.2px + 0.41vw);
-    }
-
-    h4, .h4, .subtitle {
-        font-size: calc(16.9px + 0.22vw);
-    }
-
-    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: calc(14.9px + 0.22vw);
-    }
-
-    .body-alt {
-        font-size: calc(13.5px + 0.11vw);
-    }
-
-    .caption {
-        font-size: calc(11.5px + 0.11vw)
-    }
-
-    .caption-alt {
-        font-size: calc(9.5px + 0.11vw)
-    }
-}
-
-
-
-
-
-//----------------------------------------------------------
-//              #Lock font size above last breakpoint
-//----------------------------------------------------------
-
-@media all and (min-width: $vp5) {
-    .headline {
-        font-size: 62px;
-    }
-
-    h1, .h1, .header {
-        font-size: 46px;
-    }
-
-    h2, .h2, .subheader {
-        font-size: 34px;
-    }
-
-    h3, .h3, .title {
-        font-size: 24px;
-    }
-
-    h4, .h4, .subtitle {
-        font-size: 20px;
-    }
-
-    body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: 18px;
-    }
-
-    .body-alt {
-        font-size: 15px;
-    }
-
-    .caption {
-        font-size: 13px;
-    }
-
-    .caption-alt {
-        font-size: 11px;
-    }
-}
-
-
-
-
-
-//---------------------------------------------
-//              #Non-responsive Typography
-//---------------------------------------------
+// Non-Responsive Typography Styles
 
 .static-typography {
     .headline {
-        font-size: 62px;
+        @extend %headline-static;
     }
 
     h1, .h1, .header {
-        font-size: 46px;
+       @extend %h1-static;
     }
 
     h2, .h2, .subheader {
-        font-size: 34px;
+        @extend %h2-static;
     }
 
     h3, .h3, .title {
-        font-size: 24px;
+        @extend %h3-static;
     }
 
     h4, .h4, .subtitle {
-        font-size: 20px;
+        @extend %h4-static;
     }
 
     body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
-        font-size: 18px;
+        @extend %body-static;
     }
 
     .body-alt {
-        font-size: 15px;
+        @extend %body-alt-static;
     }
 
     .caption {
-        font-size: 13px;
+        @extend %caption-static;
     }
 
     .caption-alt {
-        font-size: 11px;
+        @extend %caption-alt-static;
     }
 }

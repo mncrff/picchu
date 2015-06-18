@@ -14,12 +14,9 @@ module.exports = function (grunt) {
                     style: 'expanded',
                     map: false
                 },
-                files: [{
-                    expand: true,
-                    src: ['src/*.scss'],
-                    dest: '../dist',
-                    ext: '.css'
-                }]
+                files: {
+                    'dist/picchu.css': 'src/picchu.scss'
+                }
             }
         },
 
