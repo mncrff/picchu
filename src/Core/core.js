@@ -1,64 +1,78 @@
 (function( window, undefined ) {
 
-    function Picchu(selector) {
+	// expose static methods
+	Picchu = _Picchu;
 
-        if (selector) {
-        	var nodes;
+	function _Picchu() {
 
-	        if (typeof selector === 'string') {
-		        nodes = document.querySelectorAll(selector);
-		    } else if (selector.length) {
-		    	nodes = selector;
-		    } else {
-		    	nodes = [selector];
-		    }
-
-			for (var i = 0; i < nodes.length; i++) {
-				this[i] = nodes[i];
-			}
-			this._length = nodes.length;
-		}
-
-		return this;
+        return this;
     };
 
-	window.Picchu = window.ms = Picchu;
+    _Picchu.prototype = {
 
-    // ========= Utilities
+        select: function(q) {
+            if (typeof q === 'string') { 
+                return new this.nodeList(document.querySelector(q));
+            }
+        },
 
-    Picchu.prototype.forEach = function (callback) {
-        this.map(callback);
-        return this; 
-    };
+        selectAll: function(q) {
+            if (typeof q === 'string') { 
+                return new this.nodeList(document.querySelectorAll(q));
+            }
+        },
 
-    Picchu.prototype.map = function (callback) {
-        var results = [];
-        for (var i = 0; i < this._length; i++) {
-            results.push(callback.call(this, this[i], i));
+        nodeList: function(n) {
+            if (n.length) {
+                for (var i = 0; i < n.length; i++) {
+                    this[i] = n[i];
+                    this.size = n.length;
+                }
+            } else {
+                this[0] = n;
+                this.size = 1;
+            }
         }
-        return results;
     };
 
-    Picchu.prototype.hasClass = function (kls) {
-		return (' ' + this[0].className + ' ').indexOf(' ' + kls + ' ') > -1;
-	};
+    _Picchu.prototype.nodeList.prototype = {
 
-	Picchu.prototype.removeClass = function(kls) {
-		return this.forEach(function(el) {
-			el.className = el.className.replace(new RegExp("\\b\\s\?"+kls+"\\b"),'');
-		});
-	};
-	Picchu.prototype.addClass = function(kls) {
-		return this.forEach(function(el) {
-			if (!el.className.match(new RegExp("\\b\\s\?"+kls+"\\b"),'')) {
-				return el.className = el.className+" "+kls;
-			}
-		});
-	};
+        forEach: function (callback) {
+            this.map(callback);
+            return this; 
+        },
+
+        map: function (callback) {
+            var results = [];
+            for (var i = 0; i < this.size; i++) {
+                results.push(callback.call(this, this[i], i));
+            }
+            return results;
+        },
+
+        hasClass: function (kls) {
+            return (' ' + this[0].className + ' ').indexOf(' ' + kls + ' ') > -1;
+        },
+
+        removeClass: function(kls) {
+            return this.forEach(function(el) {
+                el.className = el.className.replace(new RegExp("\\b\\s\?"+kls+"\\b"),'');
+            });
+        },
+
+        addClass: function(kls) {
+            return this.forEach(function(el) {
+                if (!el.className.match(new RegExp("\\b\\s\?"+kls+"\\b"),'')) {
+                    return el.className = el.className+" "+kls;
+                }
+            });
+        }
+
+    };
 
 	// ========== Browser compatibility
 
-	Picchu.prototype.addEvent = (function () {
+	_Picchu.prototype.addEvent = (function () {
 	    if (document.addEventListener) {
 	        return function (evt, fn) {
 	            return this.forEach(function (el) {
@@ -80,7 +94,7 @@
 	    }
 	}());
 
-	Picchu.prototype.removeEvent = (function () {
+	_Picchu.prototype.removeEvent = (function () {
 	    if (document.removeEventListener) {
 	        return function (evt, fn) {
 	            return this.forEach(function (el) {
@@ -104,7 +118,7 @@
 
 	// ========== Static methods
 
-	Picchu.debounce = function(func, wait, immediate) {
+	_Picchu.debounce = function(func, wait, immediate) {
 		var timeout;
 		return function() {
 			var context = this, args = arguments;
@@ -119,7 +133,7 @@
 		};
 	};
 
-	Picchu.test = function() {
+	_Picchu.test = function() {
 		return 'test';
 	}
 
