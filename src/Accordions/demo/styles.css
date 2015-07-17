@@ -2489,6 +2489,9 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
 .full-width {
   width: 100%; }
 
+.accordion-header {
+  cursor: pointer; }
+
 .accordion-panel {
   overflow: hidden;
   transition: all 0.5s ease; }
