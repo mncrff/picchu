@@ -3,6 +3,7 @@
 	// expose static methods
 	Picchu = _Picchu;
 
+
 	function _Picchu() {
 
         return this;
@@ -13,16 +14,22 @@
         select: function(q) {
             if (typeof q === 'string') { 
                 return new this.nodeList(document.querySelector(q));
+            } else if (q.length) {
+                return new this.nodeList(q[0]);
             }
+            return new this.nodeList(q);
         },
 
         selectAll: function(q) {
             if (typeof q === 'string') { 
                 return new this.nodeList(document.querySelectorAll(q));
             }
+            return new this.nodeList(q);
         },
 
         nodeList: function(n) {
+            this.size = 0;
+
             if (n.length) {
                 for (var i = 0; i < n.length; i++) {
                     this[i] = n[i];
@@ -50,6 +57,17 @@
             return results;
         },
 
+        static: function() {
+            if (this.size > 1) {
+                var results = [];
+                for (var i = 0; i < this.size; i++) {
+                    results.push(this[i]);
+                }
+                return results;
+            }
+            return this[0];
+        },
+
         hasClass: function (kls) {
             return (' ' + this[0].className + ' ').indexOf(' ' + kls + ' ') > -1;
         },
@@ -66,13 +84,20 @@
                     return el.className = el.className+" "+kls;
                 }
             });
-        }
+        },
 
+        next: function() {
+            var el = this[0];
+
+            if (el.nextElementSibling) {
+                return new ms.nodeList(el.nextElementSibling);
+            }
+            do { el = el.nextSibling } while (el && el.nodeType !== 1);
+            return new ms.nodeList(el);
+        }
     };
 
-	// ========== Browser compatibility
-
-	_Picchu.prototype.addEvent = (function () {
+	_Picchu.prototype.nodeList.prototype.addEvent = (function () {
 	    if (document.addEventListener) {
 	        return function (evt, fn) {
 	            return this.forEach(function (el) {
@@ -94,7 +119,7 @@
 	    }
 	}());
 
-	_Picchu.prototype.removeEvent = (function () {
+	_Picchu.prototype.nodeList.prototype.removeEvent = (function () {
 	    if (document.removeEventListener) {
 	        return function (evt, fn) {
 	            return this.forEach(function (el) {
@@ -118,6 +143,19 @@
 
 	// ========== Static methods
 
+    _Picchu.map = function(list, callback) {
+        var results = [];
+        for (var i = 0; i < list.length; i++) {
+            results.push(callback.call(list, list[i], i));
+        }
+        return results;
+    };
+
+    _Picchu.forEach = function(list, callback) {
+        _Picchu.map(list, callback);
+        return this; 
+    };
+
 	_Picchu.debounce = function(func, wait, immediate) {
 		var timeout;
 		return function() {
@@ -136,5 +174,7 @@
 	_Picchu.test = function() {
 		return 'test';
 	}
+
+    ms = new _Picchu();
 
 })(window);
