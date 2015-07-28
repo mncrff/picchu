@@ -1893,13 +1893,13 @@ h2, .h2, .subheader {
 .static-typography h2, .static-typography .h2, .static-typography .subheader {
   font-size: 34px; }
 
-h3, .h3, .title {
+h3, .h3, .title, button.large, .button.large {
   font-size: 20px; }
   @media all and (min-width: 540px) {
-    h3, .h3, .title {
+    h3, .h3, .title, button.large, .button.large {
       font-size: calc(18.2px + 0.41vw); } }
   @media all and (min-width: 1400px) {
-    h3, .h3, .title {
+    h3, .h3, .title, button.large, .button.large {
       font-size: 24px; } }
 
 .static-typography h3, .static-typography .h3, .static-typography .title {
@@ -1929,13 +1929,13 @@ body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
 .static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
   font-size: 18px; }
 
-.body-alt {
+.body-alt, button.small, .button.small {
   font-size: 14px; }
   @media all and (min-width: 540px) {
-    .body-alt {
+    .body-alt, button.small, .button.small {
       font-size: calc(13.5px + 0.11vw); } }
   @media all and (min-width: 1400px) {
-    .body-alt {
+    .body-alt, button.small, .button.small {
       font-size: 15px; } }
 
 .static-typography .body-alt {
@@ -2051,12 +2051,25 @@ button, .button {
   border: none;
   box-sizing: border-box;
   outline: none;
-  padding: 0.5em 1.5em;
   position: relative;
-  -webkit-transition: all 0.15s;
-          transition: all 0.15s; }
+  padding: 0.55em 1.5em;
+  -webkit-transition: background-color 0.5s;
+          transition: background-color 0.5s;
+  background-color: #0078D7;
+  color: #FFFFFF; }
+  button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #0060ac;
+    -webkit-transition: background-color 0s;
+            transition: background-color 0s; }
+  button:active, .button:active {
+    background-color: #004881;
+    -webkit-transition: background-color 0s;
+            transition: background-color 0s; }
+  button[disabled]:hover, button[disabled]:focus, .button[disabled]:hover, .button[disabled]:focus {
+    background-color: #e3e3e3;
+    color: #919191; }
   button[disabled], .button[disabled] {
-    background-color: #c8c8c8;
+    background-color: #e3e3e3;
     color: #919191; }
   button.secondary, .button.secondary {
     background-color: #767676;
@@ -2065,6 +2078,16 @@ button, .button {
       background-color: #5e5e5e; }
     button.secondary:active, .button.secondary:active {
       background-color: #464646; }
+  button.large, .button.large {
+    font-family: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
+    font-weight: inherit;
+    line-height: 1.25; }
+  button.small, .button.small {
+    font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
+    line-height: 1.25; }
+  button + a, .button + a {
+    margin-left: 20px;
+    font-family: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif; }
   button.lightblue-bgc:hover, button.lightblue-bgc:focus, .button.lightblue-bgc:hover, .button.lightblue-bgc:focus {
     background-color: #0096c1; }
   button.lightblue-bgc:active, .button.lightblue-bgc:active {
@@ -2226,13 +2249,15 @@ button, .button {
   button.gray-bgc[disabled]:hover, button.gray-bgc[disabled]:focus, .button.gray-bgc[disabled]:hover, .button.gray-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.white-bgc:hover, button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus {
-    background-color: #e3e3e3; }
-  button.white-bgc:active, .button.white-bgc:active {
-    background-color: #c8c8c8; }
-  button.white-bgc[disabled]:hover, button.white-bgc[disabled]:focus, .button.white-bgc[disabled]:hover, .button.white-bgc[disabled]:focus {
-    background-color: #c8c8c8;
-    color: #919191; }
+  button.white-bgc, .button.white-bgc {
+    color: #0078D7; }
+    button.white-bgc:hover, button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus {
+      background-color: #e3e3e3; }
+    button.white-bgc:active, .button.white-bgc:active {
+      background-color: #c8c8c8; }
+    button.white-bgc[disabled]:hover, button.white-bgc[disabled]:focus, .button.white-bgc[disabled]:hover, .button.white-bgc[disabled]:focus {
+      background-color: #c8c8c8;
+      color: #919191; }
   button.black-bgc:hover, button.black-bgc:focus, .button.black-bgc:hover, .button.black-bgc:focus {
     background-color: #333333; }
   button.black-bgc:active, .button.black-bgc:active {
