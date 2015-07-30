@@ -6,6 +6,7 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	    <link rel="stylesheet" href="../../../dist/picchu.css">
+        <link rel="stylesheet" href="styles.css">
 	</head>
 
     <style type="text/css">
@@ -24,6 +25,92 @@
 	<body>
 
         <h1>Form Elements</h1>
+
+        <p>Currently does not work in IE8 due to lack of support for pseudo selectors like :checked and :disabled.</p>
+
+    <section>
+        <h2>Checkboxes</h2>
+
+        <p>
+            <label class="checkbox">
+                <input type="checkbox">
+                <span class="custom-control"></span>
+                <span>Check this custom checkbox</span>
+            </label>
+            <br/>
+            <label class="checkbox">
+                <input type="checkbox" disabled="disabled">
+                <span class="custom-control"></span>
+                <span>You can't check this</span>
+            </label>
+            <br/>
+            <label class="checkbox">
+                <input type="checkbox" disabled="disabled" checked="checked">
+                <span class="custom-control"></span>
+                <span>You can't uncheck this</span>
+            </label>
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Toggles</h2>
+
+        <p>
+            <label class="toggle">
+                <input type="checkbox">
+                <span class="custom-control"></span>
+                <span>Toggle this toggle yo.</span>
+            </label>
+            <br/>
+            <label class="toggle">
+                <input type="checkbox" disabled="disabled">
+                <span class="custom-control"></span>
+                <span>You can't toggle this</span>
+            </label>
+            <br/>
+            <label class="toggle">
+                <input type="checkbox" disabled="disabled" checked="checked">
+                <span class="custom-control"></span>
+                <span>You can't toggle this</span>
+            </label>
+        </p>
+
+    </section>
+
+    <section>
+        <h2>Radio Controls</h2>
+
+        <p>
+            <label class="radio">
+                <input id="radio1" name="radio" type="radio">
+                <span class="custom-control"></span>
+                <span>Toggle this custom radio</span>
+            </label>
+            <br/>
+            <label class="radio">
+                <input id="radio2" name="radio" type="radio">
+                <span class="custom-control"></span>
+                <span>Or toggle this other custom radio</span>
+            </label>
+        </p>
+
+        <h3>Disabled</h3>
+        <p>
+            <label class="radio">
+                <input id="radio3" name="radio2" type="radio" disabled="disabled">
+                <span class="custom-control"></span>
+                <span>You can't toggle this</span>
+            </label>
+            <br/>
+            <label class="radio">
+                <input id="radio3" name="radio2" type="radio" disabled="disabled" checked="checked">
+                <span class="custom-control"></span>
+                <span>You can't toggle this</span>
+            </label>
+        </p>
+
+    </section>
 
     <section>
         <h2>Buttons</h2>
