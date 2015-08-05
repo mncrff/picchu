@@ -1,0 +1,107 @@
+::-webkit-input-placeholder {
+   color: $gray;
+}
+::-moz-placeholder {
+   color: $gray;  
+}
+:-ms-input-placeholder {  
+   color: $gray;  
+}
+
+label, input, textarea {
+	display: inline-block;
+	font-size: 15px;
+    color: $text-color;
+    appearance: none;
+    box-sizing: border-box;
+}
+
+label.disabled {
+	color: tint($gray, 60%);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+    color: $text-color;
+    padding: 0.4667em 0.55em;
+    border: 1px solid $gray;
+    width: 100%;
+
+	&:focus,
+	&:active {
+    	border-color: $blue;
+    	box-shadow: 0 0 0 1px $blue;
+    	outline: none;
+	}
+
+	&[disabled],
+    &[disabled]:active {
+    	background-color: $white;
+        border-color: tint($gray, 60%);
+        color: tint($gray, 60%);
+    }
+
+    &[disabled]:active {
+        box-shadow: none;
+    }
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+
+	select {
+		display: inline-block;
+		font-size: 15px;
+		color: $text-color;
+		appearance: none;
+		border: 1px solid $gray;
+		position: relative;
+		padding: 0.4667em 2.8em 0.4667em 0.55em;
+		width: 100%;
+	}
+
+	select::-ms-expand {
+    	display: none;
+	}
+
+	select:focus,
+	select:active {
+		border-color: $blue;
+		box-shadow: 0 0 0 1px $blue;
+		outline: none;
+	}
+
+	select[disabled],
+    select[disabled]:active {
+        border-color: tint($gray, 60%);
+        color: tint($gray, 60%);
+    }
+
+    select[disabled]:active {
+        box-shadow: none;
+    }
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 0.9em;
+		width: 0.9em;
+		top: 0.6em;
+		right: 0.61em;
+		background-repeat: no-repeat;
+		z-index: 10;
+		pointer-events: none;
+		background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%232F2F2F%20!important%3B%20stroke%3A%20%232F2F2F!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	}
+
+	&.disabled:before {
+		background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23c8c8c8%20!important%3B%20stroke%3A%20%23c8c8c8!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	}
+}
