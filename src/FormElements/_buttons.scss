@@ -5,6 +5,7 @@ button, .button {
 	position: relative;
 	padding: 0.55em 1.5em;
 	transition: background-color 0.5s;
+	line-height: 1.5;
 
 	background-color: $blue;
 	color: $white;
@@ -44,9 +45,11 @@ button, .button {
 
 	&.large {
 		@include font-title;
+		line-height: 1.5;
 	}
 	&.small {
 		@include font-body-alt;
+		line-height: 1.5;
 	}
 
 	&+ a {

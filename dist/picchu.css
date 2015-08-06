@@ -2055,6 +2055,7 @@ button, .button {
   padding: 0.55em 1.5em;
   -webkit-transition: background-color 0.5s;
           transition: background-color 0.5s;
+  line-height: 1.5;
   background-color: #0078D7;
   color: #FFFFFF; }
   button:hover, button:focus, .button:hover, .button:focus {
@@ -2081,10 +2082,12 @@ button, .button {
   button.large, .button.large {
     font-family: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
     font-weight: inherit;
-    line-height: 1.25; }
+    line-height: 1.25;
+    line-height: 1.5; }
   button.small, .button.small {
     font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
-    line-height: 1.25; }
+    line-height: 1.25;
+    line-height: 1.5; }
   button + a, .button + a {
     margin-left: 20px;
     font-family: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif; }
