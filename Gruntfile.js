@@ -53,7 +53,7 @@ module.exports = function (grunt) {
                 stripBanners: true
             },
             dist: {
-                src: ['bower_components/modernizr/modernizr.js', 'src/FormElements/formElements.js'],
+                src: assetLists.dist,
                 dest: 'dist/picchu.js'
             }
         }

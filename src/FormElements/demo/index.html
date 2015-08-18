@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="https://cdn.rawgit.com/winjs/grid/master/dist/css/mscom-grid.css">
 	    <link rel="stylesheet" href="../../../dist/picchu.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="../../../dist/picchu.js"></script>
 	</head>
 
     <style type="text/css">
@@ -60,9 +60,9 @@
                         <input type="number" name="numberfield1" placeholder="0" />
                     </p>
                     <p>
-                        <label for="textfield1">Disabled Field</label>
+                        <label for="disabledfield1">Disabled Field</label>
                         <br/>
-                        <input type="text" name="textfield1" value="some value" disabled/>
+                        <input type="text" name="disabledfield1" value="some value" disabled="disabled"/>
                     </p>
                 </section>
 
@@ -70,7 +70,7 @@
                     <h2>Select Boxes</h2>
 
                     <p>
-                        <label>Select an Option</label>
+                        <label for="fruit">Select an Option</label>
                         </br>
                         <span class="dropdown">
                             <select name="fruit">
@@ -83,10 +83,10 @@
                     </p>
 
                     <p>
-                        <label>Disabled Select Box</label>
+                        <label for="fruitdisabled">Disabled Select Box</label>
                         </br>
                         <span class="dropdown disabled">
-                            <select name="fruit" disabled>
+                            <select name="fruitdisabled" disabled>
                                 <option value="value1">Apples</option> 
                                 <option value="value2">Oranges</option>
                                 <option value="value3" selected>Kiwis</option>
@@ -102,26 +102,26 @@
                     <h2>Checkboxes</h2>
 
                     <p>
-                        <label class="checkbox">
-                            <input id="testCheck" type="checkbox">
+                        <label class="checkbox" for="cb1">
+                            <input type="checkbox" id="cb1">
                             <span class="custom-control"></span>
                             <span>Check this custom checkbox</span>
                         </label>
                         <br/>
-                        <label class="checkbox">
-                            <input type="checkbox" checked="checked">
+                        <label class="checkbox" for="cb2">
+                            <input type="checkbox" checked="checked" id="cb2">
                             <span class="custom-control"></span>
                             <span>Check this custom checkbox</span>
                         </label>
                         <br/>
-                        <label class="checkbox">
-                            <input type="checkbox" disabled="disabled">
+                        <label class="checkbox" for="cb3">
+                            <input type="checkbox" disabled="disabled" id="cb3">
                             <span class="custom-control"></span>
                             <span>You can't check this</span>
                         </label>
                         <br/>
-                        <label class="checkbox">
-                            <input type="checkbox" disabled="disabled" checked="checked">
+                        <label class="checkbox" for="cb4">
+                            <input type="checkbox" disabled="disabled" checked="checked" id="cb4">
                             <span class="custom-control"></span>
                             <span>You can't uncheck this</span>
                         </label>
@@ -133,26 +133,26 @@
                     <h2>Toggles</h2>
 
                     <p>
-                        <label class="toggle">
-                            <input type="checkbox">
+                        <label class="toggle" for="tg1">
+                            <input type="checkbox" id="tg1">
                             <span class="custom-control"></span>
                             <span>Toggle this toggle yo.</span>
                         </label>
                         <br/>
-                        <label class="toggle">
-                            <input type="checkbox" checked="checked">
+                        <label class="toggle" for="tg2">
+                            <input type="checkbox" checked="checked" id="tg2">
                             <span class="custom-control"></span>
                             <span>Toggle this toggle yo.</span>
                         </label>
                         <br/>
-                        <label class="toggle">
-                            <input type="checkbox" disabled="disabled">
+                        <label class="toggle" for="tg3">
+                            <input type="checkbox" disabled="disabled" id="tg3">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
                         <br/>
-                        <label class="toggle">
-                            <input type="checkbox" disabled="disabled" checked="checked">
+                        <label class="toggle" for="tg4">
+                            <input type="checkbox" disabled="disabled" checked="checked" id="tg4">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
@@ -164,28 +164,28 @@
                     <h2>Radio Controls</h2>
 
                     <p>
-                        <label class="radio">
-                            <input id="radio1" name="radio" type="radio" checked="checked">
+                        <label class="radio" for"r1">
+                            <input id="r1" name="radio" type="radio" checked="checked">
                             <span class="custom-control"></span>
                             <span>Toggle this custom radio</span>
                         </label>
                         <br/>
-                        <label class="radio">
-                            <input id="radio2" name="radio" type="radio">
+                        <label class="radio" for="r2">
+                            <input id="r2" name="radio" type="radio">
                             <span class="custom-control"></span>
                             <span>Or toggle this other custom radio</span>
                         </label>
                     </p>
 
                     <p>
-                        <label class="radio">
-                            <input id="radio3" name="radio2" type="radio" disabled="disabled">
+                        <label class="radio" for="r3">
+                            <input id="r3" name="radio2" type="radio" disabled="disabled">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
                         <br/>
-                        <label class="radio">
-                            <input id="radio3" name="radio2" type="radio" disabled="disabled" checked="checked">
+                        <label class="radio" for="r4">
+                            <input id="r4" name="radio2" type="radio" disabled="disabled" checked="checked">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
@@ -269,7 +269,6 @@
 
             </section>
         </div>
-
-        <script src="../formElements.js"></script>
+        
 	</body>
 </html>
