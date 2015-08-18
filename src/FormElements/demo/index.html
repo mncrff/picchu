@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="https://cdn.rawgit.com/winjs/grid/master/dist/css/mscom-grid.css">
 	    <link rel="stylesheet" href="../../../dist/picchu.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	</head>
 
     <style type="text/css">
@@ -59,7 +60,7 @@
                         <input type="number" name="numberfield1" placeholder="0" />
                     </p>
                     <p>
-                        <label for="textfield1" class="disabled">Disabled Field</label>
+                        <label for="textfield1">Disabled Field</label>
                         <br/>
                         <input type="text" name="textfield1" value="some value" disabled/>
                     </p>
@@ -82,7 +83,7 @@
                     </p>
 
                     <p>
-                        <label class="disabled">Disabled Select Box</label>
+                        <label>Disabled Select Box</label>
                         </br>
                         <span class="dropdown disabled">
                             <select name="fruit" disabled>
@@ -102,7 +103,7 @@
 
                     <p>
                         <label class="checkbox">
-                            <input type="checkbox">
+                            <input id="testCheck" type="checkbox">
                             <span class="custom-control"></span>
                             <span>Check this custom checkbox</span>
                         </label>
@@ -268,5 +269,7 @@
 
             </section>
         </div>
+
+        <script src="../formElements.js"></script>
 	</body>
 </html>

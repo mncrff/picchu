@@ -31,5 +31,8 @@
     "Gruntfile.js",
     "package.json",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3"
+  }
 }

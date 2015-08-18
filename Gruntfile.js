@@ -3,6 +3,14 @@ module.exports = function (grunt) {
 
     // Load Grunt modules
     require('load-grunt-tasks')(grunt);
+
+    // assets to package
+    var assetLists = {
+        dist: [
+            'bower_components/modernizr/modernizr.js',
+            'src/FormElements/formElements.js'
+        ]
+    };
     
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -36,11 +44,24 @@ module.exports = function (grunt) {
             files: {
                 'dist/picchu.min.css': 'dist/picchu.css'
           }
-      }
-  }
+        },
+
+        concat: {
+            options: {
+                separator: ';',
+                stripBanners: true
+            },
+            dist: {
+                src: ['bower_components/modernizr/modernizr.js', 'src/FormElements/formElements.js'],
+                dest: 'dist/picchu.js'
+            }
+        }
+    }
 
 });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');
+
     // Set Grunt tasks
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat:dist']);
 }
