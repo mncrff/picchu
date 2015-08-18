@@ -40,10 +40,11 @@ module.exports = function (grunt) {
         },
 
         cssmin: {
-          target: {
-            files: {
-                'dist/picchu.min.css': 'dist/picchu.css'
-          }
+            target: {
+                files: {
+                    'dist/picchu.min.css': 'dist/picchu.css'
+                }
+            }
         },
 
         concat: {
@@ -56,12 +57,9 @@ module.exports = function (grunt) {
                 dest: 'dist/picchu.js'
             }
         }
-    }
-
-});
-
-    grunt.loadNpmTasks('grunt-contrib-concat');
+    });
 
     // Set Grunt tasks
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat:dist']);
-}
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat']);
+
+};
