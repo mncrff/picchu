@@ -56,10 +56,21 @@ module.exports = function (grunt) {
                 src: assetLists.dist,
                 dest: 'dist/picchu.js'
             }
-        }
+        },
+
+        uglify: {
+            options: {
+                mangle: false
+            },
+            dist: {
+                files: {
+                    'dist/picchu.min.js': ['dist/picchu.js']
+                }
+            }
+        },
     });
 
     // Set Grunt tasks
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'uglify']);
 
 };
