@@ -14,9 +14,6 @@
         body {
             padding: 2em;
         }
-        section {
-            margin-bottom: 4em;
-        }
         .color-bg-example {
             margin-top: 2em;
             padding: 2em;
@@ -28,10 +25,10 @@
 
             <h1>Form Elements</h1>
 
-            <p>Currently does not work in IE8 due to lack of support for pseudo selectors like :checked and :disabled.</p>
+            <p>Due to lack of support for pseudo selectors like :checked and :disabled in IE8, custom checkboxes and toggles fallback to browser defaults.</p>
 
             <div class="ms-row">
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 l-padding-vertical">
                     <h2>Form Fields</h2>
 
                     <p>
@@ -55,7 +52,7 @@
                         <input type="url" name="urlfield1" placeholder="http://" />
                     </p>
                     <p>
-                        <label for="numberfield1">Url Field</label>
+                        <label for="numberfield1">Number Field</label>
                         <br/>
                         <input type="number" name="numberfield1" placeholder="0" />
                     </p>
@@ -66,7 +63,7 @@
                     </p>
                 </section>
 
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 l-padding-vertical">
                     <h2>Select Boxes</h2>
 
                     <p>
@@ -97,8 +94,8 @@
                 </section>
             </div>
 
-            <div class="ms-row">
-                <section class="m-col-1-3">
+            <section class="ms-row l-padding-vertical">
+                <div class="m-col-1-3 m-padding-bottom">
                     <h2>Checkboxes</h2>
 
                     <p>
@@ -127,9 +124,9 @@
                         </label>
                     </p>
 
-                </section>
+                </div>
 
-                <section class="m-col-1-3">
+                <div class="m-col-1-3 m-padding-bottom">
                     <h2>Toggles</h2>
 
                     <p>
@@ -158,9 +155,9 @@
                         </label>
                     </p>
 
-                </section>
+                </div>
 
-                <section class="m-col-1-3">
+                <div class="m-col-1-3">
                     <h2>Radio Controls</h2>
 
                     <p>
@@ -191,10 +188,10 @@
                         </label>
                     </p>
 
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <section>
+            <section class="l-padding-vertical">
                 <h2>Buttons</h2>
 
                 <div>
