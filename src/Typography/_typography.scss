@@ -90,6 +90,11 @@ $typeList: (
     small: 18px,
     flex: calc(16.9px + 0.22vw)
   ),
+  h5: (
+    large: 18px,
+    small: 16px,
+    flex: calc(14.9px + 0.22vw)
+  ),
   body: (
     large: 18px,
     small: 16px,
@@ -140,9 +145,11 @@ $typeList: (
 
 //helper mixin to @extend with the appropriate placeholder
 //defaults to '%body-' placeholders.
-//1. inject base styling before media queries start
+//1. see Spacing/spacing.scss for placeholders
+//2. inject base styling before media queries start
 @mixin font-responsive($name: "body", $isResponsive: true) {
-    @content; //1.
+    @extend %#{$name}-spacing; //1.
+    @content; //2.
 
     @if $isResponsive {
         @extend %#{$name}-respond;
@@ -200,8 +207,8 @@ $typeList: (
 }
 
 // h5, .h5, h6, .h6
-@mixin font-sm-heading($isResponsive: true) {
-    @include font-responsive("body", $isResponsive){
+@mixin font-sm-title($isResponsive: true) {
+    @include font-responsive("h5", $isResponsive){
         font-family: $semibold;
         font-weight: inherit;
         line-height: 1.25;
@@ -267,13 +274,12 @@ body {
     @include font-body;
 }
 
-p, input, div, span, li, select, button {
+p, blockquote, input, div, span, li, select, button {
     font-family: $regular;
     @extend %body-respond;
 }
 
 p {
-    margin: 0 0 1em 0;
     line-height: 1.5;
 }
 
@@ -309,7 +315,7 @@ h4, .h4, .subtitle {
 }
 
 h5, .h5, h6, .h6 {
-    @include font-sm-heading;
+    @include font-sm-title;
 }
 
 .body {
@@ -350,6 +356,10 @@ h5, .h5, h6, .h6 {
 
     h4, .h4, .subtitle {
         @extend %h4-static;
+    }
+
+    h5, .h5, h6, .h6 {
+        @extend %h5-static;
     }
 
     body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {

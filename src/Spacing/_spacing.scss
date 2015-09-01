@@ -1,0 +1,233 @@
+$spacing-list: (
+  xlarge: (
+    desktop: 70px,
+    mobile: 54px,
+    flex: calc(44.5px + 1.8vw)
+  ),
+  large: (
+    desktop: 40px,
+    mobile: 33px,
+    flex: calc(29.5px + 0.75vw)
+  ),
+  medium: (
+    desktop: 28px,
+    mobile: 24px,
+    flex: calc(22px + 0.4vw)
+  ),
+  small: (
+    desktop: 20px,
+    mobile: 18px,
+    flex: calc(17px + 0.2vw)
+  ),
+  xsmall: (
+    desktop: 12px,
+    mobile: 12px,
+    flex: 12px
+  )
+);
+
+$spacing-prefix-list: (xlarge, xl), (large, l), (medium, m), (small, s), (xsmall, xs);
+
+@function purge($list) {
+  $result: ();
+  
+  @each $item in $list {
+    @if $item != null 
+    and $item != false 
+    and $item != "" {
+      $result: append($result, $item);
+    }
+  }
+  
+  @return $result;
+}
+
+@mixin vertical-spacing($property, $vals...){
+
+    @if not nth($vals, length($vals)) {
+        //last value passed is false, for no responsive values
+        @include vertical-properties($property, purge($vals), desktop);
+    } @else {
+        //default to responsive values
+        @include vertical-properties($property, purge($vals), mobile);
+
+        @media all and (min-width: $vp2) {
+           @include vertical-properties($property, purge($vals), flex);
+        }
+        @media all and (min-width: $vp5) {
+            @include vertical-properties($property, purge($vals), desktop);
+        }
+    }
+}
+
+@mixin vertical-properties($property, $vals, $option: desktop){
+
+    $i: str-index($property, "-");
+
+    @if $i != null {
+        $dir: str-slice($property, str-index($property, "-") + 1);
+        @if $dir == "top" or $dir == "bottom" {
+            #{$property}: map-get(map-get($spacing-list, nth($vals, 1)), $option);
+        }
+    } @else {
+        @if length($vals) == 1 {
+            $val: map-get(map-get($spacing-list, nth($vals, 1)), $option);
+            #{$property}-top: $val;
+            #{$property}-bottom: $val;
+        } @else if length($vals) == 2 {
+            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $option);
+            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 2)), $option);
+        }
+    }
+}
+
+//helper classes for section/container vertical spacing
+@each $pair in $spacing-prefix-list {
+    .#{nth($pair, 2)}-padding-vertical {
+        @include vertical-spacing(padding, nth($pair, 1));
+    }
+    .#{nth($pair, 2)}-padding-top {
+        @include vertical-spacing(padding-top, nth($pair, 1));
+    }
+    .#{nth($pair, 2)}-padding-bottom {
+        @include vertical-spacing(padding-bottom, nth($pair, 1));
+    }
+    .#{nth($pair, 2)}-margin-vertical {
+        @include vertical-spacing(margin, nth($pair, 1));
+    }
+    .#{nth($pair, 2)}-margin-top {
+        @include vertical-spacing(margin-top, nth($pair, 1));
+    }
+    .#{nth($pair, 2)}-margin-bottom {
+        @include vertical-spacing(margin-bottom, nth($pair, 1));
+    }
+}
+
+%headline-spacing {
+    margin-bottom: 0.33em;
+
+    &.tighter {
+      margin-bottom: 0.165em;
+    }
+    &.looser {
+      margin-bottom: 0.5em;
+    }
+}
+
+%h1-spacing {
+    margin-bottom: 0.4em;
+
+    &.tighter {
+        margin-bottom: 0.2em;
+    }
+    &.looser {
+        margin-bottom: 0.6em;
+    }
+}
+
+%h2-spacing {
+    margin-bottom: 0.5em;
+
+    &.tighter {
+        margin-bottom: 0.25em;
+    }
+    &.looser {
+        margin-bottom: 0.75em;
+    }
+}
+
+%h3-spacing,
+%h4-spacing {
+    margin-bottom: 0.66em;
+
+    &.tighter {
+        margin-bottom: 0.33em;
+    }
+    &.looser {
+        margin-bottom: 1em;
+    }
+}
+
+%h5-spacing {
+    margin-bottom: 0.75em;
+}
+
+p, blockquote {
+    margin-bottom: 1.25em;
+
+    &.tighter {
+        margin-bottom: 0.65em;
+    }
+    &.looser {
+        margin-bottom: 1.85em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote {
+    &.body {
+        margin-bottom: 1.25em;
+
+        &.tighter {
+            margin-bottom: 0.65em;
+        }
+        &.looser {
+            margin-bottom: 1.85em;
+        }
+    }
+
+    &.body-alt,
+    &.caption,
+    &.caption-alt {
+        margin-bottom: 1.25em;
+
+        &.tighter {
+            margin-bottom: 0.625em;
+        }
+        &.looser {
+            margin-bottom: 1.875em;
+        }
+    }
+}
+
+//buttons
+button, .button {
+    margin-bottom: 1.25em;
+
+    &.tighter {
+        margin-bottom: 0.625em;
+    }
+    &.looser {
+        margin-bottom: 1.875em;
+    }
+}
+
+//links 
+a.isolated-link {
+    margin-bottom: 0.8em;
+
+    &.tighter {
+        margin-bottom: 0.4em;
+    }
+    &.looser {
+        margin-bottom: 1.2em;
+    }
+}
+
+//lists
+ul, ol {
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  &.tighter {
+    li {
+      margin-bottom: 0.25em;
+    }
+  }
+  &.looser {
+    li {
+      margin-bottom: 0.75em;
+    }
+  }
+}

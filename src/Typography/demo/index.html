@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width initial-scale=1" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" href="https://cdn.rawgit.com/winjs/grid/master/dist/css/mscom-grid.css">
+	    <link rel="stylesheet" href="../../../dist/picchu.css">
+        <script src="../../../dist/picchu.js"></script>
+	</head>
+
+    <style type="text/css">
+        body {
+            padding: 2em;
+        }
+        section {
+           margin-top: 2em;
+           margin-bottom: 2em;
+        }
+        .type-ramps {
+            width: 100%;
+            padding: 1em;
+            background-color: #f6f6f6;
+        }
+        table.type-ramps {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        td {
+            vertical-align: middle;
+            padding: 0.5em 1em;
+        }
+        tr:nth-child(even) td {
+            background-color: white;
+        }
+    </style>
+
+	<body>
+        <div class="ms-grid">
+
+            <h1>Responsive Typography</h1>
+
+                <section>
+                    <h2>Default behavior</h2>
+                    <p>Styles are applied to html elements by default.</p>
+
+                    <div class="type-ramps">
+                        <h1>H1 header</h1>
+                        <h2>H2 header</h2>
+                        <h3>H3 header</h3>
+                        <h4>H4 header</h4>
+                        <h5>H5 header</h5>
+                        <h6>H6 header</h6>
+                        <p>Paragraph</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Using helper classes &amp; Sass mixins</h2>
+                    <p>Attach a helper class to the html element or use the mixin in your scss styles.</p>
+
+                    <table class="type-ramps">
+                        <tr>
+                            <td>
+                                <span class="headline">headline</span>
+                            </td>
+                            <td>
+                                <span>.headline</span>
+                                <br/>
+                                <span>&#64;include font-headline;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="header">header</span>
+                            </td>
+                            <td>
+                                <span>.header</span>
+                                <br/>
+                                <span>&#64;include font-header;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="subheader">subheader</span>
+                            </td>
+                            <td>
+                                <span>.subheader</span>
+                                <br/>
+                                <span>&#64;include font-subheader;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="title">title</span>
+                            </td>
+                            <td>
+                                <span>.title</span>
+                                <br/>
+                                <span>&#64;include font-title;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="subtitle">subtitle</span>
+                            </td>
+                            <td>
+                                <span>.subtitle</span>
+                                <br/>
+                                <span>&#64;include font-subtitle;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="body">body</span>
+                            </td>
+                            <td>
+                                <span>.body</span>
+                                <br/>
+                                <span>&#64;include font-body;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="body-alt">body-alt</span>
+                            </td>
+                            <td>
+                                <span>.body-alt</span>
+                                <br/>
+                                <span>&#64;include font-body-alt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="caption">caption</span>
+                            </td>
+                            <td>
+                                <span>.caption</span>
+                                <br/>
+                                <span>&#64;include font-caption;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="caption-alt">caption-alt</span>
+                            </td>
+                            <td>
+                                <span>.caption-alt</span>
+                                <br/>
+                                <span>&#64;include font-caption-alt;</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <section>
+                    <h2>Static Type Option</h2>
+                    <p>Font sizes are set to stay at desktop size.</p>
+
+                    <div class="type-ramps static-typography">
+                        <h1>H1 header</h1>
+                        <h2>H2 header</h2>
+                        <h3>H3 header</h3>
+                        <h4>H4 header</h4>
+                        <h5>H5 header</h5>
+                        <h6>H6 header</h6>
+                        <p>Paragraph</p>
+                    </div>
+                </section>
+                
+            </div>
+
+        </div>
+	</body>
+</html>

@@ -62,6 +62,9 @@ html, button, input, select, textarea {
 body {
   margin: 0; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -90,7 +93,7 @@ b, strong {
   font-weight: bold; }
 
 blockquote {
-  margin: 1em 40px; }
+  margin: 0 20px 1.25em; }
 
 /**
  * Address styling not present in Safari 5 and Chrome.
@@ -117,7 +120,7 @@ mark {
  * Address margins set differently in IE 6/7.
  */
 p, pre {
-  margin: 1em 0; }
+  margin: 0 0 1.25em; }
 
 /**
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
@@ -176,16 +179,16 @@ sub {
  * Address margins set differently in IE 6/7.
  */
 dl, menu, ol, ul {
-  margin: 1em 0; }
+  margin: 0; }
 
 dd {
-  margin: 0 0 0 40px; }
+  margin: 0 0 0 20px; }
 
 /**
  * Address paddings set differently in IE 6/7.
  */
 menu, ol, ul {
-  padding: 0 0 0 40px; }
+  padding: 0 0 0 20px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -236,8 +239,8 @@ form {
  */
 fieldset {
   border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  margin: 0;
+  padding: 0; }
 
 /**
  * 1. Correct color not being inherited in IE 6/7/8/9.
@@ -357,6 +360,378 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.headline {
+  margin-bottom: 0.33em; }
+  .tighter.headline {
+    margin-bottom: 0.165em; }
+  .looser.headline {
+    margin-bottom: 0.5em; }
+
+h1, .h1, .header {
+  margin-bottom: 0.4em; }
+  h1.tighter, .tighter.h1, .tighter.header {
+    margin-bottom: 0.2em; }
+  h1.looser, .looser.h1, .looser.header {
+    margin-bottom: 0.6em; }
+
+h2, .h2, .subheader {
+  margin-bottom: 0.5em; }
+  h2.tighter, .tighter.h2, .tighter.subheader {
+    margin-bottom: 0.25em; }
+  h2.looser, .looser.h2, .looser.subheader {
+    margin-bottom: 0.75em; }
+
+h3, .h3, .title, button.large, .button.large, h4, .h4, .subtitle {
+  margin-bottom: 0.66em; }
+  h3.tighter, .tighter.h3, .tighter.title, button.tighter.large, .tighter.button.large, h4.tighter, .tighter.h4, .tighter.subtitle {
+    margin-bottom: 0.33em; }
+  h3.looser, .looser.h3, .looser.title, button.looser.large, .looser.button.large, h4.looser, .looser.h4, .looser.subtitle {
+    margin-bottom: 1em; }
+
+h5, .h5, h6, .h6 {
+  margin-bottom: 0.75em; }
+
+.xl-padding-vertical {
+  padding-top: 54px;
+  padding-bottom: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-padding-vertical {
+      padding-top: calc(44.5px + 1.8vw);
+      padding-bottom: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-padding-vertical {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+
+.xl-padding-top {
+  padding-top: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-padding-top {
+      padding-top: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-padding-top {
+      padding-top: 70px; } }
+
+.xl-padding-bottom {
+  padding-bottom: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-padding-bottom {
+      padding-bottom: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-padding-bottom {
+      padding-bottom: 70px; } }
+
+.xl-margin-vertical {
+  margin-top: 54px;
+  margin-bottom: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-margin-vertical {
+      margin-top: calc(44.5px + 1.8vw);
+      margin-bottom: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-margin-vertical {
+      margin-top: 70px;
+      margin-bottom: 70px; } }
+
+.xl-margin-top {
+  margin-top: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-margin-top {
+      margin-top: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-margin-top {
+      margin-top: 70px; } }
+
+.xl-margin-bottom {
+  margin-bottom: 54px; }
+  @media all and (min-width: 540px) {
+    .xl-margin-bottom {
+      margin-bottom: calc(44.5px + 1.8vw); } }
+  @media all and (min-width: 1400px) {
+    .xl-margin-bottom {
+      margin-bottom: 70px; } }
+
+.l-padding-vertical {
+  padding-top: 33px;
+  padding-bottom: 33px; }
+  @media all and (min-width: 540px) {
+    .l-padding-vertical {
+      padding-top: calc(29.5px + 0.75vw);
+      padding-bottom: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-padding-vertical {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+
+.l-padding-top {
+  padding-top: 33px; }
+  @media all and (min-width: 540px) {
+    .l-padding-top {
+      padding-top: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-padding-top {
+      padding-top: 40px; } }
+
+.l-padding-bottom {
+  padding-bottom: 33px; }
+  @media all and (min-width: 540px) {
+    .l-padding-bottom {
+      padding-bottom: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-padding-bottom {
+      padding-bottom: 40px; } }
+
+.l-margin-vertical {
+  margin-top: 33px;
+  margin-bottom: 33px; }
+  @media all and (min-width: 540px) {
+    .l-margin-vertical {
+      margin-top: calc(29.5px + 0.75vw);
+      margin-bottom: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-margin-vertical {
+      margin-top: 40px;
+      margin-bottom: 40px; } }
+
+.l-margin-top {
+  margin-top: 33px; }
+  @media all and (min-width: 540px) {
+    .l-margin-top {
+      margin-top: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-margin-top {
+      margin-top: 40px; } }
+
+.l-margin-bottom {
+  margin-bottom: 33px; }
+  @media all and (min-width: 540px) {
+    .l-margin-bottom {
+      margin-bottom: calc(29.5px + 0.75vw); } }
+  @media all and (min-width: 1400px) {
+    .l-margin-bottom {
+      margin-bottom: 40px; } }
+
+.m-padding-vertical {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  @media all and (min-width: 540px) {
+    .m-padding-vertical {
+      padding-top: calc(22px + 0.4vw);
+      padding-bottom: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-padding-vertical {
+      padding-top: 28px;
+      padding-bottom: 28px; } }
+
+.m-padding-top {
+  padding-top: 24px; }
+  @media all and (min-width: 540px) {
+    .m-padding-top {
+      padding-top: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-padding-top {
+      padding-top: 28px; } }
+
+.m-padding-bottom {
+  padding-bottom: 24px; }
+  @media all and (min-width: 540px) {
+    .m-padding-bottom {
+      padding-bottom: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-padding-bottom {
+      padding-bottom: 28px; } }
+
+.m-margin-vertical {
+  margin-top: 24px;
+  margin-bottom: 24px; }
+  @media all and (min-width: 540px) {
+    .m-margin-vertical {
+      margin-top: calc(22px + 0.4vw);
+      margin-bottom: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-margin-vertical {
+      margin-top: 28px;
+      margin-bottom: 28px; } }
+
+.m-margin-top {
+  margin-top: 24px; }
+  @media all and (min-width: 540px) {
+    .m-margin-top {
+      margin-top: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-margin-top {
+      margin-top: 28px; } }
+
+.m-margin-bottom {
+  margin-bottom: 24px; }
+  @media all and (min-width: 540px) {
+    .m-margin-bottom {
+      margin-bottom: calc(22px + 0.4vw); } }
+  @media all and (min-width: 1400px) {
+    .m-margin-bottom {
+      margin-bottom: 28px; } }
+
+.s-padding-vertical {
+  padding-top: 18px;
+  padding-bottom: 18px; }
+  @media all and (min-width: 540px) {
+    .s-padding-vertical {
+      padding-top: calc(17px + 0.2vw);
+      padding-bottom: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-padding-vertical {
+      padding-top: 20px;
+      padding-bottom: 20px; } }
+
+.s-padding-top {
+  padding-top: 18px; }
+  @media all and (min-width: 540px) {
+    .s-padding-top {
+      padding-top: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-padding-top {
+      padding-top: 20px; } }
+
+.s-padding-bottom {
+  padding-bottom: 18px; }
+  @media all and (min-width: 540px) {
+    .s-padding-bottom {
+      padding-bottom: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-padding-bottom {
+      padding-bottom: 20px; } }
+
+.s-margin-vertical {
+  margin-top: 18px;
+  margin-bottom: 18px; }
+  @media all and (min-width: 540px) {
+    .s-margin-vertical {
+      margin-top: calc(17px + 0.2vw);
+      margin-bottom: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-margin-vertical {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+
+.s-margin-top {
+  margin-top: 18px; }
+  @media all and (min-width: 540px) {
+    .s-margin-top {
+      margin-top: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-margin-top {
+      margin-top: 20px; } }
+
+.s-margin-bottom {
+  margin-bottom: 18px; }
+  @media all and (min-width: 540px) {
+    .s-margin-bottom {
+      margin-bottom: calc(17px + 0.2vw); } }
+  @media all and (min-width: 1400px) {
+    .s-margin-bottom {
+      margin-bottom: 20px; } }
+
+.xs-padding-vertical {
+  padding-top: 12px;
+  padding-bottom: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-padding-vertical {
+      padding-top: 12px;
+      padding-bottom: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-padding-vertical {
+      padding-top: 12px;
+      padding-bottom: 12px; } }
+
+.xs-padding-top {
+  padding-top: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-padding-top {
+      padding-top: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-padding-top {
+      padding-top: 12px; } }
+
+.xs-padding-bottom {
+  padding-bottom: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-padding-bottom {
+      padding-bottom: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-padding-bottom {
+      padding-bottom: 12px; } }
+
+.xs-margin-vertical {
+  margin-top: 12px;
+  margin-bottom: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-margin-vertical {
+      margin-top: 12px;
+      margin-bottom: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-margin-vertical {
+      margin-top: 12px;
+      margin-bottom: 12px; } }
+
+.xs-margin-top {
+  margin-top: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-margin-top {
+      margin-top: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-margin-top {
+      margin-top: 12px; } }
+
+.xs-margin-bottom {
+  margin-bottom: 12px; }
+  @media all and (min-width: 540px) {
+    .xs-margin-bottom {
+      margin-bottom: 12px; } }
+  @media all and (min-width: 1400px) {
+    .xs-margin-bottom {
+      margin-bottom: 12px; } }
+
+p, blockquote {
+  margin-bottom: 1.25em; }
+  p.tighter, blockquote.tighter {
+    margin-bottom: 0.65em; }
+  p.looser, blockquote.looser {
+    margin-bottom: 1.85em; }
+
+h1.body, h2.body, h3.body, h4.body, h5.body, h6.body, p.body, blockquote.body {
+  margin-bottom: 1.25em; }
+  h1.body.tighter, h2.body.tighter, h3.body.tighter, h4.body.tighter, h5.body.tighter, h6.body.tighter, p.body.tighter, blockquote.body.tighter {
+    margin-bottom: 0.65em; }
+  h1.body.looser, h2.body.looser, h3.body.looser, h4.body.looser, h5.body.looser, h6.body.looser, p.body.looser, blockquote.body.looser {
+    margin-bottom: 1.85em; }
+h1.body-alt, h1.caption, h1.caption-alt, h2.body-alt, h2.caption, h2.caption-alt, h3.body-alt, h3.caption, h3.caption-alt, h4.body-alt, h4.caption, h4.caption-alt, h5.body-alt, h5.caption, h5.caption-alt, h6.body-alt, h6.caption, h6.caption-alt, p.body-alt, p.caption, p.caption-alt, blockquote.body-alt, blockquote.caption, blockquote.caption-alt {
+  margin-bottom: 1.25em; }
+  h1.body-alt.tighter, h1.caption.tighter, h1.caption-alt.tighter, h2.body-alt.tighter, h2.caption.tighter, h2.caption-alt.tighter, h3.body-alt.tighter, h3.caption.tighter, h3.caption-alt.tighter, h4.body-alt.tighter, h4.caption.tighter, h4.caption-alt.tighter, h5.body-alt.tighter, h5.caption.tighter, h5.caption-alt.tighter, h6.body-alt.tighter, h6.caption.tighter, h6.caption-alt.tighter, p.body-alt.tighter, p.caption.tighter, p.caption-alt.tighter, blockquote.body-alt.tighter, blockquote.caption.tighter, blockquote.caption-alt.tighter {
+    margin-bottom: 0.625em; }
+  h1.body-alt.looser, h1.caption.looser, h1.caption-alt.looser, h2.body-alt.looser, h2.caption.looser, h2.caption-alt.looser, h3.body-alt.looser, h3.caption.looser, h3.caption-alt.looser, h4.body-alt.looser, h4.caption.looser, h4.caption-alt.looser, h5.body-alt.looser, h5.caption.looser, h5.caption-alt.looser, h6.body-alt.looser, h6.caption.looser, h6.caption-alt.looser, p.body-alt.looser, p.caption.looser, p.caption-alt.looser, blockquote.body-alt.looser, blockquote.caption.looser, blockquote.caption-alt.looser {
+    margin-bottom: 1.875em; }
+
+button, .button {
+  margin-bottom: 1.25em; }
+  button.tighter, .button.tighter {
+    margin-bottom: 0.625em; }
+  button.looser, .button.looser {
+    margin-bottom: 1.875em; }
+
+a.isolated-link {
+  margin-bottom: 0.8em; }
+  a.isolated-link.tighter {
+    margin-bottom: 0.4em; }
+  a.isolated-link.looser {
+    margin-bottom: 1.2em; }
+
+ul li, ol li {
+  margin-bottom: 0.5em; }
+ul.tighter li, ol.tighter li {
+  margin-bottom: 0.25em; }
+ul.looser li, ol.looser li {
+  margin-bottom: 0.75em; }
 
 .black-bgc {
   background-color: #000000;
@@ -1917,13 +2292,25 @@ h4, .h4, .subtitle {
 .static-typography h4, .static-typography .h4, .static-typography .subtitle {
   font-size: 20px; }
 
-body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+h5, .h5, h6, .h6 {
   font-size: 16px; }
   @media all and (min-width: 540px) {
-    body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+    h5, .h5, h6, .h6 {
       font-size: calc(14.9px + 0.22vw); } }
   @media all and (min-width: 1400px) {
-    body, p, input, div, span, li, select, button, h5, .h5, h6, .h6, .body {
+    h5, .h5, h6, .h6 {
+      font-size: 18px; } }
+
+.static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6 {
+  font-size: 18px; }
+
+body, p, blockquote, input, div, span, li, select, button, .body {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    body, p, blockquote, input, div, span, li, select, button, .body {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    body, p, blockquote, input, div, span, li, select, button, .body {
       font-size: 18px; } }
 
 .static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
@@ -1986,11 +2373,10 @@ body {
   font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
   line-height: 1.5; }
 
-p, input, div, span, li, select, button {
+p, blockquote, input, div, span, li, select, button {
   font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif; }
 
 p {
-  margin: 0 0 1em 0;
   line-height: 1.5; }
 
 a {
