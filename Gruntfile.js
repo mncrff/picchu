@@ -7,7 +7,6 @@ module.exports = function (grunt) {
     // assets to package
     var assetLists = {
         dist: [
-            'bower_components/modernizr/modernizr.js',
             'src/FormElements/formElements.js'
         ]
     };

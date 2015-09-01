@@ -6,7 +6,10 @@
     "Microsoft.com kyle.zinter@microsoft.com"
   ],
   "description": "An HTML, CSS, and JavaScript framework for developing stunning experiences on the web.",
-  "main": "src/picchu.scss",
+  "main": [
+    "src/picchu.scss",
+    "dist/picchu.js"
+  ],
   "keywords": [
     "html",
     "css",
@@ -33,6 +36,7 @@
     "README.md"
   ],
   "dependencies": {
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "jquery-1.11.1": "~2.1.4"
   }
 }
