@@ -36,8 +36,8 @@ label.radio {
 
     input:focus ~ .custom-control,
     input:active ~ .custom-control {
-        border-color: $blue;
-        box-shadow: 0 0 0 1px $blue;
+        border-color: $theme-form-element-color;
+        box-shadow: 0 0 0 1px $theme-form-element-color;
     }
 
     input[disabled] ~ .custom-control,
@@ -88,8 +88,8 @@ label.radio {
     }
 
     input:checked:focus ~ .custom-control {
-        border-color: $blue;
-        box-shadow: 0 0 0 1px $blue, inset 0 0 0 4px $white;
+        border-color: $theme-form-element-color;
+        box-shadow: 0 0 0 1px $theme-form-element-color, inset 0 0 0 4px $white;
     }
 
     input[disabled]:checked ~ .custom-control,
@@ -126,8 +126,8 @@ label.toggle {
     }
 
     input:checked ~ .custom-control {
-        background-color: $blue;
-        border-color: $blue;
+        background-color: $theme-form-element-color;
+        border-color: $theme-form-element-color;
 
         &:before {
             background-color: $white;
@@ -137,8 +137,8 @@ label.toggle {
 
     input:focus ~ .custom-control,
     input:active ~ .custom-control {
-        border-color: $blue;
-        box-shadow: 0 0 0 1px $blue;
+        border-color: $theme-form-element-color;
+        box-shadow: 0 0 0 1px $theme-form-element-color;
     }
 
     input[disabled] ~ .custom-control {

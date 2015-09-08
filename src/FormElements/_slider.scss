@@ -1,5 +1,5 @@
 input[type=range].ms-slider {
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   margin: 3px 0;
 }
@@ -35,7 +35,7 @@ input[type=range].ms-slider::-webkit-slider-thumb {
   border-radius: 50px;
   background: #0078d7;
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   margin-top: -3px;
 }
 

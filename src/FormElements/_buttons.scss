@@ -7,15 +7,15 @@ button, .button {
 	transition: background-color 0.5s;
 	line-height: 1.5;
 
-	background-color: $blue;
-	color: $white;
+	background-color: $theme-button-color;
+	color: contrasting-color($theme-button-color);
 
 	&:hover, &:focus {
-		background-color: shade($blue, 20%);
+		background-color: shade($theme-button-color, 20%);
 		transition: background-color 0s;
 	}
 	&:active {
-		background-color: shade($blue, 40%);
+		background-color: shade($theme-button-color, 40%);
 		transition: background-color 0s;
 	}
 
@@ -76,7 +76,7 @@ button, .button {
 	}
 
 	&.white-bgc {
-		color: $blue;
+		color: $theme-button-color;
 
 		&:hover, &:focus {
 			background-color: tint($gray, 80%);

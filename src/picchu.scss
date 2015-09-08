@@ -4,6 +4,12 @@
 //              #VARIABLES
 //------------------------------------
 
+//Theme options
+//Default brand color pallette for UI elements.
+$theme-primary-color: $blue;
+$theme-button-color: $theme-primary-color;
+$theme-form-element-color: $theme-primary-color;
+
 //Grid breakpoints - aligning to the winjs grid breakpoints, used for responsive aspects of 
 //this framework, can be changed to align to your breakpoints if different
 $vp1: 320px;
