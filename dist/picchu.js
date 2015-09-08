@@ -1,3 +1,7 @@
+//***************************
+//  FORM ELEMENTS
+//***************************
+
 // use feature detection
 if (typeof Modernizr !== 'undefined') {
 
@@ -29,9 +33,9 @@ if (typeof document.documentMode !== "undefined") {
 
 (function($) {
     // declare var in global scope
-    window.Picchu = {};
+    window.PICCHU = {};
 
-    Picchu.formElements = {
+    PICCHU.formElements = {
         init: function() {
             this.setDisabled();
         },
@@ -51,15 +55,5 @@ if (typeof document.documentMode !== "undefined") {
 })(jQuery);
 
 $(function() {
-    Picchu.formElements.init();
-    // // add disabled class to label elements
-    // var lbList = document.getElementsByTagName('label');
-
-    // for (i = 0; i < lbList.length; i++) {
-    //     var l = lbList[i],
-    //         d = document.getElementById(l.htmlFor) ? document.getElementById(l.htmlFor) : document.getElementsByName(l.htmlFor)[0];
-    //     if (d && d.disabled == true) {
-    //         $(l).addClass("disabled");
-    //     }
-    // }
+    PICCHU.formElements.init();
 });
