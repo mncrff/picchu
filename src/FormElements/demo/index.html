@@ -21,6 +21,11 @@
             margin-top: 2em;
             padding: 2em;
         }
+
+        .button + a,
+        button + a {
+            margin-left: 20px;
+        }
     </style>
 
 	<body>
@@ -72,7 +77,7 @@
                     <p>
                         <label for="fruit">Select an Option</label>
                         </br>
-                        <span class="dropdown">
+                        <span class="ms-dropdown">
                             <select name="fruit">
                                 <option value="value1">Apples</option> 
                                 <option value="value2">Oranges</option>
@@ -85,7 +90,7 @@
                     <p>
                         <label for="fruitdisabled">Disabled Select Box</label>
                         </br>
-                        <span class="dropdown disabled">
+                        <span class="ms-dropdown disabled">
                             <select name="fruitdisabled" disabled>
                                 <option value="value1">Apples</option> 
                                 <option value="value2">Oranges</option>
@@ -102,25 +107,25 @@
                     <h2>Checkboxes</h2>
 
                     <p>
-                        <label class="checkbox" for="cb1">
+                        <label class="ms-checkbox" for="cb1">
                             <input type="checkbox" id="cb1">
                             <span class="custom-control"></span>
                             <span>Check this custom checkbox</span>
                         </label>
                         <br/>
-                        <label class="checkbox" for="cb2">
+                        <label class="ms-checkbox" for="cb2">
                             <input type="checkbox" checked="checked" id="cb2">
                             <span class="custom-control"></span>
                             <span>Check this custom checkbox</span>
                         </label>
                         <br/>
-                        <label class="checkbox" for="cb3">
+                        <label class="ms-checkbox" for="cb3">
                             <input type="checkbox" disabled="disabled" id="cb3">
                             <span class="custom-control"></span>
                             <span>You can't check this</span>
                         </label>
                         <br/>
-                        <label class="checkbox" for="cb4">
+                        <label class="ms-checkbox" for="cb4">
                             <input type="checkbox" disabled="disabled" checked="checked" id="cb4">
                             <span class="custom-control"></span>
                             <span>You can't uncheck this</span>
@@ -133,25 +138,25 @@
                     <h2>Toggles</h2>
 
                     <p>
-                        <label class="toggle" for="tg1">
+                        <label class="ms-toggle" for="tg1">
                             <input type="checkbox" id="tg1">
                             <span class="custom-control"></span>
                             <span>Toggle this toggle yo.</span>
                         </label>
                         <br/>
-                        <label class="toggle" for="tg2">
+                        <label class="ms-toggle" for="tg2">
                             <input type="checkbox" checked="checked" id="tg2">
                             <span class="custom-control"></span>
                             <span>Toggle this toggle yo.</span>
                         </label>
                         <br/>
-                        <label class="toggle" for="tg3">
+                        <label class="ms-toggle" for="tg3">
                             <input type="checkbox" disabled="disabled" id="tg3">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
                         <br/>
-                        <label class="toggle" for="tg4">
+                        <label class="ms-toggle" for="tg4">
                             <input type="checkbox" disabled="disabled" checked="checked" id="tg4">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
@@ -164,13 +169,13 @@
                     <h2>Radio Controls</h2>
 
                     <p>
-                        <label class="radio" for"r1">
+                        <label class="ms-radio" for"r1">
                             <input id="r1" name="radio" type="radio" checked="checked">
                             <span class="custom-control"></span>
                             <span>Toggle this custom radio</span>
                         </label>
                         <br/>
-                        <label class="radio" for="r2">
+                        <label class="ms-radio" for="r2">
                             <input id="r2" name="radio" type="radio">
                             <span class="custom-control"></span>
                             <span>Or toggle this other custom radio</span>
@@ -178,13 +183,13 @@
                     </p>
 
                     <p>
-                        <label class="radio" for="r3">
+                        <label class="ms-radio" for="r3">
                             <input id="r3" name="radio2" type="radio" disabled="disabled">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>
                         </label>
                         <br/>
-                        <label class="radio" for="r4">
+                        <label class="ms-radio" for="r4">
                             <input id="r4" name="radio2" type="radio" disabled="disabled" checked="checked">
                             <span class="custom-control"></span>
                             <span>You can't toggle this</span>

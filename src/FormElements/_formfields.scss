@@ -50,7 +50,7 @@ input[type="password"] {
     }
 }
 
-.dropdown {
+.#{$picchu-prefix}dropdown {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -108,7 +108,7 @@ input[type="password"] {
 
 html.ie9,
 html.ie8 {
-    .dropdown {
+    .#{$picchu-prefix}dropdown {
         select {
             padding-right: 0.55em;
         }

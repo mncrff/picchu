@@ -1,4 +1,4 @@
-button, .button {
+button, .button, .#{$picchu-prefix}button {
 	border: none;
 	box-sizing: border-box;
 	outline: none;
@@ -50,11 +50,6 @@ button, .button {
 	&.small {
 		@include font-body-alt;
 		line-height: 1.5;
-	}
-
-	&+ a {
-		margin-left: 20px;
-		font-family: $semibold;
 	}
 
 	@each $pair in $color-list {
