@@ -4,6 +4,14 @@
 //              #VARIABLES
 //------------------------------------
 
+$picchu-prefix: "ms-" !default;
+
+//Theme options
+//Default color pallette
+$theme-primary-color: #0078D7; //blue
+$theme-button-color: $theme-primary-color;
+$theme-form-element-color: $theme-primary-color;
+
 //Grid breakpoints - aligning to the winjs grid breakpoints, used for responsive aspects of 
 //this framework, can be changed to align to your breakpoints if different
 $vp1: 320px;
@@ -24,6 +32,8 @@ $vp5: 1400px;
 @import "Color/colors";
 @import "Typography/typography";
 @import "FormElements/buttons";
+@import "FormElements/formfields";
+@import "FormElements/checkboxes";
 @import "FormElements/slider";
 @import "Helpers/helpers";
 

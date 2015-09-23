@@ -27,9 +27,10 @@ $lightteal: #00B294;
 $teal: #008272;
 $darkteal: #004B50;
 $gray: #767676;
+$darkgray: #2F2F2F;
 $white: #FFFFFF;
 $black: #000000;
-$text-color: #2F2F2F;
+$text-color: $darkgray;
 
 $color-list: ("lightblue", $lightblue), ("blue", $blue), ("midblue", $midblue), ("darkblue", $darkblue),
 ("lightpurple", $lightpurple), ("purple", $purple), ("darkpurple", $darkpurple), ("lightmagenta", $lightmagenta),
