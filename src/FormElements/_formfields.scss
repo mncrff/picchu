@@ -33,8 +33,8 @@ input[type="password"] {
 
     &:focus,
     &:active {
-        border-color: $blue;
-        box-shadow: 0 0 0 1px $blue;
+        border-color: $theme-form-element-color;
+        box-shadow: 0 0 0 1px $theme-form-element-color;
         outline: none;
     }
 
@@ -50,7 +50,7 @@ input[type="password"] {
     }
 }
 
-.dropdown {
+.#{$picchu-prefix}dropdown {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -72,8 +72,8 @@ input[type="password"] {
 
     select:focus,
     select:active {
-        border-color: $blue;
-        box-shadow: 0 0 0 1px $blue;
+        border-color: $theme-form-element-color;
+        box-shadow: 0 0 0 1px $theme-form-element-color;
         outline: none;
     }
 
@@ -108,7 +108,7 @@ input[type="password"] {
 
 html.ie9,
 html.ie8 {
-    .dropdown {
+    .#{$picchu-prefix}dropdown {
         select {
             padding-right: 0.55em;
         }

@@ -1,20 +1,6 @@
-var Picchu = {
-
-    addClass: function (el, kls) {
-        if (!el.className.match(new RegExp("\\b\\s\?"+kls+"\\b"),'')) {
-            return el.className = el.className+" "+kls;
-        }
-    },
-
-    removeClass: function(el, kls) {
-        el.className = el.className.replace(new RegExp("\\b\\s\?"+kls+"\\b"),'');
-    },
-
-    hasClass: function(el, kls) {
-        return (' ' + el.className + ' ').indexOf(' ' + kls + ' ') > -1;
-    }
-
-}
+//***************************
+//  FORM ELEMENTS
+//***************************
 
 // use feature detection
 if (typeof Modernizr !== 'undefined') {
@@ -42,46 +28,32 @@ if (typeof Modernizr !== 'undefined') {
 
 // detect version of IE for special circumstances where feature detection is useless
 if (typeof document.documentMode !== "undefined") {
-    var htmlTag = document.getElementsByTagName('html')[0];
-    Picchu.addClass(htmlTag, "ie"+document.documentMode);
+    $('html').addClass("ie"+document.documentMode);
 }
 
-window.onload = function(){
-    // add disabled class to label elements
-    var lbList = document.getElementsByTagName('label');
+(function($) {
+    // declare var in global scope
+    window.PICCHU = {};
 
-    for (i = 0; i < lbList.length; i++) {
-        var l = lbList[i],
-            d = document.getElementById(l.htmlFor) ? document.getElementById(l.htmlFor) : document.getElementsByName(l.htmlFor)[0];
-        if (d && d.disabled == true) {
-            Picchu.addClass(l, "disabled");
+    PICCHU.formElements = {
+        init: function() {
+            this.setDisabled();
+        },
+        setDisabled: function() {
+            // add disabled class to label elements
+            var lbList = document.getElementsByTagName('label');
+            for (i = 0; i < lbList.length; i++) {
+                var l = lbList[i],
+                    d = document.getElementById(l.htmlFor) ? document.getElementById(l.htmlFor) : document.getElementsByName(l.htmlFor)[0];
+                if (d && d.disabled == true) {
+                    $(l).addClass("disabled");
+                }
+            }
         }
     }
+ 
+})(jQuery);
 
-    // add checked class to checkbox label elements
-    var cbList = document.querySelectorAll('label input[type=checkbox]');
-
-    for (i = 0; i < cbList.length; i++) {
-        assignCheckboxClasses(cbList[i]);
-
-        cbList[i].addEventListener('click', function(){
-            updateCheckbox(this);
-        });
-    }
-
-    function assignCheckboxClasses(cb) {
-        if (cb.checked) {
-            Picchu.addClass(cb.parentNode, "checked");
-        }
-    }
-
-    function updateCheckbox(cb) {
-        var lb = cb.parentNode;
-
-        if (Picchu.hasClass(lb, "checked")) {
-            Picchu.removeClass(lb, "checked");
-        } else {
-            Picchu.addClass(lb, "checked");
-        }
-    }
-}
+$(function() {
+    PICCHU.formElements.init();
+});
