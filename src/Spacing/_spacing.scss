@@ -1,40 +1,42 @@
 $spacing-list: (
-  xlarge: (
-    desktop: 70px,
-    mobile: 54px,
+  sp6: (
+    large: 70px,
+    small: 54px,
     flex: calc(44.5px + 1.8vw)
   ),
-  large: (
-    desktop: 40px,
-    mobile: 33px,
+  sp5: (
+    large: 60px,
+    small: 40px,
+    flex: calc(37px + 1.25vw)
+  ),
+  sp4: (
+    large: 40px,
+    small: 33px,
     flex: calc(29.5px + 0.75vw)
   ),
-  medium: (
-    desktop: 28px,
-    mobile: 24px,
+  sp3: (
+    large: 28px,
+    small: 24px,
     flex: calc(22px + 0.4vw)
   ),
-  small: (
-    desktop: 20px,
-    mobile: 18px,
+  sp2: (
+    large: 20px,
+    small: 18px,
     flex: calc(17px + 0.2vw)
   ),
-  xsmall: (
-    desktop: 12px,
-    mobile: 12px,
+  sp1: (
+    large: 12px,
+    small: 12px,
     flex: 12px
   )
 );
 
-$spacing-prefix-list: (xlarge, xl), (large, l), (medium, m), (small, s), (xsmall, xs);
-
-@function purge($list) {
+@function str-list($list) {
   $result: ();
   
   @each $item in $list {
-    @if $item != null 
-    and $item != false 
-    and $item != "" {
+    @if $item != ""
+    and type-of($item) == string {
       $result: append($result, $item);
     }
   }
@@ -43,96 +45,313 @@ $spacing-prefix-list: (xlarge, xl), (large, l), (medium, m), (small, s), (xsmall
 }
 
 @mixin vertical-spacing($property, $vals...){
+    $last: nth($vals, length($vals));
 
-    @if not nth($vals, length($vals)) {
-        //last value passed is false, for no responsive values
-        @include vertical-properties($property, purge($vals), desktop);
+    @if $last == "small" or $last == "flex" or $last == "large" or $last == "static" {
+        //remove last value passed in list, returns a new list
+        $v: str-list(set-nth($vals, length($vals), ""));
+
+        @if $last == "static" {
+            //if a "static" option is passed in as the last value, use large size without responsive media queries
+            @include vertical-properties($property, $v, large);
+        } @else {
+            //if a size option is passed in as the last value, use size without responsive media queries
+            @include vertical-properties($property, $v, $last);
+        }
     } @else {
         //default to responsive values
-        @include vertical-properties($property, purge($vals), mobile);
+        @include vertical-properties($property, str-list($vals), small);
 
         @media all and (min-width: $vp2) {
-           @include vertical-properties($property, purge($vals), flex);
+           @include vertical-properties($property, str-list($vals), flex);
         }
         @media all and (min-width: $vp5) {
-            @include vertical-properties($property, purge($vals), desktop);
+            @include vertical-properties($property, str-list($vals), large);
         }
     }
 }
 
-@mixin vertical-properties($property, $vals, $option: desktop){
+@mixin vertical-properties($property, $vals, $prop_val){
 
     $i: str-index($property, "-");
 
     @if $i != null {
         $dir: str-slice($property, str-index($property, "-") + 1);
         @if $dir == "top" or $dir == "bottom" {
-            #{$property}: map-get(map-get($spacing-list, nth($vals, 1)), $option);
+            #{$property}: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
         }
     } @else {
         @if length($vals) == 1 {
-            $val: map-get(map-get($spacing-list, nth($vals, 1)), $option);
+            $val: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
             #{$property}-top: $val;
             #{$property}-bottom: $val;
         } @else if length($vals) == 2 {
-            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $option);
-            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 2)), $option);
+            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 2)), $prop_val);
         }
     }
 }
 
 //helper classes for section/container vertical spacing
-@each $pair in $spacing-prefix-list {
-    .#{nth($pair, 2)}-padding-vertical {
-        @include vertical-spacing(padding, nth($pair, 1));
+@each $val in $spacing-list {
+    .padding-vertical-#{nth($val, 1)} {
+        @include vertical-spacing(padding, nth($val, 1));
     }
-    .#{nth($pair, 2)}-padding-top {
-        @include vertical-spacing(padding-top, nth($pair, 1));
+    .padding-top-#{nth($val, 1)} {
+        @include vertical-spacing(padding-top, nth($val, 1));
     }
-    .#{nth($pair, 2)}-padding-bottom {
-        @include vertical-spacing(padding-bottom, nth($pair, 1));
+    .padding-bottom-#{nth($val, 1)} {
+        @include vertical-spacing(padding-bottom, nth($val, 1));
     }
-    .#{nth($pair, 2)}-margin-vertical {
-        @include vertical-spacing(margin, nth($pair, 1));
+    .margin-vertical-#{nth($val, 1)} {
+        @include vertical-spacing(margin, nth($val, 1));
     }
-    .#{nth($pair, 2)}-margin-top {
-        @include vertical-spacing(margin-top, nth($pair, 1));
+    .margin-top-#{nth($val, 1)} {
+        @include vertical-spacing(margin-top, nth($val, 1));
     }
-    .#{nth($pair, 2)}-margin-bottom {
-        @include vertical-spacing(margin-bottom, nth($pair, 1));
+    .margin-bottom-#{nth($val, 1)} {
+        @include vertical-spacing(margin-bottom, nth($val, 1));
+    }
+}
+.no-padding-vertical {
+    @extend .no-padding-top;
+    @extend .no-padding-bottom;
+}
+.no-margin-vertical {
+    @extend .no-margin-top;
+    @extend .no-margin-bottom;
+}
+
+@media screen and (min-width: $vp1) {
+    @each $val in $spacing-list {
+        .xs-padding-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(padding, nth($val, 1), small);
+        }
+        .xs-padding-top-#{nth($val, 1)} {
+            @include vertical-spacing(padding-top, nth($val, 1), small);
+        }
+        .xs-padding-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(padding-bottom, nth($val, 1), small);
+        }
+        .xs-margin-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(margin, nth($val, 1), small);
+        }
+        .xs-margin-top-#{nth($val, 1)} {
+            @include vertical-spacing(margin-top, nth($val, 1), small);
+        }
+        .xs-margin-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(margin-bottom, nth($val, 1), small);
+        }
+    }
+    .xs-no-padding-vertical,
+    .xs-no-padding-top {
+        padding-top: 0;
+    }
+    .xs-no-padding-vertical,
+    .xs-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    .xs-no-margin-vertical,
+    .xs-no-margin-top {
+        margin-top: 0;
+    }
+    .xs-no-margin-vertical,
+    .xs-no-margin-bottom {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: $vp2) {
+    @each $val in $spacing-list {
+        .s-padding-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(padding, nth($val, 1), flex);
+        }
+        .s-padding-top-#{nth($val, 1)} {
+            @include vertical-spacing(padding-top, nth($val, 1), flex);
+        }
+        .s-padding-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(padding-bottom, nth($val, 1), flex);
+        }
+        .s-margin-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(margin, nth($val, 1), flex);
+        }
+        .s-margin-top-#{nth($val, 1)} {
+            @include vertical-spacing(margin-top, nth($val, 1), flex);
+        }
+        .s-margin-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(margin-bottom, nth($val, 1), flex);
+        }
+    }
+    .s-no-padding-vertical,
+    .s-no-padding-top {
+        padding-top: 0;
+    }
+    .s-no-padding-vertical,
+    .s-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    .s-no-margin-vertical,
+    .s-no-margin-top {
+        margin-top: 0;
+    }
+    .s-no-margin-vertical,
+    .s-no-margin-bottom {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: $vp3) {
+    @each $val in $spacing-list {
+        .m-padding-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(padding, nth($val, 1), flex);
+        }
+        .m-padding-top-#{nth($val, 1)} {
+            @include vertical-spacing(padding-top, nth($val, 1), flex);
+        }
+        .m-padding-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(padding-bottom, nth($val, 1), flex);
+        }
+        .m-margin-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(margin, nth($val, 1), flex);
+        }
+        .m-margin-top-#{nth($val, 1)} {
+            @include vertical-spacing(margin-top, nth($val, 1), flex);
+        }
+        .m-margin-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(margin-bottom, nth($val, 1), flex);
+        }
+    }
+    .m-no-padding-vertical,
+    .m-no-padding-top {
+        padding-top: 0;
+    }
+    .m-no-padding-vertical,
+    .m-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    .m-no-margin-vertical,
+    .m-no-margin-top {
+        margin-top: 0;
+    }
+    .m-no-margin-vertical,
+    .m-no-margin-bottom {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: $vp4) {
+    @each $val in $spacing-list {
+        .l-padding-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(padding, nth($val, 1), flex);
+        }
+        .l-padding-top-#{nth($val, 1)} {
+            @include vertical-spacing(padding-top, nth($val, 1), flex);
+        }
+        .l-padding-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(padding-bottom, nth($val, 1), flex);
+        }
+        .l-margin-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(margin, nth($val, 1), flex);
+        }
+        .l-margin-top-#{nth($val, 1)} {
+            @include vertical-spacing(margin-top, nth($val, 1), flex);
+        }
+        .l-margin-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(margin-bottom, nth($val, 1), flex);
+        }
+    }
+    .l-no-padding-vertical,
+    .l-no-padding-top {
+        padding-top: 0;
+    }
+    .l-no-padding-vertical,
+    .l-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    .l-no-margin-vertical,
+    .l-no-margin-top {
+        margin-top: 0;
+    }
+    .l-no-margin-vertical,
+    .l-no-margin-bottom {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: $vp5) {
+    @each $val in $spacing-list {
+        .xl-padding-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(padding, nth($val, 1), large);
+        }
+        .xl-padding-top-#{nth($val, 1)} {
+            @include vertical-spacing(padding-top, nth($val, 1), large);
+        }
+        .xl-padding-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(padding-bottom, nth($val, 1), large);
+        }
+        .xl-margin-vertical-#{nth($val, 1)} {
+            @include vertical-spacing(margin, nth($val, 1), large);
+        }
+        .xl-margin-top-#{nth($val, 1)} {
+            @include vertical-spacing(margin-top, nth($val, 1), large);
+        }
+        .xl-margin-bottom-#{nth($val, 1)} {
+            @include vertical-spacing(margin-bottom, nth($val, 1), large);
+        }
+    }
+    .xl-no-padding-vertical,
+    .xl-no-padding-top {
+        padding-top: 0;
+    }
+    .xl-no-padding-vertical,
+    .xl-no-padding-bottom {
+        padding-bottom: 0;
+    }
+    .xl-no-margin-vertical,
+    .xl-no-margin-top {
+        margin-top: 0;
+    }
+    .xl-no-margin-vertical,
+    .xl-no-margin-bottom {
+        margin-bottom: 0;
     }
 }
 
 %headline-spacing {
     margin-bottom: 0.33em;
 
-    &.tighter {
+    &.tight {
       margin-bottom: 0.165em;
     }
-    &.looser {
+    &.loose {
       margin-bottom: 0.5em;
+    }
+    &.xloose {
+      margin-bottom: 0.66em;
     }
 }
 
 %h1-spacing {
     margin-bottom: 0.4em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.2em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 0.6em;
+    }
+    &.xloose {
+        margin-bottom: 0.8em;
     }
 }
 
 %h2-spacing {
     margin-bottom: 0.5em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.25em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 0.75em;
+    }
+    &.xloose {
+        margin-bottom: 1em;
     }
 }
 
@@ -140,26 +359,42 @@ $spacing-prefix-list: (xlarge, xl), (large, l), (medium, m), (small, s), (xsmall
 %h4-spacing {
     margin-bottom: 0.66em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.33em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 1em;
+    }
+    &.xloose {
+        margin-bottom: 1.32em;
     }
 }
 
 %h5-spacing {
     margin-bottom: 0.75em;
+
+    &.tight {
+        margin-bottom: 0.37em;
+    }
+    &.loose {
+        margin-bottom: 1.13em;
+    }
+    &.xloose {
+        margin-bottom: 1.5em;
+    }
 }
 
 p, blockquote {
     margin-bottom: 1.25em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.65em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 1.85em;
+    }
+    &.xloose {
+        margin-bottom: 2.5em;
     }
 }
 
@@ -167,11 +402,14 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
     &.body {
         margin-bottom: 1.25em;
 
-        &.tighter {
+        &.tight {
             margin-bottom: 0.65em;
         }
-        &.looser {
+        &.loose {
             margin-bottom: 1.85em;
+        }
+        &.xloose {
+            margin-bottom: 2.5em;
         }
     }
 
@@ -180,11 +418,14 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
     &.caption-alt {
         margin-bottom: 1.25em;
 
-        &.tighter {
+        &.tight {
             margin-bottom: 0.625em;
         }
-        &.looser {
+        &.loose {
             margin-bottom: 1.875em;
+        }
+        &.xloose {
+            margin-bottom: 2.5em;
         }
     }
 }
@@ -193,11 +434,14 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
 button, .button {
     margin-bottom: 1.25em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.625em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 1.875em;
+    }
+    &.xloose {
+        margin-bottom: 2.5em;
     }
 }
 
@@ -205,11 +449,14 @@ button, .button {
 a.isolated-link {
     margin-bottom: 0.8em;
 
-    &.tighter {
+    &.tight {
         margin-bottom: 0.4em;
     }
-    &.looser {
+    &.loose {
         margin-bottom: 1.2em;
+    }
+    &.loose {
+        margin-bottom: 1.6em;
     }
 }
 
@@ -220,14 +467,19 @@ ul, ol {
     margin-bottom: 0.5em;
   }
 
-  &.tighter {
+  &.tight {
     li {
       margin-bottom: 0.25em;
     }
   }
-  &.looser {
+  &.loose {
     li {
       margin-bottom: 0.75em;
+    }
+  }
+  &.xloose {
+    li {
+      margin-bottom: 1em;
     }
   }
 }
