@@ -92,6 +92,10 @@ body {
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -131,7 +135,7 @@ strong {
 }
 
 blockquote {
-    margin: 1em 40px;
+    margin: 0 20px 1.25em;
 }
 
 /**
@@ -168,7 +172,7 @@ mark {
 
 p,
 pre {
-    margin: 1em 0;
+    margin: 0 0 1.25em;
 }
 
 /**
@@ -252,11 +256,11 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+    margin: 0;
 }
 
 dd {
-    margin: 0 0 0 40px;
+    margin: 0 0 0 20px;
 }
 
 /**
@@ -266,7 +270,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 20px;
 }
 
 /**
@@ -331,8 +335,8 @@ form {
 
 fieldset {
     border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    margin: 0;
+    padding: 0;
 }
 
 /**

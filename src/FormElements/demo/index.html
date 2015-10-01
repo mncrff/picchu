@@ -14,9 +14,6 @@
         body {
             padding: 2em;
         }
-        section {
-            margin-bottom: 4em;
-        }
         .color-bg-example {
             margin-top: 2em;
             padding: 2em;
@@ -33,10 +30,10 @@
 
             <h1>Form Elements</h1>
 
-            <p>Currently does not work in IE8 due to lack of support for pseudo selectors like :checked and :disabled.</p>
+            <p>Due to lack of support for pseudo selectors like :checked and :disabled in IE8, custom checkboxes and toggles fallback to browser defaults.</p>
 
-            <div class="ms-row">
-                <section class="m-col-1-3">
+            <div class="ms-row padding-top-sp4">
+                <section class="m-col-1-3 margin-bottom-sp5">
                     <h2>Form Fields</h2>
 
                     <p>
@@ -60,7 +57,7 @@
                         <input type="url" name="urlfield1" placeholder="http://" />
                     </p>
                     <p>
-                        <label for="numberfield1">Url Field</label>
+                        <label for="numberfield1">Number Field</label>
                         <br/>
                         <input type="number" name="numberfield1" placeholder="0" />
                     </p>
@@ -71,7 +68,7 @@
                     </p>
                 </section>
 
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 margin-bottom-sp5">
                     <h2>Select Boxes</h2>
 
                     <p>
@@ -103,7 +100,7 @@
             </div>
 
             <div class="ms-row">
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 margin-bottom-sp5">
                     <h2>Checkboxes</h2>
 
                     <p>
@@ -134,7 +131,7 @@
 
                 </section>
 
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 margin-bottom-sp5">
                     <h2>Toggles</h2>
 
                     <p>
@@ -165,7 +162,7 @@
 
                 </section>
 
-                <section class="m-col-1-3">
+                <section class="m-col-1-3 margin-bottom-sp5">
                     <h2>Radio Controls</h2>
 
                     <p>
@@ -199,7 +196,15 @@
                 </section>
             </div>
 
-            <section>
+            <section class="margin-bottom-sp5">
+                <h2>Slider</h2>
+
+                <p>
+                    <input class="ms-slider" type="range" min="0" max="100">
+                </p>
+            </section>
+
+            <section class="margin-bottom-sp5">
                 <h2>Buttons</h2>
 
                 <div>
@@ -272,12 +277,6 @@
                     </button>
                 </div>
 
-            </section>
-
-            <section>
-                <h2>Slider</h2>
-
-                <input class="ms-slider" type="range" min="0" max="100">
             </section>
         </div>
         
