@@ -1236,30 +1236,22 @@ h5, .h5, h6, .h6 {
   h5.xloose, .xloose.h5, h6.xloose, .xloose.h6 {
     margin-bottom: 1.5em; }
 
-p, blockquote {
+p, blockquote, h1.body, h2.body, h3.body, h4.body, h5.body, h6.body, p.body, blockquote.body, body, .body {
   margin-bottom: 1.25em; }
-  p.tight, blockquote.tight {
+  p.tight, blockquote.tight, body.tight, .tight.body {
     margin-bottom: 0.65em; }
-  p.loose, blockquote.loose {
+  p.loose, blockquote.loose, body.loose, .loose.body {
     margin-bottom: 1.85em; }
-  p.xloose, blockquote.xloose {
+  p.xloose, blockquote.xloose, body.xloose, .xloose.body {
     margin-bottom: 2.5em; }
 
-h1.body, h2.body, h3.body, h4.body, h5.body, h6.body, p.body, blockquote.body {
+h1.body-alt, h2.body-alt, h3.body-alt, h4.body-alt, h5.body-alt, h6.body-alt, p.body-alt, blockquote.body-alt, .body-alt, button.small, .button.small, .ms-button.small, h1.caption, h2.caption, h3.caption, h4.caption, h5.caption, h6.caption, p.caption, blockquote.caption, .caption, h1.caption-alt, h2.caption-alt, h3.caption-alt, h4.caption-alt, h5.caption-alt, h6.caption-alt, p.caption-alt, blockquote.caption-alt, .caption-alt {
   margin-bottom: 1.25em; }
-  h1.body.tight, h2.body.tight, h3.body.tight, h4.body.tight, h5.body.tight, h6.body.tight, p.body.tight, blockquote.body.tight {
-    margin-bottom: 0.65em; }
-  h1.body.loose, h2.body.loose, h3.body.loose, h4.body.loose, h5.body.loose, h6.body.loose, p.body.loose, blockquote.body.loose {
-    margin-bottom: 1.85em; }
-  h1.body.xloose, h2.body.xloose, h3.body.xloose, h4.body.xloose, h5.body.xloose, h6.body.xloose, p.body.xloose, blockquote.body.xloose {
-    margin-bottom: 2.5em; }
-h1.body-alt, h1.caption, h1.caption-alt, h2.body-alt, h2.caption, h2.caption-alt, h3.body-alt, h3.caption, h3.caption-alt, h4.body-alt, h4.caption, h4.caption-alt, h5.body-alt, h5.caption, h5.caption-alt, h6.body-alt, h6.caption, h6.caption-alt, p.body-alt, p.caption, p.caption-alt, blockquote.body-alt, blockquote.caption, blockquote.caption-alt {
-  margin-bottom: 1.25em; }
-  h1.body-alt.tight, h1.caption.tight, h1.caption-alt.tight, h2.body-alt.tight, h2.caption.tight, h2.caption-alt.tight, h3.body-alt.tight, h3.caption.tight, h3.caption-alt.tight, h4.body-alt.tight, h4.caption.tight, h4.caption-alt.tight, h5.body-alt.tight, h5.caption.tight, h5.caption-alt.tight, h6.body-alt.tight, h6.caption.tight, h6.caption-alt.tight, p.body-alt.tight, p.caption.tight, p.caption-alt.tight, blockquote.body-alt.tight, blockquote.caption.tight, blockquote.caption-alt.tight {
+  .tight.body-alt, button.tight.small, .tight.button.small, .tight.ms-button.small, .tight.caption, .tight.caption-alt {
     margin-bottom: 0.625em; }
-  h1.body-alt.loose, h1.caption.loose, h1.caption-alt.loose, h2.body-alt.loose, h2.caption.loose, h2.caption-alt.loose, h3.body-alt.loose, h3.caption.loose, h3.caption-alt.loose, h4.body-alt.loose, h4.caption.loose, h4.caption-alt.loose, h5.body-alt.loose, h5.caption.loose, h5.caption-alt.loose, h6.body-alt.loose, h6.caption.loose, h6.caption-alt.loose, p.body-alt.loose, p.caption.loose, p.caption-alt.loose, blockquote.body-alt.loose, blockquote.caption.loose, blockquote.caption-alt.loose {
+  .loose.body-alt, button.loose.small, .loose.button.small, .loose.ms-button.small, .loose.caption, .loose.caption-alt {
     margin-bottom: 1.875em; }
-  h1.body-alt.xloose, h1.caption.xloose, h1.caption-alt.xloose, h2.body-alt.xloose, h2.caption.xloose, h2.caption-alt.xloose, h3.body-alt.xloose, h3.caption.xloose, h3.caption-alt.xloose, h4.body-alt.xloose, h4.caption.xloose, h4.caption-alt.xloose, h5.body-alt.xloose, h5.caption.xloose, h5.caption-alt.xloose, h6.body-alt.xloose, h6.caption.xloose, h6.caption-alt.xloose, p.body-alt.xloose, p.caption.xloose, p.caption-alt.xloose, blockquote.body-alt.xloose, blockquote.caption.xloose, blockquote.caption-alt.xloose {
+  .xloose.body-alt, button.xloose.small, .xloose.button.small, .xloose.ms-button.small, .xloose.caption, .xloose.caption-alt {
     margin-bottom: 2.5em; }
 
 button, .button {

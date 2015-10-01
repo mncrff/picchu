@@ -384,7 +384,7 @@ $spacing-list: (
     }
 }
 
-p, blockquote {
+%body-spacing {
     margin-bottom: 1.25em;
 
     &.tight {
@@ -398,35 +398,38 @@ p, blockquote {
     }
 }
 
+%body-alt-spacing,
+%caption-spacing,
+%caption-alt-spacing {
+    margin-bottom: 1.25em;
+
+    &.tight {
+        margin-bottom: 0.625em;
+    }
+    &.loose {
+        margin-bottom: 1.875em;
+    }
+    &.xloose {
+        margin-bottom: 2.5em;
+    }
+}
+
+p, blockquote {
+    @extend %body-spacing;
+}
+
 h1, h2, h3, h4, h5, h6, p, blockquote {
     &.body {
-        margin-bottom: 1.25em;
-
-        &.tight {
-            margin-bottom: 0.65em;
-        }
-        &.loose {
-            margin-bottom: 1.85em;
-        }
-        &.xloose {
-            margin-bottom: 2.5em;
-        }
+        @extend %body-spacing;
     }
-
-    &.body-alt,
-    &.caption,
+    &.body-alt {
+        @extend %body-alt-spacing;
+    }
+    &.caption {
+        @extend %caption-spacing;
+    }
     &.caption-alt {
-        margin-bottom: 1.25em;
-
-        &.tight {
-            margin-bottom: 0.625em;
-        }
-        &.loose {
-            margin-bottom: 1.875em;
-        }
-        &.xloose {
-            margin-bottom: 2.5em;
-        }
+        @extend %caption-alt-spacing;
     }
 }
 
