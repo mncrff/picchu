@@ -1,0 +1,211 @@
+.hero {
+    background-color: $white;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+    @media screen and (min-width: $vp3) {
+        background-color: $gray;
+        padding-bottom: 37.5%;
+    }
+
+    .isolated-link {
+        white-space: nowrap;
+    }
+
+    .hero-banner,
+    .hero-carousel {
+        @media screen and (min-width: $vp3) {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .hero-banner {
+
+    }
+
+    .hero-carousel {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            height: 100%;
+            position: relative;
+
+            .ms-grid {
+                position: relative;
+                padding-left: 42px;
+                padding-right: 42px;
+
+                @media screen and (min-width: $vp3) {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                }
+
+                @media screen and (min-width: $vp4) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            } 
+        }
+    }
+
+    .background-image {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &.top {
+           background-position: top center; 
+        }
+        &.top-left {
+           background-position: top left; 
+        }
+        &.top-right {
+           background-position: top right; 
+        }
+        &.bottom {
+           background-position: bottom center; 
+        }
+        &.bottom-left {
+           background-position: bottom left; 
+        }
+        &.bottom-right {
+           background-position: bottom right; 
+        }
+        &.left {
+           background-position: center left; 
+        }
+        &.right {
+           background-position: center right; 
+        }
+    }
+
+    .hero-banner-mobile-img {
+        width: 100%;
+        height: auto;
+    }
+
+    &.inside-text {
+        .hero-content-container {
+                @include vertical-properties(padding, xlarge, mobile);
+                position: relative;
+                z-index: 200;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+
+                @media screen and (min-width: $vp2) {
+                    display: table;
+                    @include vertical-properties(padding, xlarge, flex);
+                }
+
+                @media screen and (min-width: $vp3) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                }
+
+            .centered {
+                position: relative;
+                vertical-align: middle;
+                background-color: transparent;
+                color: $white;
+
+                @media screen and (min-width: $vp2) {
+                    display: table-cell;
+                }
+            }
+        }
+
+        .background-image {
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0.5;
+                top: 0;
+                left: 0;
+
+                @media screen and (min-width: $vp3) {
+                    opacity: 1;
+                    background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* IE10+ */
+                    background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* W3C */
+
+                }
+            }
+        }
+    }
+
+    &.popout-text {
+        .hero-content-container {
+
+            @media screen and (min-width: $vp3) {
+                @include vertical-spacing(padding, xlarge);
+                display: table;
+                position: relative;
+                z-index: 200;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+            }
+
+            .centered {
+                @include vertical-properties(padding, medium, mobile);
+                position: relative;
+                background-color: $white;
+
+                @media screen and (min-width: $vp2) {
+                    @include vertical-properties(padding, medium, flex);
+                }
+
+                @media screen and (min-width: $vp3) {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: table-cell;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    color: $white;
+                }
+            }
+        }
+
+        .background-image {
+            @media screen and (min-width: $vp3) {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: black;
+                    opacity: 0.5;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .slick-list,
+    .slick-track,
+    .slick-slide {
+        height: 100%;
+        padding-bottom: 0;
+    }
+
+    .slick-initialized .slick-slide {
+        display: table-cell;
+    }
+}
