@@ -2983,6 +2983,8 @@ h5, .h5, h6, .h6 {
 
 button, .button, .ms-button {
   border: none;
+  display: inline-block;
+  text-decoration: none;
   box-sizing: border-box;
   outline: none;
   position: relative;
@@ -2993,6 +2995,7 @@ button, .button, .ms-button {
   background-color: #0078D7;
   color: #FFFFFF; }
   button:hover, button:focus, .button:hover, .button:focus, .ms-button:hover, .ms-button:focus {
+    text-decoration: none;
     background-color: #0060ac;
     -webkit-transition: background-color 0s;
             transition: background-color 0s; }
@@ -3605,6 +3608,156 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
 
 .full-width {
   width: 100%; }
+
+.hero {
+  background-color: #FFFFFF;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    .hero {
+      background-color: #767676;
+      padding-bottom: 37.5%; } }
+  .hero .isolated-link {
+    white-space: nowrap; }
+  @media screen and (min-width: 768px) {
+    .hero .hero-banner, .hero .hero-carousel {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; } }
+  .hero .hero-carousel {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .hero .hero-carousel li {
+      height: 100%;
+      position: relative; }
+      .hero .hero-carousel li .ms-grid {
+        position: relative;
+        padding-left: 42px;
+        padding-right: 42px; }
+        @media screen and (min-width: 768px) {
+          .hero .hero-carousel li .ms-grid {
+            padding-left: 12px;
+            padding-right: 12px; } }
+        @media screen and (min-width: 1084px) {
+          .hero .hero-carousel li .ms-grid {
+            padding-left: 0;
+            padding-right: 0; } }
+  .hero .hero-mobile-img {
+    display: block;
+    width: 100%;
+    height: auto; }
+    @media screen and (min-width: 768px) {
+      .hero .hero-mobile-img {
+        display: none; } }
+  .hero .hero-content-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .hero .hero-content-container:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    .hero .hero-content-container :last-child {
+      margin-bottom: 0; }
+    .hero .hero-content-container.top {
+      background-position: top center; }
+    .hero .hero-content-container.top-left {
+      background-position: top left; }
+    .hero .hero-content-container.top-right {
+      background-position: top right; }
+    .hero .hero-content-container.bottom {
+      background-position: bottom center; }
+    .hero .hero-content-container.bottom-left {
+      background-position: bottom left; }
+    .hero .hero-content-container.bottom-right {
+      background-position: bottom right; }
+    .hero .hero-content-container.left {
+      background-position: center left; }
+    .hero .hero-content-container.right {
+      background-position: center right; }
+  .hero.inside-text .hero-content-container {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; }
+    @media screen and (min-width: 540px) {
+      .hero.inside-text .hero-content-container {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        padding-top: calc(44.5px + 1.8vw);
+        padding-bottom: calc(44.5px + 1.8vw); } }
+    @media screen and (min-width: 768px) {
+      .hero.inside-text .hero-content-container {
+        padding-top: 0;
+        padding-bottom: 0; } }
+    .hero.inside-text .hero-content-container:before {
+      background: rgba(0, 0, 0, 0.5); }
+      @media screen and (min-width: 768px) {
+        .hero.inside-text .hero-content-container:before {
+          background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
+          background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
+          /* W3C */ } }
+    .hero.inside-text .hero-content-container .hero-content-centered {
+      position: relative;
+      vertical-align: middle;
+      background-color: transparent;
+      color: #FFFFFF; }
+      @media screen and (min-width: 540px) {
+        .hero.inside-text .hero-content-container .hero-content-centered {
+          display: table-cell;
+          width: 100%; } }
+  .hero.inside-text .hero-mobile-img {
+    display: none; }
+  @media screen and (min-width: 768px) {
+    .hero.popout-text .hero-content-container {
+      display: table;
+      table-layout: fixed;
+      position: relative;
+      z-index: 200;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box; } }
+  @media screen and (min-width: 768px) {
+    .hero.popout-text .hero-content-container:before {
+      background: rgba(0, 0, 0, 0.5);
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
+  .hero.popout-text .hero-content-container .hero-content-centered {
+    padding-top: 24px;
+    padding-bottom: 33px;
+    position: relative;
+    background-color: #FFFFFF; }
+    @media screen and (min-width: 540px) {
+      .hero.popout-text .hero-content-container .hero-content-centered {
+        padding-top: calc(22px + 0.4vw);
+        padding-bottom: calc(29.5px + 0.75vw); } }
+    @media screen and (min-width: 768px) {
+      .hero.popout-text .hero-content-container .hero-content-centered {
+        padding-top: 0;
+        padding-bottom: 0;
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        background-color: transparent;
+        color: #FFFFFF; } }
+  .hero .slick-list, .hero .slick-track, .hero .slick-slide {
+    height: 100%;
+    padding-bottom: 0; }
+  .hero .slick-initialized .slick-slide {
+    display: table-cell;
+    width: 100%; }
 
 html {
   box-sizing: border-box;

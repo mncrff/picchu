@@ -1,5 +1,7 @@
 button, .button, .#{$picchu-prefix}button {
 	border: none;
+	display: inline-block;
+	text-decoration: none;
 	box-sizing: border-box;
 	outline: none;
 	position: relative;
@@ -11,6 +13,7 @@ button, .button, .#{$picchu-prefix}button {
 	color: contrasting-color($theme-button-color);
 
 	&:hover, &:focus {
+		text-decoration: none;
 		background-color: shade($theme-button-color, 20%);
 		transition: background-color 0s;
 	}

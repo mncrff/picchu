@@ -24,10 +24,6 @@
         }
     }
 
-    .hero-banner {
-
-    }
-
     .hero-carousel {
         list-style-type: none;
         padding: 0;
@@ -55,10 +51,34 @@
         }
     }
 
-    .background-image {
+    .hero-mobile-img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: $vp3) {
+            display: none;
+        }
+    }
+
+    .hero-content-container {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
 
         &.top {
            background-position: top center; 
@@ -86,31 +106,42 @@
         }
     }
 
-    .hero-banner-mobile-img {
-        width: 100%;
-        height: auto;
-    }
-
     &.inside-text {
         .hero-content-container {
-                @include vertical-properties(padding, xlarge, mobile);
-                position: relative;
-                z-index: 200;
-                width: 100%;
-                height: 100%;
-                box-sizing: border-box;
+            @include vertical-spacing(padding, sp6, small);
+            position: relative;
+            z-index: 200;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
 
-                @media screen and (min-width: $vp2) {
-                    display: table;
-                    @include vertical-properties(padding, xlarge, flex);
-                }
+            @media screen and (min-width: $vp2) {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+                @include vertical-spacing(padding, sp6, flex);
+            }
+
+            @media screen and (min-width: $vp3) {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            &:before {
+                background: rgba(0,0,0,0.5);
 
                 @media screen and (min-width: $vp3) {
-                    padding-top: 0;
-                    padding-bottom: 0;
+                    // background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+                    // background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+                    // background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+                    // background: -o-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+                    // background: -ms-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* IE10+ */
+                    background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* W3C */
+                    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
                 }
+            }
 
-            .centered {
+            .hero-content-centered {
                 position: relative;
                 vertical-align: middle;
                 background-color: transparent;
@@ -118,33 +149,13 @@
 
                 @media screen and (min-width: $vp2) {
                     display: table-cell;
+                    width: 100%;
                 }
             }
         }
 
-        .background-image {
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: black;
-                opacity: 0.5;
-                top: 0;
-                left: 0;
-
-                @media screen and (min-width: $vp3) {
-                    opacity: 1;
-                    background: -moz-linear-gradient(left,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%, rgba(0,0,0,0) 100%); /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.8)), color-stop(80%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
-                    background: -ms-linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* IE10+ */
-                    background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%); /* W3C */
-
-                }
-            }
+        .hero-mobile-img {
+            display: none;
         }
     }
 
@@ -152,8 +163,8 @@
         .hero-content-container {
 
             @media screen and (min-width: $vp3) {
-                @include vertical-spacing(padding, xlarge);
                 display: table;
+                table-layout: fixed;
                 position: relative;
                 z-index: 200;
                 width: 100%;
@@ -161,38 +172,32 @@
                 box-sizing: border-box;
             }
 
-            .centered {
-                @include vertical-properties(padding, medium, mobile);
+            &:before {
+                @media screen and (min-width: $vp3) {
+                    background: rgba(0,0,0,0.5);
+                    background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+                }
+            }
+
+            .hero-content-centered {
+                @include vertical-spacing(padding-top, sp3, small);
+                @include vertical-spacing(padding-bottom, sp4, small);
                 position: relative;
                 background-color: $white;
 
                 @media screen and (min-width: $vp2) {
-                    @include vertical-properties(padding, medium, flex);
+                    @include vertical-spacing(padding-top, sp3, flex);
+                    @include vertical-spacing(padding-bottom, sp4, flex);
                 }
 
                 @media screen and (min-width: $vp3) {
                     padding-top: 0;
                     padding-bottom: 0;
                     display: table-cell;
+                    width: 100%;
                     vertical-align: middle;
                     background-color: transparent;
                     color: $white;
-                }
-            }
-        }
-
-        .background-image {
-            @media screen and (min-width: $vp3) {
-                &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background-color: black;
-                    opacity: 0.5;
-                    top: 0;
-                    left: 0;
                 }
             }
         }
@@ -207,5 +212,6 @@
 
     .slick-initialized .slick-slide {
         display: table-cell;
+        width: 100%;
     }
 }
