@@ -75,6 +75,7 @@ button, .button, .#{$picchu-prefix}button {
 
 	&.white-bgc {
 		color: $theme-button-color;
+		background-color: white;
 
 		&:hover, &:focus {
 			background-color: tint($gray, 80%);

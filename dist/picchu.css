@@ -3187,7 +3187,8 @@ button, .button, .ms-button {
     background-color: #c8c8c8;
     color: #919191; }
   button.white-bgc, .button.white-bgc, .ms-button.white-bgc {
-    color: #0078D7; }
+    color: #0078D7;
+    background-color: white; }
     button.white-bgc:hover, button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus, .ms-button.white-bgc:hover, .ms-button.white-bgc:focus {
       background-color: #e3e3e3; }
     button.white-bgc:active, .button.white-bgc:active, .ms-button.white-bgc:active {
@@ -3609,55 +3610,55 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
 .full-width {
   width: 100%; }
 
-.hero {
+.ms-hero {
   background-color: #FFFFFF;
   position: relative;
   width: 100%;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
-    .hero {
+    .ms-hero {
       background-color: #767676;
       padding-bottom: 37.5%; } }
-  .hero .isolated-link {
+  .ms-hero .isolated-link {
     white-space: nowrap; }
   @media screen and (min-width: 768px) {
-    .hero .hero-banner, .hero .hero-carousel {
+    .ms-hero .ms-hero-banner, .ms-hero .ms-hero-carousel {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0; } }
-  .hero .hero-carousel {
+  .ms-hero .ms-hero-carousel {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    .hero .hero-carousel li {
+    .ms-hero .ms-hero-carousel li {
       height: 100%;
       position: relative; }
-      .hero .hero-carousel li .ms-grid {
+      .ms-hero .ms-hero-carousel li .ms-grid {
         position: relative;
         padding-left: 42px;
         padding-right: 42px; }
         @media screen and (min-width: 768px) {
-          .hero .hero-carousel li .ms-grid {
+          .ms-hero .ms-hero-carousel li .ms-grid {
             padding-left: 12px;
             padding-right: 12px; } }
         @media screen and (min-width: 1084px) {
-          .hero .hero-carousel li .ms-grid {
+          .ms-hero .ms-hero-carousel li .ms-grid {
             padding-left: 0;
             padding-right: 0; } }
-  .hero .hero-mobile-img {
+  .ms-hero .ms-hero-mobile-img {
     display: block;
     width: 100%;
     height: auto; }
     @media screen and (min-width: 768px) {
-      .hero .hero-mobile-img {
+      .ms-hero .ms-hero-mobile-img {
         display: none; } }
-  .hero .hero-content-container {
+  .ms-hero .ms-hero-content-container {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-    .hero .hero-content-container:before {
+    .ms-hero .ms-hero-content-container:before {
       content: '';
       display: block;
       position: absolute;
@@ -3665,25 +3666,25 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
       height: 100%;
       top: 0;
       left: 0; }
-    .hero .hero-content-container :last-child {
+    .ms-hero .ms-hero-content-container :last-child {
       margin-bottom: 0; }
-    .hero .hero-content-container.top {
+    .ms-hero .ms-hero-content-container.top {
       background-position: top center; }
-    .hero .hero-content-container.top-left {
+    .ms-hero .ms-hero-content-container.top-left {
       background-position: top left; }
-    .hero .hero-content-container.top-right {
+    .ms-hero .ms-hero-content-container.top-right {
       background-position: top right; }
-    .hero .hero-content-container.bottom {
+    .ms-hero .ms-hero-content-container.bottom {
       background-position: bottom center; }
-    .hero .hero-content-container.bottom-left {
+    .ms-hero .ms-hero-content-container.bottom-left {
       background-position: bottom left; }
-    .hero .hero-content-container.bottom-right {
+    .ms-hero .ms-hero-content-container.bottom-right {
       background-position: bottom right; }
-    .hero .hero-content-container.left {
+    .ms-hero .ms-hero-content-container.left {
       background-position: center left; }
-    .hero .hero-content-container.right {
+    .ms-hero .ms-hero-content-container.right {
       background-position: center right; }
-  .hero.inside-text .hero-content-container {
+  .ms-hero.inside-text .ms-hero-content-container {
     padding-top: 54px;
     padding-bottom: 54px;
     position: relative;
@@ -3692,37 +3693,37 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
     height: 100%;
     box-sizing: border-box; }
     @media screen and (min-width: 540px) {
-      .hero.inside-text .hero-content-container {
+      .ms-hero.inside-text .ms-hero-content-container {
         display: table;
         table-layout: fixed;
         width: 100%;
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw); } }
     @media screen and (min-width: 768px) {
-      .hero.inside-text .hero-content-container {
+      .ms-hero.inside-text .ms-hero-content-container {
         padding-top: 0;
         padding-bottom: 0; } }
-    .hero.inside-text .hero-content-container:before {
+    .ms-hero.inside-text .ms-hero-content-container:before {
       background: rgba(0, 0, 0, 0.65); }
       @media screen and (min-width: 768px) {
-        .hero.inside-text .hero-content-container:before {
+        .ms-hero.inside-text .ms-hero-content-container:before {
           background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
           background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
-    .hero.inside-text .hero-content-container.tac:before {
+    .ms-hero.inside-text .ms-hero-content-container.tac:before {
       background: rgba(0, 0, 0, 0.65); }
-    .hero.inside-text .hero-content-container .hero-content-centered {
+    .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-centered {
       position: relative;
       vertical-align: middle;
       background-color: transparent;
       color: #FFFFFF; }
       @media screen and (min-width: 540px) {
-        .hero.inside-text .hero-content-container .hero-content-centered {
+        .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-centered {
           display: table-cell;
           width: 100%; } }
-  .hero.inside-text .hero-mobile-img {
+  .ms-hero.inside-text .ms-hero-mobile-img {
     display: none; }
   @media screen and (min-width: 768px) {
-    .hero.popout-text .hero-content-container {
+    .ms-hero.popout-text .ms-hero-content-container {
       display: table;
       table-layout: fixed;
       position: relative;
@@ -3731,24 +3732,24 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
       height: 100%;
       box-sizing: border-box; } }
   @media screen and (min-width: 768px) {
-    .hero.popout-text .hero-content-container:before {
+    .ms-hero.popout-text .ms-hero-content-container:before {
       background: rgba(0, 0, 0, 0.65);
       background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
       background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
   @media screen and (min-width: 768px) {
-    .hero.popout-text .hero-content-container.tac:before {
+    .ms-hero.popout-text .ms-hero-content-container.tac:before {
       background: rgba(0, 0, 0, 0.65); } }
-  .hero.popout-text .hero-content-container .hero-content-centered {
+  .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-centered {
     padding-top: 24px;
     padding-bottom: 33px;
     position: relative;
     background-color: #FFFFFF; }
     @media screen and (min-width: 540px) {
-      .hero.popout-text .hero-content-container .hero-content-centered {
+      .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-centered {
         padding-top: calc(22px + 0.4vw);
         padding-bottom: calc(29.5px + 0.75vw); } }
     @media screen and (min-width: 768px) {
-      .hero.popout-text .hero-content-container .hero-content-centered {
+      .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-centered {
         padding-top: 0;
         padding-bottom: 0;
         display: table-cell;
@@ -3756,12 +3757,69 @@ input[type=range].ms-slider:focus::-ms-fill-upper {
         vertical-align: middle;
         background-color: transparent;
         color: #FFFFFF; } }
-  .hero .slick-list, .hero .slick-track, .hero .slick-slide {
+  .ms-hero .slick-list, .ms-hero .slick-track, .ms-hero .slick-slide {
     height: 100%;
     padding-bottom: 0; }
-  .hero .slick-initialized .slick-slide {
+  .ms-hero .slick-initialized .slick-slide {
     display: table-cell;
     width: 100%; }
+
+.ms-mosaic {
+  overflow: hidden; }
+  .ms-mosaic .ms-mosaic-tile {
+    padding-top: 54px;
+    padding-bottom: 54px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #0078D7;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media all and (min-width: 540px) {
+      .ms-mosaic .ms-mosaic-tile {
+        padding-top: calc(44.5px + 1.8vw);
+        padding-bottom: calc(44.5px + 1.8vw); } }
+    @media all and (min-width: 1400px) {
+      .ms-mosaic .ms-mosaic-tile {
+        padding-top: 70px;
+        padding-bottom: 70px; } }
+    @media screen and (min-width: 540px) {
+      .ms-mosaic .ms-mosaic-tile {
+        padding-left: 24px;
+        padding-right: 24px; } }
+    @media screen and (min-width: 768px) {
+      .ms-mosaic .ms-mosaic-tile {
+        padding-left: 10%;
+        padding-right: 10%; } }
+    .ms-mosaic .ms-mosaic-tile :last-child {
+      margin-bottom: 0; }
+    .ms-mosaic .ms-mosaic-tile.half-tile {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .ms-mosaic .ms-mosaic-tile.half-tile {
+          display: block;
+          min-height: 300px;
+          height: 300px;
+          height: 25vw; } }
+    .ms-mosaic .ms-mosaic-tile.full-tile {
+      display: none; }
+      @media screen and (min-width: 768px) {
+        .ms-mosaic .ms-mosaic-tile.full-tile {
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; } }
+  .ms-mosaic .ms-mosaic-mobile-img {
+    width: 100%;
+    height: auto; }
+    @media screen and (min-width: 768px) {
+      .ms-mosaic .ms-mosaic-mobile-img {
+        display: none; } }
+  .ms-mosaic [class*="col-"] {
+    position: relative; }
 
 html {
   box-sizing: border-box;

@@ -1,4 +1,4 @@
-.hero {
+.ms-hero {
     background-color: $white;
     position: relative;
     width: 100%;
@@ -13,8 +13,8 @@
         white-space: nowrap;
     }
 
-    .hero-banner,
-    .hero-carousel {
+    .ms-hero-banner,
+    .ms-hero-carousel {
         @media screen and (min-width: $vp3) {
             position: absolute;
             top: 0;
@@ -24,7 +24,7 @@
         }
     }
 
-    .hero-carousel {
+    .ms-hero-carousel {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -51,7 +51,7 @@
         }
     }
 
-    .hero-mobile-img {
+    .ms-hero-mobile-img {
         display: block;
         width: 100%;
         height: auto;
@@ -61,7 +61,7 @@
         }
     }
 
-    .hero-content-container {
+    .ms-hero-content-container {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -107,7 +107,7 @@
     }
 
     &.inside-text {
-        .hero-content-container {
+        .ms-hero-content-container {
             @include vertical-spacing(padding, sp6, small);
             position: relative;
             z-index: 200;
@@ -137,7 +137,7 @@
                 background: rgba(0,0,0,0.65);
             }
 
-            .hero-content-centered {
+            .ms-hero-content-centered {
                 position: relative;
                 vertical-align: middle;
                 background-color: transparent;
@@ -150,13 +150,13 @@
             }
         }
 
-        .hero-mobile-img {
+        .ms-hero-mobile-img {
             display: none;
         }
     }
 
     &.popout-text {
-        .hero-content-container {
+        .ms-hero-content-container {
 
             @media screen and (min-width: $vp3) {
                 display: table;
@@ -180,7 +180,7 @@
                 }
             }
 
-            .hero-content-centered {
+            .ms-hero-content-centered {
                 @include vertical-spacing(padding-top, sp3, small);
                 @include vertical-spacing(padding-bottom, sp4, small);
                 position: relative;
