@@ -4,6 +4,8 @@
 //              #IMPORTS
 //------------------------------------
 @import "config";
+@import "Math/math";
+@import "variables";
 @import "Typography/fontface";
 
 @mixin namespace-content {
@@ -25,7 +27,6 @@
 
 @include namespace-content {
 	@import "Reset/normalize";
-	@import "Math/math";
 	@import "Color/colors";
 	@import "Spacing/spacing";
 	@import "Typography/typography";

@@ -2,68 +2,6 @@
 //              #TYPOGRAPHY
 //------------------------------------
 
-// Variables
-
-$light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
-$semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-$regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
-$semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
-$bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-
-$typeList: (
-  headline: (
-    large: 62px,
-    small: 46px,
-    flex: calc(36px + 1.86vw)
-  ),
-  h1: (
-    large: 46px,
-    small: 34px,
-    flex: calc(26.5px + 1.4vw)
-  ),
-  h2: (
-    large: 34px,
-    small: 26px,
-    flex: calc(17.6px + 1.18vw)
-  ),
-  h3: (
-    large: 24px,
-    small: 20px,
-    flex: calc(18.2px + 0.41vw)
-  ),
-  h4: (
-    large: 20px,
-    small: 18px,
-    flex: calc(16.9px + 0.22vw)
-  ),
-  h5: (
-    large: 18px,
-    small: 16px,
-    flex: calc(14.9px + 0.22vw)
-  ),
-  body: (
-    large: 18px,
-    small: 16px,
-    flex: calc(14.9px + 0.22vw)
-  ),
-  body-alt: (
-    large: 15px,
-    small: 14px,
-    flex: calc(13.5px + 0.11vw)
-  ),
-  caption: (
-    large: 13px,
-    small: 12px,
-    flex: calc(11.5px + 0.11vw)
-  ),
-  caption-alt: (
-    large: 11px,
-    small: 10px,
-    flex: calc(9.5px + 0.11vw)
-  )
-
-);
-
 
 // Placeholders
 
