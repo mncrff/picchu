@@ -1,3 +1,9 @@
+//------------------------------------
+//              #FONTS
+//------------------------------------
+
+// List of spacing options. Each option has three ramps: 
+// large (large viewports), small (mobile), and flex (everything in between)
 $spacing-list: (
   sp6: (
     large: 70px,
@@ -31,6 +37,14 @@ $spacing-list: (
   )
 );
 
+
+// Function to remove none-strings and empty strings from a list
+//
+// @param {List} $list
+//      List of values
+//
+// @return {List}
+
 @function str-list($list) {
   $result: ();
   
@@ -43,6 +57,18 @@ $spacing-list: (
   
   @return $result;
 }
+
+
+// Mixin to output vertical spacing properties on elements
+//
+// @param {String} $property
+//      Property to use, ex. 'margin', 'padding-bottom', etc
+// @param {List} $vals...
+//      List of variable arguments
+//          - Strings corresponding to 'option' keys inside $spacing-list (ex. sp1)
+//          - Optional String corresponding to 'size' keys inside $spacing-list (ex. large)
+//
+// @require {Mixin} vertical-properties
 
 @mixin vertical-spacing($property, $vals...){
     $last: nth($vals, length($vals));
@@ -71,8 +97,17 @@ $spacing-list: (
     }
 }
 
-@mixin vertical-properties($property, $vals, $prop_val){
 
+// Helper for vertical-spacing mixin to intelligently handle shorthand lists of values
+//
+// @param {String} $property
+//      Property to use, ex. 'margin', 'padding-bottom', etc
+// @param {List} $vals
+//      List of Strings corresponding to 'option' keys inside $spacing-list (ex. sp1)
+// @param {String} $prop_val
+//      String corresponding to 'size' keys inside $spacing-list (ex. large)
+
+@mixin vertical-properties($property, $vals, $prop_val){
     $i: str-index($property, "-");
 
     @if $i != null {
@@ -82,17 +117,19 @@ $spacing-list: (
         }
     } @else {
         @if length($vals) == 1 {
-            $val: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
-            #{$property}-top: $val;
-            #{$property}-bottom: $val;
-        } @else if length($vals) == 2 {
+            // Libsass 1.1.0-beta would not compile with this variable set
+            // $val: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+        } 
+        @else if length($vals) == 2 {
             #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
             #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 2)), $prop_val);
         }
     }
 }
 
-//helper classes for section/container vertical spacing
+// helper classes to apply vertical spacing to content containers (sections, divs, etc)
 @each $val in $spacing-list {
     .padding-vertical-#{nth($val, 1)} {
         @include vertical-spacing(padding, nth($val, 1));
@@ -122,6 +159,8 @@ $spacing-list: (
     @extend .no-margin-bottom;
 }
 
+// helper classes to apply vertical spacing by breakpoint
+// manually set spacing inside media queries by passing additional ramp option to "vertical-spacing"
 @media screen and (min-width: $vp1) {
     @each $val in $spacing-list {
         .xs-padding-vertical-#{nth($val, 1)} {
@@ -313,6 +352,8 @@ $spacing-list: (
     }
 }
 
+// define margin-bottom spacing for typographic elements
+// placeholders used by mixins in Typogaphy/_typography.scss
 %headline-spacing {
     margin-bottom: 0.33em;
 
@@ -434,18 +475,8 @@ h1, h2, h3, h4, h5, h6, p, blockquote {
 }
 
 //buttons
-button, .button {
-    margin-bottom: 1.25em;
-
-    &.tight {
-        margin-bottom: 0.625em;
-    }
-    &.loose {
-        margin-bottom: 1.875em;
-    }
-    &.xloose {
-        margin-bottom: 2.5em;
-    }
+button, .button, .#{$picchu-prefix}button {
+    @extend %body-alt-spacing;
 }
 
 //links 
