@@ -1,48 +1,50 @@
 /*! picchu.css v0.1 | Microsoftdotcom team | Github - url coming once ready to make public */
 
 //------------------------------------
-//              #VARIABLES
+//              #IMPORTS
 //------------------------------------
+@import "config";
+@import "Typography/fontface";
 
-$picchu-prefix: "ms-" !default;
+@mixin namespace-content {
+	@if $picchu-namespace {
 
-//Theme options
-//Default color pallette
-$theme-primary-color: #0078D7; //blue
-$theme-button-color: $theme-primary-color;
-$theme-form-element-color: $theme-primary-color;
+		// if namespaced flag is true,
+		// wrap a namespace class around all styles
+		.#{$picchu-namespace-class} {
+			@content;
+		}
 
-//Grid breakpoints - aligning to the winjs grid breakpoints, used for responsive aspects of 
-//this framework, can be changed to align to your breakpoints if different
-$vp1: 320px;
-$vp2: 540px;
-$vp3: 768px;
-$vp4: 1084px;
-$vp5: 1400px;
+	} @else {
 
+		// otherwise just output styles without any namespace
+		@content;
 
-
+	}
+}
 
 
 //------------------------------------
 //              #IMPORTS
 //------------------------------------
-@import "Reset/normalize";
-@import "Math/math";
-@import "Spacing/spacing";
-@import "Color/colors";
-@import "Typography/typography";
-@import "FormElements/buttons";
-@import "FormElements/formfields";
-@import "FormElements/checkboxes";
-@import "FormElements/slider";
-@import "Helpers/helpers";
+@include namespace-content {
+	@import "Reset/normalize";
+	@import "Math/math";
+	@import "Color/colors";
+	@import "Spacing/spacing";
+	@import "Typography/typography";
+	@import "FormElements/buttons";
+	@import "FormElements/formfields";
+	@import "FormElements/checkboxes";
+	@import "FormElements/slider";
+	@import "Helpers/helpers";
 
-@import "Components/Hero/hero";
-@import "Components/Mosaic/mosaic";
-
-
-
+	@import "Components/Hero/hero";
+	@import "Components/Mosaic/mosaic";
+	@import "Components/Parallax/parallax";
+	@import "Components/ListRow/listRow";
+	@import "Components/Banner/banner"
+}
 
 
 //------------------------------------

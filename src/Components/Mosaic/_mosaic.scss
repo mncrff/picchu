@@ -1,7 +1,7 @@
-.ms-mosaic {
+.#{$picchu-prefix}mosaic {
     overflow: hidden;
 
-    .ms-mosaic-tile {
+    .#{$picchu-prefix}mosaic-tile {
         @include vertical-spacing(padding, sp6);
         padding-left: 12px;
         padding-right: 12px;
@@ -51,7 +51,7 @@
         }
     }
 
-    .ms-mosaic-mobile-img {
+    .#{$picchu-prefix}mosaic-mobile-img {
         width: 100%;
         height: auto;
 

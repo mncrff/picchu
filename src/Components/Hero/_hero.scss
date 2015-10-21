@@ -1,7 +1,6 @@
-.ms-hero {
+.#{$picchu-prefix}hero {
     background-color: $white;
     position: relative;
-    width: 100%;
     overflow: hidden;
     
     @media screen and (min-width: $vp3) {
@@ -13,8 +12,8 @@
         white-space: nowrap;
     }
 
-    .ms-hero-banner,
-    .ms-hero-carousel {
+    .#{$picchu-prefix}hero-banner,
+    .#{$picchu-prefix}hero-carousel {
         @media screen and (min-width: $vp3) {
             position: absolute;
             top: 0;
@@ -24,7 +23,7 @@
         }
     }
 
-    .ms-hero-carousel {
+    .#{$picchu-prefix}hero-carousel {
         list-style-type: none;
         padding: 0;
         margin: 0;
@@ -33,7 +32,7 @@
             height: 100%;
             position: relative;
 
-            .ms-grid {
+            .#{$picchu-prefix}grid {
                 position: relative;
                 padding-left: 42px;
                 padding-right: 42px;
@@ -51,7 +50,7 @@
         }
     }
 
-    .ms-hero-mobile-img {
+    .#{$picchu-prefix}hero-mobile-img {
         display: block;
         width: 100%;
         height: auto;
@@ -61,7 +60,7 @@
         }
     }
 
-    .ms-hero-content-container {
+    .#{$picchu-prefix}hero-content-container {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -107,7 +106,7 @@
     }
 
     &.inside-text {
-        .ms-hero-content-container {
+        .#{$picchu-prefix}hero-content-container {
             @include vertical-spacing(padding, sp6, small);
             position: relative;
             z-index: 200;
@@ -137,26 +136,26 @@
                 background: rgba(0,0,0,0.65);
             }
 
-            .ms-hero-content-centered {
+            .#{$picchu-prefix}hero-content-centered {
                 position: relative;
-                vertical-align: middle;
                 background-color: transparent;
                 color: $white;
 
                 @media screen and (min-width: $vp2) {
                     display: table-cell;
+                    vertical-align: middle;
                     width: 100%;
                 }
             }
         }
 
-        .ms-hero-mobile-img {
+        .#{$picchu-prefix}hero-mobile-img {
             display: none;
         }
     }
 
     &.popout-text {
-        .ms-hero-content-container {
+        .#{$picchu-prefix}hero-content-container {
 
             @media screen and (min-width: $vp3) {
                 display: table;
@@ -180,7 +179,7 @@
                 }
             }
 
-            .ms-hero-content-centered {
+            .#{$picchu-prefix}hero-content-centered {
                 @include vertical-spacing(padding-top, sp3, small);
                 @include vertical-spacing(padding-bottom, sp4, small);
                 position: relative;

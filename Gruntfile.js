@@ -22,7 +22,8 @@ module.exports = function (grunt) {
                     map: false
                 },
                 files: {
-                    'dist/picchu.css': 'src/picchu.scss'
+                    'dist/picchu.css': 'src/picchu.scss',
+                    'dist/picchu-namespace.css': 'src/picchu-namespace.scss'
                 }
             }
         },
@@ -33,7 +34,8 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    'dist/picchu.css': 'dist/picchu.css'
+                    'dist/picchu.css': 'dist/picchu.css',
+                    'dist/picchu-namespace.css': 'dist/picchu-namespace.css'
                 }
             }
         },
@@ -41,7 +43,8 @@ module.exports = function (grunt) {
         cssmin: {
             target: {
                 files: {
-                    'dist/picchu.min.css': 'dist/picchu.css'
+                    'dist/picchu.min.css': 'dist/picchu.css',
+                    'dist/picchu-namespace.min.css': 'dist/picchu-namespace.css'
                 }
             }
         },
