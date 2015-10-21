@@ -35,6 +35,53 @@
   font-weight: normal;
   font-style: normal; }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -247,14 +294,6 @@ ul {
 
 dd {
   margin: 0 0 0 20px; }
-
-/**
- * Address paddings set differently in IE 6/7.
- */
-menu,
-ol,
-ul {
-  padding: 0 0 0 20px; }
 
 /**
  * Correct list images handled incorrectly in IE 7.
@@ -3332,9 +3371,7 @@ label, input, textarea {
   display: inline-block;
   font-size: 15px;
   color: #2F2F2F;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   box-sizing: border-box; }
 
 label.disabled {
@@ -3396,9 +3433,7 @@ input[type="password"] {
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid #767676;
     position: relative;
     padding: 0.4667em 2.8em 0.4667em 0.55em;
@@ -3599,9 +3634,7 @@ label.ms-toggle input[disabled] ~ span {
   margin-right: 0.25em; }
 
 input[type=range].ms-slider {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 100%;
   margin: 3px 0; }
 
@@ -3631,8 +3664,7 @@ input[type=range].ms-slider::-webkit-slider-thumb {
   border-radius: 50px;
   background: #0078D7;
   cursor: pointer;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin-top: -3px; }
 
 input[type=range].ms-slider::-webkit-slider-thumb:hover {

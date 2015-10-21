@@ -36,6 +36,11 @@
   font-style: normal; }
 
 .picchu {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+  /* HTML5 display-role reset for older browsers */
   /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
   /* ==========================================================================
    HTML5 display definitions
@@ -123,9 +128,6 @@
  * Address margins set differently in IE 6/7.
  */
   /**
- * Address paddings set differently in IE 6/7.
- */
-  /**
  * Correct list images handled incorrectly in IE 7.
  */
   /* ==========================================================================
@@ -209,6 +211,41 @@
   /**
  * Remove most spacing between table cells.
  */ }
+  .picchu html, .picchu body, .picchu div, .picchu span, .picchu applet, .picchu object, .picchu iframe,
+  .picchu h1, .picchu h2, .picchu h3, .picchu h4, .picchu h5, .picchu h6, .picchu p, .picchu blockquote, .picchu pre,
+  .picchu a, .picchu abbr, .picchu acronym, .picchu address, .picchu big, .picchu cite, .picchu code,
+  .picchu del, .picchu dfn, .picchu em, .picchu img, .picchu ins, .picchu kbd, .picchu q, .picchu s, .picchu samp,
+  .picchu small, .picchu strike, .picchu strong, .picchu sub, .picchu sup, .picchu tt, .picchu var,
+  .picchu b, .picchu u, .picchu i, .picchu center,
+  .picchu dl, .picchu dt, .picchu dd, .picchu ol, .picchu ul, .picchu li,
+  .picchu fieldset, .picchu form, .picchu label, .picchu legend,
+  .picchu table, .picchu caption, .picchu tbody, .picchu tfoot, .picchu thead, .picchu tr, .picchu th, .picchu td,
+  .picchu article, .picchu aside, .picchu canvas, .picchu details, .picchu embed,
+  .picchu figure, .picchu figcaption, .picchu footer, .picchu header, .picchu hgroup,
+  .picchu menu, .picchu nav, .picchu output, .picchu ruby, .picchu section, .picchu summary,
+  .picchu time, .picchu mark, .picchu audio, .picchu video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
+  .picchu article, .picchu aside, .picchu details, .picchu figcaption, .picchu figure,
+  .picchu footer, .picchu header, .picchu hgroup, .picchu menu, .picchu nav, .picchu section {
+    display: block; }
+  .picchu body {
+    line-height: 1; }
+  .picchu ol, .picchu ul {
+    list-style: none; }
+  .picchu blockquote, .picchu q {
+    quotes: none; }
+  .picchu blockquote:before, .picchu blockquote:after,
+  .picchu q:before, .picchu q:after {
+    content: '';
+    content: none; }
+  .picchu table {
+    border-collapse: collapse;
+    border-spacing: 0; }
   .picchu article,
   .picchu aside,
   .picchu details,
@@ -309,10 +346,6 @@
     margin: 0; }
   .picchu dd {
     margin: 0 0 0 20px; }
-  .picchu menu,
-  .picchu ol,
-  .picchu ul {
-    padding: 0 0 0 20px; }
   .picchu nav ul,
   .picchu nav ol {
     list-style: none;
@@ -2711,9 +2744,7 @@
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     box-sizing: border-box; }
   .picchu label.disabled {
     color: #c8c8c8; }
@@ -2772,9 +2803,7 @@
       display: inline-block;
       font-size: 15px;
       color: #2F2F2F;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
+      appearance: none;
       border: 1px solid #767676;
       position: relative;
       padding: 0.4667em 2.8em 0.4667em 0.55em;
@@ -2947,9 +2976,7 @@
     z-index: 0;
     margin-right: 0.25em; }
   .picchu input[type=range].ms-slider {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     width: 100%;
     margin: 3px 0; }
   .picchu input[type=range].ms-slider:focus {
@@ -2976,8 +3003,7 @@
     border-radius: 50px;
     background: #0078D7;
     cursor: pointer;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     margin-top: -3px; }
   .picchu input[type=range].ms-slider::-webkit-slider-thumb:hover {
     background: #000000; }
