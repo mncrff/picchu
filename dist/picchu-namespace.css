@@ -36,6 +36,10 @@
   font-style: normal; }
 
 .picchu {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
   /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
   /* ==========================================================================
    HTML5 display definitions
@@ -122,8 +126,8 @@
   /**
  * Address margins set differently in IE 6/7.
  */
-  /**
- * Address paddings set differently in IE 6/7.
+  /**        
+ * Address paddings set differently in IE 6/7.     
  */
   /**
  * Correct list images handled incorrectly in IE 7.
@@ -209,6 +213,25 @@
   /**
  * Remove most spacing between table cells.
  */ }
+  .picchu html, .picchu body, .picchu div, .picchu span, .picchu applet, .picchu object, .picchu iframe,
+  .picchu h1, .picchu h2, .picchu h3, .picchu h4, .picchu h5, .picchu h6, .picchu p, .picchu blockquote, .picchu pre,
+  .picchu a, .picchu abbr, .picchu acronym, .picchu address, .picchu big, .picchu cite, .picchu code,
+  .picchu del, .picchu dfn, .picchu em, .picchu img, .picchu ins, .picchu kbd, .picchu q, .picchu s, .picchu samp,
+  .picchu small, .picchu strike, .picchu strong, .picchu sub, .picchu sup, .picchu tt, .picchu var,
+  .picchu b, .picchu u, .picchu i, .picchu center,
+  .picchu dl, .picchu dt, .picchu dd, .picchu ol, .picchu ul, .picchu li,
+  .picchu fieldset, .picchu form, .picchu label, .picchu legend,
+  .picchu table, .picchu caption, .picchu tbody, .picchu tfoot, .picchu thead, .picchu tr, .picchu th, .picchu td,
+  .picchu article, .picchu aside, .picchu canvas, .picchu details, .picchu embed,
+  .picchu figure, .picchu figcaption, .picchu footer, .picchu header, .picchu hgroup,
+  .picchu menu, .picchu nav, .picchu output, .picchu ruby, .picchu section, .picchu summary,
+  .picchu time, .picchu mark, .picchu audio, .picchu video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; }
   .picchu article,
   .picchu aside,
   .picchu details,

@@ -2,41 +2,6 @@
 //              #FONTS
 //------------------------------------
 
-// List of spacing options. Each option has three ramps: 
-// large (large viewports), small (mobile), and flex (everything in between)
-$spacing-list: (
-  sp6: (
-    large: 70px,
-    small: 54px,
-    flex: calc(44.5px + 1.8vw)
-  ),
-  sp5: (
-    large: 60px,
-    small: 40px,
-    flex: calc(37px + 1.25vw)
-  ),
-  sp4: (
-    large: 40px,
-    small: 33px,
-    flex: calc(29.5px + 0.75vw)
-  ),
-  sp3: (
-    large: 28px,
-    small: 24px,
-    flex: calc(22px + 0.4vw)
-  ),
-  sp2: (
-    large: 20px,
-    small: 18px,
-    flex: calc(17px + 0.2vw)
-  ),
-  sp1: (
-    large: 12px,
-    small: 12px,
-    flex: 12px
-  )
-);
-
 
 // Function to remove none-strings and empty strings from a list
 //
