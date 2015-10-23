@@ -231,7 +231,6 @@ p {
 }
 
 a {
-    color: shade($blue, nth($shade-list, 1));
     font-size: inherit;
     font-family: $regular;
     text-decoration: none;

@@ -480,7 +480,7 @@ button, .button, .#{$picchu-prefix}button {
 }
 
 //links 
-a.isolated-link {
+.cta-link {
     margin-bottom: 0.8em;
 
     &.tight {
@@ -489,8 +489,34 @@ a.isolated-link {
     &.loose {
         margin-bottom: 1.2em;
     }
-    &.loose {
+    &.xloose {
         margin-bottom: 1.6em;
+    }
+}
+
+.cta-container {
+    margin-bottom: 0;
+
+    a, button, .button, .#{$picchu-prefix}button {
+        margin-bottom: 0.8em;
+    }
+    &.tight {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 0.4em;
+        }
+    }
+    &.loose {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 1.2em;
+        }
+    }
+    &.xloose {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 1.6em;
+        }
     }
 }
 

@@ -34,6 +34,17 @@
     @extend %visuallyhidden;
 }
 
+//Visual hides text inside an element but allows background images to be visible
+%text-hide {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-hide {
+  @extend %text-hide;
+}
+
 .text-center, .tac {
     text-align: center;
 }
@@ -131,6 +142,38 @@
     visibility: hidden !important;
 }
 
+.display-block, .db {
+    display: block;
+}
+
+.display-inline-block, .dib {
+    display: inline-block;
+}
+
+.display-inline, .di {
+    display: inline;
+}
+
+.display-table, .dt {
+    display: table;
+}
+
+.display-table-cell, .dtc {
+    display: table-cell;
+}
+
+.mobile-only {
+  @media screen and (min-width: $vp3) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  @media screen and (max-width: $vp3 + 1px) {
+    display: none;
+  }
+}
+
 .overflow-hidden, .ofh {
     overflow: hidden;
 }
@@ -153,4 +196,14 @@
 
 .full-width {
     width: 100%;
+    height: auto;
+}
+
+.no-wrap {
+    white-space: nowrap !important;
+}
+
+.stripped {
+  list-style-type: none;
+  padding-left: 0;
 }

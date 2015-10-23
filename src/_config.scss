@@ -1,10 +1,12 @@
 $picchu-namespace: false !default;
 $picchu-namespace-class: "picchu" !default;
 $picchu-prefix: "ms-" !default;
+$grid-prefix: "ms-" !default;
 
 //Theme options
 //Default color pallette
 $theme-primary-color: #0078D7; //blue
+$theme-link-color: $theme-primary-color;
 $theme-button-color: $theme-primary-color;
 $theme-form-element-color: $theme-primary-color;
 

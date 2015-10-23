@@ -4,6 +4,7 @@
 //              #IMPORTS
 //------------------------------------
 @import "config";
+@import "Math/math";
 @import "Typography/fontface";
 
 @mixin namespace-content {
@@ -29,21 +30,24 @@
 //------------------------------------
 @include namespace-content {
 	@import "Reset/normalize";
-	@import "Math/math";
+	@import "Helpers/helpers";
 	@import "Color/colors";
 	@import "Spacing/spacing";
 	@import "Typography/typography";
+	@import "Icons/icons";
 	@import "FormElements/buttons";
 	@import "FormElements/formfields";
 	@import "FormElements/checkboxes";
 	@import "FormElements/slider";
-	@import "Helpers/helpers";
+	@import "Hyperlinks/links";
 
 	@import "Components/Hero/hero";
+	@import "Components/Banner/banner";
 	@import "Components/Mosaic/mosaic";
 	@import "Components/Parallax/parallax";
 	@import "Components/ListRow/listRow";
-	@import "Components/Banner/banner"
+	@import "Components/Features/productFeature";
+	@import "Components/Features/videoFeature";
 }
 
 

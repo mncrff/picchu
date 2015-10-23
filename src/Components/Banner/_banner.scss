@@ -1,53 +1,66 @@
-.ms-banner {
-	position: relative;
+.#{$picchu-prefix}banner {
+    position: relative;
     background-color: $gray;
-    overflow: hidden;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media screen and (min-width: $vp3) {
-        padding-bottom: 56.3%;
-    }
+        @include vertical-spacing(padding, sp6, flex);
+        color: white;
 
-    .ms-banner-content-container {
-        background-color: white;
-        color: $black;
-
-        @media screen and (min-width: $vp3) {
-            background-color: transparent;
-            color: $white;
+        &:before {
+            content: '';
+            display: block;
             position: absolute;
             width: 100%;
             height: 100%;
-            height: calc(100% + 1px);
-            top:  0;
+            top: 0;
             left: 0;
+            background: rgba(0,0,0,0.65);
+            background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+        }
+        &.black-bgc {
+            color: white;
+            &:before {
+                background: rgba(0,0,0,0.65);
+                background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+            }
+        }
+        &.white-bgc {
+            color: $text-color;
+            &:before {
+                background: rgba(255,255,255,0.65);
+                background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+            }
+        }
+
+        &.tac:before,
+        &.black-bgc.tac:before {
+            background: rgba(0,0,0,0.65);
+        }
+        &.white-bgc.tac:before {
+            background: rgba(255,255,255,0.65);
         }
     }
 
-    .ms-banner-mobile-img {
-        display: block;
-        width: 100%;
-        height: auto;
+    @media screen and (min-width: $vp5) {
+        @include vertical-spacing(padding, sp6, large);
+    }
+
+    & > .#{$grid-prefix}grid {
+        background-color: white;
 
         @media screen and (min-width: $vp3) {
-            display: none;
+            background-color: transparent;
         }
     }
 
-	.ms-banner-table {
+    & > .#{$grid-prefix}grid > .#{$grid-prefix}row {
         @include vertical-spacing(padding-top, sp3, small);
         @include vertical-spacing(padding-bottom, sp4, small);
-        position: relative;
-        width: 100%;
-        height: 100%;
-        box-sizing: border-box;
 
-		@media screen and (min-width: $vp2) {
-            display: table;
-            table-layout: fixed;
-            width: 100%;
+        @media screen and (min-width: $vp2) {
             @include vertical-spacing(padding-top, sp3, flex);
             @include vertical-spacing(padding-bottom, sp4, flex);
         }
@@ -55,29 +68,15 @@
         @media screen and (min-width: $vp3) {
             padding-top: 0;
             padding-bottom: 0;
-
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                background: rgba(0,0,0,0.65);
-                background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-            }
-            &.tac:before {
-                background: rgba(0,0,0,0.65);
-            }
+            height: 50vw;
         }
+    }
 
-        .ms-banner-table-cell {
-            @media screen and (min-width: $vp2) {
-                display: table-cell;
-                vertical-align: middle;
-                width: 100%;
-            }
+    .#{$picchu-prefix}banner-mobile-img {
+        display: block;
+
+        @media screen and (min-width: $vp3) {
+            display: none;
         }
-	}
+    }
 }
