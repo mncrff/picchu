@@ -1,13 +1,13 @@
 .#{$picchu-prefix}banner {
     position: relative;
-    background-color: $gray;
-    background-position: center;
-    background-size: cover;
+    background-position: -9999px;
+    background-size: 0 0;
     background-repeat: no-repeat;
 
     @media screen and (min-width: $vp3) {
         @include vertical-spacing(padding, sp6, flex);
-        color: white;
+        background-position: center;
+        background-size: cover;
 
         &:before {
             content: '';
@@ -17,17 +17,16 @@
             height: 100%;
             top: 0;
             left: 0;
-            background: rgba(0,0,0,0.65);
-            background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
         }
-        &.black-bgc {
+
+        &.black-bg-grad {
             color: white;
             &:before {
                 background: rgba(0,0,0,0.65);
                 background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
             }
         }
-        &.white-bgc {
+        &.white-bg-grad {
             color: $text-color;
             &:before {
                 background: rgba(255,255,255,0.65);
@@ -35,11 +34,10 @@
             }
         }
 
-        &.tac:before,
-        &.black-bgc.tac:before {
+        &.black-bgc:before {
             background: rgba(0,0,0,0.65);
         }
-        &.white-bgc.tac:before {
+        &.white-bgc:before {
             background: rgba(255,255,255,0.65);
         }
     }
@@ -48,15 +46,15 @@
         @include vertical-spacing(padding, sp6, large);
     }
 
-    & > .#{$grid-prefix}grid {
-        background-color: white;
+    .#{$picchu-prefix}banner-content-container {
 
         @media screen and (min-width: $vp3) {
+            color: inherit;
             background-color: transparent;
         }
     }
 
-    & > .#{$grid-prefix}grid > .#{$grid-prefix}row {
+    .#{$picchu-prefix}banner-content {
         @include vertical-spacing(padding-top, sp3, small);
         @include vertical-spacing(padding-bottom, sp4, small);
 

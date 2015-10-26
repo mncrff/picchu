@@ -1,10 +1,8 @@
 .#{$picchu-prefix}hero {
-    background-color: $white;
     position: relative;
     overflow: hidden;
     
     @media screen and (min-width: $vp3) {
-        background-color: $gray;
         padding-bottom: 37.5%;
     }
 
@@ -23,16 +21,28 @@
         }
     }
 
+    .#{$picchu-prefix}hero-banner {
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
     .#{$picchu-prefix}hero-carousel {
         list-style-type: none;
         padding: 0;
         margin: 0;
 
-        li {
+        .#{$picchu-prefix}hero-carousel-slide {
             height: 100%;
             position: relative;
 
-            .#{$grid-prefix}grid {
+            .#{$picchu-prefix}hero-content-container {
                 position: relative;
                 padding-left: 42px;
                 padding-right: 42px;
@@ -46,7 +56,17 @@
                     padding-left: 0;
                     padding-right: 0;
                 }
-            } 
+            }
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
         }
     }
 
@@ -61,51 +81,47 @@
     }
 
     .#{$picchu-prefix}hero-content-container {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-        }
-
         :last-child {
             margin-bottom: 0;
-        }
-
-        &.top {
-           background-position: top center; 
-        }
-        &.top-left {
-           background-position: top left; 
-        }
-        &.top-right {
-           background-position: top right; 
-        }
-        &.bottom {
-           background-position: bottom center; 
-        }
-        &.bottom-left {
-           background-position: bottom left; 
-        }
-        &.bottom-right {
-           background-position: bottom right; 
-        }
-        &.left {
-           background-position: center left; 
-        }
-        &.right {
-           background-position: center right; 
         }
     }
 
     &.inside-text {
+        .#{$picchu-prefix}hero-banner,
+        .#{$picchu-prefix}hero-carousel .#{$picchu-prefix}hero-carousel-slide {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &.black-bg-grad {
+                color: white;
+                &:before {
+                    background: rgba(0,0,0,0.65);
+                    @media screen and (min-width: $vp3) {
+                        background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+                    }
+                }
+            }
+
+            &.white-bg-grad {
+                color: $text-color;
+                &:before {
+                    background: rgba(255,255,255,0.65);
+                    @media screen and (min-width: $vp3) {
+                        background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+                    }
+                }
+            }
+
+            &.black-bgc:before {
+                background: rgba(0,0,0,0.65);
+            }
+
+            &.white-bgc:before {
+                background: rgba(255,255,255,0.65);
+            }
+        }
+
         .#{$picchu-prefix}hero-content-container {
             @include vertical-spacing(padding, sp6, small);
             position: relative;
@@ -126,20 +142,8 @@
                 padding-bottom: 0;
             }
 
-            &:before {
-                background: rgba(0,0,0,0.65);
-                @media screen and (min-width: $vp3) {
-                    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-                }
-            }
-            &.tac:before {
-                background: rgba(0,0,0,0.65);
-            }
-
-            .#{$picchu-prefix}hero-content-centered {
+            .#{$picchu-prefix}hero-content-valign {
                 position: relative;
-                background-color: transparent;
-                color: $white;
 
                 @media screen and (min-width: $vp2) {
                     display: table-cell;
@@ -155,6 +159,48 @@
     }
 
     &.popout-text {
+        .#{$picchu-prefix}hero-banner,
+        .#{$picchu-prefix}hero-carousel .#{$picchu-prefix}hero-carousel-slide {
+            background-position: -9999px;
+            background-size: 0 0;
+            background-repeat: no-repeat;
+
+            @media screen and (min-width: $vp3) {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                &.black-bg-grad {
+                    color: white;
+                    &:before {
+                        background: rgba(0,0,0,0.65);
+                        @media screen and (min-width: $vp3) {
+                            background: linear-gradient(to right, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
+                        }
+                    }
+                }
+
+                &.white-bg-grad {
+                    color: $text-color;
+                    &:before {
+                        background: rgba(255,255,255,0.65);
+                        @media screen and (min-width: $vp3) {
+                            background: linear-gradient(to right,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0) 80%,rgba(255,255,255,0) 100%);
+                        }
+                    }
+                }
+
+                &.black-bgc:before {
+                    background: rgba(0,0,0,0.65);
+                }
+
+                &.white-bgc:before {
+                    background: rgba(255,255,255,0.65);
+                }
+            }
+
+        }
+
         .#{$picchu-prefix}hero-content-container {
 
             @media screen and (min-width: $vp3) {
@@ -165,25 +211,14 @@
                 width: 100%;
                 height: 100%;
                 box-sizing: border-box;
+                background-color: transparent;
+                color: inherit;
             }
 
-            &:before {
-                @media screen and (min-width: $vp3) {
-                    background: rgba(0,0,0,0.65);
-                    background: linear-gradient(to right,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 80%,rgba(0,0,0,0) 100%);
-                }
-            }
-            &.tac:before {
-                @media screen and (min-width: $vp3) {
-                    background: rgba(0,0,0,0.65);
-                }
-            }
-
-            .#{$picchu-prefix}hero-content-centered {
+            .#{$picchu-prefix}hero-content-valign {
                 @include vertical-spacing(padding-top, sp3, small);
                 @include vertical-spacing(padding-bottom, sp4, small);
                 position: relative;
-                background-color: $white;
 
                 @media screen and (min-width: $vp2) {
                     @include vertical-spacing(padding-top, sp3, flex);
@@ -196,8 +231,6 @@
                     display: table-cell;
                     width: 100%;
                     vertical-align: middle;
-                    background-color: transparent;
-                    color: $white;
                 }
             }
         }
