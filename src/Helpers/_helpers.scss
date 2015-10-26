@@ -142,26 +142,6 @@
     visibility: hidden !important;
 }
 
-.display-block, .db {
-    display: block;
-}
-
-.display-inline-block, .dib {
-    display: inline-block;
-}
-
-.display-inline, .di {
-    display: inline;
-}
-
-.display-table, .dt {
-    display: table;
-}
-
-.display-table-cell, .dtc {
-    display: table-cell;
-}
-
 .mobile-only {
   @media screen and (min-width: $vp3) {
     display: none;
@@ -169,9 +149,58 @@
 }
 
 .desktop-only {
-  @media screen and (max-width: $vp3 + 1px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: $vp3) {
+    display: block;
   }
+}
+
+.display-block, .db {
+    display: block;
+}
+
+.display-inline-block, .dib {
+    display: inline-block;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: inline-block;
+      }
+    }
+}
+
+.display-inline, .di {
+    display: inline;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: inline;
+      }
+    }
+}
+
+.display-table, .dt {
+    display: table;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: table;
+      }
+    }
+}
+
+.display-table-cell, .dtc {
+    display: table-cell;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: table-cell;
+      }
+    }
 }
 
 .overflow-hidden, .ofh {
@@ -206,4 +235,32 @@
 .stripped {
   list-style-type: none;
   padding-left: 0;
+}
+
+.bg-top {
+   background-position: top center; 
+}
+.bg-top-left {
+   background-position: top left; 
+}
+.bg-top-right {
+   background-position: top right; 
+}
+.bg-bottom {
+   background-position: bottom center; 
+}
+.bg-bottom-left {
+   background-position: bottom left; 
+}
+.bg-bottom-right {
+   background-position: bottom right; 
+}
+.bg-left {
+   background-position: center left; 
+}
+.bg-right {
+   background-position: center right; 
+}
+.bg-center {
+   background-position: center; 
 }
