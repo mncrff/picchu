@@ -1,117 +1,6 @@
 //------------------------------------
-//              #FONTS
+//              #TYPOGRAPHY
 //------------------------------------
-
-
-@font-face {
-    font-family: 'wf_segoe-ui_light';
-    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
-    src: local("Segoe UI Light"), local("Segoe WP Light"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot?#iefix") format("embedded-opentype"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.woff") format("woff"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-}
-
-@font-face {
-    font-family: 'wf_segoe-ui_normal';
-    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot");
-    src: local("Segoe UI"), local("Segoe"), local("Segoe WP"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.eot?#iefix") format("embedded-opentype"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'wf_segoe-ui_semibold';
-    src: url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot');
-    src: local("Segoe UI Semibold"), local("Segoe Semibold"), local("Segoe WP Semibold"),
-    url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.eot?#iefix') format("embedded-opentype"),
-    url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.woff') format("woff"), 
-    url('//i.s-microsoft.com/fonts/segoe-ui/west-european/Semibold/latest.ttf') format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face{
-    font-family:'wf_segoe-ui_semilight';
-    src:url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot");
-    src:url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.eot?#iefix") format("embedded-opentype"),
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.woff") format("woff"),
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/semilight/latest.ttf") format("truetype");
-    font-weight:normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'wf_segoe-ui_bold';
-    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot");
-    src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.eot?#iefix") format("embedded-opentype"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.woff") format("woff"), 
-    url("//i.s-microsoft.com/fonts/segoe-ui/west-european/bold/latest.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-// Variables
-
-$light: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
-$semibold: wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-$regular: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
-$semilight: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
-$bold: wf_segoe-ui_bold, wf_segoe-ui_semibold, wf_segoe-ui_normal, Arial, sans-serif;
-
-$typeList: (
-  headline: (
-    large: 62px,
-    small: 46px,
-    flex: calc(36px + 1.86vw)
-  ),
-  h1: (
-    large: 46px,
-    small: 34px,
-    flex: calc(26.5px + 1.4vw)
-  ),
-  h2: (
-    large: 34px,
-    small: 26px,
-    flex: calc(17.6px + 1.18vw)
-  ),
-  h3: (
-    large: 24px,
-    small: 20px,
-    flex: calc(18.2px + 0.41vw)
-  ),
-  h4: (
-    large: 20px,
-    small: 18px,
-    flex: calc(16.9px + 0.22vw)
-  ),
-  body: (
-    large: 18px,
-    small: 16px,
-    flex: calc(14.9px + 0.22vw)
-  ),
-  body-alt: (
-    large: 15px,
-    small: 14px,
-    flex: calc(13.5px + 0.11vw)
-  ),
-  caption: (
-    large: 13px,
-    small: 12px,
-    flex: calc(11.5px + 0.11vw)
-  ),
-  caption-alt: (
-    large: 11px,
-    small: 10px,
-    flex: calc(9.5px + 0.11vw)
-  )
-
-);
 
 
 // Placeholders
@@ -140,9 +29,11 @@ $typeList: (
 
 //helper mixin to @extend with the appropriate placeholder
 //defaults to '%body-' placeholders.
-//1. inject base styling before media queries start
+//1. see Spacing/spacing.scss for placeholders
+//2. inject base styling before media queries start
 @mixin font-responsive($name: "body", $isResponsive: true) {
-    @content; //1.
+    @extend %#{$name}-spacing; //1.
+    @content; //2.
 
     @if $isResponsive {
         @extend %#{$name}-respond;
@@ -200,15 +91,15 @@ $typeList: (
 }
 
 // h5, .h5, h6, .h6
-@mixin font-sm-heading($isResponsive: true) {
-    @include font-responsive("body", $isResponsive){
+@mixin font-sm-title($isResponsive: true) {
+    @include font-responsive("h5", $isResponsive){
         font-family: $semibold;
         font-weight: inherit;
         line-height: 1.25;
     };
 }
 
-// body, .body
+// .body
 @mixin font-body($isResponsive: true) {
     @include font-responsive("body", $isResponsive){
         font-family: $regular;
@@ -264,21 +155,20 @@ b, .bold {
 body {
     color: $text-color;
     text-rendering: optimizeLegibility;
-    @include font-body;
+    font-family: $regular;
+    @extend %body-respond;
 }
 
-p, input, div, span, li, select, button {
+p, blockquote, input, div, span, li, select, button {
     font-family: $regular;
     @extend %body-respond;
 }
 
 p {
-    margin: 0 0 1em 0;
     line-height: 1.5;
 }
 
 a {
-    color: shade($blue, nth($shade-list, 1));
     font-size: inherit;
     font-family: $regular;
     text-decoration: none;
@@ -309,7 +199,7 @@ h4, .h4, .subtitle {
 }
 
 h5, .h5, h6, .h6 {
-    @include font-sm-heading;
+    @include font-sm-title;
 }
 
 .body {
@@ -350,6 +240,10 @@ h5, .h5, h6, .h6 {
 
     h4, .h4, .subtitle {
         @extend %h4-static;
+    }
+
+    h5, .h5, h6, .h6 {
+        @extend %h5-static;
     }
 
     body, .body, p, h5, .h5, h6, .h6, input, div, span, li, select, button {
