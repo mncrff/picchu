@@ -1,68 +1,24 @@
-/*! picchu.css v0.1 | Microsoftdotcom team | Github - url coming once ready to make public */
+@import "core";
 
 //------------------------------------
 //              #IMPORTS
 //------------------------------------
-@import "config";
-@import "Math/math";
-@import "variables";
-@import "Typography/fontface";
+@import "Reset/normalize";
+@import "Helpers/helpers";
+@import "Color/colors";
+@import "Spacing/spacing";
+@import "Typography/typography";
+@import "Icons/icons";
+@import "FormElements/buttons";
+@import "FormElements/formfields";
+@import "FormElements/checkboxes";
+@import "FormElements/slider";
+@import "Hyperlinks/links";
 
-@mixin namespace-content {
-	@if $picchu-namespace {
-
-		// if namespaced flag is true,
-		// wrap a namespace class around all styles
-		.#{$picchu-namespace-class} {
-			@content;
-		}
-
-	} @else {
-
-		// otherwise just output styles without any namespace
-		@content;
-
-	}
-}
-
-
-//------------------------------------
-//              #IMPORTS
-//------------------------------------
-@include namespace-content {
-	@import "Reset/normalize";
-	@import "Helpers/helpers";
-	@import "Color/colors";
-	@import "Spacing/spacing";
-	@import "Typography/typography";
-	@import "Icons/icons";
-	@import "FormElements/buttons";
-	@import "FormElements/formfields";
-	@import "FormElements/checkboxes";
-	@import "FormElements/slider";
-	@import "Hyperlinks/links";
-
-	@import "Components/Hero/hero";
-	@import "Components/Banner/banner";
-	@import "Components/Mosaic/mosaic";
-	@import "Components/Parallax/parallax";
-	@import "Components/ListRow/listRow";
-	@import "Components/Features/productFeature";
-	@import "Components/Features/videoFeature";
-}
-
-
-//------------------------------------
-//              #GLOBALS
-//------------------------------------
-html {
-    box-sizing: border-box;
-    line-height: 1.4;
-}
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-img {
-    max-width: 100%;
-}
+@import "Components/Hero/hero";
+@import "Components/Banner/banner";
+@import "Components/Mosaic/mosaic";
+@import "Components/Parallax/parallax";
+@import "Components/ListRow/listRow";
+@import "Components/Features/productFeature";
+@import "Components/Features/videoFeature";

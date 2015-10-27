@@ -1,0 +1,227 @@
+//------------------------------------
+//              #TYPOGRAPHY
+//------------------------------------
+
+
+// Placeholders
+
+//loop creates placeholders for each typeset.
+//1. placeholder for responsive font-size (ex. %body-respond{...})
+//2. placeholder for static font-size (ex. %body-static{...})
+@each $item, $type in $typeList {
+    %#{$item}-respond { //1.
+        font-size: map-get($type, small);
+
+        @media all and (min-width: $vp2) {
+            font-size:  map-get($type, flex);
+        }
+        @media all and (min-width: $vp5) {
+            font-size:  map-get($type, large);
+        }
+    }
+    %#{$item}-static { //2.
+        font-size: map-get($type, large);
+    }
+}
+
+
+// Mixins
+
+//helper mixin to @extend with the appropriate placeholder
+//defaults to '%body-' placeholders.
+//1. see Spacing/spacing.scss for placeholders
+//2. inject base styling before media queries start
+@mixin font-responsive($name: "body", $isResponsive: true) {
+    @extend %#{$name}-spacing; //1.
+    @content; //2.
+
+    @if $isResponsive {
+        @extend %#{$name}-respond;
+    }
+    @else {
+        @extend %#{$name}-static;
+    }
+}
+
+// .headline
+@mixin font-headline($isResponsive: true) {
+    @include font-responsive("headline", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h1, .h1, .header
+@mixin font-header($isResponsive: true) {
+    @include font-responsive("h1", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+    };
+}
+
+// h2, .h2, .subheader
+@mixin font-subheader($isResponsive: true) {
+    @include font-responsive("h2", $isResponsive){
+        font-family: $light;
+        font-weight: inherit;
+        line-height: 1.2;
+    };
+}
+
+// h3, .h3, .title
+@mixin font-title($isResponsive: true) {
+    @include font-responsive("h3", $isResponsive){
+        font-family: $semilight;
+        font-weight: inherit;
+        line-height: 1.25; 
+    };
+}
+
+// h4, .h4, .subtitle
+@mixin font-subtitle($isResponsive: true) {
+    @include font-responsive("h4", $isResponsive){
+        font-family: $regular;
+        font-weight: inherit;
+        line-height: 1.25;
+    };
+}
+
+// h5, .h5, h6, .h6
+@mixin font-sm-title($isResponsive: true) {
+    @include font-responsive("h5", $isResponsive){
+        font-family: $semibold;
+        font-weight: inherit;
+        line-height: 1.25;
+    };
+}
+
+// .body
+@mixin font-body($isResponsive: true) {
+    @include font-responsive("body", $isResponsive){
+        font-family: $regular;
+        line-height: 1.5;
+    };
+}
+
+// .body-alt
+@mixin font-body-alt($isResponsive: true) {
+    @include font-responsive("body-alt", $isResponsive){
+        font-family: $regular;
+        line-height: 1.25; 
+    };
+}
+
+//.caption
+@mixin font-caption($isResponsive: true) {
+    @include font-responsive("caption", $isResponsive){
+        line-height: 1.25;
+    };
+}
+
+// .caption-alt
+@mixin font-caption-alt($isResponsive: true) {
+    @include font-responsive("caption-alt", $isResponsive){
+        line-height: 1.25;
+    }
+}
+
+
+//------------------------------------
+//              #SPACING
+//------------------------------------
+
+
+// Function to remove none-strings and empty strings from a list
+//
+// @param {List} $list
+//      List of values
+//
+// @return {List}
+
+@function str-list($list) {
+  $result: ();
+  
+  @each $item in $list {
+    @if $item != ""
+    and type-of($item) == string {
+      $result: append($result, $item);
+    }
+  }
+  
+  @return $result;
+}
+
+
+// Mixin to output vertical spacing properties on elements
+//
+// @param {String} $property
+//      Property to use, ex. 'margin', 'padding-bottom', etc
+// @param {List} $vals...
+//      List of variable arguments
+//          - Strings corresponding to 'option' keys inside $spacing-list (ex. sp1)
+//          - Optional String corresponding to 'size' keys inside $spacing-list (ex. large)
+//
+// @require {Mixin} vertical-properties
+
+@mixin vertical-spacing($property, $vals...){
+    $last: nth($vals, length($vals));
+
+    @if $last == "small" or $last == "flex" or $last == "large" or $last == "static" {
+        //remove last value passed in list, returns a new list
+        $v: str-list(set-nth($vals, length($vals), ""));
+
+        @if $last == "static" {
+            //if a "static" option is passed in as the last value, use large size without responsive media queries
+            @include vertical-properties($property, $v, large);
+        } @else {
+            //if a size option is passed in as the last value, use size without responsive media queries
+            @include vertical-properties($property, $v, $last);
+        }
+    } @else {
+        //default to responsive values
+        @include vertical-properties($property, str-list($vals), small);
+
+        @media all and (min-width: $vp2) {
+           @include vertical-properties($property, str-list($vals), flex);
+        }
+        @media all and (min-width: $vp5) {
+            @include vertical-properties($property, str-list($vals), large);
+        }
+    }
+}
+
+
+// Helper for vertical-spacing mixin to intelligently handle shorthand lists of values
+//
+// @param {String} $property
+//      Property to use, ex. 'margin', 'padding-bottom', etc
+// @param {List} $vals
+//      List of Strings corresponding to 'option' keys inside $spacing-list (ex. sp1)
+// @param {String} $prop_val
+//      String corresponding to 'size' keys inside $spacing-list (ex. large)
+
+@mixin vertical-properties($property, $vals, $prop_val){
+    $i: str-index($property, "-");
+
+    @if $i != null {
+        $dir: str-slice($property, str-index($property, "-") + 1);
+        @if $dir == "top" or $dir == "bottom" {
+            #{$property}: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+        }
+    } @else {
+        @if length($vals) == 1 {
+            // Libsass 1.0.0 would not compile with this variable set
+            // $val: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+        } 
+        @else if length($vals) == 2 {
+            #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
+            #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 2)), $prop_val);
+        }
+    }
+}

@@ -1,4 +1,134 @@
 /*! picchu.css v0.1 | Microsoftdotcom team | Github - url coming once ready to make public */
+html {
+  box-sizing: border-box;
+  line-height: 1.4; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%; }
+
+.picchu .headline {
+  font-size: 46px; }
+  @media all and (min-width: 540px) {
+    .picchu .headline {
+      font-size: calc(36px + 1.86vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu .headline {
+      font-size: 62px; } }
+
+.picchu .static-typography .headline {
+  font-size: 62px; }
+
+.picchu h1, .picchu .h1, .picchu .header {
+  font-size: 34px; }
+  @media all and (min-width: 540px) {
+    .picchu h1, .picchu .h1, .picchu .header {
+      font-size: calc(26.5px + 1.4vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu h1, .picchu .h1, .picchu .header {
+      font-size: 46px; } }
+
+.picchu .static-typography h1, .picchu .static-typography .h1, .picchu .static-typography .header {
+  font-size: 46px; }
+
+.picchu h2, .picchu .h2, .picchu .subheader {
+  font-size: 26px; }
+  @media all and (min-width: 540px) {
+    .picchu h2, .picchu .h2, .picchu .subheader {
+      font-size: calc(17.6px + 1.18vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu h2, .picchu .h2, .picchu .subheader {
+      font-size: 34px; } }
+
+.picchu .static-typography h2, .picchu .static-typography .h2, .picchu .static-typography .subheader {
+  font-size: 34px; }
+
+.picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large {
+  font-size: 20px; }
+  @media all and (min-width: 540px) {
+    .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large {
+      font-size: calc(18.2px + 0.41vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large {
+      font-size: 24px; } }
+
+.picchu .static-typography h3, .picchu .static-typography .h3, .picchu .static-typography .title {
+  font-size: 24px; }
+
+.picchu h4, .picchu .h4, .picchu .subtitle {
+  font-size: 18px; }
+  @media all and (min-width: 540px) {
+    .picchu h4, .picchu .h4, .picchu .subtitle {
+      font-size: calc(16.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu h4, .picchu .h4, .picchu .subtitle {
+      font-size: 20px; } }
+
+.picchu .static-typography h4, .picchu .static-typography .h4, .picchu .static-typography .subtitle {
+  font-size: 20px; }
+
+.picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
+      font-size: 18px; } }
+
+.picchu .static-typography h5, .picchu .static-typography .h5, .picchu .static-typography h6, .picchu .static-typography .h6 {
+  font-size: 18px; }
+
+.picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    .picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
+      font-size: 18px; } }
+
+.picchu .static-typography body, .picchu .static-typography .body, .picchu .static-typography p, .picchu .static-typography h5, .picchu .static-typography .h5, .picchu .static-typography h6, .picchu .static-typography .h6, .picchu .static-typography input, .picchu .static-typography div, .picchu .static-typography span, .picchu .static-typography li, .picchu .static-typography select, .picchu .static-typography button {
+  font-size: 18px; }
+
+.picchu .body-alt, .picchu button.small, .picchu .button.small {
+  font-size: 14px; }
+  @media all and (min-width: 540px) {
+    .picchu .body-alt, .picchu button.small, .picchu .button.small {
+      font-size: calc(13.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu .body-alt, .picchu button.small, .picchu .button.small {
+      font-size: 15px; } }
+
+.picchu .static-typography .body-alt {
+  font-size: 15px; }
+
+.picchu .caption {
+  font-size: 12px; }
+  @media all and (min-width: 540px) {
+    .picchu .caption {
+      font-size: calc(11.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu .caption {
+      font-size: 13px; } }
+
+.picchu .static-typography .caption {
+  font-size: 13px; }
+
+.picchu .caption-alt {
+  font-size: 10px; }
+  @media all and (min-width: 540px) {
+    .picchu .caption-alt {
+      font-size: calc(9.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .picchu .caption-alt {
+      font-size: 11px; } }
+
+.picchu .static-typography .caption-alt {
+  font-size: 11px; }
+
 @font-face {
   font-family: 'wf_segoe-ui_light';
   src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
@@ -2446,13 +2576,13 @@
       margin-bottom: 0.75em; }
     .picchu h2.xloose, .picchu .xloose.h2, .picchu .xloose.subheader {
       margin-bottom: 1em; }
-  .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large, .picchu .ms-button.large, .picchu h4, .picchu .h4, .picchu .subtitle {
+  .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large, .picchu h4, .picchu .h4, .picchu .subtitle {
     margin-bottom: 0.66em; }
-    .picchu h3.tight, .picchu .tight.h3, .picchu .tight.title, .picchu button.tight.large, .picchu .tight.button.large, .picchu .tight.ms-button.large, .picchu h4.tight, .picchu .tight.h4, .picchu .tight.subtitle {
+    .picchu h3.tight, .picchu .tight.h3, .picchu .tight.title, .picchu button.tight.large, .picchu .tight.button.large, .picchu h4.tight, .picchu .tight.h4, .picchu .tight.subtitle {
       margin-bottom: 0.33em; }
-    .picchu h3.loose, .picchu .loose.h3, .picchu .loose.title, .picchu button.loose.large, .picchu .loose.button.large, .picchu .loose.ms-button.large, .picchu h4.loose, .picchu .loose.h4, .picchu .loose.subtitle {
+    .picchu h3.loose, .picchu .loose.h3, .picchu .loose.title, .picchu button.loose.large, .picchu .loose.button.large, .picchu h4.loose, .picchu .loose.h4, .picchu .loose.subtitle {
       margin-bottom: 1em; }
-    .picchu h3.xloose, .picchu .xloose.h3, .picchu .xloose.title, .picchu button.xloose.large, .picchu .xloose.button.large, .picchu .xloose.ms-button.large, .picchu h4.xloose, .picchu .xloose.h4, .picchu .xloose.subtitle {
+    .picchu h3.xloose, .picchu .xloose.h3, .picchu .xloose.title, .picchu button.xloose.large, .picchu .xloose.button.large, .picchu h4.xloose, .picchu .xloose.h4, .picchu .xloose.subtitle {
       margin-bottom: 1.32em; }
   .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
     margin-bottom: 0.75em; }
@@ -2470,13 +2600,13 @@
       margin-bottom: 1.85em; }
     .picchu p.xloose, .picchu blockquote.xloose, .picchu .xloose.body {
       margin-bottom: 2.5em; }
-  .picchu h1.body-alt, .picchu h2.body-alt, .picchu h3.body-alt, .picchu h4.body-alt, .picchu h5.body-alt, .picchu h6.body-alt, .picchu p.body-alt, .picchu blockquote.body-alt, .picchu button, .picchu .button, .picchu .ms-button, .picchu .body-alt, .picchu button.small, .picchu .button.small, .picchu .ms-button.small, .picchu h1.caption, .picchu h2.caption, .picchu h3.caption, .picchu h4.caption, .picchu h5.caption, .picchu h6.caption, .picchu p.caption, .picchu blockquote.caption, .picchu .caption, .picchu h1.caption-alt, .picchu h2.caption-alt, .picchu h3.caption-alt, .picchu h4.caption-alt, .picchu h5.caption-alt, .picchu h6.caption-alt, .picchu p.caption-alt, .picchu blockquote.caption-alt, .picchu .caption-alt {
+  .picchu h1.body-alt, .picchu h2.body-alt, .picchu h3.body-alt, .picchu h4.body-alt, .picchu h5.body-alt, .picchu h6.body-alt, .picchu p.body-alt, .picchu blockquote.body-alt, .picchu button, .picchu .button, .picchu .body-alt, .picchu button.small, .picchu .button.small, .picchu h1.caption, .picchu h2.caption, .picchu h3.caption, .picchu h4.caption, .picchu h5.caption, .picchu h6.caption, .picchu p.caption, .picchu blockquote.caption, .picchu .caption, .picchu h1.caption-alt, .picchu h2.caption-alt, .picchu h3.caption-alt, .picchu h4.caption-alt, .picchu h5.caption-alt, .picchu h6.caption-alt, .picchu p.caption-alt, .picchu blockquote.caption-alt, .picchu .caption-alt {
     margin-bottom: 1.25em; }
-    .picchu button.tight, .picchu .tight.button, .picchu .tight.ms-button, .picchu .tight.body-alt, .picchu .tight.caption, .picchu .tight.caption-alt {
+    .picchu button.tight, .picchu .tight.button, .picchu .tight.body-alt, .picchu .tight.caption, .picchu .tight.caption-alt {
       margin-bottom: 0.625em; }
-    .picchu button.loose, .picchu .loose.button, .picchu .loose.ms-button, .picchu .loose.body-alt, .picchu .loose.caption, .picchu .loose.caption-alt {
+    .picchu button.loose, .picchu .loose.button, .picchu .loose.body-alt, .picchu .loose.caption, .picchu .loose.caption-alt {
       margin-bottom: 1.875em; }
-    .picchu button.xloose, .picchu .xloose.button, .picchu .xloose.ms-button, .picchu .xloose.body-alt, .picchu .xloose.caption, .picchu .xloose.caption-alt {
+    .picchu button.xloose, .picchu .xloose.button, .picchu .xloose.body-alt, .picchu .xloose.caption, .picchu .xloose.caption-alt {
       margin-bottom: 2.5em; }
   .picchu .cta-link {
     margin-bottom: 0.8em; }
@@ -2488,19 +2618,19 @@
       margin-bottom: 1.6em; }
   .picchu .cta-container {
     margin-bottom: 0; }
-    .picchu .cta-container a, .picchu .cta-container button, .picchu .cta-container .button, .picchu .cta-container .ms-button {
+    .picchu .cta-container a, .picchu .cta-container button, .picchu .cta-container .button, .picchu .cta-container .button {
       margin-bottom: 0.8em; }
     .picchu .cta-container.tight {
       margin-bottom: 0; }
-      .picchu .cta-container.tight a, .picchu .cta-container.tight button, .picchu .cta-container.tight .button, .picchu .cta-container.tight .ms-button {
+      .picchu .cta-container.tight a, .picchu .cta-container.tight button, .picchu .cta-container.tight .button, .picchu .cta-container.tight .button {
         margin-bottom: 0.4em; }
     .picchu .cta-container.loose {
       margin-bottom: 0; }
-      .picchu .cta-container.loose a, .picchu .cta-container.loose button, .picchu .cta-container.loose .button, .picchu .cta-container.loose .ms-button {
+      .picchu .cta-container.loose a, .picchu .cta-container.loose button, .picchu .cta-container.loose .button, .picchu .cta-container.loose .button {
         margin-bottom: 1.2em; }
     .picchu .cta-container.xloose {
       margin-bottom: 0; }
-      .picchu .cta-container.xloose a, .picchu .cta-container.xloose button, .picchu .cta-container.xloose .button, .picchu .cta-container.xloose .ms-button {
+      .picchu .cta-container.xloose a, .picchu .cta-container.xloose button, .picchu .cta-container.xloose .button, .picchu .cta-container.xloose .button {
         margin-bottom: 1.6em; }
   .picchu ul li, .picchu ol li {
     margin-bottom: 0.5em; }
@@ -2510,106 +2640,6 @@
     margin-bottom: 0.75em; }
   .picchu ul.xloose li, .picchu ol.xloose li {
     margin-bottom: 1em; }
-  .picchu .headline {
-    font-size: 46px; }
-    @media all and (min-width: 540px) {
-      .picchu .headline {
-        font-size: calc(36px + 1.86vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu .headline {
-        font-size: 62px; } }
-  .picchu .static-typography .headline {
-    font-size: 62px; }
-  .picchu h1, .picchu .h1, .picchu .header {
-    font-size: 34px; }
-    @media all and (min-width: 540px) {
-      .picchu h1, .picchu .h1, .picchu .header {
-        font-size: calc(26.5px + 1.4vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu h1, .picchu .h1, .picchu .header {
-        font-size: 46px; } }
-  .picchu .static-typography h1, .picchu .static-typography .h1, .picchu .static-typography .header {
-    font-size: 46px; }
-  .picchu h2, .picchu .h2, .picchu .subheader {
-    font-size: 26px; }
-    @media all and (min-width: 540px) {
-      .picchu h2, .picchu .h2, .picchu .subheader {
-        font-size: calc(17.6px + 1.18vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu h2, .picchu .h2, .picchu .subheader {
-        font-size: 34px; } }
-  .picchu .static-typography h2, .picchu .static-typography .h2, .picchu .static-typography .subheader {
-    font-size: 34px; }
-  .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large, .picchu .ms-button.large {
-    font-size: 20px; }
-    @media all and (min-width: 540px) {
-      .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large, .picchu .ms-button.large {
-        font-size: calc(18.2px + 0.41vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu h3, .picchu .h3, .picchu .title, .picchu button.large, .picchu .button.large, .picchu .ms-button.large {
-        font-size: 24px; } }
-  .picchu .static-typography h3, .picchu .static-typography .h3, .picchu .static-typography .title {
-    font-size: 24px; }
-  .picchu h4, .picchu .h4, .picchu .subtitle {
-    font-size: 18px; }
-    @media all and (min-width: 540px) {
-      .picchu h4, .picchu .h4, .picchu .subtitle {
-        font-size: calc(16.9px + 0.22vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu h4, .picchu .h4, .picchu .subtitle {
-        font-size: 20px; } }
-  .picchu .static-typography h4, .picchu .static-typography .h4, .picchu .static-typography .subtitle {
-    font-size: 20px; }
-  .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
-    font-size: 16px; }
-    @media all and (min-width: 540px) {
-      .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
-        font-size: calc(14.9px + 0.22vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu h5, .picchu .h5, .picchu h6, .picchu .h6 {
-        font-size: 18px; } }
-  .picchu .static-typography h5, .picchu .static-typography .h5, .picchu .static-typography h6, .picchu .static-typography .h6 {
-    font-size: 18px; }
-  .picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
-    font-size: 16px; }
-    @media all and (min-width: 540px) {
-      .picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
-        font-size: calc(14.9px + 0.22vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu body, .picchu p, .picchu blockquote, .picchu input, .picchu div, .picchu span, .picchu li, .picchu select, .picchu button, .picchu .body {
-        font-size: 18px; } }
-  .picchu .static-typography body, .picchu .static-typography .body, .picchu .static-typography p, .picchu .static-typography h5, .picchu .static-typography .h5, .picchu .static-typography h6, .picchu .static-typography .h6, .picchu .static-typography input, .picchu .static-typography div, .picchu .static-typography span, .picchu .static-typography li, .picchu .static-typography select, .picchu .static-typography button {
-    font-size: 18px; }
-  .picchu .body-alt, .picchu button.small, .picchu .button.small, .picchu .ms-button.small {
-    font-size: 14px; }
-    @media all and (min-width: 540px) {
-      .picchu .body-alt, .picchu button.small, .picchu .button.small, .picchu .ms-button.small {
-        font-size: calc(13.5px + 0.11vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu .body-alt, .picchu button.small, .picchu .button.small, .picchu .ms-button.small {
-        font-size: 15px; } }
-  .picchu .static-typography .body-alt {
-    font-size: 15px; }
-  .picchu .caption {
-    font-size: 12px; }
-    @media all and (min-width: 540px) {
-      .picchu .caption {
-        font-size: calc(11.5px + 0.11vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu .caption {
-        font-size: 13px; } }
-  .picchu .static-typography .caption {
-    font-size: 13px; }
-  .picchu .caption-alt {
-    font-size: 10px; }
-    @media all and (min-width: 540px) {
-      .picchu .caption-alt {
-        font-size: calc(9.5px + 0.11vw); } }
-    @media all and (min-width: 1400px) {
-      .picchu .caption-alt {
-        font-size: 11px; } }
-  .picchu .static-typography .caption-alt {
-    font-size: 11px; }
   .picchu .light {
     font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif; }
   .picchu .semilight {
@@ -2711,7 +2741,7 @@
   .picchu .video-link.black-bgc:after {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20%20%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20white%20!important%3B%20stroke%3A%20white!important%3B%20%7D%3C%2Fstyle%3E%20%20%20%20%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M499.9.2C545.8.2%20590%206.1%20632.7%2018%20675.3%2029.9%20715%2046.7%20752%2068.6c37%2021.8%2070.6%2047.9%20101%2078.4%2030.4%2030.4%2056.5%2064.2%2078.4%20101%2021.8%2037%2038.7%2076.8%2050.6%20119.4s17.8%2086.9%2017.8%20132.8-5.9%2090.1-17.8%20132.8c-11.9%2042.6-28.7%2082.4-50.6%20119.4-21.9%2037-47.9%2070.6-78.4%20101-30.4%2030.4-64.2%2056.5-101%2078.4-37%2021.9-76.8%2038.7-119.4%2050.6-42.6%2011.9-86.9%2017.8-132.8%2017.8s-90.1-5.9-132.8-17.8-82.5-28.6-119.6-50.3-70.9-47.6-101.3-78.1S89.6%20789.8%2068%20752.7c-21.8-37.2-38.5-77-50.4-119.5C5.9%20590.6%200%20546.2%200%20500c0-45.9%205.9-90.1%2017.8-132.8s28.7-82.4%2050.6-119.4c21.8-37%2047.9-70.6%2078.4-101%2030.3-30.4%2064.1-56.5%20101-78.4%2037-21.8%2076.8-38.7%20119.4-50.6C409.7%206.2%20454%20.2%20499.9.2zm0%20958.3c40.4%200%20101.2-14.2%20138.4-24.6s76.1-34.2%20108.5-53.2c32.3-19%2055.8-43.8%2082.3-70.4%2026.5-26.5%2049.3-57%2068.4-89.3%2019-32.3%2033.7-67.2%2044.2-104.5%2010.4-37.3%2015.6-76%2015.6-116.4s-5.2-79.2-15.6-116.4-25.2-73.1-44.2-105.5c-19-32.3-39.8-64.8-66.4-91.3-26.5-26.5-68-60.3-100.3-79.4-32.4-18.9-67.2-34.6-104.5-45.1-37.3-10.4-86-19.6-126.4-19.6S420.7%2048%20383.5%2058.4%20295.3%2093.5%20263%20112.5c-32.4%2019-65.8%2051.8-92.3%2078.4-26.5%2026.5-49.3%2056-68.4%2088.3-19%2032.4-33.7%2067.2-44.2%20104.5-10.4%2037.3-15.6%2076-15.6%20116.3%200%2042.8%202.2%2072%2014.6%20116.4%2010%2035.9%2024.1%2067%2045.9%20104.5%2018.8%2032.4%2049.7%2072.9%2076.4%2099.6s53.2%2051.5%2085.6%2070.3c32.3%2018.8%2071.2%2038.5%20108.5%2048.9%2037.2%2010.5%2086%2018.8%20126.4%2018.8zm-125-708.4l374.9%20248.5L374.9%20750V250.1zm46.4%20414.8L670%20499.1%20420.3%20338.2l1%20326.7z%22%2F%3E%3C%2Fsvg%3E");
     background-repeat: no-repeat; }
-  .picchu button, .picchu .button, .picchu .ms-button {
+  .picchu button, .picchu .button, .picchu .button {
     border: none;
     display: inline-block;
     text-decoration: none;
@@ -2724,213 +2754,213 @@
     line-height: 1.5;
     background-color: #0078D7;
     color: #FFFFFF; }
-    .picchu button:hover, .picchu button:focus, .picchu .button:hover, .picchu .button:focus, .picchu .ms-button:hover, .picchu .ms-button:focus {
+    .picchu button:hover, .picchu button:focus, .picchu .button:hover, .picchu .button:focus, .picchu .button:hover, .picchu .button:focus {
       text-decoration: none;
       background-color: #0060ac;
       -webkit-transition: background-color 0s;
               transition: background-color 0s; }
-    .picchu button:active, .picchu .button:active, .picchu .ms-button:active {
+    .picchu button:active, .picchu .button:active, .picchu .button:active {
       background-color: #004881;
       -webkit-transition: background-color 0s;
               transition: background-color 0s; }
-    .picchu button[disabled]:hover, .picchu button[disabled]:focus, .picchu .button[disabled]:hover, .picchu .button[disabled]:focus, .picchu .ms-button[disabled]:hover, .picchu .ms-button[disabled]:focus {
+    .picchu button[disabled]:hover, .picchu button[disabled]:focus, .picchu .button[disabled]:hover, .picchu .button[disabled]:focus, .picchu .button[disabled]:hover, .picchu .button[disabled]:focus {
       background-color: #e4e4e4;
       color: #919191; }
-    .picchu button[disabled], .picchu .button[disabled], .picchu .ms-button[disabled] {
+    .picchu button[disabled], .picchu .button[disabled], .picchu .button[disabled] {
       background-color: #e4e4e4;
       color: #919191; }
-    .picchu button.secondary, .picchu .button.secondary, .picchu .ms-button.secondary {
+    .picchu button.secondary, .picchu .button.secondary, .picchu .button.secondary {
       background-color: #767676;
       color: #FFFFFF; }
-      .picchu button.secondary:hover, .picchu button.secondary:focus, .picchu .button.secondary:hover, .picchu .button.secondary:focus, .picchu .ms-button.secondary:hover, .picchu .ms-button.secondary:focus {
+      .picchu button.secondary:hover, .picchu button.secondary:focus, .picchu .button.secondary:hover, .picchu .button.secondary:focus, .picchu .button.secondary:hover, .picchu .button.secondary:focus {
         background-color: #5e5e5e; }
-      .picchu button.secondary:active, .picchu .button.secondary:active, .picchu .ms-button.secondary:active {
+      .picchu button.secondary:active, .picchu .button.secondary:active, .picchu .button.secondary:active {
         background-color: #474747; }
-    .picchu button.large, .picchu .button.large, .picchu .ms-button.large {
+    .picchu button.large, .picchu .button.large, .picchu .button.large {
       font-family: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
       font-weight: inherit;
       line-height: 1.25;
       line-height: 1.5; }
-    .picchu button.small, .picchu .button.small, .picchu .ms-button.small {
+    .picchu button.small, .picchu .button.small, .picchu .button.small {
       font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
       line-height: 1.25;
       line-height: 1.5; }
-    .picchu button.lightblue-bgc:hover, .picchu button.lightblue-bgc:focus, .picchu .button.lightblue-bgc:hover, .picchu .button.lightblue-bgc:focus, .picchu .ms-button.lightblue-bgc:hover, .picchu .ms-button.lightblue-bgc:focus {
+    .picchu button.lightblue-bgc:hover, .picchu button.lightblue-bgc:focus, .picchu .button.lightblue-bgc:hover, .picchu .button.lightblue-bgc:focus, .picchu .button.lightblue-bgc:hover, .picchu .button.lightblue-bgc:focus {
       background-color: #0096c2; }
-    .picchu button.lightblue-bgc:active, .picchu .button.lightblue-bgc:active, .picchu .ms-button.lightblue-bgc:active {
+    .picchu button.lightblue-bgc:active, .picchu .button.lightblue-bgc:active, .picchu .button.lightblue-bgc:active {
       background-color: #007191; }
-    .picchu button.lightblue-bgc[disabled]:hover, .picchu button.lightblue-bgc[disabled]:focus, .picchu .button.lightblue-bgc[disabled]:hover, .picchu .button.lightblue-bgc[disabled]:focus, .picchu .ms-button.lightblue-bgc[disabled]:hover, .picchu .ms-button.lightblue-bgc[disabled]:focus {
+    .picchu button.lightblue-bgc[disabled]:hover, .picchu button.lightblue-bgc[disabled]:focus, .picchu .button.lightblue-bgc[disabled]:hover, .picchu .button.lightblue-bgc[disabled]:focus, .picchu .button.lightblue-bgc[disabled]:hover, .picchu .button.lightblue-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.blue-bgc:hover, .picchu button.blue-bgc:focus, .picchu .button.blue-bgc:hover, .picchu .button.blue-bgc:focus, .picchu .ms-button.blue-bgc:hover, .picchu .ms-button.blue-bgc:focus {
+    .picchu button.blue-bgc:hover, .picchu button.blue-bgc:focus, .picchu .button.blue-bgc:hover, .picchu .button.blue-bgc:focus, .picchu .button.blue-bgc:hover, .picchu .button.blue-bgc:focus {
       background-color: #0060ac; }
-    .picchu button.blue-bgc:active, .picchu .button.blue-bgc:active, .picchu .ms-button.blue-bgc:active {
+    .picchu button.blue-bgc:active, .picchu .button.blue-bgc:active, .picchu .button.blue-bgc:active {
       background-color: #004881; }
-    .picchu button.blue-bgc[disabled]:hover, .picchu button.blue-bgc[disabled]:focus, .picchu .button.blue-bgc[disabled]:hover, .picchu .button.blue-bgc[disabled]:focus, .picchu .ms-button.blue-bgc[disabled]:hover, .picchu .ms-button.blue-bgc[disabled]:focus {
+    .picchu button.blue-bgc[disabled]:hover, .picchu button.blue-bgc[disabled]:focus, .picchu .button.blue-bgc[disabled]:hover, .picchu .button.blue-bgc[disabled]:focus, .picchu .button.blue-bgc[disabled]:hover, .picchu .button.blue-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.midblue-bgc:hover, .picchu button.midblue-bgc:focus, .picchu .button.midblue-bgc:hover, .picchu .button.midblue-bgc:focus, .picchu .ms-button.midblue-bgc:hover, .picchu .ms-button.midblue-bgc:focus {
+    .picchu button.midblue-bgc:hover, .picchu button.midblue-bgc:focus, .picchu .button.midblue-bgc:hover, .picchu .button.midblue-bgc:focus, .picchu .button.midblue-bgc:hover, .picchu .button.midblue-bgc:focus {
       background-color: #001372; }
-    .picchu button.midblue-bgc:active, .picchu .button.midblue-bgc:active, .picchu .ms-button.midblue-bgc:active {
+    .picchu button.midblue-bgc:active, .picchu .button.midblue-bgc:active, .picchu .button.midblue-bgc:active {
       background-color: #000e56; }
-    .picchu button.midblue-bgc[disabled]:hover, .picchu button.midblue-bgc[disabled]:focus, .picchu .button.midblue-bgc[disabled]:hover, .picchu .button.midblue-bgc[disabled]:focus, .picchu .ms-button.midblue-bgc[disabled]:hover, .picchu .ms-button.midblue-bgc[disabled]:focus {
+    .picchu button.midblue-bgc[disabled]:hover, .picchu button.midblue-bgc[disabled]:focus, .picchu .button.midblue-bgc[disabled]:hover, .picchu .button.midblue-bgc[disabled]:focus, .picchu .button.midblue-bgc[disabled]:hover, .picchu .button.midblue-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkblue-bgc:hover, .picchu button.darkblue-bgc:focus, .picchu .button.darkblue-bgc:hover, .picchu .button.darkblue-bgc:focus, .picchu .ms-button.darkblue-bgc:hover, .picchu .ms-button.darkblue-bgc:focus {
+    .picchu button.darkblue-bgc:hover, .picchu button.darkblue-bgc:focus, .picchu .button.darkblue-bgc:hover, .picchu .button.darkblue-bgc:focus, .picchu .button.darkblue-bgc:hover, .picchu .button.darkblue-bgc:focus {
       background-color: #001a40; }
-    .picchu button.darkblue-bgc:active, .picchu .button.darkblue-bgc:active, .picchu .ms-button.darkblue-bgc:active {
+    .picchu button.darkblue-bgc:active, .picchu .button.darkblue-bgc:active, .picchu .button.darkblue-bgc:active {
       background-color: #001330; }
-    .picchu button.darkblue-bgc[disabled]:hover, .picchu button.darkblue-bgc[disabled]:focus, .picchu .button.darkblue-bgc[disabled]:hover, .picchu .button.darkblue-bgc[disabled]:focus, .picchu .ms-button.darkblue-bgc[disabled]:hover, .picchu .ms-button.darkblue-bgc[disabled]:focus {
+    .picchu button.darkblue-bgc[disabled]:hover, .picchu button.darkblue-bgc[disabled]:focus, .picchu .button.darkblue-bgc[disabled]:hover, .picchu .button.darkblue-bgc[disabled]:focus, .picchu .button.darkblue-bgc[disabled]:hover, .picchu .button.darkblue-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightpurple-bgc:hover, .picchu button.lightpurple-bgc:focus, .picchu .button.lightpurple-bgc:hover, .picchu .button.lightpurple-bgc:focus, .picchu .ms-button.lightpurple-bgc:hover, .picchu .ms-button.lightpurple-bgc:focus {
+    .picchu button.lightpurple-bgc:hover, .picchu button.lightpurple-bgc:focus, .picchu .button.lightpurple-bgc:hover, .picchu .button.lightpurple-bgc:focus, .picchu .button.lightpurple-bgc:hover, .picchu .button.lightpurple-bgc:focus {
       background-color: #9080cc; }
-    .picchu button.lightpurple-bgc:active, .picchu .button.lightpurple-bgc:active, .picchu .ms-button.lightpurple-bgc:active {
+    .picchu button.lightpurple-bgc:active, .picchu .button.lightpurple-bgc:active, .picchu .button.lightpurple-bgc:active {
       background-color: #6c6099; }
-    .picchu button.lightpurple-bgc[disabled]:hover, .picchu button.lightpurple-bgc[disabled]:focus, .picchu .button.lightpurple-bgc[disabled]:hover, .picchu .button.lightpurple-bgc[disabled]:focus, .picchu .ms-button.lightpurple-bgc[disabled]:hover, .picchu .ms-button.lightpurple-bgc[disabled]:focus {
+    .picchu button.lightpurple-bgc[disabled]:hover, .picchu button.lightpurple-bgc[disabled]:focus, .picchu .button.lightpurple-bgc[disabled]:hover, .picchu .button.lightpurple-bgc[disabled]:focus, .picchu .button.lightpurple-bgc[disabled]:hover, .picchu .button.lightpurple-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.purple-bgc:hover, .picchu button.purple-bgc:focus, .picchu .button.purple-bgc:hover, .picchu .button.purple-bgc:focus, .picchu .ms-button.purple-bgc:hover, .picchu .ms-button.purple-bgc:focus {
+    .picchu button.purple-bgc:hover, .picchu button.purple-bgc:focus, .picchu .button.purple-bgc:hover, .picchu .button.purple-bgc:focus, .picchu .button.purple-bgc:hover, .picchu .button.purple-bgc:focus {
       background-color: #4a2474; }
-    .picchu button.purple-bgc:active, .picchu .button.purple-bgc:active, .picchu .ms-button.purple-bgc:active {
+    .picchu button.purple-bgc:active, .picchu .button.purple-bgc:active, .picchu .button.purple-bgc:active {
       background-color: #371b57; }
-    .picchu button.purple-bgc[disabled]:hover, .picchu button.purple-bgc[disabled]:focus, .picchu .button.purple-bgc[disabled]:hover, .picchu .button.purple-bgc[disabled]:focus, .picchu .ms-button.purple-bgc[disabled]:hover, .picchu .ms-button.purple-bgc[disabled]:focus {
+    .picchu button.purple-bgc[disabled]:hover, .picchu button.purple-bgc[disabled]:focus, .picchu .button.purple-bgc[disabled]:hover, .picchu .button.purple-bgc[disabled]:focus, .picchu .button.purple-bgc[disabled]:hover, .picchu .button.purple-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkpurple-bgc:hover, .picchu button.darkpurple-bgc:focus, .picchu .button.darkpurple-bgc:hover, .picchu .button.darkpurple-bgc:focus, .picchu .ms-button.darkpurple-bgc:hover, .picchu .ms-button.darkpurple-bgc:focus {
+    .picchu button.darkpurple-bgc:hover, .picchu button.darkpurple-bgc:focus, .picchu .button.darkpurple-bgc:hover, .picchu .button.darkpurple-bgc:focus, .picchu .button.darkpurple-bgc:hover, .picchu .button.darkpurple-bgc:focus {
       background-color: #281048; }
-    .picchu button.darkpurple-bgc:active, .picchu .button.darkpurple-bgc:active, .picchu .ms-button.darkpurple-bgc:active {
+    .picchu button.darkpurple-bgc:active, .picchu .button.darkpurple-bgc:active, .picchu .button.darkpurple-bgc:active {
       background-color: #1e0c36; }
-    .picchu button.darkpurple-bgc[disabled]:hover, .picchu button.darkpurple-bgc[disabled]:focus, .picchu .button.darkpurple-bgc[disabled]:hover, .picchu .button.darkpurple-bgc[disabled]:focus, .picchu .ms-button.darkpurple-bgc[disabled]:hover, .picchu .ms-button.darkpurple-bgc[disabled]:focus {
+    .picchu button.darkpurple-bgc[disabled]:hover, .picchu button.darkpurple-bgc[disabled]:focus, .picchu .button.darkpurple-bgc[disabled]:hover, .picchu .button.darkpurple-bgc[disabled]:focus, .picchu .button.darkpurple-bgc[disabled]:hover, .picchu .button.darkpurple-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightmagenta-bgc:hover, .picchu button.lightmagenta-bgc:focus, .picchu .button.lightmagenta-bgc:hover, .picchu .button.lightmagenta-bgc:focus, .picchu .ms-button.lightmagenta-bgc:hover, .picchu .ms-button.lightmagenta-bgc:focus {
+    .picchu button.lightmagenta-bgc:hover, .picchu button.lightmagenta-bgc:focus, .picchu .button.lightmagenta-bgc:hover, .picchu .button.lightmagenta-bgc:focus, .picchu .button.lightmagenta-bgc:hover, .picchu .button.lightmagenta-bgc:focus {
       background-color: #b60070; }
-    .picchu button.lightmagenta-bgc:active, .picchu .button.lightmagenta-bgc:active, .picchu .ms-button.lightmagenta-bgc:active {
+    .picchu button.lightmagenta-bgc:active, .picchu .button.lightmagenta-bgc:active, .picchu .button.lightmagenta-bgc:active {
       background-color: #880054; }
-    .picchu button.lightmagenta-bgc[disabled]:hover, .picchu button.lightmagenta-bgc[disabled]:focus, .picchu .button.lightmagenta-bgc[disabled]:hover, .picchu .button.lightmagenta-bgc[disabled]:focus, .picchu .ms-button.lightmagenta-bgc[disabled]:hover, .picchu .ms-button.lightmagenta-bgc[disabled]:focus {
+    .picchu button.lightmagenta-bgc[disabled]:hover, .picchu button.lightmagenta-bgc[disabled]:focus, .picchu .button.lightmagenta-bgc[disabled]:hover, .picchu .button.lightmagenta-bgc[disabled]:focus, .picchu .button.lightmagenta-bgc[disabled]:hover, .picchu .button.lightmagenta-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.magenta-bgc:hover, .picchu button.magenta-bgc:focus, .picchu .button.magenta-bgc:hover, .picchu .button.magenta-bgc:focus, .picchu .ms-button.magenta-bgc:hover, .picchu .ms-button.magenta-bgc:focus {
+    .picchu button.magenta-bgc:hover, .picchu button.magenta-bgc:focus, .picchu .button.magenta-bgc:hover, .picchu .button.magenta-bgc:focus, .picchu .button.magenta-bgc:hover, .picchu .button.magenta-bgc:focus {
       background-color: #90007e; }
-    .picchu button.magenta-bgc:active, .picchu .button.magenta-bgc:active, .picchu .ms-button.magenta-bgc:active {
+    .picchu button.magenta-bgc:active, .picchu .button.magenta-bgc:active, .picchu .button.magenta-bgc:active {
       background-color: #6c005f; }
-    .picchu button.magenta-bgc[disabled]:hover, .picchu button.magenta-bgc[disabled]:focus, .picchu .button.magenta-bgc[disabled]:hover, .picchu .button.magenta-bgc[disabled]:focus, .picchu .ms-button.magenta-bgc[disabled]:hover, .picchu .ms-button.magenta-bgc[disabled]:focus {
+    .picchu button.magenta-bgc[disabled]:hover, .picchu button.magenta-bgc[disabled]:focus, .picchu .button.magenta-bgc[disabled]:hover, .picchu .button.magenta-bgc[disabled]:focus, .picchu .button.magenta-bgc[disabled]:hover, .picchu .button.magenta-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkmagenta-bgc:hover, .picchu button.darkmagenta-bgc:focus, .picchu .button.darkmagenta-bgc:hover, .picchu .button.darkmagenta-bgc:focus, .picchu .ms-button.darkmagenta-bgc:hover, .picchu .ms-button.darkmagenta-bgc:focus {
+    .picchu button.darkmagenta-bgc:hover, .picchu button.darkmagenta-bgc:focus, .picchu .button.darkmagenta-bgc:hover, .picchu .button.darkmagenta-bgc:focus, .picchu .button.darkmagenta-bgc:hover, .picchu .button.darkmagenta-bgc:focus {
       background-color: #4a004a; }
-    .picchu button.darkmagenta-bgc:active, .picchu .button.darkmagenta-bgc:active, .picchu .ms-button.darkmagenta-bgc:active {
+    .picchu button.darkmagenta-bgc:active, .picchu .button.darkmagenta-bgc:active, .picchu .button.darkmagenta-bgc:active {
       background-color: #370037; }
-    .picchu button.darkmagenta-bgc[disabled]:hover, .picchu button.darkmagenta-bgc[disabled]:focus, .picchu .button.darkmagenta-bgc[disabled]:hover, .picchu .button.darkmagenta-bgc[disabled]:focus, .picchu .ms-button.darkmagenta-bgc[disabled]:hover, .picchu .ms-button.darkmagenta-bgc[disabled]:focus {
+    .picchu button.darkmagenta-bgc[disabled]:hover, .picchu button.darkmagenta-bgc[disabled]:focus, .picchu .button.darkmagenta-bgc[disabled]:hover, .picchu .button.darkmagenta-bgc[disabled]:focus, .picchu .button.darkmagenta-bgc[disabled]:hover, .picchu .button.darkmagenta-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.red-bgc:hover, .picchu button.red-bgc:focus, .picchu .button.red-bgc:hover, .picchu .button.red-bgc:focus, .picchu .ms-button.red-bgc:hover, .picchu .ms-button.red-bgc:focus {
+    .picchu button.red-bgc:hover, .picchu button.red-bgc:focus, .picchu .button.red-bgc:hover, .picchu .button.red-bgc:focus, .picchu .button.red-bgc:hover, .picchu .button.red-bgc:focus {
       background-color: #ba0e1c; }
-    .picchu button.red-bgc:active, .picchu .button.red-bgc:active, .picchu .ms-button.red-bgc:active {
+    .picchu button.red-bgc:active, .picchu .button.red-bgc:active, .picchu .button.red-bgc:active {
       background-color: #8b0a15; }
-    .picchu button.red-bgc[disabled]:hover, .picchu button.red-bgc[disabled]:focus, .picchu .button.red-bgc[disabled]:hover, .picchu .button.red-bgc[disabled]:focus, .picchu .ms-button.red-bgc[disabled]:hover, .picchu .ms-button.red-bgc[disabled]:focus {
+    .picchu button.red-bgc[disabled]:hover, .picchu button.red-bgc[disabled]:focus, .picchu .button.red-bgc[disabled]:hover, .picchu .button.red-bgc[disabled]:focus, .picchu .button.red-bgc[disabled]:hover, .picchu .button.red-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkred-bgc:hover, .picchu button.darkred-bgc:focus, .picchu .button.darkred-bgc:hover, .picchu .button.darkred-bgc:focus, .picchu .ms-button.darkred-bgc:hover, .picchu .ms-button.darkred-bgc:focus {
+    .picchu button.darkred-bgc:hover, .picchu button.darkred-bgc:focus, .picchu .button.darkred-bgc:hover, .picchu .button.darkred-bgc:focus, .picchu .button.darkred-bgc:hover, .picchu .button.darkred-bgc:focus {
       background-color: #860000; }
-    .picchu button.darkred-bgc:active, .picchu .button.darkred-bgc:active, .picchu .ms-button.darkred-bgc:active {
+    .picchu button.darkred-bgc:active, .picchu .button.darkred-bgc:active, .picchu .button.darkred-bgc:active {
       background-color: #650000; }
-    .picchu button.darkred-bgc[disabled]:hover, .picchu button.darkred-bgc[disabled]:focus, .picchu .button.darkred-bgc[disabled]:hover, .picchu .button.darkred-bgc[disabled]:focus, .picchu .ms-button.darkred-bgc[disabled]:hover, .picchu .ms-button.darkred-bgc[disabled]:focus {
+    .picchu button.darkred-bgc[disabled]:hover, .picchu button.darkred-bgc[disabled]:focus, .picchu .button.darkred-bgc[disabled]:hover, .picchu .button.darkred-bgc[disabled]:focus, .picchu .button.darkred-bgc[disabled]:hover, .picchu .button.darkred-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightorange-bgc:hover, .picchu button.lightorange-bgc:focus, .picchu .button.lightorange-bgc:hover, .picchu .button.lightorange-bgc:focus, .picchu .ms-button.lightorange-bgc:hover, .picchu .ms-button.lightorange-bgc:focus {
+    .picchu button.lightorange-bgc:hover, .picchu button.lightorange-bgc:focus, .picchu .button.lightorange-bgc:hover, .picchu .button.lightorange-bgc:focus, .picchu .button.lightorange-bgc:hover, .picchu .button.lightorange-bgc:focus {
       background-color: #cc7000; }
-    .picchu button.lightorange-bgc:active, .picchu .button.lightorange-bgc:active, .picchu .ms-button.lightorange-bgc:active {
+    .picchu button.lightorange-bgc:active, .picchu .button.lightorange-bgc:active, .picchu .button.lightorange-bgc:active {
       background-color: #995400; }
-    .picchu button.lightorange-bgc[disabled]:hover, .picchu button.lightorange-bgc[disabled]:focus, .picchu .button.lightorange-bgc[disabled]:hover, .picchu .button.lightorange-bgc[disabled]:focus, .picchu .ms-button.lightorange-bgc[disabled]:hover, .picchu .ms-button.lightorange-bgc[disabled]:focus {
+    .picchu button.lightorange-bgc[disabled]:hover, .picchu button.lightorange-bgc[disabled]:focus, .picchu .button.lightorange-bgc[disabled]:hover, .picchu .button.lightorange-bgc[disabled]:focus, .picchu .button.lightorange-bgc[disabled]:hover, .picchu .button.lightorange-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.orange-bgc:hover, .picchu button.orange-bgc:focus, .picchu .button.orange-bgc:hover, .picchu .button.orange-bgc:focus, .picchu .ms-button.orange-bgc:hover, .picchu .ms-button.orange-bgc:focus {
+    .picchu button.orange-bgc:hover, .picchu button.orange-bgc:focus, .picchu .button.orange-bgc:hover, .picchu .button.orange-bgc:focus, .picchu .button.orange-bgc:hover, .picchu .button.orange-bgc:focus {
       background-color: #ad2f01; }
-    .picchu button.orange-bgc:active, .picchu .button.orange-bgc:active, .picchu .ms-button.orange-bgc:active {
+    .picchu button.orange-bgc:active, .picchu .button.orange-bgc:active, .picchu .button.orange-bgc:active {
       background-color: #822301; }
-    .picchu button.orange-bgc[disabled]:hover, .picchu button.orange-bgc[disabled]:focus, .picchu .button.orange-bgc[disabled]:hover, .picchu .button.orange-bgc[disabled]:focus, .picchu .ms-button.orange-bgc[disabled]:hover, .picchu .ms-button.orange-bgc[disabled]:focus {
+    .picchu button.orange-bgc[disabled]:hover, .picchu button.orange-bgc[disabled]:focus, .picchu .button.orange-bgc[disabled]:hover, .picchu .button.orange-bgc[disabled]:focus, .picchu .button.orange-bgc[disabled]:hover, .picchu .button.orange-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightyellow-bgc:hover, .picchu button.lightyellow-bgc:focus, .picchu .button.lightyellow-bgc:hover, .picchu .button.lightyellow-bgc:focus, .picchu .ms-button.lightyellow-bgc:hover, .picchu .ms-button.lightyellow-bgc:focus {
+    .picchu button.lightyellow-bgc:hover, .picchu button.lightyellow-bgc:focus, .picchu .button.lightyellow-bgc:hover, .picchu .button.lightyellow-bgc:focus, .picchu .button.lightyellow-bgc:hover, .picchu .button.lightyellow-bgc:focus {
       background-color: #ccc100; }
-    .picchu button.lightyellow-bgc:active, .picchu .button.lightyellow-bgc:active, .picchu .ms-button.lightyellow-bgc:active {
+    .picchu button.lightyellow-bgc:active, .picchu .button.lightyellow-bgc:active, .picchu .button.lightyellow-bgc:active {
       background-color: #999100; }
-    .picchu button.lightyellow-bgc[disabled]:hover, .picchu button.lightyellow-bgc[disabled]:focus, .picchu .button.lightyellow-bgc[disabled]:hover, .picchu .button.lightyellow-bgc[disabled]:focus, .picchu .ms-button.lightyellow-bgc[disabled]:hover, .picchu .ms-button.lightyellow-bgc[disabled]:focus {
+    .picchu button.lightyellow-bgc[disabled]:hover, .picchu button.lightyellow-bgc[disabled]:focus, .picchu .button.lightyellow-bgc[disabled]:hover, .picchu .button.lightyellow-bgc[disabled]:focus, .picchu .button.lightyellow-bgc[disabled]:hover, .picchu .button.lightyellow-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.yellow-bgc:hover, .picchu button.yellow-bgc:focus, .picchu .button.yellow-bgc:hover, .picchu .button.yellow-bgc:focus, .picchu .ms-button.yellow-bgc:hover, .picchu .ms-button.yellow-bgc:focus {
+    .picchu button.yellow-bgc:hover, .picchu button.yellow-bgc:focus, .picchu .button.yellow-bgc:hover, .picchu .button.yellow-bgc:focus, .picchu .button.yellow-bgc:hover, .picchu .button.yellow-bgc:focus {
       background-color: #cc9400; }
-    .picchu button.yellow-bgc:active, .picchu .button.yellow-bgc:active, .picchu .ms-button.yellow-bgc:active {
+    .picchu button.yellow-bgc:active, .picchu .button.yellow-bgc:active, .picchu .button.yellow-bgc:active {
       background-color: #996f00; }
-    .picchu button.yellow-bgc[disabled]:hover, .picchu button.yellow-bgc[disabled]:focus, .picchu .button.yellow-bgc[disabled]:hover, .picchu .button.yellow-bgc[disabled]:focus, .picchu .ms-button.yellow-bgc[disabled]:hover, .picchu .ms-button.yellow-bgc[disabled]:focus {
+    .picchu button.yellow-bgc[disabled]:hover, .picchu button.yellow-bgc[disabled]:focus, .picchu .button.yellow-bgc[disabled]:hover, .picchu .button.yellow-bgc[disabled]:focus, .picchu .button.yellow-bgc[disabled]:hover, .picchu .button.yellow-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightgreen-bgc:hover, .picchu button.lightgreen-bgc:focus, .picchu .button.lightgreen-bgc:hover, .picchu .button.lightgreen-bgc:focus, .picchu .ms-button.lightgreen-bgc:hover, .picchu .ms-button.lightgreen-bgc:focus {
+    .picchu button.lightgreen-bgc:hover, .picchu button.lightgreen-bgc:focus, .picchu .button.lightgreen-bgc:hover, .picchu .button.lightgreen-bgc:focus, .picchu .button.lightgreen-bgc:hover, .picchu .button.lightgreen-bgc:focus {
       background-color: #95ad08; }
-    .picchu button.lightgreen-bgc:active, .picchu .button.lightgreen-bgc:active, .picchu .ms-button.lightgreen-bgc:active {
+    .picchu button.lightgreen-bgc:active, .picchu .button.lightgreen-bgc:active, .picchu .button.lightgreen-bgc:active {
       background-color: #708206; }
-    .picchu button.lightgreen-bgc[disabled]:hover, .picchu button.lightgreen-bgc[disabled]:focus, .picchu .button.lightgreen-bgc[disabled]:hover, .picchu .button.lightgreen-bgc[disabled]:focus, .picchu .ms-button.lightgreen-bgc[disabled]:hover, .picchu .ms-button.lightgreen-bgc[disabled]:focus {
+    .picchu button.lightgreen-bgc[disabled]:hover, .picchu button.lightgreen-bgc[disabled]:focus, .picchu .button.lightgreen-bgc[disabled]:hover, .picchu .button.lightgreen-bgc[disabled]:focus, .picchu .button.lightgreen-bgc[disabled]:hover, .picchu .button.lightgreen-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.green-bgc:hover, .picchu button.green-bgc:focus, .picchu .button.green-bgc:hover, .picchu .button.green-bgc:focus, .picchu .ms-button.green-bgc:hover, .picchu .ms-button.green-bgc:focus {
+    .picchu button.green-bgc:hover, .picchu button.green-bgc:focus, .picchu .button.green-bgc:hover, .picchu .button.green-bgc:focus, .picchu .button.green-bgc:hover, .picchu .button.green-bgc:focus {
       background-color: #0d630d; }
-    .picchu button.green-bgc:active, .picchu .button.green-bgc:active, .picchu .ms-button.green-bgc:active {
+    .picchu button.green-bgc:active, .picchu .button.green-bgc:active, .picchu .button.green-bgc:active {
       background-color: #0a4a0a; }
-    .picchu button.green-bgc[disabled]:hover, .picchu button.green-bgc[disabled]:focus, .picchu .button.green-bgc[disabled]:hover, .picchu .button.green-bgc[disabled]:focus, .picchu .ms-button.green-bgc[disabled]:hover, .picchu .ms-button.green-bgc[disabled]:focus {
+    .picchu button.green-bgc[disabled]:hover, .picchu button.green-bgc[disabled]:focus, .picchu .button.green-bgc[disabled]:hover, .picchu .button.green-bgc[disabled]:focus, .picchu .button.green-bgc[disabled]:hover, .picchu .button.green-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkgreen-bgc:hover, .picchu button.darkgreen-bgc:focus, .picchu .button.darkgreen-bgc:hover, .picchu .button.darkgreen-bgc:focus, .picchu .ms-button.darkgreen-bgc:hover, .picchu .ms-button.darkgreen-bgc:focus {
+    .picchu button.darkgreen-bgc:hover, .picchu button.darkgreen-bgc:focus, .picchu .button.darkgreen-bgc:hover, .picchu .button.darkgreen-bgc:focus, .picchu .button.darkgreen-bgc:hover, .picchu .button.darkgreen-bgc:focus {
       background-color: #003c16; }
-    .picchu button.darkgreen-bgc:active, .picchu .button.darkgreen-bgc:active, .picchu .ms-button.darkgreen-bgc:active {
+    .picchu button.darkgreen-bgc:active, .picchu .button.darkgreen-bgc:active, .picchu .button.darkgreen-bgc:active {
       background-color: #002d11; }
-    .picchu button.darkgreen-bgc[disabled]:hover, .picchu button.darkgreen-bgc[disabled]:focus, .picchu .button.darkgreen-bgc[disabled]:hover, .picchu .button.darkgreen-bgc[disabled]:focus, .picchu .ms-button.darkgreen-bgc[disabled]:hover, .picchu .ms-button.darkgreen-bgc[disabled]:focus {
+    .picchu button.darkgreen-bgc[disabled]:hover, .picchu button.darkgreen-bgc[disabled]:focus, .picchu .button.darkgreen-bgc[disabled]:hover, .picchu .button.darkgreen-bgc[disabled]:focus, .picchu .button.darkgreen-bgc[disabled]:hover, .picchu .button.darkgreen-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.lightteal-bgc:hover, .picchu button.lightteal-bgc:focus, .picchu .button.lightteal-bgc:hover, .picchu .button.lightteal-bgc:focus, .picchu .ms-button.lightteal-bgc:hover, .picchu .ms-button.lightteal-bgc:focus {
+    .picchu button.lightteal-bgc:hover, .picchu button.lightteal-bgc:focus, .picchu .button.lightteal-bgc:hover, .picchu .button.lightteal-bgc:focus, .picchu .button.lightteal-bgc:hover, .picchu .button.lightteal-bgc:focus {
       background-color: #008e76; }
-    .picchu button.lightteal-bgc:active, .picchu .button.lightteal-bgc:active, .picchu .ms-button.lightteal-bgc:active {
+    .picchu button.lightteal-bgc:active, .picchu .button.lightteal-bgc:active, .picchu .button.lightteal-bgc:active {
       background-color: #006b59; }
-    .picchu button.lightteal-bgc[disabled]:hover, .picchu button.lightteal-bgc[disabled]:focus, .picchu .button.lightteal-bgc[disabled]:hover, .picchu .button.lightteal-bgc[disabled]:focus, .picchu .ms-button.lightteal-bgc[disabled]:hover, .picchu .ms-button.lightteal-bgc[disabled]:focus {
+    .picchu button.lightteal-bgc[disabled]:hover, .picchu button.lightteal-bgc[disabled]:focus, .picchu .button.lightteal-bgc[disabled]:hover, .picchu .button.lightteal-bgc[disabled]:focus, .picchu .button.lightteal-bgc[disabled]:hover, .picchu .button.lightteal-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.teal-bgc:hover, .picchu button.teal-bgc:focus, .picchu .button.teal-bgc:hover, .picchu .button.teal-bgc:focus, .picchu .ms-button.teal-bgc:hover, .picchu .ms-button.teal-bgc:focus {
+    .picchu button.teal-bgc:hover, .picchu button.teal-bgc:focus, .picchu .button.teal-bgc:hover, .picchu .button.teal-bgc:focus, .picchu .button.teal-bgc:hover, .picchu .button.teal-bgc:focus {
       background-color: #00685b; }
-    .picchu button.teal-bgc:active, .picchu .button.teal-bgc:active, .picchu .ms-button.teal-bgc:active {
+    .picchu button.teal-bgc:active, .picchu .button.teal-bgc:active, .picchu .button.teal-bgc:active {
       background-color: #004e44; }
-    .picchu button.teal-bgc[disabled]:hover, .picchu button.teal-bgc[disabled]:focus, .picchu .button.teal-bgc[disabled]:hover, .picchu .button.teal-bgc[disabled]:focus, .picchu .ms-button.teal-bgc[disabled]:hover, .picchu .ms-button.teal-bgc[disabled]:focus {
+    .picchu button.teal-bgc[disabled]:hover, .picchu button.teal-bgc[disabled]:focus, .picchu .button.teal-bgc[disabled]:hover, .picchu .button.teal-bgc[disabled]:focus, .picchu .button.teal-bgc[disabled]:hover, .picchu .button.teal-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.darkteal-bgc:hover, .picchu button.darkteal-bgc:focus, .picchu .button.darkteal-bgc:hover, .picchu .button.darkteal-bgc:focus, .picchu .ms-button.darkteal-bgc:hover, .picchu .ms-button.darkteal-bgc:focus {
+    .picchu button.darkteal-bgc:hover, .picchu button.darkteal-bgc:focus, .picchu .button.darkteal-bgc:hover, .picchu .button.darkteal-bgc:focus, .picchu .button.darkteal-bgc:hover, .picchu .button.darkteal-bgc:focus {
       background-color: #003c40; }
-    .picchu button.darkteal-bgc:active, .picchu .button.darkteal-bgc:active, .picchu .ms-button.darkteal-bgc:active {
+    .picchu button.darkteal-bgc:active, .picchu .button.darkteal-bgc:active, .picchu .button.darkteal-bgc:active {
       background-color: #002d30; }
-    .picchu button.darkteal-bgc[disabled]:hover, .picchu button.darkteal-bgc[disabled]:focus, .picchu .button.darkteal-bgc[disabled]:hover, .picchu .button.darkteal-bgc[disabled]:focus, .picchu .ms-button.darkteal-bgc[disabled]:hover, .picchu .ms-button.darkteal-bgc[disabled]:focus {
+    .picchu button.darkteal-bgc[disabled]:hover, .picchu button.darkteal-bgc[disabled]:focus, .picchu .button.darkteal-bgc[disabled]:hover, .picchu .button.darkteal-bgc[disabled]:focus, .picchu .button.darkteal-bgc[disabled]:hover, .picchu .button.darkteal-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.gray-bgc:hover, .picchu button.gray-bgc:focus, .picchu .button.gray-bgc:hover, .picchu .button.gray-bgc:focus, .picchu .ms-button.gray-bgc:hover, .picchu .ms-button.gray-bgc:focus {
+    .picchu button.gray-bgc:hover, .picchu button.gray-bgc:focus, .picchu .button.gray-bgc:hover, .picchu .button.gray-bgc:focus, .picchu .button.gray-bgc:hover, .picchu .button.gray-bgc:focus {
       background-color: #5e5e5e; }
-    .picchu button.gray-bgc:active, .picchu .button.gray-bgc:active, .picchu .ms-button.gray-bgc:active {
+    .picchu button.gray-bgc:active, .picchu .button.gray-bgc:active, .picchu .button.gray-bgc:active {
       background-color: #474747; }
-    .picchu button.gray-bgc[disabled]:hover, .picchu button.gray-bgc[disabled]:focus, .picchu .button.gray-bgc[disabled]:hover, .picchu .button.gray-bgc[disabled]:focus, .picchu .ms-button.gray-bgc[disabled]:hover, .picchu .ms-button.gray-bgc[disabled]:focus {
+    .picchu button.gray-bgc[disabled]:hover, .picchu button.gray-bgc[disabled]:focus, .picchu .button.gray-bgc[disabled]:hover, .picchu .button.gray-bgc[disabled]:focus, .picchu .button.gray-bgc[disabled]:hover, .picchu .button.gray-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-    .picchu button.white-bgc, .picchu .button.white-bgc, .picchu .ms-button.white-bgc {
+    .picchu button.white-bgc, .picchu .button.white-bgc, .picchu .button.white-bgc {
       color: #0078D7;
       background-color: white; }
-      .picchu button.white-bgc:hover, .picchu button.white-bgc:focus, .picchu .button.white-bgc:hover, .picchu .button.white-bgc:focus, .picchu .ms-button.white-bgc:hover, .picchu .ms-button.white-bgc:focus {
+      .picchu button.white-bgc:hover, .picchu button.white-bgc:focus, .picchu .button.white-bgc:hover, .picchu .button.white-bgc:focus, .picchu .button.white-bgc:hover, .picchu .button.white-bgc:focus {
         background-color: #e4e4e4; }
-      .picchu button.white-bgc:active, .picchu .button.white-bgc:active, .picchu .ms-button.white-bgc:active {
+      .picchu button.white-bgc:active, .picchu .button.white-bgc:active, .picchu .button.white-bgc:active {
         background-color: #c8c8c8; }
-      .picchu button.white-bgc[disabled]:hover, .picchu button.white-bgc[disabled]:focus, .picchu .button.white-bgc[disabled]:hover, .picchu .button.white-bgc[disabled]:focus, .picchu .ms-button.white-bgc[disabled]:hover, .picchu .ms-button.white-bgc[disabled]:focus {
+      .picchu button.white-bgc[disabled]:hover, .picchu button.white-bgc[disabled]:focus, .picchu .button.white-bgc[disabled]:hover, .picchu .button.white-bgc[disabled]:focus, .picchu .button.white-bgc[disabled]:hover, .picchu .button.white-bgc[disabled]:focus {
         background-color: #c8c8c8;
         color: #919191; }
-    .picchu button.black-bgc:hover, .picchu button.black-bgc:focus, .picchu .button.black-bgc:hover, .picchu .button.black-bgc:focus, .picchu .ms-button.black-bgc:hover, .picchu .ms-button.black-bgc:focus {
+    .picchu button.black-bgc:hover, .picchu button.black-bgc:focus, .picchu .button.black-bgc:hover, .picchu .button.black-bgc:focus, .picchu .button.black-bgc:hover, .picchu .button.black-bgc:focus {
       background-color: #333333; }
-    .picchu button.black-bgc:active, .picchu .button.black-bgc:active, .picchu .ms-button.black-bgc:active {
+    .picchu button.black-bgc:active, .picchu .button.black-bgc:active, .picchu .button.black-bgc:active {
       background-color: #666666; }
-    .picchu button.black-bgc[disabled]:hover, .picchu button.black-bgc[disabled]:focus, .picchu .button.black-bgc[disabled]:hover, .picchu .button.black-bgc[disabled]:focus, .picchu .ms-button.black-bgc[disabled]:hover, .picchu .ms-button.black-bgc[disabled]:focus {
+    .picchu button.black-bgc[disabled]:hover, .picchu button.black-bgc[disabled]:focus, .picchu .button.black-bgc[disabled]:hover, .picchu .button.black-bgc[disabled]:focus, .picchu .button.black-bgc[disabled]:hover, .picchu .button.black-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
   .picchu ::-webkit-input-placeholder {
@@ -2943,9 +2973,7 @@
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     box-sizing: border-box; }
   .picchu label.disabled {
     color: #c8c8c8; }
@@ -2996,35 +3024,33 @@
     .picchu input[type="url"][disabled]:active,
     .picchu input[type="password"][disabled]:active {
       box-shadow: none; }
-  .picchu .ms-dropdown {
+  .picchu .dropdown {
     position: relative;
     display: inline-block;
     width: 100%; }
-    .picchu .ms-dropdown select {
+    .picchu .dropdown select {
       display: inline-block;
       font-size: 15px;
       color: #2F2F2F;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
+      appearance: none;
       border: 1px solid #767676;
       position: relative;
       padding: 0.4667em 2.8em 0.4667em 0.55em;
       width: 100%; }
-    .picchu .ms-dropdown select::-ms-expand {
+    .picchu .dropdown select::-ms-expand {
       display: none; }
-    .picchu .ms-dropdown select:focus,
-    .picchu .ms-dropdown select:active {
+    .picchu .dropdown select:focus,
+    .picchu .dropdown select:active {
       border-color: #0078D7;
       box-shadow: 0 0 0 1px #0078D7;
       outline: none; }
-    .picchu .ms-dropdown select[disabled],
-    .picchu .ms-dropdown select[disabled]:active {
+    .picchu .dropdown select[disabled],
+    .picchu .dropdown select[disabled]:active {
       border-color: #c8c8c8;
       color: #c8c8c8; }
-    .picchu .ms-dropdown select[disabled]:active {
+    .picchu .dropdown select[disabled]:active {
       box-shadow: none; }
-    .picchu .ms-dropdown:before {
+    .picchu .dropdown:before {
       content: '';
       display: block;
       position: absolute;
@@ -3036,23 +3062,23 @@
       z-index: 10;
       pointer-events: none;
       background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%232F2F2F%20!important%3B%20stroke%3A%20%232F2F2F!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-    .picchu .ms-dropdown.disabled:before {
+    .picchu .dropdown.disabled:before {
       background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23c8c8c8%20!important%3B%20stroke%3A%20%23c8c8c8!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-  .picchu html.ie9 .ms-dropdown select,
-  .picchu html.ie8 .ms-dropdown select {
+  .picchu html.ie9 .dropdown select,
+  .picchu html.ie8 .dropdown select {
     padding-right: 0.55em; }
-  .picchu html.ie9 .ms-dropdown:before,
-  .picchu html.ie8 .ms-dropdown:before {
+  .picchu html.ie9 .dropdown:before,
+  .picchu html.ie8 .dropdown:before {
     display: none; }
-  .picchu label.ms-checkbox,
-  .picchu label.ms-radio,
-  .picchu label.ms-toggle {
+  .picchu label.checkbox,
+  .picchu label.radio,
+  .picchu label.toggle {
     position: relative;
     display: inline-block;
     padding: 0.5em 0; }
-    .picchu label.ms-checkbox .custom-control,
-    .picchu label.ms-radio .custom-control,
-    .picchu label.ms-toggle .custom-control {
+    .picchu label.checkbox .custom-control,
+    .picchu label.radio .custom-control,
+    .picchu label.toggle .custom-control {
       display: inline-block;
       position: relative;
       border: 1px solid #767676;
@@ -3063,69 +3089,69 @@
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none; }
-    .picchu label.ms-checkbox input,
-    .picchu label.ms-radio input,
-    .picchu label.ms-toggle input {
+    .picchu label.checkbox input,
+    .picchu label.radio input,
+    .picchu label.toggle input {
       position: absolute;
       opacity: 0;
       z-index: -1; }
-    .picchu label.ms-checkbox span,
-    .picchu label.ms-radio span,
-    .picchu label.ms-toggle span {
+    .picchu label.checkbox span,
+    .picchu label.radio span,
+    .picchu label.toggle span {
       font-size: inherit; }
-  .picchu label.ms-checkbox .custom-control,
-  .picchu label.ms-radio .custom-control {
+  .picchu label.checkbox .custom-control,
+  .picchu label.radio .custom-control {
     width: 20px;
     height: 20px; }
-  .picchu label.ms-checkbox input:focus ~ .custom-control,
-  .picchu label.ms-checkbox input:active ~ .custom-control,
-  .picchu label.ms-radio input:focus ~ .custom-control,
-  .picchu label.ms-radio input:active ~ .custom-control {
+  .picchu label.checkbox input:focus ~ .custom-control,
+  .picchu label.checkbox input:active ~ .custom-control,
+  .picchu label.radio input:focus ~ .custom-control,
+  .picchu label.radio input:active ~ .custom-control {
     border-color: #0078D7;
     box-shadow: 0 0 0 1px #0078D7; }
-  .picchu label.ms-checkbox input[disabled] ~ .custom-control,
-  .picchu label.ms-checkbox input[disabled]:active ~ .custom-control,
-  .picchu label.ms-radio input[disabled] ~ .custom-control,
-  .picchu label.ms-radio input[disabled]:active ~ .custom-control {
+  .picchu label.checkbox input[disabled] ~ .custom-control,
+  .picchu label.checkbox input[disabled]:active ~ .custom-control,
+  .picchu label.radio input[disabled] ~ .custom-control,
+  .picchu label.radio input[disabled]:active ~ .custom-control {
     border-color: #c8c8c8; }
-  .picchu label.ms-checkbox input[disabled]:active ~ .custom-control,
-  .picchu label.ms-radio input[disabled]:active ~ .custom-control {
+  .picchu label.checkbox input[disabled]:active ~ .custom-control,
+  .picchu label.radio input[disabled]:active ~ .custom-control {
     box-shadow: none; }
-  .picchu label.ms-checkbox input[disabled] ~ span,
-  .picchu label.ms-radio input[disabled] ~ span {
+  .picchu label.checkbox input[disabled] ~ span,
+  .picchu label.radio input[disabled] ~ span {
     color: #c8c8c8; }
-  .picchu label.ms-checkbox input {
+  .picchu label.checkbox input {
     background-repeat: no-repeat;
     background-size: 90% auto;
     background-position: center; }
-  .picchu label.ms-checkbox input:checked ~ .custom-control {
+  .picchu label.checkbox input:checked ~ .custom-control {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%232F2F2F%20!important%3B%20stroke%3A%20%232F2F2F!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22checkmark_x5F_32%22%3E%20%3Cpolygon%20points%3D%22852.9%2C227.9%20375%2C705.8%20147.1%2C477.9%20102.9%2C522.1%20375%2C794.2%20897.1%2C272.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-  .picchu label.ms-checkbox input[disabled]:checked ~ .custom-control {
+  .picchu label.checkbox input[disabled]:checked ~ .custom-control {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23c8c8c8%20!important%3B%20stroke%3A%20%23c8c8c8!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22checkmark_x5F_32%22%3E%20%3Cpolygon%20points%3D%22852.9%2C227.9%20375%2C705.8%20147.1%2C477.9%20102.9%2C522.1%20375%2C794.2%20897.1%2C272.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-  .picchu label.ms-checkbox + .ms-checkbox {
+  .picchu label.checkbox + .checkbox {
     margin-left: 2em; }
-  .picchu label.ms-radio .custom-control {
+  .picchu label.radio .custom-control {
     border-radius: 50%;
     position: relative; }
-  .picchu label.ms-radio input:checked ~ .custom-control {
+  .picchu label.radio input:checked ~ .custom-control {
     background-color: #2F2F2F;
     box-shadow: inset 0 0 0 4px #FFFFFF; }
-  .picchu label.ms-radio input:checked:focus ~ .custom-control {
+  .picchu label.radio input:checked:focus ~ .custom-control {
     border-color: #0078D7;
     box-shadow: 0 0 0 1px #0078D7, inset 0 0 0 4px #FFFFFF; }
-  .picchu label.ms-radio input[disabled]:checked ~ .custom-control,
-  .picchu label.ms-radio input[disabled]:checked:active ~ .custom-control {
+  .picchu label.radio input[disabled]:checked ~ .custom-control,
+  .picchu label.radio input[disabled]:checked:active ~ .custom-control {
     background-color: #c8c8c8;
     box-shadow: inset 0 0 0 4px #FFFFFF; }
-  .picchu label.ms-radio + .ms-radio {
+  .picchu label.radio + .radio {
     margin-left: 2em; }
-  .picchu label.ms-toggle .custom-control {
+  .picchu label.toggle .custom-control {
     width: 44px;
     height: 22px;
     border-radius: 1em;
     -webkit-transition: background-color 0.2s;
             transition: background-color 0.2s; }
-    .picchu label.ms-toggle .custom-control:before {
+    .picchu label.toggle .custom-control:before {
       content: '';
       position: absolute;
       top: 50%;
@@ -3138,61 +3164,59 @@
       background-color: #2F2F2F;
       -webkit-transition: left 0.5s;
               transition: left 0.5s; }
-  .picchu label.ms-toggle input:checked ~ .custom-control {
+  .picchu label.toggle input:checked ~ .custom-control {
     background-color: #0078D7;
     border-color: #0078D7; }
-    .picchu label.ms-toggle input:checked ~ .custom-control:before {
+    .picchu label.toggle input:checked ~ .custom-control:before {
       background-color: #FFFFFF;
       left: 1.65em; }
-  .picchu label.ms-toggle input:focus ~ .custom-control,
-  .picchu label.ms-toggle input:active ~ .custom-control {
+  .picchu label.toggle input:focus ~ .custom-control,
+  .picchu label.toggle input:active ~ .custom-control {
     border-color: #0078D7;
     box-shadow: 0 0 0 1px #0078D7; }
-  .picchu label.ms-toggle input[disabled] ~ .custom-control:before {
+  .picchu label.toggle input[disabled] ~ .custom-control:before {
     background-color: #c8c8c8; }
-  .picchu label.ms-toggle input[disabled] ~ .custom-control,
-  .picchu label.ms-toggle input[disabled]:active ~ .custom-control {
+  .picchu label.toggle input[disabled] ~ .custom-control,
+  .picchu label.toggle input[disabled]:active ~ .custom-control {
     border-color: #c8c8c8; }
-  .picchu label.ms-toggle input[disabled]:checked ~ .custom-control {
+  .picchu label.toggle input[disabled]:checked ~ .custom-control {
     background-color: #c8c8c8; }
-    .picchu label.ms-toggle input[disabled]:checked ~ .custom-control:before {
+    .picchu label.toggle input[disabled]:checked ~ .custom-control:before {
       background-color: #767676; }
-  .picchu label.ms-toggle input[disabled]:active ~ .custom-control {
+  .picchu label.toggle input[disabled]:active ~ .custom-control {
     box-shadow: none; }
-  .picchu label.ms-toggle input[disabled] ~ span {
+  .picchu label.toggle input[disabled] ~ span {
     color: #c8c8c8; }
-  .picchu .no-css-checked label.ms-checkbox .custom-control,
-  .picchu .no-css-checked label.ms-radio .custom-control,
-  .picchu .no-css-checked label.ms-toggle .custom-control,
-  .picchu .no-css-sibselector label.ms-checkbox .custom-control,
-  .picchu .no-css-sibselector label.ms-radio .custom-control,
-  .picchu .no-css-sibselector label.ms-toggle .custom-control {
+  .picchu .no-css-checked label.checkbox .custom-control,
+  .picchu .no-css-checked label.radio .custom-control,
+  .picchu .no-css-checked label.toggle .custom-control,
+  .picchu .no-css-sibselector label.checkbox .custom-control,
+  .picchu .no-css-sibselector label.radio .custom-control,
+  .picchu .no-css-sibselector label.toggle .custom-control {
     display: none; }
-  .picchu .no-css-checked label.ms-checkbox input,
-  .picchu .no-css-checked label.ms-radio input,
-  .picchu .no-css-checked label.ms-toggle input,
-  .picchu .no-css-sibselector label.ms-checkbox input,
-  .picchu .no-css-sibselector label.ms-radio input,
-  .picchu .no-css-sibselector label.ms-toggle input {
+  .picchu .no-css-checked label.checkbox input,
+  .picchu .no-css-checked label.radio input,
+  .picchu .no-css-checked label.toggle input,
+  .picchu .no-css-sibselector label.checkbox input,
+  .picchu .no-css-sibselector label.radio input,
+  .picchu .no-css-sibselector label.toggle input {
     position: relative;
     opacity: 1;
     z-index: 0;
     margin-right: 0.25em; }
-  .picchu input[type=range].ms-slider {
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+  .picchu input[type=range].slider {
+    appearance: none;
     width: 100%;
     margin: 3px 0; }
-  .picchu input[type=range].ms-slider:focus {
+  .picchu input[type=range].slider:focus {
     outline: none; }
-    .picchu input[type=range].ms-slider:focus::-webkit-slider-thumb {
+    .picchu input[type=range].slider:focus::-webkit-slider-thumb {
       background: #000000; }
-    .picchu input[type=range].ms-slider:focus::-moz-range-thumb {
+    .picchu input[type=range].slider:focus::-moz-range-thumb {
       background: #000000; }
-    .picchu input[type=range].ms-slider:focus::-ms-thumb {
+    .picchu input[type=range].slider:focus::-ms-thumb {
       background: #000000; }
-  .picchu input[type=range].ms-slider::-webkit-slider-runnable-track {
+  .picchu input[type=range].slider::-webkit-slider-runnable-track {
     width: 100%;
     height: 2px;
     cursor: pointer;
@@ -3200,7 +3224,7 @@
     background: #0078D7;
     border-radius: 0px;
     border: 0px solid #000000; }
-  .picchu input[type=range].ms-slider::-webkit-slider-thumb {
+  .picchu input[type=range].slider::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
     border: 0px solid transparent;
     height: 8px;
@@ -3208,18 +3232,17 @@
     border-radius: 50px;
     background: #0078D7;
     cursor: pointer;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     margin-top: -3px; }
-  .picchu input[type=range].ms-slider::-webkit-slider-thumb:hover {
+  .picchu input[type=range].slider::-webkit-slider-thumb:hover {
     background: #000000; }
-  .picchu input[type=range].ms-slider::-moz-range-thumb:hover {
+  .picchu input[type=range].slider::-moz-range-thumb:hover {
     background: #000000; }
-  .picchu input[type=range].ms-slider::-ms-thumb:hover {
+  .picchu input[type=range].slider::-ms-thumb:hover {
     background: #000000; }
-  .picchu input[type=range].ms-slider:focus::-webkit-slider-runnable-track {
+  .picchu input[type=range].slider:focus::-webkit-slider-runnable-track {
     background: #00BCF2; }
-  .picchu input[type=range].ms-slider::-moz-range-track {
+  .picchu input[type=range].slider::-moz-range-track {
     width: 100%;
     height: 2px;
     cursor: pointer;
@@ -3227,7 +3250,7 @@
     background: #0078D7;
     border-radius: 0px;
     border: 0px solid #000000; }
-  .picchu input[type=range].ms-slider::-moz-range-thumb {
+  .picchu input[type=range].slider::-moz-range-thumb {
     box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
     border: 0px solid transparent;
     height: 8px;
@@ -3235,24 +3258,24 @@
     border-radius: 50px;
     background: #0078D7;
     cursor: pointer; }
-  .picchu input[type=range].ms-slider::-ms-track {
+  .picchu input[type=range].slider::-ms-track {
     width: 100%;
     height: 2px;
     cursor: pointer;
     background: transparent;
     border-color: transparent;
     color: transparent; }
-  .picchu input[type=range].ms-slider::-ms-fill-lower {
+  .picchu input[type=range].slider::-ms-fill-lower {
     background: #005ca4;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #2F2F2F; }
-  .picchu input[type=range].ms-slider::-ms-fill-upper {
+  .picchu input[type=range].slider::-ms-fill-upper {
     background: #0078D7;
     border: 0px solid #000000;
     border-radius: 0px;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #2F2F2F; }
-  .picchu input[type=range].ms-slider::-ms-thumb {
+  .picchu input[type=range].slider::-ms-thumb {
     box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
     border: 0px solid transparent;
     height: 8px;
@@ -3261,9 +3284,9 @@
     background: #0078D7;
     cursor: pointer;
     height: 2px; }
-  .picchu input[type=range].ms-slider:focus::-ms-fill-lower {
+  .picchu input[type=range].slider:focus::-ms-fill-lower {
     background: #0078D7; }
-  .picchu input[type=range].ms-slider:focus::-ms-fill-upper {
+  .picchu input[type=range].slider:focus::-ms-fill-upper {
     background: #3393df; }
   .picchu a {
     color: #0060ac; }
@@ -3280,7 +3303,7 @@
       margin-bottom: 0.02em;
       margin-left: 0.25em;
       background-position: 0 bottom; }
-  .picchu .cta-container a, .picchu .cta-container button, .picchu .cta-container .button, .picchu .cta-container .ms-button {
+  .picchu .cta-container a, .picchu .cta-container button, .picchu .cta-container .button, .picchu .cta-container .button {
     margin-right: 1.25em; }
   @media screen and (min-width: 768px) {
     .picchu .cta-container br {
@@ -3320,23 +3343,23 @@
     .picchu .video-link.white-c:before,
     .picchu .video-link.black-bgc:before {
       background-color: black; }
-  .picchu .ms-hero {
+  .picchu .hero {
     position: relative;
     overflow: hidden; }
     @media screen and (min-width: 768px) {
-      .picchu .ms-hero {
+      .picchu .hero {
         padding-bottom: 37.5%; } }
-    .picchu .ms-hero .cta-link {
+    .picchu .hero .cta-link {
       white-space: nowrap; }
     @media screen and (min-width: 768px) {
-      .picchu .ms-hero .ms-hero-banner,
-      .picchu .ms-hero .ms-hero-carousel {
+      .picchu .hero .hero-banner,
+      .picchu .hero .hero-carousel {
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0; } }
-    .picchu .ms-hero .ms-hero-banner:before {
+    .picchu .hero .hero-banner:before {
       content: '';
       display: block;
       position: absolute;
@@ -3344,26 +3367,26 @@
       height: 100%;
       top: 0;
       left: 0; }
-    .picchu .ms-hero .ms-hero-carousel {
+    .picchu .hero .hero-carousel {
       list-style-type: none;
       padding: 0;
       margin: 0; }
-      .picchu .ms-hero .ms-hero-carousel .ms-hero-carousel-slide {
+      .picchu .hero .hero-carousel .hero-carousel-slide {
         height: 100%;
         position: relative; }
-        .picchu .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+        .picchu .hero .hero-carousel .hero-carousel-slide .hero-content-container {
           position: relative;
           padding-left: 42px;
           padding-right: 42px; }
           @media screen and (min-width: 768px) {
-            .picchu .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+            .picchu .hero .hero-carousel .hero-carousel-slide .hero-content-container {
               padding-left: 12px;
               padding-right: 12px; } }
           @media screen and (min-width: 1084px) {
-            .picchu .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+            .picchu .hero .hero-carousel .hero-carousel-slide .hero-content-container {
               padding-left: 0;
               padding-right: 0; } }
-        .picchu .ms-hero .ms-hero-carousel .ms-hero-carousel-slide:before {
+        .picchu .hero .hero-carousel .hero-carousel-slide:before {
           content: '';
           display: block;
           position: absolute;
@@ -3371,49 +3394,49 @@
           height: 100%;
           top: 0;
           left: 0; }
-    .picchu .ms-hero .ms-hero-mobile-img {
+    .picchu .hero .hero-mobile-img {
       display: block;
       width: 100%;
       height: auto; }
       @media screen and (min-width: 768px) {
-        .picchu .ms-hero .ms-hero-mobile-img {
+        .picchu .hero .hero-mobile-img {
           display: none; } }
-    .picchu .ms-hero .ms-hero-content-container :last-child {
+    .picchu .hero .hero-content-container :last-child {
       margin-bottom: 0; }
-    .picchu .ms-hero.inside-text .ms-hero-banner,
-    .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide {
+    .picchu .hero.inside-text .hero-banner,
+    .picchu .hero.inside-text .hero-carousel .hero-carousel-slide {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
-      .picchu .ms-hero.inside-text .ms-hero-banner.black-bg-grad,
-      .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad {
+      .picchu .hero.inside-text .hero-banner.black-bg-grad,
+      .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad {
         color: white; }
-        .picchu .ms-hero.inside-text .ms-hero-banner.black-bg-grad:before,
-        .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+        .picchu .hero.inside-text .hero-banner.black-bg-grad:before,
+        .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
           background: rgba(0, 0, 0, 0.65); }
           @media screen and (min-width: 768px) {
-            .picchu .ms-hero.inside-text .ms-hero-banner.black-bg-grad:before,
-            .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+            .picchu .hero.inside-text .hero-banner.black-bg-grad:before,
+            .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
               background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
               background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
-      .picchu .ms-hero.inside-text .ms-hero-banner.white-bg-grad,
-      .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad {
+      .picchu .hero.inside-text .hero-banner.white-bg-grad,
+      .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad {
         color: #2F2F2F; }
-        .picchu .ms-hero.inside-text .ms-hero-banner.white-bg-grad:before,
-        .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+        .picchu .hero.inside-text .hero-banner.white-bg-grad:before,
+        .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
           background: rgba(255, 255, 255, 0.65); }
           @media screen and (min-width: 768px) {
-            .picchu .ms-hero.inside-text .ms-hero-banner.white-bg-grad:before,
-            .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+            .picchu .hero.inside-text .hero-banner.white-bg-grad:before,
+            .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
               background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
               background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); } }
-      .picchu .ms-hero.inside-text .ms-hero-banner.black-bgc:before,
-      .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bgc:before {
+      .picchu .hero.inside-text .hero-banner.black-bgc:before,
+      .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.black-bgc:before {
         background: rgba(0, 0, 0, 0.65); }
-      .picchu .ms-hero.inside-text .ms-hero-banner.white-bgc:before,
-      .picchu .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bgc:before {
+      .picchu .hero.inside-text .hero-banner.white-bgc:before,
+      .picchu .hero.inside-text .hero-carousel .hero-carousel-slide.white-bgc:before {
         background: rgba(255, 255, 255, 0.65); }
-    .picchu .ms-hero.inside-text .ms-hero-content-container {
+    .picchu .hero.inside-text .hero-content-container {
       padding-top: 54px;
       padding-bottom: 54px;
       position: relative;
@@ -3422,68 +3445,68 @@
       height: 100%;
       box-sizing: border-box; }
       @media screen and (min-width: 540px) {
-        .picchu .ms-hero.inside-text .ms-hero-content-container {
+        .picchu .hero.inside-text .hero-content-container {
           display: table;
           table-layout: fixed;
           width: 100%;
           padding-top: calc(44.5px + 1.8vw);
           padding-bottom: calc(44.5px + 1.8vw); } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-hero.inside-text .ms-hero-content-container {
+        .picchu .hero.inside-text .hero-content-container {
           padding-top: 0;
           padding-bottom: 0; } }
-      .picchu .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-valign {
+      .picchu .hero.inside-text .hero-content-container .hero-content-valign {
         position: relative; }
         @media screen and (min-width: 540px) {
-          .picchu .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-valign {
+          .picchu .hero.inside-text .hero-content-container .hero-content-valign {
             display: table-cell;
             vertical-align: middle;
             width: 100%; } }
-    .picchu .ms-hero.inside-text .ms-hero-mobile-img {
+    .picchu .hero.inside-text .hero-mobile-img {
       display: none; }
-    .picchu .ms-hero.popout-text .ms-hero-banner,
-    .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide {
+    .picchu .hero.popout-text .hero-banner,
+    .picchu .hero.popout-text .hero-carousel .hero-carousel-slide {
       background-position: -9999px;
       background-size: 0 0;
       background-repeat: no-repeat; }
       @media screen and (min-width: 768px) {
-        .picchu .ms-hero.popout-text .ms-hero-banner,
-        .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide {
+        .picchu .hero.popout-text .hero-banner,
+        .picchu .hero.popout-text .hero-carousel .hero-carousel-slide {
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat; }
-          .picchu .ms-hero.popout-text .ms-hero-banner.black-bg-grad,
-          .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad {
+          .picchu .hero.popout-text .hero-banner.black-bg-grad,
+          .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad {
             color: white; }
-            .picchu .ms-hero.popout-text .ms-hero-banner.black-bg-grad:before,
-            .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+            .picchu .hero.popout-text .hero-banner.black-bg-grad:before,
+            .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
               background: rgba(0, 0, 0, 0.65); } }
       @media screen and (min-width: 768px) and (min-width: 768px) {
-        .picchu .ms-hero.popout-text .ms-hero-banner.black-bg-grad:before,
-        .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+        .picchu .hero.popout-text .hero-banner.black-bg-grad:before,
+        .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
           background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
           background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
       @media screen and (min-width: 768px) {
-          .picchu .ms-hero.popout-text .ms-hero-banner.white-bg-grad,
-          .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad {
+          .picchu .hero.popout-text .hero-banner.white-bg-grad,
+          .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad {
             color: #2F2F2F; }
-            .picchu .ms-hero.popout-text .ms-hero-banner.white-bg-grad:before,
-            .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+            .picchu .hero.popout-text .hero-banner.white-bg-grad:before,
+            .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
               background: rgba(255, 255, 255, 0.65); } }
       @media screen and (min-width: 768px) and (min-width: 768px) {
-        .picchu .ms-hero.popout-text .ms-hero-banner.white-bg-grad:before,
-        .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+        .picchu .hero.popout-text .hero-banner.white-bg-grad:before,
+        .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
           background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
           background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); } }
       @media screen and (min-width: 768px) {
-          .picchu .ms-hero.popout-text .ms-hero-banner.black-bgc:before,
-          .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bgc:before {
+          .picchu .hero.popout-text .hero-banner.black-bgc:before,
+          .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.black-bgc:before {
             background: rgba(0, 0, 0, 0.65); }
-          .picchu .ms-hero.popout-text .ms-hero-banner.white-bgc:before,
-          .picchu .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bgc:before {
+          .picchu .hero.popout-text .hero-banner.white-bgc:before,
+          .picchu .hero.popout-text .hero-carousel .hero-carousel-slide.white-bgc:before {
             background: rgba(255, 255, 255, 0.65); } }
     @media screen and (min-width: 768px) {
-      .picchu .ms-hero.popout-text .ms-hero-content-container {
+      .picchu .hero.popout-text .hero-content-container {
         display: table;
         table-layout: fixed;
         position: relative;
@@ -3493,41 +3516,41 @@
         box-sizing: border-box;
         background-color: transparent;
         color: inherit; } }
-    .picchu .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+    .picchu .hero.popout-text .hero-content-container .hero-content-valign {
       padding-top: 24px;
       padding-bottom: 33px;
       position: relative; }
       @media screen and (min-width: 540px) {
-        .picchu .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+        .picchu .hero.popout-text .hero-content-container .hero-content-valign {
           padding-top: calc(22px + 0.4vw);
           padding-bottom: calc(29.5px + 0.75vw); } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+        .picchu .hero.popout-text .hero-content-container .hero-content-valign {
           padding-top: 0;
           padding-bottom: 0;
           display: table-cell;
           width: 100%;
           vertical-align: middle; } }
-    .picchu .ms-hero .slick-list,
-    .picchu .ms-hero .slick-track,
-    .picchu .ms-hero .slick-slide {
+    .picchu .hero .slick-list,
+    .picchu .hero .slick-track,
+    .picchu .hero .slick-slide {
       height: 100%;
       padding-bottom: 0; }
-    .picchu .ms-hero .slick-initialized .slick-slide {
+    .picchu .hero .slick-initialized .slick-slide {
       display: table-cell;
       width: 100%; }
-  .picchu .ms-banner {
+  .picchu .banner {
     position: relative;
     background-position: -9999px;
     background-size: 0 0;
     background-repeat: no-repeat; }
     @media screen and (min-width: 768px) {
-      .picchu .ms-banner {
+      .picchu .banner {
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw);
         background-position: center;
         background-size: cover; }
-        .picchu .ms-banner:before {
+        .picchu .banner:before {
           content: '';
           display: block;
           position: absolute;
@@ -3535,50 +3558,50 @@
           height: 100%;
           top: 0;
           left: 0; }
-        .picchu .ms-banner.black-bg-grad {
+        .picchu .banner.black-bg-grad {
           color: white; }
-          .picchu .ms-banner.black-bg-grad:before {
+          .picchu .banner.black-bg-grad:before {
             background: rgba(0, 0, 0, 0.65);
             background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
             background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); }
-        .picchu .ms-banner.white-bg-grad {
+        .picchu .banner.white-bg-grad {
           color: #2F2F2F; }
-          .picchu .ms-banner.white-bg-grad:before {
+          .picchu .banner.white-bg-grad:before {
             background: rgba(255, 255, 255, 0.65);
             background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
             background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); }
-        .picchu .ms-banner.black-bgc:before {
+        .picchu .banner.black-bgc:before {
           background: rgba(0, 0, 0, 0.65); }
-        .picchu .ms-banner.white-bgc:before {
+        .picchu .banner.white-bgc:before {
           background: rgba(255, 255, 255, 0.65); } }
     @media screen and (min-width: 1400px) {
-      .picchu .ms-banner {
+      .picchu .banner {
         padding-top: 70px;
         padding-bottom: 70px; } }
     @media screen and (min-width: 768px) {
-      .picchu .ms-banner .ms-banner-content-container {
+      .picchu .banner .banner-content-container {
         color: inherit;
         background-color: transparent; } }
-    .picchu .ms-banner .ms-banner-content {
+    .picchu .banner .banner-content {
       padding-top: 24px;
       padding-bottom: 33px; }
       @media screen and (min-width: 540px) {
-        .picchu .ms-banner .ms-banner-content {
+        .picchu .banner .banner-content {
           padding-top: calc(22px + 0.4vw);
           padding-bottom: calc(29.5px + 0.75vw); } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-banner .ms-banner-content {
+        .picchu .banner .banner-content {
           padding-top: 0;
           padding-bottom: 0;
           height: 50vw; } }
-    .picchu .ms-banner .ms-banner-mobile-img {
+    .picchu .banner .banner-mobile-img {
       display: block; }
       @media screen and (min-width: 768px) {
-        .picchu .ms-banner .ms-banner-mobile-img {
+        .picchu .banner .banner-mobile-img {
           display: none; } }
-  .picchu .ms-mosaic {
+  .picchu .mosaic {
     overflow: hidden; }
-    .picchu .ms-mosaic .ms-mosaic-tile {
+    .picchu .mosaic .mosaic-tile {
       padding-top: 54px;
       padding-bottom: 54px;
       padding-left: 12px;
@@ -3589,67 +3612,67 @@
       background-repeat: no-repeat;
       background-size: cover; }
       @media all and (min-width: 540px) {
-        .picchu .ms-mosaic .ms-mosaic-tile {
+        .picchu .mosaic .mosaic-tile {
           padding-top: calc(44.5px + 1.8vw);
           padding-bottom: calc(44.5px + 1.8vw); } }
       @media all and (min-width: 1400px) {
-        .picchu .ms-mosaic .ms-mosaic-tile {
+        .picchu .mosaic .mosaic-tile {
           padding-top: 70px;
           padding-bottom: 70px; } }
       @media screen and (min-width: 540px) {
-        .picchu .ms-mosaic .ms-mosaic-tile {
+        .picchu .mosaic .mosaic-tile {
           padding-left: 24px;
           padding-right: 24px; } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-mosaic .ms-mosaic-tile {
+        .picchu .mosaic .mosaic-tile {
           padding-left: 10%;
           padding-right: 10%; } }
-      .picchu .ms-mosaic .ms-mosaic-tile :last-child {
+      .picchu .mosaic .mosaic-tile :last-child {
         margin-bottom: 0; }
-      .picchu .ms-mosaic .ms-mosaic-tile.half-tile {
+      .picchu .mosaic .mosaic-tile.half-tile {
         display: none; }
         @media screen and (min-width: 768px) {
-          .picchu .ms-mosaic .ms-mosaic-tile.half-tile {
+          .picchu .mosaic .mosaic-tile.half-tile {
             display: block;
             min-height: 300px;
             height: 300px;
             height: 25vw; } }
-      .picchu .ms-mosaic .ms-mosaic-tile.full-tile {
+      .picchu .mosaic .mosaic-tile.full-tile {
         display: none; }
         @media screen and (min-width: 768px) {
-          .picchu .ms-mosaic .ms-mosaic-tile.full-tile {
+          .picchu .mosaic .mosaic-tile.full-tile {
             display: block;
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0; } }
-    .picchu .ms-mosaic .ms-mosaic-mobile-img {
+    .picchu .mosaic .mosaic-mobile-img {
       width: 100%;
       height: auto; }
       @media screen and (min-width: 768px) {
-        .picchu .ms-mosaic .ms-mosaic-mobile-img {
+        .picchu .mosaic .mosaic-mobile-img {
           display: none; } }
-  .picchu .ms-parallax-bg {
+  .picchu .parallax-bg {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed; }
-  .picchu .ms-list-row {
+  .picchu .list-row {
     list-style-type: none;
     padding-left: 0;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px; }
     @media all and (min-width: 540px) {
-      .picchu .ms-list-row {
+      .picchu .list-row {
         padding-top: calc(37px + 1.25vw);
         padding-bottom: calc(37px + 1.25vw); } }
     @media all and (min-width: 1400px) {
-      .picchu .ms-list-row {
+      .picchu .list-row {
         padding-top: 60px;
         padding-bottom: 60px; } }
-    .picchu .ms-list-row li {
+    .picchu .list-row li {
       display: inline-block;
       vertical-align: top;
       width: 49%;
@@ -3657,150 +3680,140 @@
       padding-right: 2%;
       margin-bottom: 12px; }
       @media all and (min-width: 540px) {
-        .picchu .ms-list-row li {
+        .picchu .list-row li {
           margin-bottom: 12px; } }
       @media all and (min-width: 1400px) {
-        .picchu .ms-list-row li {
+        .picchu .list-row li {
           margin-bottom: 12px; } }
       @media screen and (min-width: 540px) {
-        .picchu .ms-list-row li {
+        .picchu .list-row li {
           width: 24.3%; } }
       @media screen and (min-width: 1400px) {
-        .picchu .ms-list-row li {
+        .picchu .list-row li {
           width: 12%; } }
-      .picchu .ms-list-row li:first-child {
+      .picchu .list-row li:first-child {
         padding-left: 0; }
-      .picchu .ms-list-row li:last-child {
+      .picchu .list-row li:last-child {
         padding-right: 0; }
-      .picchu .ms-list-row li .ms-list-row-item-img {
+      .picchu .list-row li .list-row-item-img {
         display: block;
         max-width: 100%;
         height: auto;
         max-height: 100px;
         margin: 0 auto; }
-      .picchu .ms-list-row li a:hover span {
+      .picchu .list-row li a:hover span {
         text-decoration: underline; }
     @media screen and (min-width: 540px) {
-      .picchu .ms-list-row.row-of-3 li {
+      .picchu .list-row.row-of-3 li {
         width: 32.7%; } }
     @media screen and (min-width: 768px) {
-      .picchu .ms-list-row.row-of-3 li {
+      .picchu .list-row.row-of-3 li {
         width: 24.3%; } }
     @media screen and (min-width: 1400px) {
-      .picchu .ms-list-row.row-of-3 li {
+      .picchu .list-row.row-of-3 li {
         width: 16%; } }
     @media screen and (min-width: 540px) {
-      .picchu .ms-list-row.row-of-5 li {
+      .picchu .list-row.row-of-5 li {
         width: 32.7%; } }
     @media screen and (min-width: 768px) {
-      .picchu .ms-list-row.row-of-5 li {
+      .picchu .list-row.row-of-5 li {
         width: 19.4%; } }
-  .picchu .ms-product-feature,
-  .picchu .ms-product-family-feature {
+  .picchu .product-feature,
+  .picchu .product-family-feature {
     padding-top: 54px;
     padding-bottom: 54px; }
     @media all and (min-width: 540px) {
-      .picchu .ms-product-feature,
-      .picchu .ms-product-family-feature {
+      .picchu .product-feature,
+      .picchu .product-family-feature {
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw); } }
     @media all and (min-width: 1400px) {
-      .picchu .ms-product-feature,
-      .picchu .ms-product-family-feature {
+      .picchu .product-feature,
+      .picchu .product-family-feature {
         padding-top: 70px;
         padding-bottom: 70px; } }
-    .picchu .ms-product-feature .ms--col,
-    .picchu .ms-product-family-feature .ms--col {
+    .picchu .product-feature .col,
+    .picchu .product-family-feature .col {
       margin-bottom: 40px; }
       @media all and (min-width: 540px) {
-        .picchu .ms-product-feature .ms--col,
-        .picchu .ms-product-family-feature .ms--col {
+        .picchu .product-feature .col,
+        .picchu .product-family-feature .col {
           margin-bottom: calc(37px + 1.25vw); } }
       @media all and (min-width: 1400px) {
-        .picchu .ms-product-feature .ms--col,
-        .picchu .ms-product-family-feature .ms--col {
+        .picchu .product-feature .col,
+        .picchu .product-family-feature .col {
           margin-bottom: 60px; } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-product-feature .ms--col,
-        .picchu .ms-product-family-feature .ms--col {
+        .picchu .product-feature .col,
+        .picchu .product-family-feature .col {
           margin-bottom: 0; } }
-    .picchu .ms-product-feature :last-child,
-    .picchu .ms-product-family-feature :last-child {
+    .picchu .product-feature :last-child,
+    .picchu .product-family-feature :last-child {
       margin-bottom: 0; }
-  .picchu .ms-product-feature img {
+  .picchu .product-feature img {
     width: 100%;
     height: auto;
     margin-bottom: 12px;
     display: block; }
     @media all and (min-width: 540px) {
-      .picchu .ms-product-feature img {
+      .picchu .product-feature img {
         margin-bottom: 12px; } }
     @media all and (min-width: 1400px) {
-      .picchu .ms-product-feature img {
+      .picchu .product-feature img {
         margin-bottom: 12px; } }
-  .picchu .ms-product-family-feature img {
+  .picchu .product-family-feature img {
     width: 100%;
     height: auto;
     margin-bottom: 12px;
     display: none; }
     @media all and (min-width: 540px) {
-      .picchu .ms-product-family-feature img {
+      .picchu .product-family-feature img {
         margin-bottom: 12px; } }
     @media all and (min-width: 1400px) {
-      .picchu .ms-product-family-feature img {
+      .picchu .product-family-feature img {
         margin-bottom: 12px; } }
     @media screen and (min-width: 768px) {
-      .picchu .ms-product-family-feature img {
+      .picchu .product-family-feature img {
         display: block; } }
-  .picchu .ms-product-family-feature .ms--col img {
+  .picchu .product-family-feature .col img {
     display: block; }
     @media screen and (min-width: 768px) {
-      .picchu .ms-product-family-feature .ms--col img {
+      .picchu .product-family-feature .col img {
         display: none; } }
-  .picchu .ms-video-feature {
+  .picchu .video-feature {
     padding-top: 54px;
     padding-bottom: 54px; }
     @media all and (min-width: 540px) {
-      .picchu .ms-video-feature {
+      .picchu .video-feature {
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw); } }
     @media all and (min-width: 1400px) {
-      .picchu .ms-video-feature {
+      .picchu .video-feature {
         padding-top: 70px;
         padding-bottom: 70px; } }
-    .picchu .ms-video-feature .ms-col {
+    .picchu .video-feature .col {
       margin-bottom: 40px; }
       @media all and (min-width: 540px) {
-        .picchu .ms-video-feature .ms-col {
+        .picchu .video-feature .col {
           margin-bottom: calc(37px + 1.25vw); } }
       @media all and (min-width: 1400px) {
-        .picchu .ms-video-feature .ms-col {
+        .picchu .video-feature .col {
           margin-bottom: 60px; } }
       @media screen and (min-width: 768px) {
-        .picchu .ms-video-feature .ms-col {
+        .picchu .video-feature .col {
           margin-bottom: 0; } }
-    .picchu .ms-video-feature :last-child {
+    .picchu .video-feature :last-child {
       margin-bottom: 0; }
-    .picchu .ms-video-feature img {
+    .picchu .video-feature img {
       width: 100%;
       height: auto;
       display: block; }
-    .picchu .ms-video-feature .video-link {
+    .picchu .video-feature .video-link {
       display: block;
       margin-bottom: 12px; }
       @media all and (min-width: 540px) {
-        .picchu .ms-video-feature .video-link {
+        .picchu .video-feature .video-link {
           margin-bottom: 12px; } }
       @media all and (min-width: 1400px) {
-        .picchu .ms-video-feature .video-link {
+        .picchu .video-feature .video-link {
           margin-bottom: 12px; } }
-
-html {
-  box-sizing: border-box;
-  line-height: 1.4; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-img {
-  max-width: 100%; }

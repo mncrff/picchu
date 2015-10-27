@@ -1,0 +1,26 @@
+/*! picchu.css v0.1 | Microsoftdotcom team | Github - url coming once ready to make public */
+
+//------------------------------------
+//              #GLOBALS
+//------------------------------------
+html {
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+//------------------------------------
+//              #IMPORTS
+//------------------------------------
+@import "config";
+@import "Math/math";
+@import "variables";
+@import "mixins";
+@import "Typography/fontface";

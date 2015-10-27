@@ -1,6 +1,26 @@
-$picchu-namespace: true;
+@import "core";
 
-//------------------------------------
-//          #IMPORTS
-//------------------------------------
-@import "picchu";
+.#{$picchu-namespace-class} {
+	//------------------------------------
+	//              #IMPORTS
+	//------------------------------------
+	@import "Reset/normalize";
+	@import "Helpers/helpers";
+	@import "Color/colors";
+	@import "Spacing/spacing";
+	@import "Typography/typography";
+	@import "Icons/icons";
+	@import "FormElements/buttons";
+	@import "FormElements/formfields";
+	@import "FormElements/checkboxes";
+	@import "FormElements/slider";
+	@import "Hyperlinks/links";
+
+	@import "Components/Hero/hero";
+	@import "Components/Banner/banner";
+	@import "Components/Mosaic/mosaic";
+	@import "Components/Parallax/parallax";
+	@import "Components/ListRow/listRow";
+	@import "Components/Features/productFeature";
+	@import "Components/Features/videoFeature";
+}

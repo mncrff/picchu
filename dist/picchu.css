@@ -1,4 +1,134 @@
 /*! picchu.css v0.1 | Microsoftdotcom team | Github - url coming once ready to make public */
+html {
+  box-sizing: border-box;
+  line-height: 1.4; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+img {
+  max-width: 100%; }
+
+.headline {
+  font-size: 46px; }
+  @media all and (min-width: 540px) {
+    .headline {
+      font-size: calc(36px + 1.86vw); } }
+  @media all and (min-width: 1400px) {
+    .headline {
+      font-size: 62px; } }
+
+.static-typography .headline {
+  font-size: 62px; }
+
+h1, .h1, .header {
+  font-size: 34px; }
+  @media all and (min-width: 540px) {
+    h1, .h1, .header {
+      font-size: calc(26.5px + 1.4vw); } }
+  @media all and (min-width: 1400px) {
+    h1, .h1, .header {
+      font-size: 46px; } }
+
+.static-typography h1, .static-typography .h1, .static-typography .header {
+  font-size: 46px; }
+
+h2, .h2, .subheader {
+  font-size: 26px; }
+  @media all and (min-width: 540px) {
+    h2, .h2, .subheader {
+      font-size: calc(17.6px + 1.18vw); } }
+  @media all and (min-width: 1400px) {
+    h2, .h2, .subheader {
+      font-size: 34px; } }
+
+.static-typography h2, .static-typography .h2, .static-typography .subheader {
+  font-size: 34px; }
+
+h3, .h3, .title, button.large, .button.large {
+  font-size: 20px; }
+  @media all and (min-width: 540px) {
+    h3, .h3, .title, button.large, .button.large {
+      font-size: calc(18.2px + 0.41vw); } }
+  @media all and (min-width: 1400px) {
+    h3, .h3, .title, button.large, .button.large {
+      font-size: 24px; } }
+
+.static-typography h3, .static-typography .h3, .static-typography .title {
+  font-size: 24px; }
+
+h4, .h4, .subtitle {
+  font-size: 18px; }
+  @media all and (min-width: 540px) {
+    h4, .h4, .subtitle {
+      font-size: calc(16.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    h4, .h4, .subtitle {
+      font-size: 20px; } }
+
+.static-typography h4, .static-typography .h4, .static-typography .subtitle {
+  font-size: 20px; }
+
+h5, .h5, h6, .h6 {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    h5, .h5, h6, .h6 {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    h5, .h5, h6, .h6 {
+      font-size: 18px; } }
+
+.static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6 {
+  font-size: 18px; }
+
+body, p, blockquote, input, div, span, li, select, button, .body {
+  font-size: 16px; }
+  @media all and (min-width: 540px) {
+    body, p, blockquote, input, div, span, li, select, button, .body {
+      font-size: calc(14.9px + 0.22vw); } }
+  @media all and (min-width: 1400px) {
+    body, p, blockquote, input, div, span, li, select, button, .body {
+      font-size: 18px; } }
+
+.static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
+  font-size: 18px; }
+
+.body-alt, button.small, .button.small {
+  font-size: 14px; }
+  @media all and (min-width: 540px) {
+    .body-alt, button.small, .button.small {
+      font-size: calc(13.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .body-alt, button.small, .button.small {
+      font-size: 15px; } }
+
+.static-typography .body-alt {
+  font-size: 15px; }
+
+.caption {
+  font-size: 12px; }
+  @media all and (min-width: 540px) {
+    .caption {
+      font-size: calc(11.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .caption {
+      font-size: 13px; } }
+
+.static-typography .caption {
+  font-size: 13px; }
+
+.caption-alt {
+  font-size: 10px; }
+  @media all and (min-width: 540px) {
+    .caption-alt {
+      font-size: calc(9.5px + 0.11vw); } }
+  @media all and (min-width: 1400px) {
+    .caption-alt {
+      font-size: 11px; } }
+
+.static-typography .caption-alt {
+  font-size: 11px; }
+
 @font-face {
   font-family: 'wf_segoe-ui_light';
   src: url("//i.s-microsoft.com/fonts/segoe-ui/west-european/light/latest.eot");
@@ -3008,7 +3138,6 @@ h3,
 .title,
 button.large,
 .button.large,
-.ms-button.large,
 h4, .h4, .subtitle {
   margin-bottom: 0.66em; }
   h3.tight,
@@ -3016,7 +3145,6 @@ h4, .h4, .subtitle {
   .tight.title,
   button.tight.large,
   .tight.button.large,
-  .tight.ms-button.large,
   h4.tight, .tight.h4, .tight.subtitle {
     margin-bottom: 0.33em; }
   h3.loose,
@@ -3024,7 +3152,6 @@ h4, .h4, .subtitle {
   .loose.title,
   button.loose.large,
   .loose.button.large,
-  .loose.ms-button.large,
   h4.loose, .loose.h4, .loose.subtitle {
     margin-bottom: 1em; }
   h3.xloose,
@@ -3032,7 +3159,6 @@ h4, .h4, .subtitle {
   .xloose.title,
   button.xloose.large,
   .xloose.button.large,
-  .xloose.ms-button.large,
   h4.xloose, .xloose.h4, .xloose.subtitle {
     margin-bottom: 1.32em; }
 
@@ -3064,11 +3190,9 @@ p.body-alt,
 blockquote.body-alt,
 button,
 .button,
-.ms-button,
 .body-alt,
 button.small,
 .button.small,
-.ms-button.small,
 h1.caption,
 h2.caption,
 h3.caption,
@@ -3082,21 +3206,18 @@ h1.caption-alt, h2.caption-alt, h3.caption-alt, h4.caption-alt, h5.caption-alt, 
   margin-bottom: 1.25em; }
   button.tight,
   .tight.button,
-  .tight.ms-button,
   .tight.body-alt,
   .tight.caption,
   .tight.caption-alt {
     margin-bottom: 0.625em; }
   button.loose,
   .loose.button,
-  .loose.ms-button,
   .loose.body-alt,
   .loose.caption,
   .loose.caption-alt {
     margin-bottom: 1.875em; }
   button.xloose,
   .xloose.button,
-  .xloose.ms-button,
   .xloose.body-alt,
   .xloose.caption,
   .xloose.caption-alt {
@@ -3113,19 +3234,19 @@ h1.caption-alt, h2.caption-alt, h3.caption-alt, h4.caption-alt, h5.caption-alt, 
 
 .cta-container {
   margin-bottom: 0; }
-  .cta-container a, .cta-container button, .cta-container .button, .cta-container .ms-button {
+  .cta-container a, .cta-container button, .cta-container .button, .cta-container .button {
     margin-bottom: 0.8em; }
   .cta-container.tight {
     margin-bottom: 0; }
-    .cta-container.tight a, .cta-container.tight button, .cta-container.tight .button, .cta-container.tight .ms-button {
+    .cta-container.tight a, .cta-container.tight button, .cta-container.tight .button, .cta-container.tight .button {
       margin-bottom: 0.4em; }
   .cta-container.loose {
     margin-bottom: 0; }
-    .cta-container.loose a, .cta-container.loose button, .cta-container.loose .button, .cta-container.loose .ms-button {
+    .cta-container.loose a, .cta-container.loose button, .cta-container.loose .button, .cta-container.loose .button {
       margin-bottom: 1.2em; }
   .cta-container.xloose {
     margin-bottom: 0; }
-    .cta-container.xloose a, .cta-container.xloose button, .cta-container.xloose .button, .cta-container.xloose .ms-button {
+    .cta-container.xloose a, .cta-container.xloose button, .cta-container.xloose .button, .cta-container.xloose .button {
       margin-bottom: 1.6em; }
 
 ul li, ol li {
@@ -3139,126 +3260,6 @@ ul.loose li, ol.loose li {
 
 ul.xloose li, ol.xloose li {
   margin-bottom: 1em; }
-
-.headline {
-  font-size: 46px; }
-  @media all and (min-width: 540px) {
-    .headline {
-      font-size: calc(36px + 1.86vw); } }
-  @media all and (min-width: 1400px) {
-    .headline {
-      font-size: 62px; } }
-
-.static-typography .headline {
-  font-size: 62px; }
-
-h1, .h1, .header {
-  font-size: 34px; }
-  @media all and (min-width: 540px) {
-    h1, .h1, .header {
-      font-size: calc(26.5px + 1.4vw); } }
-  @media all and (min-width: 1400px) {
-    h1, .h1, .header {
-      font-size: 46px; } }
-
-.static-typography h1, .static-typography .h1, .static-typography .header {
-  font-size: 46px; }
-
-h2, .h2, .subheader {
-  font-size: 26px; }
-  @media all and (min-width: 540px) {
-    h2, .h2, .subheader {
-      font-size: calc(17.6px + 1.18vw); } }
-  @media all and (min-width: 1400px) {
-    h2, .h2, .subheader {
-      font-size: 34px; } }
-
-.static-typography h2, .static-typography .h2, .static-typography .subheader {
-  font-size: 34px; }
-
-h3, .h3, .title, button.large, .button.large, .ms-button.large {
-  font-size: 20px; }
-  @media all and (min-width: 540px) {
-    h3, .h3, .title, button.large, .button.large, .ms-button.large {
-      font-size: calc(18.2px + 0.41vw); } }
-  @media all and (min-width: 1400px) {
-    h3, .h3, .title, button.large, .button.large, .ms-button.large {
-      font-size: 24px; } }
-
-.static-typography h3, .static-typography .h3, .static-typography .title {
-  font-size: 24px; }
-
-h4, .h4, .subtitle {
-  font-size: 18px; }
-  @media all and (min-width: 540px) {
-    h4, .h4, .subtitle {
-      font-size: calc(16.9px + 0.22vw); } }
-  @media all and (min-width: 1400px) {
-    h4, .h4, .subtitle {
-      font-size: 20px; } }
-
-.static-typography h4, .static-typography .h4, .static-typography .subtitle {
-  font-size: 20px; }
-
-h5, .h5, h6, .h6 {
-  font-size: 16px; }
-  @media all and (min-width: 540px) {
-    h5, .h5, h6, .h6 {
-      font-size: calc(14.9px + 0.22vw); } }
-  @media all and (min-width: 1400px) {
-    h5, .h5, h6, .h6 {
-      font-size: 18px; } }
-
-.static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6 {
-  font-size: 18px; }
-
-body, p, blockquote, input, div, span, li, select, button, .body {
-  font-size: 16px; }
-  @media all and (min-width: 540px) {
-    body, p, blockquote, input, div, span, li, select, button, .body {
-      font-size: calc(14.9px + 0.22vw); } }
-  @media all and (min-width: 1400px) {
-    body, p, blockquote, input, div, span, li, select, button, .body {
-      font-size: 18px; } }
-
-.static-typography body, .static-typography .body, .static-typography p, .static-typography h5, .static-typography .h5, .static-typography h6, .static-typography .h6, .static-typography input, .static-typography div, .static-typography span, .static-typography li, .static-typography select, .static-typography button {
-  font-size: 18px; }
-
-.body-alt, button.small, .button.small, .ms-button.small {
-  font-size: 14px; }
-  @media all and (min-width: 540px) {
-    .body-alt, button.small, .button.small, .ms-button.small {
-      font-size: calc(13.5px + 0.11vw); } }
-  @media all and (min-width: 1400px) {
-    .body-alt, button.small, .button.small, .ms-button.small {
-      font-size: 15px; } }
-
-.static-typography .body-alt {
-  font-size: 15px; }
-
-.caption {
-  font-size: 12px; }
-  @media all and (min-width: 540px) {
-    .caption {
-      font-size: calc(11.5px + 0.11vw); } }
-  @media all and (min-width: 1400px) {
-    .caption {
-      font-size: 13px; } }
-
-.static-typography .caption {
-  font-size: 13px; }
-
-.caption-alt {
-  font-size: 10px; }
-  @media all and (min-width: 540px) {
-    .caption-alt {
-      font-size: calc(9.5px + 0.11vw); } }
-  @media all and (min-width: 1400px) {
-    .caption-alt {
-      font-size: 11px; } }
-
-.static-typography .caption-alt {
-  font-size: 11px; }
 
 .light {
   font-family: wf_segoe-ui_light, wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif; }
@@ -3390,7 +3391,7 @@ h5, .h5, h6, .h6 {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20%20%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20white%20!important%3B%20stroke%3A%20white!important%3B%20%7D%3C%2Fstyle%3E%20%20%20%20%3Cpath%20fill%3D%22%23010101%22%20d%3D%22M499.9.2C545.8.2%20590%206.1%20632.7%2018%20675.3%2029.9%20715%2046.7%20752%2068.6c37%2021.8%2070.6%2047.9%20101%2078.4%2030.4%2030.4%2056.5%2064.2%2078.4%20101%2021.8%2037%2038.7%2076.8%2050.6%20119.4s17.8%2086.9%2017.8%20132.8-5.9%2090.1-17.8%20132.8c-11.9%2042.6-28.7%2082.4-50.6%20119.4-21.9%2037-47.9%2070.6-78.4%20101-30.4%2030.4-64.2%2056.5-101%2078.4-37%2021.9-76.8%2038.7-119.4%2050.6-42.6%2011.9-86.9%2017.8-132.8%2017.8s-90.1-5.9-132.8-17.8-82.5-28.6-119.6-50.3-70.9-47.6-101.3-78.1S89.6%20789.8%2068%20752.7c-21.8-37.2-38.5-77-50.4-119.5C5.9%20590.6%200%20546.2%200%20500c0-45.9%205.9-90.1%2017.8-132.8s28.7-82.4%2050.6-119.4c21.8-37%2047.9-70.6%2078.4-101%2030.3-30.4%2064.1-56.5%20101-78.4%2037-21.8%2076.8-38.7%20119.4-50.6C409.7%206.2%20454%20.2%20499.9.2zm0%20958.3c40.4%200%20101.2-14.2%20138.4-24.6s76.1-34.2%20108.5-53.2c32.3-19%2055.8-43.8%2082.3-70.4%2026.5-26.5%2049.3-57%2068.4-89.3%2019-32.3%2033.7-67.2%2044.2-104.5%2010.4-37.3%2015.6-76%2015.6-116.4s-5.2-79.2-15.6-116.4-25.2-73.1-44.2-105.5c-19-32.3-39.8-64.8-66.4-91.3-26.5-26.5-68-60.3-100.3-79.4-32.4-18.9-67.2-34.6-104.5-45.1-37.3-10.4-86-19.6-126.4-19.6S420.7%2048%20383.5%2058.4%20295.3%2093.5%20263%20112.5c-32.4%2019-65.8%2051.8-92.3%2078.4-26.5%2026.5-49.3%2056-68.4%2088.3-19%2032.4-33.7%2067.2-44.2%20104.5-10.4%2037.3-15.6%2076-15.6%20116.3%200%2042.8%202.2%2072%2014.6%20116.4%2010%2035.9%2024.1%2067%2045.9%20104.5%2018.8%2032.4%2049.7%2072.9%2076.4%2099.6s53.2%2051.5%2085.6%2070.3c32.3%2018.8%2071.2%2038.5%20108.5%2048.9%2037.2%2010.5%2086%2018.8%20126.4%2018.8zm-125-708.4l374.9%20248.5L374.9%20750V250.1zm46.4%20414.8L670%20499.1%20420.3%20338.2l1%20326.7z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat; }
 
-button, .button, .ms-button {
+button, .button, .button {
   border: none;
   display: inline-block;
   text-decoration: none;
@@ -3403,213 +3404,213 @@ button, .button, .ms-button {
   line-height: 1.5;
   background-color: #0078D7;
   color: #FFFFFF; }
-  button:hover, button:focus, .button:hover, .button:focus, .ms-button:hover, .ms-button:focus {
+  button:hover, button:focus, .button:hover, .button:focus, .button:hover, .button:focus {
     text-decoration: none;
     background-color: #0060ac;
     -webkit-transition: background-color 0s;
             transition: background-color 0s; }
-  button:active, .button:active, .ms-button:active {
+  button:active, .button:active, .button:active {
     background-color: #004881;
     -webkit-transition: background-color 0s;
             transition: background-color 0s; }
-  button[disabled]:hover, button[disabled]:focus, .button[disabled]:hover, .button[disabled]:focus, .ms-button[disabled]:hover, .ms-button[disabled]:focus {
+  button[disabled]:hover, button[disabled]:focus, .button[disabled]:hover, .button[disabled]:focus, .button[disabled]:hover, .button[disabled]:focus {
     background-color: #e4e4e4;
     color: #919191; }
-  button[disabled], .button[disabled], .ms-button[disabled] {
+  button[disabled], .button[disabled], .button[disabled] {
     background-color: #e4e4e4;
     color: #919191; }
-  button.secondary, .button.secondary, .ms-button.secondary {
+  button.secondary, .button.secondary, .button.secondary {
     background-color: #767676;
     color: #FFFFFF; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus, .ms-button.secondary:hover, .ms-button.secondary:focus {
+    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
       background-color: #5e5e5e; }
-    button.secondary:active, .button.secondary:active, .ms-button.secondary:active {
+    button.secondary:active, .button.secondary:active, .button.secondary:active {
       background-color: #474747; }
-  button.large, .button.large, .ms-button.large {
+  button.large, .button.large, .button.large {
     font-family: wf_segoe-ui_semilight, wf_segoe-ui_normal, Arial, sans-serif;
     font-weight: inherit;
     line-height: 1.25;
     line-height: 1.5; }
-  button.small, .button.small, .ms-button.small {
+  button.small, .button.small, .button.small {
     font-family: wf_segoe-ui_normal, wf_segoe-ui_semilight, wf_segoe-ui_light, Arial, sans-serif;
     line-height: 1.25;
     line-height: 1.5; }
-  button.lightblue-bgc:hover, button.lightblue-bgc:focus, .button.lightblue-bgc:hover, .button.lightblue-bgc:focus, .ms-button.lightblue-bgc:hover, .ms-button.lightblue-bgc:focus {
+  button.lightblue-bgc:hover, button.lightblue-bgc:focus, .button.lightblue-bgc:hover, .button.lightblue-bgc:focus, .button.lightblue-bgc:hover, .button.lightblue-bgc:focus {
     background-color: #0096c2; }
-  button.lightblue-bgc:active, .button.lightblue-bgc:active, .ms-button.lightblue-bgc:active {
+  button.lightblue-bgc:active, .button.lightblue-bgc:active, .button.lightblue-bgc:active {
     background-color: #007191; }
-  button.lightblue-bgc[disabled]:hover, button.lightblue-bgc[disabled]:focus, .button.lightblue-bgc[disabled]:hover, .button.lightblue-bgc[disabled]:focus, .ms-button.lightblue-bgc[disabled]:hover, .ms-button.lightblue-bgc[disabled]:focus {
+  button.lightblue-bgc[disabled]:hover, button.lightblue-bgc[disabled]:focus, .button.lightblue-bgc[disabled]:hover, .button.lightblue-bgc[disabled]:focus, .button.lightblue-bgc[disabled]:hover, .button.lightblue-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.blue-bgc:hover, button.blue-bgc:focus, .button.blue-bgc:hover, .button.blue-bgc:focus, .ms-button.blue-bgc:hover, .ms-button.blue-bgc:focus {
+  button.blue-bgc:hover, button.blue-bgc:focus, .button.blue-bgc:hover, .button.blue-bgc:focus, .button.blue-bgc:hover, .button.blue-bgc:focus {
     background-color: #0060ac; }
-  button.blue-bgc:active, .button.blue-bgc:active, .ms-button.blue-bgc:active {
+  button.blue-bgc:active, .button.blue-bgc:active, .button.blue-bgc:active {
     background-color: #004881; }
-  button.blue-bgc[disabled]:hover, button.blue-bgc[disabled]:focus, .button.blue-bgc[disabled]:hover, .button.blue-bgc[disabled]:focus, .ms-button.blue-bgc[disabled]:hover, .ms-button.blue-bgc[disabled]:focus {
+  button.blue-bgc[disabled]:hover, button.blue-bgc[disabled]:focus, .button.blue-bgc[disabled]:hover, .button.blue-bgc[disabled]:focus, .button.blue-bgc[disabled]:hover, .button.blue-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.midblue-bgc:hover, button.midblue-bgc:focus, .button.midblue-bgc:hover, .button.midblue-bgc:focus, .ms-button.midblue-bgc:hover, .ms-button.midblue-bgc:focus {
+  button.midblue-bgc:hover, button.midblue-bgc:focus, .button.midblue-bgc:hover, .button.midblue-bgc:focus, .button.midblue-bgc:hover, .button.midblue-bgc:focus {
     background-color: #001372; }
-  button.midblue-bgc:active, .button.midblue-bgc:active, .ms-button.midblue-bgc:active {
+  button.midblue-bgc:active, .button.midblue-bgc:active, .button.midblue-bgc:active {
     background-color: #000e56; }
-  button.midblue-bgc[disabled]:hover, button.midblue-bgc[disabled]:focus, .button.midblue-bgc[disabled]:hover, .button.midblue-bgc[disabled]:focus, .ms-button.midblue-bgc[disabled]:hover, .ms-button.midblue-bgc[disabled]:focus {
+  button.midblue-bgc[disabled]:hover, button.midblue-bgc[disabled]:focus, .button.midblue-bgc[disabled]:hover, .button.midblue-bgc[disabled]:focus, .button.midblue-bgc[disabled]:hover, .button.midblue-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkblue-bgc:hover, button.darkblue-bgc:focus, .button.darkblue-bgc:hover, .button.darkblue-bgc:focus, .ms-button.darkblue-bgc:hover, .ms-button.darkblue-bgc:focus {
+  button.darkblue-bgc:hover, button.darkblue-bgc:focus, .button.darkblue-bgc:hover, .button.darkblue-bgc:focus, .button.darkblue-bgc:hover, .button.darkblue-bgc:focus {
     background-color: #001a40; }
-  button.darkblue-bgc:active, .button.darkblue-bgc:active, .ms-button.darkblue-bgc:active {
+  button.darkblue-bgc:active, .button.darkblue-bgc:active, .button.darkblue-bgc:active {
     background-color: #001330; }
-  button.darkblue-bgc[disabled]:hover, button.darkblue-bgc[disabled]:focus, .button.darkblue-bgc[disabled]:hover, .button.darkblue-bgc[disabled]:focus, .ms-button.darkblue-bgc[disabled]:hover, .ms-button.darkblue-bgc[disabled]:focus {
+  button.darkblue-bgc[disabled]:hover, button.darkblue-bgc[disabled]:focus, .button.darkblue-bgc[disabled]:hover, .button.darkblue-bgc[disabled]:focus, .button.darkblue-bgc[disabled]:hover, .button.darkblue-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightpurple-bgc:hover, button.lightpurple-bgc:focus, .button.lightpurple-bgc:hover, .button.lightpurple-bgc:focus, .ms-button.lightpurple-bgc:hover, .ms-button.lightpurple-bgc:focus {
+  button.lightpurple-bgc:hover, button.lightpurple-bgc:focus, .button.lightpurple-bgc:hover, .button.lightpurple-bgc:focus, .button.lightpurple-bgc:hover, .button.lightpurple-bgc:focus {
     background-color: #9080cc; }
-  button.lightpurple-bgc:active, .button.lightpurple-bgc:active, .ms-button.lightpurple-bgc:active {
+  button.lightpurple-bgc:active, .button.lightpurple-bgc:active, .button.lightpurple-bgc:active {
     background-color: #6c6099; }
-  button.lightpurple-bgc[disabled]:hover, button.lightpurple-bgc[disabled]:focus, .button.lightpurple-bgc[disabled]:hover, .button.lightpurple-bgc[disabled]:focus, .ms-button.lightpurple-bgc[disabled]:hover, .ms-button.lightpurple-bgc[disabled]:focus {
+  button.lightpurple-bgc[disabled]:hover, button.lightpurple-bgc[disabled]:focus, .button.lightpurple-bgc[disabled]:hover, .button.lightpurple-bgc[disabled]:focus, .button.lightpurple-bgc[disabled]:hover, .button.lightpurple-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.purple-bgc:hover, button.purple-bgc:focus, .button.purple-bgc:hover, .button.purple-bgc:focus, .ms-button.purple-bgc:hover, .ms-button.purple-bgc:focus {
+  button.purple-bgc:hover, button.purple-bgc:focus, .button.purple-bgc:hover, .button.purple-bgc:focus, .button.purple-bgc:hover, .button.purple-bgc:focus {
     background-color: #4a2474; }
-  button.purple-bgc:active, .button.purple-bgc:active, .ms-button.purple-bgc:active {
+  button.purple-bgc:active, .button.purple-bgc:active, .button.purple-bgc:active {
     background-color: #371b57; }
-  button.purple-bgc[disabled]:hover, button.purple-bgc[disabled]:focus, .button.purple-bgc[disabled]:hover, .button.purple-bgc[disabled]:focus, .ms-button.purple-bgc[disabled]:hover, .ms-button.purple-bgc[disabled]:focus {
+  button.purple-bgc[disabled]:hover, button.purple-bgc[disabled]:focus, .button.purple-bgc[disabled]:hover, .button.purple-bgc[disabled]:focus, .button.purple-bgc[disabled]:hover, .button.purple-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkpurple-bgc:hover, button.darkpurple-bgc:focus, .button.darkpurple-bgc:hover, .button.darkpurple-bgc:focus, .ms-button.darkpurple-bgc:hover, .ms-button.darkpurple-bgc:focus {
+  button.darkpurple-bgc:hover, button.darkpurple-bgc:focus, .button.darkpurple-bgc:hover, .button.darkpurple-bgc:focus, .button.darkpurple-bgc:hover, .button.darkpurple-bgc:focus {
     background-color: #281048; }
-  button.darkpurple-bgc:active, .button.darkpurple-bgc:active, .ms-button.darkpurple-bgc:active {
+  button.darkpurple-bgc:active, .button.darkpurple-bgc:active, .button.darkpurple-bgc:active {
     background-color: #1e0c36; }
-  button.darkpurple-bgc[disabled]:hover, button.darkpurple-bgc[disabled]:focus, .button.darkpurple-bgc[disabled]:hover, .button.darkpurple-bgc[disabled]:focus, .ms-button.darkpurple-bgc[disabled]:hover, .ms-button.darkpurple-bgc[disabled]:focus {
+  button.darkpurple-bgc[disabled]:hover, button.darkpurple-bgc[disabled]:focus, .button.darkpurple-bgc[disabled]:hover, .button.darkpurple-bgc[disabled]:focus, .button.darkpurple-bgc[disabled]:hover, .button.darkpurple-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightmagenta-bgc:hover, button.lightmagenta-bgc:focus, .button.lightmagenta-bgc:hover, .button.lightmagenta-bgc:focus, .ms-button.lightmagenta-bgc:hover, .ms-button.lightmagenta-bgc:focus {
+  button.lightmagenta-bgc:hover, button.lightmagenta-bgc:focus, .button.lightmagenta-bgc:hover, .button.lightmagenta-bgc:focus, .button.lightmagenta-bgc:hover, .button.lightmagenta-bgc:focus {
     background-color: #b60070; }
-  button.lightmagenta-bgc:active, .button.lightmagenta-bgc:active, .ms-button.lightmagenta-bgc:active {
+  button.lightmagenta-bgc:active, .button.lightmagenta-bgc:active, .button.lightmagenta-bgc:active {
     background-color: #880054; }
-  button.lightmagenta-bgc[disabled]:hover, button.lightmagenta-bgc[disabled]:focus, .button.lightmagenta-bgc[disabled]:hover, .button.lightmagenta-bgc[disabled]:focus, .ms-button.lightmagenta-bgc[disabled]:hover, .ms-button.lightmagenta-bgc[disabled]:focus {
+  button.lightmagenta-bgc[disabled]:hover, button.lightmagenta-bgc[disabled]:focus, .button.lightmagenta-bgc[disabled]:hover, .button.lightmagenta-bgc[disabled]:focus, .button.lightmagenta-bgc[disabled]:hover, .button.lightmagenta-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.magenta-bgc:hover, button.magenta-bgc:focus, .button.magenta-bgc:hover, .button.magenta-bgc:focus, .ms-button.magenta-bgc:hover, .ms-button.magenta-bgc:focus {
+  button.magenta-bgc:hover, button.magenta-bgc:focus, .button.magenta-bgc:hover, .button.magenta-bgc:focus, .button.magenta-bgc:hover, .button.magenta-bgc:focus {
     background-color: #90007e; }
-  button.magenta-bgc:active, .button.magenta-bgc:active, .ms-button.magenta-bgc:active {
+  button.magenta-bgc:active, .button.magenta-bgc:active, .button.magenta-bgc:active {
     background-color: #6c005f; }
-  button.magenta-bgc[disabled]:hover, button.magenta-bgc[disabled]:focus, .button.magenta-bgc[disabled]:hover, .button.magenta-bgc[disabled]:focus, .ms-button.magenta-bgc[disabled]:hover, .ms-button.magenta-bgc[disabled]:focus {
+  button.magenta-bgc[disabled]:hover, button.magenta-bgc[disabled]:focus, .button.magenta-bgc[disabled]:hover, .button.magenta-bgc[disabled]:focus, .button.magenta-bgc[disabled]:hover, .button.magenta-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkmagenta-bgc:hover, button.darkmagenta-bgc:focus, .button.darkmagenta-bgc:hover, .button.darkmagenta-bgc:focus, .ms-button.darkmagenta-bgc:hover, .ms-button.darkmagenta-bgc:focus {
+  button.darkmagenta-bgc:hover, button.darkmagenta-bgc:focus, .button.darkmagenta-bgc:hover, .button.darkmagenta-bgc:focus, .button.darkmagenta-bgc:hover, .button.darkmagenta-bgc:focus {
     background-color: #4a004a; }
-  button.darkmagenta-bgc:active, .button.darkmagenta-bgc:active, .ms-button.darkmagenta-bgc:active {
+  button.darkmagenta-bgc:active, .button.darkmagenta-bgc:active, .button.darkmagenta-bgc:active {
     background-color: #370037; }
-  button.darkmagenta-bgc[disabled]:hover, button.darkmagenta-bgc[disabled]:focus, .button.darkmagenta-bgc[disabled]:hover, .button.darkmagenta-bgc[disabled]:focus, .ms-button.darkmagenta-bgc[disabled]:hover, .ms-button.darkmagenta-bgc[disabled]:focus {
+  button.darkmagenta-bgc[disabled]:hover, button.darkmagenta-bgc[disabled]:focus, .button.darkmagenta-bgc[disabled]:hover, .button.darkmagenta-bgc[disabled]:focus, .button.darkmagenta-bgc[disabled]:hover, .button.darkmagenta-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.red-bgc:hover, button.red-bgc:focus, .button.red-bgc:hover, .button.red-bgc:focus, .ms-button.red-bgc:hover, .ms-button.red-bgc:focus {
+  button.red-bgc:hover, button.red-bgc:focus, .button.red-bgc:hover, .button.red-bgc:focus, .button.red-bgc:hover, .button.red-bgc:focus {
     background-color: #ba0e1c; }
-  button.red-bgc:active, .button.red-bgc:active, .ms-button.red-bgc:active {
+  button.red-bgc:active, .button.red-bgc:active, .button.red-bgc:active {
     background-color: #8b0a15; }
-  button.red-bgc[disabled]:hover, button.red-bgc[disabled]:focus, .button.red-bgc[disabled]:hover, .button.red-bgc[disabled]:focus, .ms-button.red-bgc[disabled]:hover, .ms-button.red-bgc[disabled]:focus {
+  button.red-bgc[disabled]:hover, button.red-bgc[disabled]:focus, .button.red-bgc[disabled]:hover, .button.red-bgc[disabled]:focus, .button.red-bgc[disabled]:hover, .button.red-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkred-bgc:hover, button.darkred-bgc:focus, .button.darkred-bgc:hover, .button.darkred-bgc:focus, .ms-button.darkred-bgc:hover, .ms-button.darkred-bgc:focus {
+  button.darkred-bgc:hover, button.darkred-bgc:focus, .button.darkred-bgc:hover, .button.darkred-bgc:focus, .button.darkred-bgc:hover, .button.darkred-bgc:focus {
     background-color: #860000; }
-  button.darkred-bgc:active, .button.darkred-bgc:active, .ms-button.darkred-bgc:active {
+  button.darkred-bgc:active, .button.darkred-bgc:active, .button.darkred-bgc:active {
     background-color: #650000; }
-  button.darkred-bgc[disabled]:hover, button.darkred-bgc[disabled]:focus, .button.darkred-bgc[disabled]:hover, .button.darkred-bgc[disabled]:focus, .ms-button.darkred-bgc[disabled]:hover, .ms-button.darkred-bgc[disabled]:focus {
+  button.darkred-bgc[disabled]:hover, button.darkred-bgc[disabled]:focus, .button.darkred-bgc[disabled]:hover, .button.darkred-bgc[disabled]:focus, .button.darkred-bgc[disabled]:hover, .button.darkred-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightorange-bgc:hover, button.lightorange-bgc:focus, .button.lightorange-bgc:hover, .button.lightorange-bgc:focus, .ms-button.lightorange-bgc:hover, .ms-button.lightorange-bgc:focus {
+  button.lightorange-bgc:hover, button.lightorange-bgc:focus, .button.lightorange-bgc:hover, .button.lightorange-bgc:focus, .button.lightorange-bgc:hover, .button.lightorange-bgc:focus {
     background-color: #cc7000; }
-  button.lightorange-bgc:active, .button.lightorange-bgc:active, .ms-button.lightorange-bgc:active {
+  button.lightorange-bgc:active, .button.lightorange-bgc:active, .button.lightorange-bgc:active {
     background-color: #995400; }
-  button.lightorange-bgc[disabled]:hover, button.lightorange-bgc[disabled]:focus, .button.lightorange-bgc[disabled]:hover, .button.lightorange-bgc[disabled]:focus, .ms-button.lightorange-bgc[disabled]:hover, .ms-button.lightorange-bgc[disabled]:focus {
+  button.lightorange-bgc[disabled]:hover, button.lightorange-bgc[disabled]:focus, .button.lightorange-bgc[disabled]:hover, .button.lightorange-bgc[disabled]:focus, .button.lightorange-bgc[disabled]:hover, .button.lightorange-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.orange-bgc:hover, button.orange-bgc:focus, .button.orange-bgc:hover, .button.orange-bgc:focus, .ms-button.orange-bgc:hover, .ms-button.orange-bgc:focus {
+  button.orange-bgc:hover, button.orange-bgc:focus, .button.orange-bgc:hover, .button.orange-bgc:focus, .button.orange-bgc:hover, .button.orange-bgc:focus {
     background-color: #ad2f01; }
-  button.orange-bgc:active, .button.orange-bgc:active, .ms-button.orange-bgc:active {
+  button.orange-bgc:active, .button.orange-bgc:active, .button.orange-bgc:active {
     background-color: #822301; }
-  button.orange-bgc[disabled]:hover, button.orange-bgc[disabled]:focus, .button.orange-bgc[disabled]:hover, .button.orange-bgc[disabled]:focus, .ms-button.orange-bgc[disabled]:hover, .ms-button.orange-bgc[disabled]:focus {
+  button.orange-bgc[disabled]:hover, button.orange-bgc[disabled]:focus, .button.orange-bgc[disabled]:hover, .button.orange-bgc[disabled]:focus, .button.orange-bgc[disabled]:hover, .button.orange-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightyellow-bgc:hover, button.lightyellow-bgc:focus, .button.lightyellow-bgc:hover, .button.lightyellow-bgc:focus, .ms-button.lightyellow-bgc:hover, .ms-button.lightyellow-bgc:focus {
+  button.lightyellow-bgc:hover, button.lightyellow-bgc:focus, .button.lightyellow-bgc:hover, .button.lightyellow-bgc:focus, .button.lightyellow-bgc:hover, .button.lightyellow-bgc:focus {
     background-color: #ccc100; }
-  button.lightyellow-bgc:active, .button.lightyellow-bgc:active, .ms-button.lightyellow-bgc:active {
+  button.lightyellow-bgc:active, .button.lightyellow-bgc:active, .button.lightyellow-bgc:active {
     background-color: #999100; }
-  button.lightyellow-bgc[disabled]:hover, button.lightyellow-bgc[disabled]:focus, .button.lightyellow-bgc[disabled]:hover, .button.lightyellow-bgc[disabled]:focus, .ms-button.lightyellow-bgc[disabled]:hover, .ms-button.lightyellow-bgc[disabled]:focus {
+  button.lightyellow-bgc[disabled]:hover, button.lightyellow-bgc[disabled]:focus, .button.lightyellow-bgc[disabled]:hover, .button.lightyellow-bgc[disabled]:focus, .button.lightyellow-bgc[disabled]:hover, .button.lightyellow-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.yellow-bgc:hover, button.yellow-bgc:focus, .button.yellow-bgc:hover, .button.yellow-bgc:focus, .ms-button.yellow-bgc:hover, .ms-button.yellow-bgc:focus {
+  button.yellow-bgc:hover, button.yellow-bgc:focus, .button.yellow-bgc:hover, .button.yellow-bgc:focus, .button.yellow-bgc:hover, .button.yellow-bgc:focus {
     background-color: #cc9400; }
-  button.yellow-bgc:active, .button.yellow-bgc:active, .ms-button.yellow-bgc:active {
+  button.yellow-bgc:active, .button.yellow-bgc:active, .button.yellow-bgc:active {
     background-color: #996f00; }
-  button.yellow-bgc[disabled]:hover, button.yellow-bgc[disabled]:focus, .button.yellow-bgc[disabled]:hover, .button.yellow-bgc[disabled]:focus, .ms-button.yellow-bgc[disabled]:hover, .ms-button.yellow-bgc[disabled]:focus {
+  button.yellow-bgc[disabled]:hover, button.yellow-bgc[disabled]:focus, .button.yellow-bgc[disabled]:hover, .button.yellow-bgc[disabled]:focus, .button.yellow-bgc[disabled]:hover, .button.yellow-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightgreen-bgc:hover, button.lightgreen-bgc:focus, .button.lightgreen-bgc:hover, .button.lightgreen-bgc:focus, .ms-button.lightgreen-bgc:hover, .ms-button.lightgreen-bgc:focus {
+  button.lightgreen-bgc:hover, button.lightgreen-bgc:focus, .button.lightgreen-bgc:hover, .button.lightgreen-bgc:focus, .button.lightgreen-bgc:hover, .button.lightgreen-bgc:focus {
     background-color: #95ad08; }
-  button.lightgreen-bgc:active, .button.lightgreen-bgc:active, .ms-button.lightgreen-bgc:active {
+  button.lightgreen-bgc:active, .button.lightgreen-bgc:active, .button.lightgreen-bgc:active {
     background-color: #708206; }
-  button.lightgreen-bgc[disabled]:hover, button.lightgreen-bgc[disabled]:focus, .button.lightgreen-bgc[disabled]:hover, .button.lightgreen-bgc[disabled]:focus, .ms-button.lightgreen-bgc[disabled]:hover, .ms-button.lightgreen-bgc[disabled]:focus {
+  button.lightgreen-bgc[disabled]:hover, button.lightgreen-bgc[disabled]:focus, .button.lightgreen-bgc[disabled]:hover, .button.lightgreen-bgc[disabled]:focus, .button.lightgreen-bgc[disabled]:hover, .button.lightgreen-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.green-bgc:hover, button.green-bgc:focus, .button.green-bgc:hover, .button.green-bgc:focus, .ms-button.green-bgc:hover, .ms-button.green-bgc:focus {
+  button.green-bgc:hover, button.green-bgc:focus, .button.green-bgc:hover, .button.green-bgc:focus, .button.green-bgc:hover, .button.green-bgc:focus {
     background-color: #0d630d; }
-  button.green-bgc:active, .button.green-bgc:active, .ms-button.green-bgc:active {
+  button.green-bgc:active, .button.green-bgc:active, .button.green-bgc:active {
     background-color: #0a4a0a; }
-  button.green-bgc[disabled]:hover, button.green-bgc[disabled]:focus, .button.green-bgc[disabled]:hover, .button.green-bgc[disabled]:focus, .ms-button.green-bgc[disabled]:hover, .ms-button.green-bgc[disabled]:focus {
+  button.green-bgc[disabled]:hover, button.green-bgc[disabled]:focus, .button.green-bgc[disabled]:hover, .button.green-bgc[disabled]:focus, .button.green-bgc[disabled]:hover, .button.green-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkgreen-bgc:hover, button.darkgreen-bgc:focus, .button.darkgreen-bgc:hover, .button.darkgreen-bgc:focus, .ms-button.darkgreen-bgc:hover, .ms-button.darkgreen-bgc:focus {
+  button.darkgreen-bgc:hover, button.darkgreen-bgc:focus, .button.darkgreen-bgc:hover, .button.darkgreen-bgc:focus, .button.darkgreen-bgc:hover, .button.darkgreen-bgc:focus {
     background-color: #003c16; }
-  button.darkgreen-bgc:active, .button.darkgreen-bgc:active, .ms-button.darkgreen-bgc:active {
+  button.darkgreen-bgc:active, .button.darkgreen-bgc:active, .button.darkgreen-bgc:active {
     background-color: #002d11; }
-  button.darkgreen-bgc[disabled]:hover, button.darkgreen-bgc[disabled]:focus, .button.darkgreen-bgc[disabled]:hover, .button.darkgreen-bgc[disabled]:focus, .ms-button.darkgreen-bgc[disabled]:hover, .ms-button.darkgreen-bgc[disabled]:focus {
+  button.darkgreen-bgc[disabled]:hover, button.darkgreen-bgc[disabled]:focus, .button.darkgreen-bgc[disabled]:hover, .button.darkgreen-bgc[disabled]:focus, .button.darkgreen-bgc[disabled]:hover, .button.darkgreen-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.lightteal-bgc:hover, button.lightteal-bgc:focus, .button.lightteal-bgc:hover, .button.lightteal-bgc:focus, .ms-button.lightteal-bgc:hover, .ms-button.lightteal-bgc:focus {
+  button.lightteal-bgc:hover, button.lightteal-bgc:focus, .button.lightteal-bgc:hover, .button.lightteal-bgc:focus, .button.lightteal-bgc:hover, .button.lightteal-bgc:focus {
     background-color: #008e76; }
-  button.lightteal-bgc:active, .button.lightteal-bgc:active, .ms-button.lightteal-bgc:active {
+  button.lightteal-bgc:active, .button.lightteal-bgc:active, .button.lightteal-bgc:active {
     background-color: #006b59; }
-  button.lightteal-bgc[disabled]:hover, button.lightteal-bgc[disabled]:focus, .button.lightteal-bgc[disabled]:hover, .button.lightteal-bgc[disabled]:focus, .ms-button.lightteal-bgc[disabled]:hover, .ms-button.lightteal-bgc[disabled]:focus {
+  button.lightteal-bgc[disabled]:hover, button.lightteal-bgc[disabled]:focus, .button.lightteal-bgc[disabled]:hover, .button.lightteal-bgc[disabled]:focus, .button.lightteal-bgc[disabled]:hover, .button.lightteal-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.teal-bgc:hover, button.teal-bgc:focus, .button.teal-bgc:hover, .button.teal-bgc:focus, .ms-button.teal-bgc:hover, .ms-button.teal-bgc:focus {
+  button.teal-bgc:hover, button.teal-bgc:focus, .button.teal-bgc:hover, .button.teal-bgc:focus, .button.teal-bgc:hover, .button.teal-bgc:focus {
     background-color: #00685b; }
-  button.teal-bgc:active, .button.teal-bgc:active, .ms-button.teal-bgc:active {
+  button.teal-bgc:active, .button.teal-bgc:active, .button.teal-bgc:active {
     background-color: #004e44; }
-  button.teal-bgc[disabled]:hover, button.teal-bgc[disabled]:focus, .button.teal-bgc[disabled]:hover, .button.teal-bgc[disabled]:focus, .ms-button.teal-bgc[disabled]:hover, .ms-button.teal-bgc[disabled]:focus {
+  button.teal-bgc[disabled]:hover, button.teal-bgc[disabled]:focus, .button.teal-bgc[disabled]:hover, .button.teal-bgc[disabled]:focus, .button.teal-bgc[disabled]:hover, .button.teal-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.darkteal-bgc:hover, button.darkteal-bgc:focus, .button.darkteal-bgc:hover, .button.darkteal-bgc:focus, .ms-button.darkteal-bgc:hover, .ms-button.darkteal-bgc:focus {
+  button.darkteal-bgc:hover, button.darkteal-bgc:focus, .button.darkteal-bgc:hover, .button.darkteal-bgc:focus, .button.darkteal-bgc:hover, .button.darkteal-bgc:focus {
     background-color: #003c40; }
-  button.darkteal-bgc:active, .button.darkteal-bgc:active, .ms-button.darkteal-bgc:active {
+  button.darkteal-bgc:active, .button.darkteal-bgc:active, .button.darkteal-bgc:active {
     background-color: #002d30; }
-  button.darkteal-bgc[disabled]:hover, button.darkteal-bgc[disabled]:focus, .button.darkteal-bgc[disabled]:hover, .button.darkteal-bgc[disabled]:focus, .ms-button.darkteal-bgc[disabled]:hover, .ms-button.darkteal-bgc[disabled]:focus {
+  button.darkteal-bgc[disabled]:hover, button.darkteal-bgc[disabled]:focus, .button.darkteal-bgc[disabled]:hover, .button.darkteal-bgc[disabled]:focus, .button.darkteal-bgc[disabled]:hover, .button.darkteal-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.gray-bgc:hover, button.gray-bgc:focus, .button.gray-bgc:hover, .button.gray-bgc:focus, .ms-button.gray-bgc:hover, .ms-button.gray-bgc:focus {
+  button.gray-bgc:hover, button.gray-bgc:focus, .button.gray-bgc:hover, .button.gray-bgc:focus, .button.gray-bgc:hover, .button.gray-bgc:focus {
     background-color: #5e5e5e; }
-  button.gray-bgc:active, .button.gray-bgc:active, .ms-button.gray-bgc:active {
+  button.gray-bgc:active, .button.gray-bgc:active, .button.gray-bgc:active {
     background-color: #474747; }
-  button.gray-bgc[disabled]:hover, button.gray-bgc[disabled]:focus, .button.gray-bgc[disabled]:hover, .button.gray-bgc[disabled]:focus, .ms-button.gray-bgc[disabled]:hover, .ms-button.gray-bgc[disabled]:focus {
+  button.gray-bgc[disabled]:hover, button.gray-bgc[disabled]:focus, .button.gray-bgc[disabled]:hover, .button.gray-bgc[disabled]:focus, .button.gray-bgc[disabled]:hover, .button.gray-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
-  button.white-bgc, .button.white-bgc, .ms-button.white-bgc {
+  button.white-bgc, .button.white-bgc, .button.white-bgc {
     color: #0078D7;
     background-color: white; }
-    button.white-bgc:hover, button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus, .ms-button.white-bgc:hover, .ms-button.white-bgc:focus {
+    button.white-bgc:hover, button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus, .button.white-bgc:hover, .button.white-bgc:focus {
       background-color: #e4e4e4; }
-    button.white-bgc:active, .button.white-bgc:active, .ms-button.white-bgc:active {
+    button.white-bgc:active, .button.white-bgc:active, .button.white-bgc:active {
       background-color: #c8c8c8; }
-    button.white-bgc[disabled]:hover, button.white-bgc[disabled]:focus, .button.white-bgc[disabled]:hover, .button.white-bgc[disabled]:focus, .ms-button.white-bgc[disabled]:hover, .ms-button.white-bgc[disabled]:focus {
+    button.white-bgc[disabled]:hover, button.white-bgc[disabled]:focus, .button.white-bgc[disabled]:hover, .button.white-bgc[disabled]:focus, .button.white-bgc[disabled]:hover, .button.white-bgc[disabled]:focus {
       background-color: #c8c8c8;
       color: #919191; }
-  button.black-bgc:hover, button.black-bgc:focus, .button.black-bgc:hover, .button.black-bgc:focus, .ms-button.black-bgc:hover, .ms-button.black-bgc:focus {
+  button.black-bgc:hover, button.black-bgc:focus, .button.black-bgc:hover, .button.black-bgc:focus, .button.black-bgc:hover, .button.black-bgc:focus {
     background-color: #333333; }
-  button.black-bgc:active, .button.black-bgc:active, .ms-button.black-bgc:active {
+  button.black-bgc:active, .button.black-bgc:active, .button.black-bgc:active {
     background-color: #666666; }
-  button.black-bgc[disabled]:hover, button.black-bgc[disabled]:focus, .button.black-bgc[disabled]:hover, .button.black-bgc[disabled]:focus, .ms-button.black-bgc[disabled]:hover, .ms-button.black-bgc[disabled]:focus {
+  button.black-bgc[disabled]:hover, button.black-bgc[disabled]:focus, .button.black-bgc[disabled]:hover, .button.black-bgc[disabled]:focus, .button.black-bgc[disabled]:hover, .button.black-bgc[disabled]:focus {
     background-color: #c8c8c8;
     color: #919191; }
 
@@ -3626,9 +3627,7 @@ label, input, textarea {
   display: inline-block;
   font-size: 15px;
   color: #2F2F2F;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   box-sizing: border-box; }
 
 label.disabled {
@@ -3682,35 +3681,33 @@ input[type="password"] {
   input[type="password"][disabled]:active {
     box-shadow: none; }
 
-.ms-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
   width: 100%; }
-  .ms-dropdown select {
+  .dropdown select {
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     border: 1px solid #767676;
     position: relative;
     padding: 0.4667em 2.8em 0.4667em 0.55em;
     width: 100%; }
-  .ms-dropdown select::-ms-expand {
+  .dropdown select::-ms-expand {
     display: none; }
-  .ms-dropdown select:focus,
-  .ms-dropdown select:active {
+  .dropdown select:focus,
+  .dropdown select:active {
     border-color: #0078D7;
     box-shadow: 0 0 0 1px #0078D7;
     outline: none; }
-  .ms-dropdown select[disabled],
-  .ms-dropdown select[disabled]:active {
+  .dropdown select[disabled],
+  .dropdown select[disabled]:active {
     border-color: #c8c8c8;
     color: #c8c8c8; }
-  .ms-dropdown select[disabled]:active {
+  .dropdown select[disabled]:active {
     box-shadow: none; }
-  .ms-dropdown:before {
+  .dropdown:before {
     content: '';
     display: block;
     position: absolute;
@@ -3722,26 +3719,26 @@ input[type="password"] {
     z-index: 10;
     pointer-events: none;
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%232F2F2F%20!important%3B%20stroke%3A%20%232F2F2F!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
-  .ms-dropdown.disabled:before {
+  .dropdown.disabled:before {
     background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23c8c8c8%20!important%3B%20stroke%3A%20%23c8c8c8!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22New_Symbol%22%3E%20%3Cpolygon%20points%3D%22500%2C808.9%2012.2%2C321.1%2071.1%2C262.2%20500%2C691.1%20928.9%2C262.2%20987.8%2C321.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
 
-html.ie9 .ms-dropdown select,
-html.ie8 .ms-dropdown select {
+html.ie9 .dropdown select,
+html.ie8 .dropdown select {
   padding-right: 0.55em; }
 
-html.ie9 .ms-dropdown:before,
-html.ie8 .ms-dropdown:before {
+html.ie9 .dropdown:before,
+html.ie8 .dropdown:before {
   display: none; }
 
-label.ms-checkbox,
-label.ms-radio,
-label.ms-toggle {
+label.checkbox,
+label.radio,
+label.toggle {
   position: relative;
   display: inline-block;
   padding: 0.5em 0; }
-  label.ms-checkbox .custom-control,
-  label.ms-radio .custom-control,
-  label.ms-toggle .custom-control {
+  label.checkbox .custom-control,
+  label.radio .custom-control,
+  label.toggle .custom-control {
     display: inline-block;
     position: relative;
     border: 1px solid #767676;
@@ -3752,84 +3749,84 @@ label.ms-toggle {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
-  label.ms-checkbox input,
-  label.ms-radio input,
-  label.ms-toggle input {
+  label.checkbox input,
+  label.radio input,
+  label.toggle input {
     position: absolute;
     opacity: 0;
     z-index: -1; }
-  label.ms-checkbox span,
-  label.ms-radio span,
-  label.ms-toggle span {
+  label.checkbox span,
+  label.radio span,
+  label.toggle span {
     font-size: inherit; }
 
-label.ms-checkbox .custom-control,
-label.ms-radio .custom-control {
+label.checkbox .custom-control,
+label.radio .custom-control {
   width: 20px;
   height: 20px; }
 
-label.ms-checkbox input:focus ~ .custom-control,
-label.ms-checkbox input:active ~ .custom-control,
-label.ms-radio input:focus ~ .custom-control,
-label.ms-radio input:active ~ .custom-control {
+label.checkbox input:focus ~ .custom-control,
+label.checkbox input:active ~ .custom-control,
+label.radio input:focus ~ .custom-control,
+label.radio input:active ~ .custom-control {
   border-color: #0078D7;
   box-shadow: 0 0 0 1px #0078D7; }
 
-label.ms-checkbox input[disabled] ~ .custom-control,
-label.ms-checkbox input[disabled]:active ~ .custom-control,
-label.ms-radio input[disabled] ~ .custom-control,
-label.ms-radio input[disabled]:active ~ .custom-control {
+label.checkbox input[disabled] ~ .custom-control,
+label.checkbox input[disabled]:active ~ .custom-control,
+label.radio input[disabled] ~ .custom-control,
+label.radio input[disabled]:active ~ .custom-control {
   border-color: #c8c8c8; }
 
-label.ms-checkbox input[disabled]:active ~ .custom-control,
-label.ms-radio input[disabled]:active ~ .custom-control {
+label.checkbox input[disabled]:active ~ .custom-control,
+label.radio input[disabled]:active ~ .custom-control {
   box-shadow: none; }
 
-label.ms-checkbox input[disabled] ~ span,
-label.ms-radio input[disabled] ~ span {
+label.checkbox input[disabled] ~ span,
+label.radio input[disabled] ~ span {
   color: #c8c8c8; }
 
-label.ms-checkbox input {
+label.checkbox input {
   background-repeat: no-repeat;
   background-size: 90% auto;
   background-position: center; }
 
-label.ms-checkbox input:checked ~ .custom-control {
+label.checkbox input:checked ~ .custom-control {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%232F2F2F%20!important%3B%20stroke%3A%20%232F2F2F!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22checkmark_x5F_32%22%3E%20%3Cpolygon%20points%3D%22852.9%2C227.9%20375%2C705.8%20147.1%2C477.9%20102.9%2C522.1%20375%2C794.2%20897.1%2C272.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
 
-label.ms-checkbox input[disabled]:checked ~ .custom-control {
+label.checkbox input[disabled]:checked ~ .custom-control {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Icon%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%201000%201000%22%20enable-background%3D%22new%200%200%201000%201000%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%23c8c8c8%20!important%3B%20stroke%3A%20%23c8c8c8!important%3B%20%7D%3C%2Fstyle%3E%3Cg%20id%3D%22checkmark_x5F_32%22%3E%20%3Cpolygon%20points%3D%22852.9%2C227.9%20375%2C705.8%20147.1%2C477.9%20102.9%2C522.1%20375%2C794.2%20897.1%2C272.1%20%20%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E"); }
 
-label.ms-checkbox + .ms-checkbox {
+label.checkbox + .checkbox {
   margin-left: 2em; }
 
-label.ms-radio .custom-control {
+label.radio .custom-control {
   border-radius: 50%;
   position: relative; }
 
-label.ms-radio input:checked ~ .custom-control {
+label.radio input:checked ~ .custom-control {
   background-color: #2F2F2F;
   box-shadow: inset 0 0 0 4px #FFFFFF; }
 
-label.ms-radio input:checked:focus ~ .custom-control {
+label.radio input:checked:focus ~ .custom-control {
   border-color: #0078D7;
   box-shadow: 0 0 0 1px #0078D7, inset 0 0 0 4px #FFFFFF; }
 
-label.ms-radio input[disabled]:checked ~ .custom-control,
-label.ms-radio input[disabled]:checked:active ~ .custom-control {
+label.radio input[disabled]:checked ~ .custom-control,
+label.radio input[disabled]:checked:active ~ .custom-control {
   background-color: #c8c8c8;
   box-shadow: inset 0 0 0 4px #FFFFFF; }
 
-label.ms-radio + .ms-radio {
+label.radio + .radio {
   margin-left: 2em; }
 
-label.ms-toggle .custom-control {
+label.toggle .custom-control {
   width: 44px;
   height: 22px;
   border-radius: 1em;
   -webkit-transition: background-color 0.2s;
           transition: background-color 0.2s; }
-  label.ms-toggle .custom-control:before {
+  label.toggle .custom-control:before {
     content: '';
     position: absolute;
     top: 50%;
@@ -3843,72 +3840,70 @@ label.ms-toggle .custom-control {
     -webkit-transition: left 0.5s;
             transition: left 0.5s; }
 
-label.ms-toggle input:checked ~ .custom-control {
+label.toggle input:checked ~ .custom-control {
   background-color: #0078D7;
   border-color: #0078D7; }
-  label.ms-toggle input:checked ~ .custom-control:before {
+  label.toggle input:checked ~ .custom-control:before {
     background-color: #FFFFFF;
     left: 1.65em; }
 
-label.ms-toggle input:focus ~ .custom-control,
-label.ms-toggle input:active ~ .custom-control {
+label.toggle input:focus ~ .custom-control,
+label.toggle input:active ~ .custom-control {
   border-color: #0078D7;
   box-shadow: 0 0 0 1px #0078D7; }
 
-label.ms-toggle input[disabled] ~ .custom-control:before {
+label.toggle input[disabled] ~ .custom-control:before {
   background-color: #c8c8c8; }
 
-label.ms-toggle input[disabled] ~ .custom-control,
-label.ms-toggle input[disabled]:active ~ .custom-control {
+label.toggle input[disabled] ~ .custom-control,
+label.toggle input[disabled]:active ~ .custom-control {
   border-color: #c8c8c8; }
 
-label.ms-toggle input[disabled]:checked ~ .custom-control {
+label.toggle input[disabled]:checked ~ .custom-control {
   background-color: #c8c8c8; }
-  label.ms-toggle input[disabled]:checked ~ .custom-control:before {
+  label.toggle input[disabled]:checked ~ .custom-control:before {
     background-color: #767676; }
 
-label.ms-toggle input[disabled]:active ~ .custom-control {
+label.toggle input[disabled]:active ~ .custom-control {
   box-shadow: none; }
 
-label.ms-toggle input[disabled] ~ span {
+label.toggle input[disabled] ~ span {
   color: #c8c8c8; }
 
-.no-css-checked label.ms-checkbox .custom-control,
-.no-css-checked label.ms-radio .custom-control,
-.no-css-checked label.ms-toggle .custom-control,
-.no-css-sibselector label.ms-checkbox .custom-control,
-.no-css-sibselector label.ms-radio .custom-control,
-.no-css-sibselector label.ms-toggle .custom-control {
+.no-css-checked label.checkbox .custom-control,
+.no-css-checked label.radio .custom-control,
+.no-css-checked label.toggle .custom-control,
+.no-css-sibselector label.checkbox .custom-control,
+.no-css-sibselector label.radio .custom-control,
+.no-css-sibselector label.toggle .custom-control {
   display: none; }
 
-.no-css-checked label.ms-checkbox input,
-.no-css-checked label.ms-radio input,
-.no-css-checked label.ms-toggle input,
-.no-css-sibselector label.ms-checkbox input,
-.no-css-sibselector label.ms-radio input,
-.no-css-sibselector label.ms-toggle input {
+.no-css-checked label.checkbox input,
+.no-css-checked label.radio input,
+.no-css-checked label.toggle input,
+.no-css-sibselector label.checkbox input,
+.no-css-sibselector label.radio input,
+.no-css-sibselector label.toggle input {
   position: relative;
   opacity: 1;
   z-index: 0;
   margin-right: 0.25em; }
 
-input[type=range].ms-slider {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+input[type=range].slider {
+  appearance: none;
   width: 100%;
   margin: 3px 0; }
 
-input[type=range].ms-slider:focus {
+input[type=range].slider:focus {
   outline: none; }
-  input[type=range].ms-slider:focus::-webkit-slider-thumb {
+  input[type=range].slider:focus::-webkit-slider-thumb {
     background: #000000; }
-  input[type=range].ms-slider:focus::-moz-range-thumb {
+  input[type=range].slider:focus::-moz-range-thumb {
     background: #000000; }
-  input[type=range].ms-slider:focus::-ms-thumb {
+  input[type=range].slider:focus::-ms-thumb {
     background: #000000; }
 
-input[type=range].ms-slider::-webkit-slider-runnable-track {
+input[type=range].slider::-webkit-slider-runnable-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -3917,7 +3912,7 @@ input[type=range].ms-slider::-webkit-slider-runnable-track {
   border-radius: 0px;
   border: 0px solid #000000; }
 
-input[type=range].ms-slider::-webkit-slider-thumb {
+input[type=range].slider::-webkit-slider-thumb {
   box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
   border: 0px solid transparent;
   height: 8px;
@@ -3925,23 +3920,22 @@ input[type=range].ms-slider::-webkit-slider-thumb {
   border-radius: 50px;
   background: #0078D7;
   cursor: pointer;
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin-top: -3px; }
 
-input[type=range].ms-slider::-webkit-slider-thumb:hover {
+input[type=range].slider::-webkit-slider-thumb:hover {
   background: #000000; }
 
-input[type=range].ms-slider::-moz-range-thumb:hover {
+input[type=range].slider::-moz-range-thumb:hover {
   background: #000000; }
 
-input[type=range].ms-slider::-ms-thumb:hover {
+input[type=range].slider::-ms-thumb:hover {
   background: #000000; }
 
-input[type=range].ms-slider:focus::-webkit-slider-runnable-track {
+input[type=range].slider:focus::-webkit-slider-runnable-track {
   background: #00BCF2; }
 
-input[type=range].ms-slider::-moz-range-track {
+input[type=range].slider::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -3950,7 +3944,7 @@ input[type=range].ms-slider::-moz-range-track {
   border-radius: 0px;
   border: 0px solid #000000; }
 
-input[type=range].ms-slider::-moz-range-thumb {
+input[type=range].slider::-moz-range-thumb {
   box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
   border: 0px solid transparent;
   height: 8px;
@@ -3959,7 +3953,7 @@ input[type=range].ms-slider::-moz-range-thumb {
   background: #0078D7;
   cursor: pointer; }
 
-input[type=range].ms-slider::-ms-track {
+input[type=range].slider::-ms-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
@@ -3967,19 +3961,19 @@ input[type=range].ms-slider::-ms-track {
   border-color: transparent;
   color: transparent; }
 
-input[type=range].ms-slider::-ms-fill-lower {
+input[type=range].slider::-ms-fill-lower {
   background: #005ca4;
   border: 0px solid #000000;
   border-radius: 0px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #2F2F2F; }
 
-input[type=range].ms-slider::-ms-fill-upper {
+input[type=range].slider::-ms-fill-upper {
   background: #0078D7;
   border: 0px solid #000000;
   border-radius: 0px;
   box-shadow: 0px 0px 0px #000000, 0px 0px 0px #2F2F2F; }
 
-input[type=range].ms-slider::-ms-thumb {
+input[type=range].slider::-ms-thumb {
   box-shadow: 0px 0px 0px transparent, 0px 0px 0px rgba(13, 13, 13, 0);
   border: 0px solid transparent;
   height: 8px;
@@ -3989,10 +3983,10 @@ input[type=range].ms-slider::-ms-thumb {
   cursor: pointer;
   height: 2px; }
 
-input[type=range].ms-slider:focus::-ms-fill-lower {
+input[type=range].slider:focus::-ms-fill-lower {
   background: #0078D7; }
 
-input[type=range].ms-slider:focus::-ms-fill-upper {
+input[type=range].slider:focus::-ms-fill-upper {
   background: #3393df; }
 
 a {
@@ -4012,7 +4006,7 @@ a {
     margin-left: 0.25em;
     background-position: 0 bottom; }
 
-.cta-container a, .cta-container button, .cta-container .button, .cta-container .ms-button {
+.cta-container a, .cta-container button, .cta-container .button, .cta-container .button {
   margin-right: 1.25em; }
 
 @media screen and (min-width: 768px) {
@@ -4055,23 +4049,23 @@ a {
   .video-link.black-bgc:before {
     background-color: black; }
 
-.ms-hero {
+.hero {
   position: relative;
   overflow: hidden; }
   @media screen and (min-width: 768px) {
-    .ms-hero {
+    .hero {
       padding-bottom: 37.5%; } }
-  .ms-hero .cta-link {
+  .hero .cta-link {
     white-space: nowrap; }
   @media screen and (min-width: 768px) {
-    .ms-hero .ms-hero-banner,
-    .ms-hero .ms-hero-carousel {
+    .hero .hero-banner,
+    .hero .hero-carousel {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0; } }
-  .ms-hero .ms-hero-banner:before {
+  .hero .hero-banner:before {
     content: '';
     display: block;
     position: absolute;
@@ -4079,26 +4073,26 @@ a {
     height: 100%;
     top: 0;
     left: 0; }
-  .ms-hero .ms-hero-carousel {
+  .hero .hero-carousel {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    .ms-hero .ms-hero-carousel .ms-hero-carousel-slide {
+    .hero .hero-carousel .hero-carousel-slide {
       height: 100%;
       position: relative; }
-      .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+      .hero .hero-carousel .hero-carousel-slide .hero-content-container {
         position: relative;
         padding-left: 42px;
         padding-right: 42px; }
         @media screen and (min-width: 768px) {
-          .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+          .hero .hero-carousel .hero-carousel-slide .hero-content-container {
             padding-left: 12px;
             padding-right: 12px; } }
         @media screen and (min-width: 1084px) {
-          .ms-hero .ms-hero-carousel .ms-hero-carousel-slide .ms-hero-content-container {
+          .hero .hero-carousel .hero-carousel-slide .hero-content-container {
             padding-left: 0;
             padding-right: 0; } }
-      .ms-hero .ms-hero-carousel .ms-hero-carousel-slide:before {
+      .hero .hero-carousel .hero-carousel-slide:before {
         content: '';
         display: block;
         position: absolute;
@@ -4106,49 +4100,49 @@ a {
         height: 100%;
         top: 0;
         left: 0; }
-  .ms-hero .ms-hero-mobile-img {
+  .hero .hero-mobile-img {
     display: block;
     width: 100%;
     height: auto; }
     @media screen and (min-width: 768px) {
-      .ms-hero .ms-hero-mobile-img {
+      .hero .hero-mobile-img {
         display: none; } }
-  .ms-hero .ms-hero-content-container :last-child {
+  .hero .hero-content-container :last-child {
     margin-bottom: 0; }
-  .ms-hero.inside-text .ms-hero-banner,
-  .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide {
+  .hero.inside-text .hero-banner,
+  .hero.inside-text .hero-carousel .hero-carousel-slide {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-    .ms-hero.inside-text .ms-hero-banner.black-bg-grad,
-    .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad {
+    .hero.inside-text .hero-banner.black-bg-grad,
+    .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad {
       color: white; }
-      .ms-hero.inside-text .ms-hero-banner.black-bg-grad:before,
-      .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+      .hero.inside-text .hero-banner.black-bg-grad:before,
+      .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
         background: rgba(0, 0, 0, 0.65); }
         @media screen and (min-width: 768px) {
-          .ms-hero.inside-text .ms-hero-banner.black-bg-grad:before,
-          .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+          .hero.inside-text .hero-banner.black-bg-grad:before,
+          .hero.inside-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
             background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
             background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
-    .ms-hero.inside-text .ms-hero-banner.white-bg-grad,
-    .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad {
+    .hero.inside-text .hero-banner.white-bg-grad,
+    .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad {
       color: #2F2F2F; }
-      .ms-hero.inside-text .ms-hero-banner.white-bg-grad:before,
-      .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+      .hero.inside-text .hero-banner.white-bg-grad:before,
+      .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
         background: rgba(255, 255, 255, 0.65); }
         @media screen and (min-width: 768px) {
-          .ms-hero.inside-text .ms-hero-banner.white-bg-grad:before,
-          .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+          .hero.inside-text .hero-banner.white-bg-grad:before,
+          .hero.inside-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
             background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
             background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); } }
-    .ms-hero.inside-text .ms-hero-banner.black-bgc:before,
-    .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.black-bgc:before {
+    .hero.inside-text .hero-banner.black-bgc:before,
+    .hero.inside-text .hero-carousel .hero-carousel-slide.black-bgc:before {
       background: rgba(0, 0, 0, 0.65); }
-    .ms-hero.inside-text .ms-hero-banner.white-bgc:before,
-    .ms-hero.inside-text .ms-hero-carousel .ms-hero-carousel-slide.white-bgc:before {
+    .hero.inside-text .hero-banner.white-bgc:before,
+    .hero.inside-text .hero-carousel .hero-carousel-slide.white-bgc:before {
       background: rgba(255, 255, 255, 0.65); }
-  .ms-hero.inside-text .ms-hero-content-container {
+  .hero.inside-text .hero-content-container {
     padding-top: 54px;
     padding-bottom: 54px;
     position: relative;
@@ -4157,68 +4151,68 @@ a {
     height: 100%;
     box-sizing: border-box; }
     @media screen and (min-width: 540px) {
-      .ms-hero.inside-text .ms-hero-content-container {
+      .hero.inside-text .hero-content-container {
         display: table;
         table-layout: fixed;
         width: 100%;
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw); } }
     @media screen and (min-width: 768px) {
-      .ms-hero.inside-text .ms-hero-content-container {
+      .hero.inside-text .hero-content-container {
         padding-top: 0;
         padding-bottom: 0; } }
-    .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-valign {
+    .hero.inside-text .hero-content-container .hero-content-valign {
       position: relative; }
       @media screen and (min-width: 540px) {
-        .ms-hero.inside-text .ms-hero-content-container .ms-hero-content-valign {
+        .hero.inside-text .hero-content-container .hero-content-valign {
           display: table-cell;
           vertical-align: middle;
           width: 100%; } }
-  .ms-hero.inside-text .ms-hero-mobile-img {
+  .hero.inside-text .hero-mobile-img {
     display: none; }
-  .ms-hero.popout-text .ms-hero-banner,
-  .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide {
+  .hero.popout-text .hero-banner,
+  .hero.popout-text .hero-carousel .hero-carousel-slide {
     background-position: -9999px;
     background-size: 0 0;
     background-repeat: no-repeat; }
     @media screen and (min-width: 768px) {
-      .ms-hero.popout-text .ms-hero-banner,
-      .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide {
+      .hero.popout-text .hero-banner,
+      .hero.popout-text .hero-carousel .hero-carousel-slide {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat; }
-        .ms-hero.popout-text .ms-hero-banner.black-bg-grad,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad {
+        .hero.popout-text .hero-banner.black-bg-grad,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad {
           color: white; }
-          .ms-hero.popout-text .ms-hero-banner.black-bg-grad:before,
-          .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+          .hero.popout-text .hero-banner.black-bg-grad:before,
+          .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
             background: rgba(0, 0, 0, 0.65); } }
       @media screen and (min-width: 768px) and (min-width: 768px) {
-        .ms-hero.popout-text .ms-hero-banner.black-bg-grad:before,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bg-grad:before {
+        .hero.popout-text .hero-banner.black-bg-grad:before,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.black-bg-grad:before {
           background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
           background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); } }
     @media screen and (min-width: 768px) {
-        .ms-hero.popout-text .ms-hero-banner.white-bg-grad,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad {
+        .hero.popout-text .hero-banner.white-bg-grad,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad {
           color: #2F2F2F; }
-          .ms-hero.popout-text .ms-hero-banner.white-bg-grad:before,
-          .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+          .hero.popout-text .hero-banner.white-bg-grad:before,
+          .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
             background: rgba(255, 255, 255, 0.65); } }
       @media screen and (min-width: 768px) and (min-width: 768px) {
-        .ms-hero.popout-text .ms-hero-banner.white-bg-grad:before,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bg-grad:before {
+        .hero.popout-text .hero-banner.white-bg-grad:before,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.white-bg-grad:before {
           background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
           background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); } }
     @media screen and (min-width: 768px) {
-        .ms-hero.popout-text .ms-hero-banner.black-bgc:before,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.black-bgc:before {
+        .hero.popout-text .hero-banner.black-bgc:before,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.black-bgc:before {
           background: rgba(0, 0, 0, 0.65); }
-        .ms-hero.popout-text .ms-hero-banner.white-bgc:before,
-        .ms-hero.popout-text .ms-hero-carousel .ms-hero-carousel-slide.white-bgc:before {
+        .hero.popout-text .hero-banner.white-bgc:before,
+        .hero.popout-text .hero-carousel .hero-carousel-slide.white-bgc:before {
           background: rgba(255, 255, 255, 0.65); } }
   @media screen and (min-width: 768px) {
-    .ms-hero.popout-text .ms-hero-content-container {
+    .hero.popout-text .hero-content-container {
       display: table;
       table-layout: fixed;
       position: relative;
@@ -4228,42 +4222,42 @@ a {
       box-sizing: border-box;
       background-color: transparent;
       color: inherit; } }
-  .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+  .hero.popout-text .hero-content-container .hero-content-valign {
     padding-top: 24px;
     padding-bottom: 33px;
     position: relative; }
     @media screen and (min-width: 540px) {
-      .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+      .hero.popout-text .hero-content-container .hero-content-valign {
         padding-top: calc(22px + 0.4vw);
         padding-bottom: calc(29.5px + 0.75vw); } }
     @media screen and (min-width: 768px) {
-      .ms-hero.popout-text .ms-hero-content-container .ms-hero-content-valign {
+      .hero.popout-text .hero-content-container .hero-content-valign {
         padding-top: 0;
         padding-bottom: 0;
         display: table-cell;
         width: 100%;
         vertical-align: middle; } }
-  .ms-hero .slick-list,
-  .ms-hero .slick-track,
-  .ms-hero .slick-slide {
+  .hero .slick-list,
+  .hero .slick-track,
+  .hero .slick-slide {
     height: 100%;
     padding-bottom: 0; }
-  .ms-hero .slick-initialized .slick-slide {
+  .hero .slick-initialized .slick-slide {
     display: table-cell;
     width: 100%; }
 
-.ms-banner {
+.banner {
   position: relative;
   background-position: -9999px;
   background-size: 0 0;
   background-repeat: no-repeat; }
   @media screen and (min-width: 768px) {
-    .ms-banner {
+    .banner {
       padding-top: calc(44.5px + 1.8vw);
       padding-bottom: calc(44.5px + 1.8vw);
       background-position: center;
       background-size: cover; }
-      .ms-banner:before {
+      .banner:before {
         content: '';
         display: block;
         position: absolute;
@@ -4271,51 +4265,51 @@ a {
         height: 100%;
         top: 0;
         left: 0; }
-      .ms-banner.black-bg-grad {
+      .banner.black-bg-grad {
         color: white; }
-        .ms-banner.black-bg-grad:before {
+        .banner.black-bg-grad:before {
           background: rgba(0, 0, 0, 0.65);
           background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%);
           background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, transparent 80%, transparent 100%); }
-      .ms-banner.white-bg-grad {
+      .banner.white-bg-grad {
         color: #2F2F2F; }
-        .ms-banner.white-bg-grad:before {
+        .banner.white-bg-grad:before {
           background: rgba(255, 255, 255, 0.65);
           background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%);
           background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0) 100%); }
-      .ms-banner.black-bgc:before {
+      .banner.black-bgc:before {
         background: rgba(0, 0, 0, 0.65); }
-      .ms-banner.white-bgc:before {
+      .banner.white-bgc:before {
         background: rgba(255, 255, 255, 0.65); } }
   @media screen and (min-width: 1400px) {
-    .ms-banner {
+    .banner {
       padding-top: 70px;
       padding-bottom: 70px; } }
   @media screen and (min-width: 768px) {
-    .ms-banner .ms-banner-content-container {
+    .banner .banner-content-container {
       color: inherit;
       background-color: transparent; } }
-  .ms-banner .ms-banner-content {
+  .banner .banner-content {
     padding-top: 24px;
     padding-bottom: 33px; }
     @media screen and (min-width: 540px) {
-      .ms-banner .ms-banner-content {
+      .banner .banner-content {
         padding-top: calc(22px + 0.4vw);
         padding-bottom: calc(29.5px + 0.75vw); } }
     @media screen and (min-width: 768px) {
-      .ms-banner .ms-banner-content {
+      .banner .banner-content {
         padding-top: 0;
         padding-bottom: 0;
         height: 50vw; } }
-  .ms-banner .ms-banner-mobile-img {
+  .banner .banner-mobile-img {
     display: block; }
     @media screen and (min-width: 768px) {
-      .ms-banner .ms-banner-mobile-img {
+      .banner .banner-mobile-img {
         display: none; } }
 
-.ms-mosaic {
+.mosaic {
   overflow: hidden; }
-  .ms-mosaic .ms-mosaic-tile {
+  .mosaic .mosaic-tile {
     padding-top: 54px;
     padding-bottom: 54px;
     padding-left: 12px;
@@ -4326,69 +4320,69 @@ a {
     background-repeat: no-repeat;
     background-size: cover; }
     @media all and (min-width: 540px) {
-      .ms-mosaic .ms-mosaic-tile {
+      .mosaic .mosaic-tile {
         padding-top: calc(44.5px + 1.8vw);
         padding-bottom: calc(44.5px + 1.8vw); } }
     @media all and (min-width: 1400px) {
-      .ms-mosaic .ms-mosaic-tile {
+      .mosaic .mosaic-tile {
         padding-top: 70px;
         padding-bottom: 70px; } }
     @media screen and (min-width: 540px) {
-      .ms-mosaic .ms-mosaic-tile {
+      .mosaic .mosaic-tile {
         padding-left: 24px;
         padding-right: 24px; } }
     @media screen and (min-width: 768px) {
-      .ms-mosaic .ms-mosaic-tile {
+      .mosaic .mosaic-tile {
         padding-left: 10%;
         padding-right: 10%; } }
-    .ms-mosaic .ms-mosaic-tile :last-child {
+    .mosaic .mosaic-tile :last-child {
       margin-bottom: 0; }
-    .ms-mosaic .ms-mosaic-tile.half-tile {
+    .mosaic .mosaic-tile.half-tile {
       display: none; }
       @media screen and (min-width: 768px) {
-        .ms-mosaic .ms-mosaic-tile.half-tile {
+        .mosaic .mosaic-tile.half-tile {
           display: block;
           min-height: 300px;
           height: 300px;
           height: 25vw; } }
-    .ms-mosaic .ms-mosaic-tile.full-tile {
+    .mosaic .mosaic-tile.full-tile {
       display: none; }
       @media screen and (min-width: 768px) {
-        .ms-mosaic .ms-mosaic-tile.full-tile {
+        .mosaic .mosaic-tile.full-tile {
           display: block;
           position: absolute;
           top: 0;
           bottom: 0;
           left: 0;
           right: 0; } }
-  .ms-mosaic .ms-mosaic-mobile-img {
+  .mosaic .mosaic-mobile-img {
     width: 100%;
     height: auto; }
     @media screen and (min-width: 768px) {
-      .ms-mosaic .ms-mosaic-mobile-img {
+      .mosaic .mosaic-mobile-img {
         display: none; } }
 
-.ms-parallax-bg {
+.parallax-bg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed; }
 
-.ms-list-row {
+.list-row {
   list-style-type: none;
   padding-left: 0;
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px; }
   @media all and (min-width: 540px) {
-    .ms-list-row {
+    .list-row {
       padding-top: calc(37px + 1.25vw);
       padding-bottom: calc(37px + 1.25vw); } }
   @media all and (min-width: 1400px) {
-    .ms-list-row {
+    .list-row {
       padding-top: 60px;
       padding-bottom: 60px; } }
-  .ms-list-row li {
+  .list-row li {
     display: inline-block;
     vertical-align: top;
     width: 49%;
@@ -4396,155 +4390,145 @@ a {
     padding-right: 2%;
     margin-bottom: 12px; }
     @media all and (min-width: 540px) {
-      .ms-list-row li {
+      .list-row li {
         margin-bottom: 12px; } }
     @media all and (min-width: 1400px) {
-      .ms-list-row li {
+      .list-row li {
         margin-bottom: 12px; } }
     @media screen and (min-width: 540px) {
-      .ms-list-row li {
+      .list-row li {
         width: 24.3%; } }
     @media screen and (min-width: 1400px) {
-      .ms-list-row li {
+      .list-row li {
         width: 12%; } }
-    .ms-list-row li:first-child {
+    .list-row li:first-child {
       padding-left: 0; }
-    .ms-list-row li:last-child {
+    .list-row li:last-child {
       padding-right: 0; }
-    .ms-list-row li .ms-list-row-item-img {
+    .list-row li .list-row-item-img {
       display: block;
       max-width: 100%;
       height: auto;
       max-height: 100px;
       margin: 0 auto; }
-    .ms-list-row li a:hover span {
+    .list-row li a:hover span {
       text-decoration: underline; }
   @media screen and (min-width: 540px) {
-    .ms-list-row.row-of-3 li {
+    .list-row.row-of-3 li {
       width: 32.7%; } }
   @media screen and (min-width: 768px) {
-    .ms-list-row.row-of-3 li {
+    .list-row.row-of-3 li {
       width: 24.3%; } }
   @media screen and (min-width: 1400px) {
-    .ms-list-row.row-of-3 li {
+    .list-row.row-of-3 li {
       width: 16%; } }
   @media screen and (min-width: 540px) {
-    .ms-list-row.row-of-5 li {
+    .list-row.row-of-5 li {
       width: 32.7%; } }
   @media screen and (min-width: 768px) {
-    .ms-list-row.row-of-5 li {
+    .list-row.row-of-5 li {
       width: 19.4%; } }
 
-.ms-product-feature,
-.ms-product-family-feature {
+.product-feature,
+.product-family-feature {
   padding-top: 54px;
   padding-bottom: 54px; }
   @media all and (min-width: 540px) {
-    .ms-product-feature,
-    .ms-product-family-feature {
+    .product-feature,
+    .product-family-feature {
       padding-top: calc(44.5px + 1.8vw);
       padding-bottom: calc(44.5px + 1.8vw); } }
   @media all and (min-width: 1400px) {
-    .ms-product-feature,
-    .ms-product-family-feature {
+    .product-feature,
+    .product-family-feature {
       padding-top: 70px;
       padding-bottom: 70px; } }
-  .ms-product-feature .ms--col,
-  .ms-product-family-feature .ms--col {
+  .product-feature .col,
+  .product-family-feature .col {
     margin-bottom: 40px; }
     @media all and (min-width: 540px) {
-      .ms-product-feature .ms--col,
-      .ms-product-family-feature .ms--col {
+      .product-feature .col,
+      .product-family-feature .col {
         margin-bottom: calc(37px + 1.25vw); } }
     @media all and (min-width: 1400px) {
-      .ms-product-feature .ms--col,
-      .ms-product-family-feature .ms--col {
+      .product-feature .col,
+      .product-family-feature .col {
         margin-bottom: 60px; } }
     @media screen and (min-width: 768px) {
-      .ms-product-feature .ms--col,
-      .ms-product-family-feature .ms--col {
+      .product-feature .col,
+      .product-family-feature .col {
         margin-bottom: 0; } }
-  .ms-product-feature :last-child,
-  .ms-product-family-feature :last-child {
+  .product-feature :last-child,
+  .product-family-feature :last-child {
     margin-bottom: 0; }
 
-.ms-product-feature img {
+.product-feature img {
   width: 100%;
   height: auto;
   margin-bottom: 12px;
   display: block; }
   @media all and (min-width: 540px) {
-    .ms-product-feature img {
+    .product-feature img {
       margin-bottom: 12px; } }
   @media all and (min-width: 1400px) {
-    .ms-product-feature img {
+    .product-feature img {
       margin-bottom: 12px; } }
 
-.ms-product-family-feature img {
+.product-family-feature img {
   width: 100%;
   height: auto;
   margin-bottom: 12px;
   display: none; }
   @media all and (min-width: 540px) {
-    .ms-product-family-feature img {
+    .product-family-feature img {
       margin-bottom: 12px; } }
   @media all and (min-width: 1400px) {
-    .ms-product-family-feature img {
+    .product-family-feature img {
       margin-bottom: 12px; } }
   @media screen and (min-width: 768px) {
-    .ms-product-family-feature img {
+    .product-family-feature img {
       display: block; } }
 
-.ms-product-family-feature .ms--col img {
+.product-family-feature .col img {
   display: block; }
   @media screen and (min-width: 768px) {
-    .ms-product-family-feature .ms--col img {
+    .product-family-feature .col img {
       display: none; } }
 
-.ms-video-feature {
+.video-feature {
   padding-top: 54px;
   padding-bottom: 54px; }
   @media all and (min-width: 540px) {
-    .ms-video-feature {
+    .video-feature {
       padding-top: calc(44.5px + 1.8vw);
       padding-bottom: calc(44.5px + 1.8vw); } }
   @media all and (min-width: 1400px) {
-    .ms-video-feature {
+    .video-feature {
       padding-top: 70px;
       padding-bottom: 70px; } }
-  .ms-video-feature .ms-col {
+  .video-feature .col {
     margin-bottom: 40px; }
     @media all and (min-width: 540px) {
-      .ms-video-feature .ms-col {
+      .video-feature .col {
         margin-bottom: calc(37px + 1.25vw); } }
     @media all and (min-width: 1400px) {
-      .ms-video-feature .ms-col {
+      .video-feature .col {
         margin-bottom: 60px; } }
     @media screen and (min-width: 768px) {
-      .ms-video-feature .ms-col {
+      .video-feature .col {
         margin-bottom: 0; } }
-  .ms-video-feature :last-child {
+  .video-feature :last-child {
     margin-bottom: 0; }
-  .ms-video-feature img {
+  .video-feature img {
     width: 100%;
     height: auto;
     display: block; }
-  .ms-video-feature .video-link {
+  .video-feature .video-link {
     display: block;
     margin-bottom: 12px; }
     @media all and (min-width: 540px) {
-      .ms-video-feature .video-link {
+      .video-feature .video-link {
         margin-bottom: 12px; } }
     @media all and (min-width: 1400px) {
-      .ms-video-feature .video-link {
+      .video-feature .video-link {
         margin-bottom: 12px; } }
-
-html {
-  box-sizing: border-box;
-  line-height: 1.4; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
-
-img {
-  max-width: 100%; }

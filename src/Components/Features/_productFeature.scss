@@ -2,7 +2,7 @@
 .#{$picchu-prefix}product-family-feature {
 	@include vertical-spacing(padding, sp6);
 
-	.#{$picchu-prefix}-col {
+	.#{$picchu-prefix}col {
 		@include vertical-spacing(margin-bottom, sp5);
 
 		@media screen and (min-width: $vp3) {
@@ -36,7 +36,7 @@
 		}
 	}
 
-	.#{$picchu-prefix}-col {
+	.#{$picchu-prefix}col {
 		img {
 			display: block;
 			@media screen and (min-width: $vp3) {
