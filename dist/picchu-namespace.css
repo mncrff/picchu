@@ -359,8 +359,6 @@ img {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline; }
   .picchu article,
   .picchu aside,
@@ -2973,7 +2971,9 @@ img {
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     box-sizing: border-box; }
   .picchu label.disabled {
     color: #c8c8c8; }
@@ -3032,7 +3032,9 @@ img {
       display: inline-block;
       font-size: 15px;
       color: #2F2F2F;
-      appearance: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
       border: 1px solid #767676;
       position: relative;
       padding: 0.4667em 2.8em 0.4667em 0.55em;
@@ -3205,7 +3207,9 @@ img {
     z-index: 0;
     margin-right: 0.25em; }
   .picchu input[type=range].slider {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 100%;
     margin: 3px 0; }
   .picchu input[type=range].slider:focus {
@@ -3232,7 +3236,8 @@ img {
     border-radius: 50px;
     background: #0078D7;
     cursor: pointer;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     margin-top: -3px; }
   .picchu input[type=range].slider::-webkit-slider-thumb:hover {
     background: #000000; }

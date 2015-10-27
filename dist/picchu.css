@@ -185,8 +185,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline; }
 
 /*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -3627,7 +3625,9 @@ label, input, textarea {
   display: inline-block;
   font-size: 15px;
   color: #2F2F2F;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   box-sizing: border-box; }
 
 label.disabled {
@@ -3689,7 +3689,9 @@ input[type="password"] {
     display: inline-block;
     font-size: 15px;
     color: #2F2F2F;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border: 1px solid #767676;
     position: relative;
     padding: 0.4667em 2.8em 0.4667em 0.55em;
@@ -3890,7 +3892,9 @@ label.toggle input[disabled] ~ span {
   margin-right: 0.25em; }
 
 input[type=range].slider {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   margin: 3px 0; }
 
@@ -3920,7 +3924,8 @@ input[type=range].slider::-webkit-slider-thumb {
   border-radius: 50px;
   background: #0078D7;
   cursor: pointer;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin-top: -3px; }
 
 input[type=range].slider::-webkit-slider-thumb:hover {
