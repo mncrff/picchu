@@ -1,0 +1,26 @@
+.#{$picchu-prefix}video-feature {
+	@include vertical-spacing(padding, sp6);
+
+	.#{$picchu-prefix}col {
+		@include vertical-spacing(margin-bottom, sp5);
+
+		@media screen and (min-width: $vp3) {
+			margin-bottom: 0;
+		}
+	}
+
+	:last-child {
+		margin-bottom: 0;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.video-link {
+		display: block;
+		@include vertical-spacing(margin-bottom, sp1);
+	}
+}

@@ -1,0 +1,69 @@
+.#{$picchu-prefix}list-row {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    @include vertical-spacing(padding, sp5);
+
+    li {
+        display: inline-block;
+        vertical-align: top;
+
+        width: 49%;
+        padding-left: 2%;
+        padding-right: 2%;
+        @include vertical-spacing(margin-bottom, sp1);
+
+        @media screen and (min-width: $vp2) {
+            width: 24.3%;
+        }
+
+        @media screen and (min-width: $vp5) {
+            width: 12%;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+
+        .#{$picchu-prefix}list-row-item-img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            max-height: 100px;
+            margin: 0 auto;
+        }
+
+        a {
+            &:hover span {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &.row-of-3 {
+        li {
+            @media screen and (min-width: $vp2) {
+                width: 32.7%;
+            }
+            @media screen and (min-width: $vp3) {
+                width: 24.3%;
+            }
+            @media screen and (min-width: $vp5) {
+                width: 16%;
+            }
+        }
+    }
+    &.row-of-5 {
+        li {
+            @media screen and (min-width: $vp2) {
+                width: 32.7%;
+            }
+            @media screen and (min-width: $vp3) {
+                width: 19.4%;
+            }
+        }
+    }
+}

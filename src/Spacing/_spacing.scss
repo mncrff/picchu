@@ -82,7 +82,7 @@
         }
     } @else {
         @if length($vals) == 1 {
-            // Libsass 1.1.0-beta would not compile with this variable set
+            // Libsass 1.0.0 would not compile with this variable set
             // $val: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
             #{$property}-top: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
             #{$property}-bottom: map-get(map-get($spacing-list, nth($vals, 1)), $prop_val);
@@ -445,7 +445,7 @@ button, .button, .#{$picchu-prefix}button {
 }
 
 //links 
-a.isolated-link {
+.cta-link {
     margin-bottom: 0.8em;
 
     &.tight {
@@ -454,8 +454,34 @@ a.isolated-link {
     &.loose {
         margin-bottom: 1.2em;
     }
-    &.loose {
+    &.xloose {
         margin-bottom: 1.6em;
+    }
+}
+
+.cta-container {
+    margin-bottom: 0;
+
+    a, button, .button, .#{$picchu-prefix}button {
+        margin-bottom: 0.8em;
+    }
+    &.tight {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 0.4em;
+        }
+    }
+    &.loose {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 1.2em;
+        }
+    }
+    &.xloose {
+        margin-bottom: 0;
+        a, button, .button, .#{$picchu-prefix}button {
+            margin-bottom: 1.6em;
+        }
     }
 }
 

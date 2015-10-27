@@ -1,0 +1,104 @@
+a {
+    color: shade($theme-link-color, nth($shade-list, 1));
+}
+
+.cta-link {
+	display: inline-block;
+    position: relative;
+    font-family: $semibold;
+
+    &:after {
+        @extend .icon-chevron-right-sm-blue;
+        content: '';
+        display: inline-block;
+        width: 0.55em;
+        height: 1em;
+        vertical-align: baseline;
+        margin-bottom: 0.02em;
+        margin-left: 0.25em;
+        background-position: 0 bottom;
+    }
+
+    &.black-c{
+        &:after {
+            @extend .icon-chevron-right-sm-black;
+        }
+    }
+    &.white-c {
+        &:after {
+            @extend .icon-chevron-right-sm-white;
+        }
+    }
+}
+
+.cta-container {
+
+    a, button, .button, .#{$picchu-prefix}button {
+        margin-right: 1.25em;
+    }
+
+    @media screen and (min-width: $vp3) {
+        br {
+            display: none;
+        }
+    }
+}
+
+.video-link {
+    display: inline-block;
+    position: relative;
+    color: $white;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.4;
+    }
+
+    &:after {
+        @extend .icon-play-white;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        margin-left: -35px;
+    }
+
+    &:hover:before,
+    &:focus:before {
+        opacity: 0.2;
+    }
+
+    &:focus:after {
+        outline: thin dotted;
+    }
+
+    &.black-c,
+    &.white-bgc {
+        &:before {
+            background-color: white;
+        }
+        &:after {
+            @extend .icon-play-black;
+        }
+    }
+    &.white-c,
+    &.black-bgc {
+        &:before {
+            background-color: black;
+        }
+        &:after {
+            @extend .icon-play-white;
+        }
+    }
+}

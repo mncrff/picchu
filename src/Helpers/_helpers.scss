@@ -34,6 +34,17 @@
     @extend %visuallyhidden;
 }
 
+//Visual hides text inside an element but allows background images to be visible
+%text-hide {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-hide {
+  @extend %text-hide;
+}
+
 .text-center, .tac {
     text-align: center;
 }
@@ -131,6 +142,67 @@
     visibility: hidden !important;
 }
 
+.mobile-only {
+  @media screen and (min-width: $vp3) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  display: none;
+  @media screen and (min-width: $vp3) {
+    display: block;
+  }
+}
+
+.display-block, .db {
+    display: block;
+}
+
+.display-inline-block, .dib {
+    display: inline-block;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: inline-block;
+      }
+    }
+}
+
+.display-inline, .di {
+    display: inline;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: inline;
+      }
+    }
+}
+
+.display-table, .dt {
+    display: table;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: table;
+      }
+    }
+}
+
+.display-table-cell, .dtc {
+    display: table-cell;
+
+    &.desktop-only {
+      display: none;
+      @media screen and (min-width: $vp3) {
+        display: table-cell;
+      }
+    }
+}
+
 .overflow-hidden, .ofh {
     overflow: hidden;
 }
@@ -153,4 +225,42 @@
 
 .full-width {
     width: 100%;
+    height: auto;
+}
+
+.no-wrap {
+    white-space: nowrap !important;
+}
+
+.stripped {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bg-top {
+   background-position: top center; 
+}
+.bg-top-left {
+   background-position: top left; 
+}
+.bg-top-right {
+   background-position: top right; 
+}
+.bg-bottom {
+   background-position: bottom center; 
+}
+.bg-bottom-left {
+   background-position: bottom left; 
+}
+.bg-bottom-right {
+   background-position: bottom right; 
+}
+.bg-left {
+   background-position: center left; 
+}
+.bg-right {
+   background-position: center right; 
+}
+.bg-center {
+   background-position: center; 
 }

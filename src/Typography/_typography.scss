@@ -99,7 +99,7 @@
     };
 }
 
-// body, .body
+// .body
 @mixin font-body($isResponsive: true) {
     @include font-responsive("body", $isResponsive){
         font-family: $regular;
@@ -155,7 +155,8 @@ b, .bold {
 body {
     color: $text-color;
     text-rendering: optimizeLegibility;
-    @include font-body;
+    font-family: $regular;
+    @extend %body-respond;
 }
 
 p, blockquote, input, div, span, li, select, button {
@@ -168,7 +169,6 @@ p {
 }
 
 a {
-    color: shade($blue, nth($shade-list, 1));
     font-size: inherit;
     font-family: $regular;
     text-decoration: none;
